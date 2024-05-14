@@ -30,11 +30,12 @@ header a {
 header ul {
     padding: 0;
     list-style: none;
+    float: left;
 }
 
 header li {
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 header #branding {
@@ -48,6 +49,16 @@ header #branding h1 {
 header nav {
     float: right;
     margin-top: 10px;
+}
+
+header .search-container {
+    float: right;
+    margin-top: 15px;
+}
+
+header .search-container input {
+    padding: 5px;
+    font-size: 16px;
 }
 
 .recipe-list {
@@ -112,5 +123,13 @@ header nav {
     margin: 5px 0;
     padding: 10px;
     background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.recipe p {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #333;
     border-radius: 5px;
 }
