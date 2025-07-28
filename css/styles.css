@@ -327,6 +327,217 @@ nav ul li a:focus {
     }
 }
 
+/* Breadcrumbs */
+.breadcrumbs {
+    background: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 2rem;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: '›';
+    margin-left: 0.5rem;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.breadcrumbs a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #764ba2;
+}
+
+.breadcrumbs span[aria-current="page"] {
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Category Filters */
+.category-filters {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #e9ecef;
+    background: #fff;
+    color: #495057;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-color: #667eea;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Quick Navigation */
+.quick-nav {
+    position: relative;
+}
+
+.quick-nav-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    gap: 4px;
+    min-height: 44px;
+    min-width: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-nav-toggle span {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.quick-nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.quick-nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.quick-nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.quick-nav-menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.quick-nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.quick-nav-menu a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Enhanced Search */
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    padding-right: 3rem;
+}
+
+.search-container::after {
+    content: '🔍';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.1rem;
+}
+
+/* Mobile Styles for Navigation */
+@media (max-width: 767px) {
+    .quick-nav-toggle {
+        display: flex;
+    }
+    
+    .quick-nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(102, 126, 234, 0.95);
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .quick-nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .filter-buttons {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+    
+    .filter-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    .breadcrumbs ol {
+        font-size: 0.8rem;
+    }
+}
+
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     * {
