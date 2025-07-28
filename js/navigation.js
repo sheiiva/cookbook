@@ -194,39 +194,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Quick navigation menu
-function createQuickNav() {
-    const quickNav = document.createElement('div');
-    quickNav.className = 'quick-nav';
-    quickNav.innerHTML = `
-        <button class="quick-nav-toggle" aria-label="Toggle quick navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="quick-nav-menu">
-            <a href="/">Home</a>
-            <a href="#main-courses">Main Courses</a>
-            <a href="#desserts">Desserts</a>
-            <a href="#search">Search</a>
-        </div>
-    `;
-    
-    // Add to header
-    const header = document.querySelector('header .container');
-    if (header) {
-        header.appendChild(quickNav);
-    }
-    
-    // Toggle functionality
-    const toggle = quickNav.querySelector('.quick-nav-toggle');
-    const menu = quickNav.querySelector('.quick-nav-menu');
-    
-    toggle.addEventListener('click', function() {
-        menu.classList.toggle('active');
-        toggle.classList.toggle('active');
-    });
-}
-
-// Initialize quick navigation
-document.addEventListener('DOMContentLoaded', createQuickNav); 
+// Quick navigation removed - using filter buttons instead 
