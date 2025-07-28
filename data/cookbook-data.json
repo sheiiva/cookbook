@@ -1,4 +1,22 @@
 {
+  "ui": {
+    "title": "My Recipe Journal",
+    "search_placeholder": "Search recipes...",
+    "categories": {
+      "all": "All Recipes",
+      "main_courses": "Main Courses",
+      "desserts": "Desserts",
+      "soups": "Soups",
+      "quick": "Quick Recipes",
+      "vegetarian": "Vegetarian"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "breadcrumbs": {
+      "separator": "›"
+    }
+  },
   "categories": {
     "main-courses": {
       "name": "Main Courses",

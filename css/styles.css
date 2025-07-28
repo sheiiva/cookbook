@@ -333,6 +333,7 @@ nav ul li a:focus {
     flex-direction: column;
     align-items: flex-end;
     margin-left: 1rem;
+    min-height: 40px; /* Ensure minimum height for positioning */
 }
 
 /* Language toggle button */
@@ -372,7 +373,7 @@ nav ul li a:focus {
 /* Language menu */
 .language-menu {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 4px);
     right: 0;
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -386,13 +387,15 @@ nav ul li a:focus {
     visibility: hidden;
     transform: translateY(-10px);
     transition: all 0.3s ease;
-    margin-top: 4px;
+    z-index: 1002; /* Higher than the switcher */
+    pointer-events: none; /* Prevent interaction when hidden */
 }
 
 .language-menu.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    pointer-events: auto; /* Re-enable interaction when visible */
 }
 
 /* Language options */
@@ -452,10 +455,12 @@ nav ul li a:focus {
     }
     
     .language-menu {
-        position: static;
+        position: absolute;
         width: 100%;
         max-width: 200px;
         margin-top: 8px;
+        top: calc(100% + 4px);
+        right: 0;
     }
 }
 

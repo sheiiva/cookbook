@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Click Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Click Test</h1>
+    
+    <button id="test-button" class="test-button">Click Me</button>
+    <div id="output"></div>
+    
+    <script>
+        console.log('Script starting...');
+        
+        // Test 1: Immediate execution
+        console.log('Immediate execution test');
+        
+        // Test 2: DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOMContentLoaded fired');
+            
+            const button = document.getElementById('test-button');
+            const output = document.getElementById('output');
+            
+            console.log('Button element:', button);
+            console.log('Output element:', output);
+            
+            if (button) {
+                console.log('Adding click listener...');
+                
+                button.addEventListener('click', function(e) {
+                    console.log('Button clicked!');
+                    console.log('Event:', e);
+                    console.log('Target:', e.target);
+                    
+                    output.innerHTML += '<p>Button clicked at ' + new Date().toLocaleTimeString() + '</p>';
+                    
+                    // Change button color
+                    this.style.background = this.style.background === 'red' ? '#007bff' : 'red';
+                });
+                
+                console.log('Click listener added successfully');
+            } else {
+                console.error('Button not found!');
+                output.innerHTML = '<p style="color: red;">ERROR: Button not found!</p>';
+            }
+        });
+        
+        // Test 3: Window load
+        window.addEventListener('load', function() {
+            console.log('Window load fired');
+        });
+        
+        console.log('Script finished loading');
+    </script>
+</body>
+</html> 
