@@ -54,7 +54,8 @@ jobs:
           cat js/searchRecipes.js | tr -d '\n' | sed 's/  */ /g' > js/searchRecipes.min.js
           cat js/lazyLoad.js | tr -d '\n' | sed 's/  */ /g' > js/lazyLoad.min.js
           cat js/navigation.js | tr -d '\n' | sed 's/  */ /g' > js/navigation.min.js
-          echo "✅ JS minified: searchRecipes.min.js, lazyLoad.min.js, navigation.min.js"
+          cat js/recipeLoader.js | tr -d '\n' | sed 's/  */ /g' > js/recipeLoader.min.js
+          echo "✅ JS minified: searchRecipes.min.js, lazyLoad.min.js, navigation.min.js, recipeLoader.min.js"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

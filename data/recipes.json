@@ -1,0 +1,56 @@
+{
+  "categories": {
+    "main-courses": {
+      "name": "Main Courses",
+      "recipes": [
+        {
+          "id": "bourguignon",
+          "title": "Seitan Bourguignon",
+          "file": "bourguignon.html",
+          "image": "bourguignon.webp",
+          "description": "A hearty vegetarian version of the classic French dish"
+        },
+        {
+          "id": "lentils_soup",
+          "title": "Lentils Soup",
+          "file": "lentils_soup.html",
+          "image": "lentils_soup.webp",
+          "description": "Warm and nutritious lentil soup"
+        },
+        {
+          "id": "moussaka",
+          "title": "Moussaka",
+          "file": "moussaka.html",
+          "image": "moussaka.webp",
+          "description": "Layered eggplant and potato casserole"
+        }
+      ]
+    },
+    "desserts": {
+      "name": "Desserts",
+      "recipes": [
+        {
+          "id": "banana_bread",
+          "title": "Banana Bread",
+          "file": "banana_bread.html",
+          "image": "banana_bread.webp",
+          "description": "Moist and delicious banana bread"
+        },
+        {
+          "id": "chocolate_truffles",
+          "title": "Chocolate Truffles",
+          "file": "chocolate_truffles.html",
+          "image": "chocolate_truffles.webp",
+          "description": "Rich and creamy chocolate truffles"
+        },
+        {
+          "id": "rice_pudding",
+          "title": "Rice Pudding",
+          "file": "rice_pudding.html",
+          "image": "rice_pudding.webp",
+          "description": "Creamy and comforting rice pudding"
+        }
+      ]
+    }
+  }
+} 
