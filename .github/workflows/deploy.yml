@@ -24,6 +24,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Build and Optimize
+        run: |
+          # Create optimized images directory
+          mkdir -p images/optimized
+          
+          # Optimize images
+          echo "📸 Optimizing images..."
+          for img in images/*.{jpg,png}; do
+            if [ -f "$img" ]; then
+              filename=$(basename "$img" | sed 's/\.[^.]*$/.webp/')
+              convert "$img" -strip -quality 85 -resize 800x600^ -gravity center -extent 800x600 "images/optimized/$filename"
+              echo "✅ Optimized: $img → images/optimized/$filename"
+            fi
+          done
+          
+          # Minify CSS
+          echo "🎨 Minifying CSS..."
+          cat css/styles.css | tr -d '\n' | sed 's/  */ /g' | sed 's/;}/}/g' | sed 's/: /:/g' > css/styles.min.css
+          echo "✅ CSS minified: css/styles.min.css"
+          
+          # Minify JS
+          echo "⚡ Minifying JavaScript..."
+          cat js/searchRecipes.js | tr -d '\n' | sed 's/  */ /g' > js/searchRecipes.min.js
+          echo "✅ JS minified: js/searchRecipes.min.js"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
