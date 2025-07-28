@@ -32,9 +32,17 @@ header {
 
 header .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    flex: 1;
 }
 
 header #branding h1 {
@@ -317,6 +325,140 @@ nav ul li a:focus {
 }
 
 /* High contrast mode support */
+/* Language switcher */
+.language-switcher {
+    position: relative;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 1rem;
+}
+
+/* Language toggle button */
+.language-toggle {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.language-toggle:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+.language-toggle:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.toggle-icon {
+    font-size: 16px;
+}
+
+/* Language menu */
+.language-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    min-width: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    margin-top: 4px;
+}
+
+.language-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Language options */
+.lang-option {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 0;
+}
+
+.lang-option:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.lang-option:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.lang-option:hover {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+}
+
+.lang-option.active {
+    background: rgba(102, 126, 234, 0.2);
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Mobile language switcher */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .header-content {
+        width: 100%;
+    }
+    
+    .language-switcher {
+        margin: 0;
+        align-items: center;
+    }
+    
+    .language-toggle {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+    
+    .language-menu {
+        position: static;
+        width: 100%;
+        max-width: 200px;
+        margin-top: 8px;
+    }
+}
+
 @media (prefers-contrast: high) {
     .recipe-list ul li a {
         border: 2px solid #333;
@@ -324,6 +466,10 @@ nav ul li a:focus {
     
     .recipe-list ul li a:hover {
         border-color: #fff;
+    }
+    
+    .language-switcher select {
+        border: 2px solid #333;
     }
 }
 
