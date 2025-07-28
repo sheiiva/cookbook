@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Click Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .language-toggle {
+            padding: 8px 16px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Debug Click Test</h1>
+    
+    <button class="test-button" onclick="alert('Test button clicked!')">Test Button (onclick)</button>
+    
+    <button id="language-toggle" class="language-toggle">Language Button (addEventListener)</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        console.log('Script loading...');
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+            
+            const toggle = document.getElementById('language-toggle');
+            const output = document.getElementById('output');
+            
+            console.log('Toggle element:', toggle);
+            
+            if (toggle) {
+                console.log('Adding click listener to toggle');
+                
+                toggle.addEventListener('click', function(e) {
+                    console.log('Language button clicked!');
+                    console.log('Event:', e);
+                    console.log('Target:', e.target);
+                    
+                    output.innerHTML += '<p>Language button clicked at ' + new Date().toLocaleTimeString() + '</p>';
+                    
+                    // Test if we can modify the button
+                    this.style.background = this.style.background === 'red' ? '#28a745' : 'red';
+                });
+                
+                console.log('Click listener added successfully');
+            } else {
+                console.error('Toggle element not found!');
+                output.innerHTML = '<p style="color: red;">ERROR: Toggle element not found!</p>';
+            }
+        });
+        
+        // Also test if the script loads at all
+        console.log('Script loaded successfully');
+    </script>
+</body>
+</html> 

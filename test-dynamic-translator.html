@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Translator Test</title>
+</head>
+<body>
+    <h1>Dynamic Translator Test</h1>
+    <p>This is a test page to verify the dynamic translator loads properly.</p>
+    
+    <script>
+        console.log('=== DYNAMIC TRANSLATOR TEST ===');
+        console.log('Before loading script');
+        console.log('window.dynamicTranslator:', window.dynamicTranslator);
+    </script>
+    
+    <script src="js/dynamicTranslator.min.js"></script>
+    
+    <script>
+        console.log('After loading script');
+        console.log('window.dynamicTranslator:', window.dynamicTranslator);
+        
+        // Wait for DOM to be ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+            console.log('window.dynamicTranslator:', window.dynamicTranslator);
+            
+            if (window.dynamicTranslator) {
+                console.log('✅ Dynamic translator loaded successfully!');
+                console.log('Methods:', Object.getOwnPropertyNames(window.dynamicTranslator));
+                console.log('Current language:', window.dynamicTranslator.currentLanguage);
+            } else {
+                console.error('❌ Dynamic translator not available');
+            }
+        });
+        
+        // Check for errors
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript error:', e.error);
+            console.error('Error message:', e.message);
+            console.error('Error filename:', e.filename);
+            console.error('Error line:', e.lineno);
+        });
+    </script>
+</body>
+</html> 

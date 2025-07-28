@@ -50,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close menu
             menu.classList.remove('show');
             
+            // Change language using dynamic translator
+            if (window.dynamicTranslator) {
+                window.dynamicTranslator.changeLanguage(selectedLang);
+            }
+            
             // Show feedback
             showLanguageChangeFeedback(selectedLang);
         });

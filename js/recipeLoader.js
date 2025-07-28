@@ -6,9 +6,18 @@ class RecipeLoader {
     }
 
     async init() {
+        console.log('=== RECIPE LOADER INIT ===');
         try {
-            const response = await fetch('data/recipes.json');
-            this.recipesData = await response.json();
+            console.log('Loading recipes from data/cookbook-data.json...');
+            const response = await fetch('data/cookbook-data.json');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            
+            const data = await response.json();
+            this.recipesData = { categories: data.categories };
+            console.log('Recipes loaded successfully:', this.recipesData);
             this.renderRecipes();
         } catch (error) {
             console.error('Failed to load recipes:', error);
@@ -17,12 +26,22 @@ class RecipeLoader {
     }
 
     renderRecipes() {
+        console.log('=== RENDER RECIPES ===');
         const mainContent = document.querySelector('.main-content');
-        if (!mainContent || !this.recipesData) return;
+        console.log('Main content element:', mainContent);
+        console.log('Recipes data:', this.recipesData);
+        
+        if (!mainContent || !this.recipesData) {
+            console.error('Missing mainContent or recipesData');
+            return;
+        }
 
         mainContent.innerHTML = '';
+        console.log('Cleared main content');
 
         Object.entries(this.recipesData.categories).forEach(([categoryId, category]) => {
+            console.log('Processing category:', categoryId, category);
+            
             const recipeList = document.createElement('div');
             recipeList.className = 'recipe-list';
             recipeList.id = `${categoryId}-list`;
@@ -41,13 +60,51 @@ class RecipeLoader {
                 a.textContent = recipe.title;
                 a.setAttribute('data-category', categoryId);
                 a.setAttribute('data-recipe-id', recipe.id);
+                console.log('Created recipe link:', recipe.title);
                 li.appendChild(a);
                 ul.appendChild(li);
             });
 
             recipeList.appendChild(ul);
             mainContent.appendChild(recipeList);
+            console.log('Added recipe list for category:', categoryId);
         });
+
+        console.log('All recipes rendered, triggering translation...');
+        // Trigger translation after recipes are loaded
+        this.triggerTranslation();
+    }
+
+    updateWithTranslatedContent(translatedCategories) {
+        if (!translatedCategories) return;
+
+        // Update recipe titles with translated content
+        const recipeLinks = document.querySelectorAll('a[data-recipe-id]');
+        recipeLinks.forEach(link => {
+            const recipeId = link.getAttribute('data-recipe-id');
+            const category = link.getAttribute('data-category');
+            
+            if (translatedCategories[category]) {
+                const recipe = translatedCategories[category].recipes.find(r => r.id === recipeId);
+                if (recipe && recipe.title) {
+                    link.textContent = recipe.title;
+                    console.log('Updated recipe title:', recipeId, '→', recipe.title);
+                }
+            }
+        });
+    }
+
+    triggerTranslation() {
+        // Wait a bit for DOM to be ready, then trigger translation
+        setTimeout(() => {
+            if (window.scalableTranslator) {
+                console.log('Triggering translation for loaded recipes...');
+                window.scalableTranslator.updatePageContent();
+            } else if (window.dynamicTranslator) {
+                console.log('Fallback: Using dynamic translator for loaded recipes...');
+                window.dynamicTranslator.translatePageContent();
+            }
+        }, 100);
     }
 
     renderFallback() {

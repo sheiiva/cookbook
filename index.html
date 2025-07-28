@@ -44,8 +44,193 @@
             <!-- Recipes will be loaded dynamically from data/recipes.json -->
         </div>
     </div>
-    <script src="js/languageSwitcher.min.js"></script>
-    <script src="js/i18n.min.js"></script>
+    
+    <!-- Inline debugging script -->
+    <script>
+        console.log('=== INLINE DEBUGGING ===');
+        console.log('DOM ready state:', document.readyState);
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('=== DOM CONTENT LOADED ===');
+            
+            const toggle = document.getElementById('language-toggle');
+            const menu = document.getElementById('language-menu');
+            
+            console.log('Toggle element:', toggle);
+            console.log('Menu element:', menu);
+            
+            if (toggle && menu) {
+                console.log('Elements found, adding basic click test...');
+                
+                // Add a simple click test
+                toggle.addEventListener('click', function(e) {
+                    console.log('=== BASIC CLICK TEST ===');
+                    console.log('Button clicked!');
+                    console.log('Event:', e);
+                    console.log('Target:', e.target);
+                    
+                    // Simple toggle test
+                    const isVisible = menu.classList.contains('show');
+                    console.log('Menu visible before:', isVisible);
+                    
+                    menu.classList.toggle('show');
+                    
+                    const isVisibleAfter = menu.classList.contains('show');
+                    console.log('Menu visible after:', isVisibleAfter);
+                    
+                    // Force visibility
+                    if (isVisibleAfter) {
+                        console.log('Forcing menu visibility...');
+                        menu.style.cssText = `
+                            opacity: 1 !important;
+                            visibility: visible !important;
+                            transform: translateY(0) !important;
+                            pointer-events: auto !important;
+                            display: block !important;
+                            position: absolute !important;
+                            top: calc(100% + 4px) !important;
+                            right: 0 !important;
+                            z-index: 10000 !important;
+                            background: red !important;
+                            border: 2px solid blue !important;
+                            min-width: 200px !important;
+                            min-height: 100px !important;
+                        `;
+                        console.log('Menu forced visible');
+                        
+                        // Debug: Check computed styles
+                        const computed = window.getComputedStyle(menu);
+                        console.log('Computed styles after forcing:');
+                        console.log('- opacity:', computed.opacity);
+                        console.log('- visibility:', computed.visibility);
+                        console.log('- display:', computed.display);
+                        console.log('- position:', computed.position);
+                        console.log('- top:', computed.top);
+                        console.log('- right:', computed.right);
+                        console.log('- z-index:', computed.zIndex);
+                        console.log('- background:', computed.background);
+                        
+                        // Debug: Check if menu is in viewport
+                        const rect = menu.getBoundingClientRect();
+                        console.log('Menu bounding rect:', rect);
+                        console.log('Menu is in viewport:', rect.top >= 0 && rect.left >= 0);
+                        
+                        // Debug: Check parent container
+                        const parent = menu.parentElement;
+                        console.log('Parent element:', parent);
+                        console.log('Parent styles:', window.getComputedStyle(parent));
+                    } else {
+                        menu.style.cssText = `
+                            opacity: 0 !important;
+                            visibility: hidden !important;
+                            pointer-events: none !important;
+                        `;
+                        console.log('Menu hidden');
+                    }
+                });
+                
+                console.log('Basic click test added successfully');
+                
+                // Debug language options
+                const langOptions = menu.querySelectorAll('.lang-option');
+                console.log('Found language options:', langOptions.length);
+                langOptions.forEach((option, index) => {
+                    console.log(`Language option ${index}:`, option);
+                    console.log(`- text:`, option.textContent);
+                    console.log(`- data-lang:`, option.dataset.lang);
+                    
+                    // Add click debugging
+                    option.addEventListener('click', function(e) {
+                        console.log('=== LANGUAGE OPTION CLICKED ===');
+                        console.log('Option clicked:', this.textContent);
+                        console.log('Language code:', this.dataset.lang);
+                        console.log('Event:', e);
+                        
+                        // Update active state
+                        langOptions.forEach(opt => opt.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Update display
+                        const currentLangSpan = document.querySelector('.current-lang');
+                        if (currentLangSpan) {
+                            currentLangSpan.textContent = this.textContent;
+                        }
+                        
+                        // Close menu
+                        menu.classList.remove('show');
+                        menu.style.cssText = `
+                            opacity: 0 !important;
+                            visibility: hidden !important;
+                            pointer-events: none !important;
+                        `;
+                        
+                        console.log('Language changed to:', this.dataset.lang);
+                        
+                        // Try to call dynamic translator
+                        console.log('Checking for dynamic translator...');
+                        console.log('window.dynamicTranslator:', window.dynamicTranslator);
+                        
+                        if (window.dynamicTranslator) {
+                            console.log('Dynamic translator found, calling changeLanguage...');
+                            try {
+                                window.dynamicTranslator.changeLanguage(this.dataset.lang);
+                                console.log('Dynamic translator changeLanguage called successfully');
+                            } catch (error) {
+                                console.error('Error calling dynamic translator:', error);
+                            }
+                        } else {
+                            console.log('Dynamic translator not available');
+                        }
+                        
+                        // Save to localStorage
+                        localStorage.setItem('cookbook-language', this.dataset.lang);
+                        console.log('Language preference saved to localStorage');
+                    });
+                });
+                
+                console.log('Language option click listeners added');
+            } else {
+                console.error('Language switcher elements not found!');
+                console.log('Toggle:', toggle);
+                console.log('Menu:', menu);
+            }
+        });
+    </script>
+    
+    <script src="js/scalableTranslator.min.js"></script>
+    <script>
+        console.log('=== SCALABLE TRANSLATOR CHECK ===');
+        console.log('After loading scalableTranslator.min.js');
+        console.log('window.scalableTranslator:', window.scalableTranslator);
+        
+        // Check for any JavaScript errors
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript error:', e.error);
+            console.error('Error message:', e.message);
+            console.error('Error filename:', e.filename);
+            console.error('Error line:', e.lineno);
+        });
+        
+        // Wait a bit and check again
+        setTimeout(() => {
+            console.log('=== SCALABLE TRANSLATOR CHECK (DELAYED) ===');
+            console.log('window.scalableTranslator:', window.scalableTranslator);
+            if (window.scalableTranslator) {
+                console.log('Scalable translator methods:', Object.getOwnPropertyNames(window.scalableTranslator));
+                console.log('Current language:', window.scalableTranslator.currentLanguage);
+                
+                // Test manual translation
+                console.log('=== TESTING MANUAL TRANSLATION ===');
+                if (window.scalableTranslator.currentLanguage !== 'en') {
+                    console.log('Triggering manual translation...');
+                    window.scalableTranslator.updatePageContent();
+                }
+            } else {
+                console.error('Scalable translator still not available after delay');
+            }
+        }, 1000);
+    </script>
+    <script src="js/simpleLanguageSwitcher.min.js"></script>
     <script src="js/recipeLoader.min.js"></script>
     <script src="js/searchRecipes.min.js"></script>
     <script src="js/lazyLoad.min.js"></script>
