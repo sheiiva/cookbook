@@ -52,7 +52,9 @@ jobs:
           # Minify JS
           echo "⚡ Minifying JavaScript..."
           cat js/searchRecipes.js | tr -d '\n' | sed 's/  */ /g' > js/searchRecipes.min.js
-          echo "✅ JS minified: js/searchRecipes.min.js"
+          cat js/lazyLoad.js | tr -d '\n' | sed 's/  */ /g' > js/lazyLoad.min.js
+          cat js/navigation.js | tr -d '\n' | sed 's/  */ /g' > js/navigation.min.js
+          echo "✅ JS minified: searchRecipes.min.js, lazyLoad.min.js, navigation.min.js"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
