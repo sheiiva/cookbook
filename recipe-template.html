@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>My Recipe Journal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Recipe content will be dynamically loaded here -->
+    </div>
+    
+    <script src="js/dynamicRecipeRenderer.min.js"></script>
+    <script>
+        // Wait for the script to load and initialize
+        function waitForRenderer() {
+            if (typeof window.dynamicRecipeRenderer !== 'undefined') {
+                console.log('Dynamic recipe renderer loaded successfully');
+                initializeRecipe();
+            } else {
+                console.log('Waiting for dynamic recipe renderer...');
+                setTimeout(waitForRenderer, 100);
+            }
+        }
+        
+        function initializeRecipe() {
+            // Get recipe ID from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const recipeId = urlParams.get('id');
+            
+            console.log('=== RECIPE TEMPLATE DEBUG ===');
+            console.log('Recipe ID from URL:', recipeId);
+            console.log('Dynamic recipe renderer available:', !!window.dynamicRecipeRenderer);
+            
+            if (recipeId && window.dynamicRecipeRenderer) {
+                console.log('Loading recipe with ID:', recipeId);
+                
+                // Load and render the recipe
+                window.dynamicRecipeRenderer.loadRecipe(recipeId).then(recipe => {
+                    console.log('Recipe loaded successfully:', recipe);
+                    
+                    if (recipe) {
+                        const container = document.querySelector('.container');
+                        console.log('Container found:', container);
+                        
+                        window.dynamicRecipeRenderer.renderRecipe(container);
+                        console.log('Recipe rendered');
+                        
+                        // Update page title
+                        document.title = recipe.title;
+                    } else {
+                        console.error('Recipe not found');
+                        // Recipe not found
+                        const container = document.querySelector('.container');
+                        container.innerHTML = `
+                            <div class="recipe">
+                                <h2>Recipe Not Found</h2>
+                                <p>The requested recipe could not be found.</p>
+                                <a href="index.html">← Back to Home</a>
+                            </div>
+                        `;
+                    }
+                }).catch(error => {
+                    console.error('Error loading recipe:', error);
+                    const container = document.querySelector('.container');
+                    container.innerHTML = `
+                        <div class="recipe">
+                            <h2>Error Loading Recipe</h2>
+                            <p>There was an error loading the recipe: ${error.message}</p>
+                            <a href="index.html">← Back to Home</a>
+                        </div>
+                    `;
+                });
+            } else if (!window.dynamicRecipeRenderer) {
+                console.error('Dynamic recipe renderer not available');
+                const container = document.querySelector('.container');
+                container.innerHTML = `
+                    <div class="recipe">
+                        <h2>Error Loading Recipe System</h2>
+                        <p>The recipe system failed to load. Please check the console for errors.</p>
+                        <a href="index.html">← Back to Home</a>
+                    </div>
+                `;
+            } else {
+                console.log('No recipe ID provided');
+                // No recipe ID provided
+                const container = document.querySelector('.container');
+                container.innerHTML = `
+                    <div class="recipe">
+                        <h2>No Recipe Selected</h2>
+                        <p>Please select a recipe from the home page.</p>
+                        <a href="index.html">← Back to Home</a>
+                    </div>
+                `;
+            }
+        }
+        
+        // Start waiting for the renderer
+        waitForRenderer();
+    </script>
+</body>
+</html> 
