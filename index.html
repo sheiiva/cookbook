@@ -19,22 +19,12 @@
             </div>
             <!-- Language Switcher - Outside the main content flow -->
             <div class="language-switcher">
-                <button id="language-toggle" class="language-toggle" aria-label="Change language">
+                <button class="language-toggle" id="language-toggle">
                     <span class="current-lang">English</span>
                     <span class="toggle-icon">🌍</span>
                 </button>
-                <div id="language-menu" class="language-menu">
-                    <button class="lang-option active" data-lang="en">English</button>
-                    <button class="lang-option" data-lang="fr">Français</button>
-                    <button class="lang-option" data-lang="es">Español</button>
-                    <button class="lang-option" data-lang="de">Deutsch</button>
-                    <button class="lang-option" data-lang="it">Italiano</button>
-                    <button class="lang-option" data-lang="pt">Português</button>
-                    <button class="lang-option" data-lang="nl">Nederlands</button>
-                    <button class="lang-option" data-lang="ru">Русский</button>
-                    <button class="lang-option" data-lang="zh">中文</button>
-                    <button class="lang-option" data-lang="ja">日本語</button>
-                    <button class="lang-option" data-lang="ko">한국어</button>
+                <div class="language-menu" id="language-menu">
+                    <!-- Language options will be loaded dynamically -->
                 </div>
             </div>
         </div>
@@ -78,53 +68,10 @@
                     const isVisibleAfter = menu.classList.contains('show');
                     console.log('Menu visible after:', isVisibleAfter);
                     
-                    // Force visibility
+                    // Remove debugging code that sets red background
                     if (isVisibleAfter) {
-                        console.log('Forcing menu visibility...');
-                        menu.style.cssText = `
-                            opacity: 1 !important;
-                            visibility: visible !important;
-                            transform: translateY(0) !important;
-                            pointer-events: auto !important;
-                            display: block !important;
-                            position: absolute !important;
-                            top: calc(100% + 4px) !important;
-                            right: 0 !important;
-                            z-index: 10000 !important;
-                            background: red !important;
-                            border: 2px solid blue !important;
-                            min-width: 200px !important;
-                            min-height: 100px !important;
-                        `;
-                        console.log('Menu forced visible');
-                        
-                        // Debug: Check computed styles
-                        const computed = window.getComputedStyle(menu);
-                        console.log('Computed styles after forcing:');
-                        console.log('- opacity:', computed.opacity);
-                        console.log('- visibility:', computed.visibility);
-                        console.log('- display:', computed.display);
-                        console.log('- position:', computed.position);
-                        console.log('- top:', computed.top);
-                        console.log('- right:', computed.right);
-                        console.log('- z-index:', computed.zIndex);
-                        console.log('- background:', computed.background);
-                        
-                        // Debug: Check if menu is in viewport
-                        const rect = menu.getBoundingClientRect();
-                        console.log('Menu bounding rect:', rect);
-                        console.log('Menu is in viewport:', rect.top >= 0 && rect.left >= 0);
-                        
-                        // Debug: Check parent container
-                        const parent = menu.parentElement;
-                        console.log('Parent element:', parent);
-                        console.log('Parent styles:', window.getComputedStyle(parent));
+                        console.log('Menu shown');
                     } else {
-                        menu.style.cssText = `
-                            opacity: 0 !important;
-                            visibility: hidden !important;
-                            pointer-events: none !important;
-                        `;
                         console.log('Menu hidden');
                     }
                 });
@@ -158,11 +105,6 @@
                         
                         // Close menu
                         menu.classList.remove('show');
-                        menu.style.cssText = `
-                            opacity: 0 !important;
-                            visibility: hidden !important;
-                            pointer-events: none !important;
-                        `;
                         
                         console.log('Language changed to:', this.dataset.lang);
                         
@@ -230,10 +172,64 @@
             }
         }, 1000);
     </script>
-    <script src="js/simpleLanguageSwitcher.min.js"></script>
+    <script src="js/languageMenuLoader.min.js"></script>
     <script src="js/recipeLoader.min.js"></script>
     <script src="js/searchRecipes.min.js"></script>
     <script src="js/lazyLoad.min.js"></script>
     <script src="js/navigation.min.js"></script>
+    <script src="js/simpleLanguageSwitcher.min.js"></script>
+    <script>
+        // Debug language menu loader
+        setTimeout(() => {
+            console.log('=== LANGUAGE MENU DEBUG ===');
+            console.log('window.languageMenuLoader:', window.languageMenuLoader);
+            console.log('Language menu element:', document.getElementById('language-menu'));
+            console.log('Language menu innerHTML:', document.getElementById('language-menu')?.innerHTML);
+            
+            if (window.languageMenuLoader) {
+                console.log('Languages loaded:', window.languageMenuLoader.languages);
+                console.log('Current language:', window.languageMenuLoader.currentLanguage);
+            }
+            
+            // Fallback: if menu is still empty, populate it manually
+            const languageMenu = document.getElementById('language-menu');
+            if (languageMenu && languageMenu.children.length === 0) {
+                console.log('Language menu is empty, adding fallback options...');
+                const fallbackLanguages = [
+                    { code: 'en', native: 'English' },
+                    { code: 'fr', native: 'Français' },
+                    { code: 'es', native: 'Español' },
+                    { code: 'de', native: 'Deutsch' },
+                    { code: 'it', native: 'Italiano' },
+                    { code: 'pt', native: 'Português' },
+                    { code: 'nl', native: 'Nederlands' },
+                    { code: 'ru', native: 'Русский' },
+                    { code: 'zh', native: '中文' },
+                    { code: 'ja', native: '日本語' },
+                    { code: 'ko', native: '한국어' }
+                ];
+                
+                fallbackLanguages.forEach(lang => {
+                    const langOption = document.createElement('div');
+                    langOption.className = 'lang-option';
+                    langOption.setAttribute('data-lang', lang.code);
+                    langOption.textContent = lang.native;
+                    languageMenu.appendChild(langOption);
+                });
+                
+                console.log('Fallback language options added');
+            }
+            
+            // Debug computed styles
+            if (languageMenu) {
+                const computedStyles = window.getComputedStyle(languageMenu);
+                console.log('=== LANGUAGE MENU COMPUTED STYLES ===');
+                console.log('Background:', computedStyles.background);
+                console.log('Background-color:', computedStyles.backgroundColor);
+                console.log('Color:', computedStyles.color);
+                console.log('Border:', computedStyles.border);
+            }
+        }, 2000);
+    </script>
 </body>
 </html>

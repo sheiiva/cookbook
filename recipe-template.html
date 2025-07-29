@@ -9,8 +9,19 @@
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>My Recipe Journal</h1>
+            <div class="header-content">
+                <div id="branding">
+                    <h1>My Recipe Journal</h1>
+                </div>
+            </div>
+            <div class="language-switcher">
+                <button class="language-toggle" id="language-toggle">
+                    <span class="current-lang">English</span>
+                    <span class="toggle-icon">🌍</span>
+                </button>
+                <div class="language-menu" id="language-menu">
+                    <!-- Language options will be loaded dynamically -->
+                </div>
             </div>
             <nav>
                 <ul>
@@ -24,14 +35,17 @@
     </div>
     
     <script src="js/dynamicRecipeRenderer.min.js"></script>
+    <script src="js/scalableTranslator.min.js"></script>
+    <script src="js/simpleLanguageSwitcher.min.js"></script>
+    <script src="js/languageMenuLoader.min.js"></script>
     <script>
         // Wait for the script to load and initialize
         function waitForRenderer() {
-            if (typeof window.dynamicRecipeRenderer !== 'undefined') {
-                console.log('Dynamic recipe renderer loaded successfully');
+            if (typeof window.dynamicRecipeRenderer !== 'undefined' && typeof window.scalableTranslator !== 'undefined') {
+                console.log('Dynamic recipe renderer and scalable translator loaded successfully');
                 initializeRecipe();
             } else {
-                console.log('Waiting for dynamic recipe renderer...');
+                console.log('Waiting for dynamic recipe renderer and scalable translator...');
                 setTimeout(waitForRenderer, 100);
             }
         }
@@ -44,6 +58,7 @@
             console.log('=== RECIPE TEMPLATE DEBUG ===');
             console.log('Recipe ID from URL:', recipeId);
             console.log('Dynamic recipe renderer available:', !!window.dynamicRecipeRenderer);
+            console.log('Scalable translator available:', !!window.scalableTranslator);
             
             if (recipeId && window.dynamicRecipeRenderer) {
                 console.log('Loading recipe with ID:', recipeId);
@@ -61,6 +76,15 @@
                         
                         // Update page title
                         document.title = recipe.title;
+                        
+                        // Apply saved language preference
+                        if (window.scalableTranslator) {
+                            console.log('Applying saved language preference...');
+                            const savedLang = localStorage.getItem('cookbook-language') || 'en';
+                            if (savedLang !== 'en') {
+                                window.scalableTranslator.changeLanguage(savedLang);
+                            }
+                        }
                     } else {
                         console.error('Recipe not found');
                         // Recipe not found
@@ -110,6 +134,48 @@
         
         // Start waiting for the renderer
         waitForRenderer();
+        
+        // Debug language menu loader
+        setTimeout(() => {
+            console.log('=== RECIPE TEMPLATE LANGUAGE MENU DEBUG ===');
+            console.log('window.languageMenuLoader:', window.languageMenuLoader);
+            console.log('Language menu element:', document.getElementById('language-menu'));
+            console.log('Language menu innerHTML:', document.getElementById('language-menu')?.innerHTML);
+            
+            if (window.languageMenuLoader) {
+                console.log('Languages loaded:', window.languageMenuLoader.languages);
+                console.log('Current language:', window.languageMenuLoader.currentLanguage);
+            }
+            
+            // Fallback: if menu is still empty, populate it manually
+            const languageMenu = document.getElementById('language-menu');
+            if (languageMenu && languageMenu.children.length === 0) {
+                console.log('Language menu is empty, adding fallback options...');
+                const fallbackLanguages = [
+                    { code: 'en', native: 'English' },
+                    { code: 'fr', native: 'Français' },
+                    { code: 'es', native: 'Español' },
+                    { code: 'de', native: 'Deutsch' },
+                    { code: 'it', native: 'Italiano' },
+                    { code: 'pt', native: 'Português' },
+                    { code: 'nl', native: 'Nederlands' },
+                    { code: 'ru', native: 'Русский' },
+                    { code: 'zh', native: '中文' },
+                    { code: 'ja', native: '日本語' },
+                    { code: 'ko', native: '한국어' }
+                ];
+                
+                fallbackLanguages.forEach(lang => {
+                    const langOption = document.createElement('div');
+                    langOption.className = 'lang-option';
+                    langOption.setAttribute('data-lang', lang.code);
+                    langOption.textContent = lang.native;
+                    languageMenu.appendChild(langOption);
+                });
+                
+                console.log('Fallback language options added');
+            }
+        }, 2000);
     </script>
 </body>
 </html> 
