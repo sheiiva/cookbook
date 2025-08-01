@@ -53,7 +53,6 @@ class ScalableTranslator {
                         main_courses: "Main Courses",
                         desserts: "Desserts",
                         soups: "Soups",
-                        quick: "Quick Recipes",
                         vegetarian: "Vegetarian"
                     }
                 },
@@ -63,24 +62,14 @@ class ScalableTranslator {
                         separator: "›"
                     }
                 },
-                categories: {
-                    "main-courses": {
-                        name: "Main Courses",
-                        recipes: [
-                            { id: "bourguignon", title: "Seitan Bourguignon", file: "bourguignon.html", image: "bourguignon.webp", description: "A hearty vegetarian version of the classic French dish" },
-                            { id: "lentils_soup", title: "Lentils Soup", file: "lentils_soup.html", image: "lentils_soup.webp", description: "Warm and nutritious lentil soup" },
-                            { id: "moussaka", title: "Moussaka", file: "moussaka.html", image: "moussaka.webp", description: "Layered eggplant and potato casserole" }
-                        ]
-                    },
-                    desserts: {
-                        name: "Desserts",
-                        recipes: [
-                            { id: "banana_bread", title: "Banana Bread", file: "banana_bread.html", image: "banana_bread.webp", description: "Moist and delicious banana bread" },
-                            { id: "chocolate_truffles", title: "Chocolate Truffles", file: "chocolate_truffles.html", image: "chocolate_truffles.webp", description: "Rich and creamy chocolate truffles" },
-                            { id: "rice_pudding", title: "Rice Pudding", file: "rice_pudding.html", image: "rice_pudding.webp", description: "Creamy and comforting rice pudding" }
-                        ]
-                    }
-                }
+                recipes: [
+                    { id: "bourguignon", title: "Seitan Bourguignon", image: "bourguignon.webp", description: "A hearty vegetarian version of the classic French dish", tags: ["main_courses", "vegetarian"] },
+                    { id: "lentils_soup", title: "Lentils Soup", image: "lentils_soup.webp", description: "Warm and nutritious lentil soup", tags: ["soups", "vegetarian"] },
+                    { id: "moussaka", title: "Moussaka", image: "moussaka.webp", description: "Layered eggplant and potato casserole", tags: ["main_courses", "vegetarian"] },
+                    { id: "banana_bread", title: "Banana Bread", image: "banana_bread.webp", description: "Moist and delicious banana bread", tags: ["desserts"] },
+                    { id: "chocolate_truffles", title: "Chocolate Truffles", image: "chocolate_truffles.webp", description: "Rich and creamy chocolate truffles", tags: ["desserts"] },
+                    { id: "rice_pudding", title: "Rice Pudding", image: "rice_pudding.webp", description: "Creamy and comforting rice pudding", tags: ["desserts"] }
+                ]
             };
             console.log('Using fallback content structure');
         }
