@@ -52,8 +52,11 @@ class ScalableTranslator {
                         all: "All Recipes",
                         main_courses: "Main Courses",
                         desserts: "Desserts",
-                        soups: "Soups",
-                        vegetarian: "Vegetarian"
+                        soups: "Soups"
+                    },
+                    dietary_filters: {
+                        vegan: "Vegan",
+                        gluten_free: "Gluten Free"
                     }
                 },
                 navigation: {
@@ -63,12 +66,12 @@ class ScalableTranslator {
                     }
                 },
                 recipes: [
-                    { id: "bourguignon", title: "Seitan Bourguignon", image: "bourguignon.webp", description: "A hearty vegetarian version of the classic French dish", tags: ["main_courses", "vegetarian"] },
-                    { id: "lentils_soup", title: "Lentils Soup", image: "lentils_soup.webp", description: "Warm and nutritious lentil soup", tags: ["soups", "vegetarian"] },
-                    { id: "moussaka", title: "Moussaka", image: "moussaka.webp", description: "Layered eggplant and potato casserole", tags: ["main_courses", "vegetarian"] },
+                    { id: "bourguignon", title: "Seitan Bourguignon", image: "bourguignon.webp", description: "A hearty vegan version of the classic French dish", tags: ["main_courses", "vegan"] },
+                    { id: "lentils_soup", title: "Lentils Soup", image: "lentils_soup.webp", description: "Warm and nutritious lentil soup", tags: ["soups", "vegan", "gluten_free"] },
+                    { id: "moussaka", title: "Moussaka", image: "moussaka.webp", description: "Layered eggplant and potato casserole", tags: ["main_courses", "vegan"] },
                     { id: "banana_bread", title: "Banana Bread", image: "banana_bread.webp", description: "Moist and delicious banana bread", tags: ["desserts"] },
-                    { id: "chocolate_truffles", title: "Chocolate Truffles", image: "chocolate_truffles.webp", description: "Rich and creamy chocolate truffles", tags: ["desserts"] },
-                    { id: "rice_pudding", title: "Rice Pudding", image: "rice_pudding.webp", description: "Creamy and comforting rice pudding", tags: ["desserts"] }
+                    { id: "chocolate_truffles", title: "Chocolate Truffles", image: "chocolate_truffles.webp", description: "Rich and creamy chocolate truffles", tags: ["desserts", "gluten_free"] },
+                    { id: "rice_pudding", title: "Rice Pudding", image: "rice_pudding.webp", description: "Creamy and comforting rice pudding", tags: ["desserts", "gluten_free"] }
                 ]
             };
             console.log('Using fallback content structure');

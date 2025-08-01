@@ -6,8 +6,11 @@
       "all": "All Recipes",
       "main_courses": "Main Courses",
       "desserts": "Desserts",
-      "soups": "Soups",
-      "vegetarian": "Vegetarian"
+      "soups": "Soups"
+    },
+    "dietary_filters": {
+      "vegan": "Vegan",
+      "gluten_free": "Gluten Free"
     }
   },
   "navigation": {
@@ -21,8 +24,8 @@
       "id": "bourguignon",
       "title": "Seitan Bourguignon",
       "image": "optimized/bourguignon.webp",
-      "description": "A hearty vegetarian version of the classic French dish",
-      "tags": ["main_courses", "vegetarian"],
+      "description": "A hearty vegan version of the classic French dish",
+      "tags": ["main_courses", "vegan"],
       "ingredients": [
         "2 squares of dark chocolate",
         "500 ml of vegetable stock",
@@ -56,7 +59,7 @@
       "title": "Lentils Soup",
       "image": "optimized/lentils_soup.webp",
       "description": "Warm and nutritious lentil soup",
-      "tags": ["soups", "vegetarian"],
+      "tags": ["soups", "vegan", "gluten_free"],
       "ingredients": [
         "1 cup dried lentils",
         "1 onion, diced",
@@ -83,7 +86,7 @@
       "title": "Moussaka",
       "image": "optimized/moussaka.webp",
       "description": "Layered eggplant and potato casserole",
-      "tags": ["main_courses", "vegetarian"],
+      "tags": ["main_courses", "vegan"],
       "ingredients": [
         "salt",
         "pepper",
@@ -185,7 +188,7 @@
       "title": "Chocolate Truffles",
       "image": "optimized/chocolate_truffles.webp",
       "description": "Rich and creamy chocolate truffles",
-      "tags": ["desserts"],
+      "tags": ["desserts", "gluten_free"],
       "ingredients": [
         "8 oz dark chocolate, finely chopped",
         "1/2 cup heavy cream",
@@ -210,7 +213,7 @@
       "title": "Rice Pudding",
       "image": "optimized/rice_pudding.webp",
       "description": "Creamy and comforting rice pudding",
-      "tags": ["desserts"],
+      "tags": ["desserts", "gluten_free"],
       "ingredients": [
         "1 cup cooked rice",
         "2 cups milk",

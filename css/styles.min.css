@@ -53,10 +53,14 @@ nav ul li a:hover, nav ul li a:focus { background: rgba(255,255,255,0.2); transf
 .lang-option.active { background: rgba(102, 126, 234, 0.2) !important; color: #667eea; font-weight: 600; }
 /* Category Filters */
 .category-filters { background: #fff; padding: 1.5rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem; }
+.filter-section { margin-bottom: 1.5rem; }
+.filter-section:last-child { margin-bottom: 0; }
+.filter-section h3 { margin: 0 0 1rem 0; font-size: 1.1rem; font-weight: 600; color: #495057; text-align: center; }
 .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
 .filter-btn { padding: 0.75rem 1.5rem; border: 2px solid #e9ecef; background: #fff; color: #495057; border-radius: 25px; font-weight: 500; cursor: pointer; transition: all 0.3s ease; min-height: 44px; display: flex; align-items: center; justify-content: center; }
 .filter-btn:hover, .filter-btn:focus { border-color: #667eea; color: #667eea; transform: translateY(-1px); }
 .filter-btn.active { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-color: #667eea; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); }
+.dietary-toggle.active { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: #fff; border-color: #28a745; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3); }
 /* Enhanced Search */
 .search-container { position: relative; }
 .search-container input { padding-right: 3rem; }
