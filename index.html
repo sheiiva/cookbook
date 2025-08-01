@@ -8,31 +8,27 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div id="branding">
-                    <h1 data-i18n="my_recipe_journal">My Recipe Journal</h1>
-                </div>
-                <div class="search-container">
-                    <input type="text" id="search-bar" placeholder="Search recipes..." data-i18n="search_placeholder">
-                </div>
+        <div class="header-content">
+            <div id="branding">
+                <h1 data-i18n="my_recipe_journal">My Recipe Journal</h1>
             </div>
-            <!-- Language Switcher - Outside the main content flow -->
-            <div class="language-switcher">
-                <button class="language-toggle" id="language-toggle">
-                    <span class="current-lang">English</span>
-                    <span class="toggle-icon">🌍</span>
-                </button>
-                <div class="language-menu" id="language-menu">
-                    <!-- Language options will be loaded dynamically -->
-                </div>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search recipes..." data-i18n="search_placeholder">
+            </div>
+        </div>
+        <!-- Language Switcher - Outside the main content flow -->
+        <div class="language-switcher">
+            <button class="language-toggle" id="language-toggle">
+                <span class="current-lang">English</span>
+                <span class="toggle-icon">🌍</span>
+            </button>
+            <div class="language-menu" id="language-menu">
+                <!-- Language options will be loaded dynamically -->
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="main-content">
-            <!-- Recipes will be loaded dynamically from data/recipes.json -->
-        </div>
+    <div class="main-content">
+        <!-- Recipes will be loaded dynamically from data/recipes.json -->
     </div>
     
     <!-- Inline debugging script -->
