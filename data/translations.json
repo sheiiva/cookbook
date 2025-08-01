@@ -6,7 +6,8 @@
     "Desserts": "Desserts",
     "Soups": "Soupes",
 
-    "Vegetarian": "Végétarien",
+    "Vegan": "Végétalien",
+    "Gluten Free": "Sans Gluten",
     "All Recipes": "Toutes les Recettes",
     "Seitan Bourguignon": "Seitan Bourguignon",
     "Lentils Soup": "Soupe aux Lentilles",
@@ -22,7 +23,8 @@
     "Desserts": "Postres",
     "Soups": "Sopas",
 
-    "Vegetarian": "Vegetariano",
+    "Vegan": "Vegano",
+    "Gluten Free": "Sin Gluten",
     "All Recipes": "Todas las Recetas",
     "Seitan Bourguignon": "Seitan Bourguignon",
     "Lentils Soup": "Sopa de Lentejas",
@@ -38,7 +40,8 @@
     "Desserts": "Desserts",
     "Soups": "Suppen",
 
-    "Vegetarian": "Vegetarisch",
+    "Vegan": "Vegan",
+    "Gluten Free": "Glutenfrei",
     "All Recipes": "Alle Rezepte",
     "Seitan Bourguignon": "Seitan Bourguignon",
     "Lentils Soup": "Linsensuppe",
@@ -54,7 +57,8 @@
     "Desserts": "Dolci",
     "Soups": "Zuppe",
 
-    "Vegetarian": "Vegetariano",
+    "Vegan": "Vegano",
+    "Gluten Free": "Senza Glutine",
     "All Recipes": "Tutte le Ricette",
     "Seitan Bourguignon": "Seitan Bourguignon",
     "Lentils Soup": "Zuppa di Lenticchie",
@@ -70,7 +74,8 @@
     "Desserts": "Sobremesas",
     "Soups": "Sopas",
 
-    "Vegetarian": "Vegetariano",
+    "Vegan": "Vegano",
+    "Gluten Free": "Sem Glúten",
     "All Recipes": "Todas as Receitas"
   },
   "nl": {
@@ -80,7 +85,8 @@
     "Desserts": "Desserts",
     "Soups": "Soepen",
 
-    "Vegetarian": "Vegetarisch",
+    "Vegan": "Vegan",
+    "Gluten Free": "Glutenvrij",
     "All Recipes": "Alle Recepten"
   }
 } 
