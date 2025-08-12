@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Test</title>
+</head>
+<body>
+    <h1>Recipe Loading Test</h1>
+    <div id="status">Loading...</div>
+    <div id="data"></div>
+    
+    <script>
+        async function testRecipeLoading() {
+            const statusDiv = document.getElementById('status');
+            const dataDiv = document.getElementById('data');
+            
+            try {
+                statusDiv.textContent = 'Testing data loading...';
+                
+                // Test loading the English data
+                const response = await fetch('data/cookbook-data-en.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                statusDiv.textContent = '✅ Data loaded successfully!';
+                dataDiv.innerHTML = `
+                    <h2>Loaded ${data.recipes.length} recipes:</h2>
+                    <ul>
+                        ${data.recipes.map(recipe => `<li>${recipe.title}</li>`).join('')}
+                    </ul>
+                `;
+                
+            } catch (error) {
+                statusDiv.textContent = `❌ Error: ${error.message}`;
+                dataDiv.innerHTML = `
+                    <h2>Debug Info:</h2>
+                    <p>Error: ${error.message}</p>
+                    <p>Current URL: ${window.location.href}</p>
+                    <p>Base URL: ${window.location.origin}</p>
+                    <p>Path: ${window.location.pathname}</p>
+                `;
+            }
+        }
+        
+        // Run test when page loads
+        document.addEventListener('DOMContentLoaded', testRecipeLoading);
+    </script>
+</body>
+</html> 
