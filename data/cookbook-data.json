@@ -92,7 +92,7 @@
         "pepper",
         "nutmeg",
         "1 tablespoon of honey",
-        "30 g of butter",
+        "30 g of butter (or margarine for vegan options)",
         "olive oil",
         "1 onion",
         "5 tomatoes (+/- a brick of tomato coulis)",
@@ -161,7 +161,7 @@
       "title": "Banana Bread",
       "image": "optimized/banana_bread.webp",
       "description": "Moist and delicious banana bread",
-      "tags": ["desserts"],
+      "tags": ["desserts", "vegan"],
       "ingredients": [
         "3 ripe bananas, mashed",
         "1/3 cup melted butter",
