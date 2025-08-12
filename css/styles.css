@@ -1,0 +1,343 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#branding h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.search-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.95);
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#search-bar:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+}
+
+#search-bar::placeholder {
+    color: #999;
+}
+
+/* Language switcher */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.language-toggle {
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.language-toggle:hover {
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(-1px);
+}
+
+.toggle-icon {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.language-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
+    min-width: 150px;
+}
+
+.language-menu.show {
+    display: block;
+}
+
+.language-menu button {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.language-menu button:hover {
+    background-color: #f5f5f5;
+}
+
+/* Main container */
+.main-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Recipe grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .recipe-image {
+    transform: scale(1.05);
+}
+
+.recipe-content {
+    padding: 1.5rem;
+}
+
+.recipe-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.recipe-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.recipe-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.recipe-difficulty {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.difficulty-easy {
+    background-color: #e8f5e8;
+    color: #2e7d32;
+}
+
+.difficulty-medium {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.difficulty-hard {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+/* Dietary filters */
+.dietary-filters {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+/* Loading and error states */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.error {
+    text-align: center;
+    padding: 3rem;
+    color: #c62828;
+    background: #ffebee;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    #branding h1 {
+        font-size: 1.5rem;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .language-switcher {
+        position: static;
+        margin-top: 1rem;
+    }
+    
+    .main-container {
+        padding: 0 1rem;
+    }
+    
+    .recipe-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .dietary-filters {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 0 0.5rem;
+    }
+    
+    .main-container {
+        padding: 0 0.5rem;
+    }
+    
+    .recipe-content {
+        padding: 1rem;
+    }
+    
+    .recipe-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animation for recipe cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.recipe-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for keyboard navigation */
+.recipe-card:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+#search-bar:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+} 
