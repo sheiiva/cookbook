@@ -2,6 +2,10 @@
   "ui": {
     "title": "My Recipe Journal",
     "search_placeholder": "Search recipes...",
+    "section_headers": {
+      "dish_types": "Dish Types",
+      "dietary_options": "Dietary Options"
+    },
     "categories": {
       "all": "All Recipes",
       "main_courses": "Main Courses",

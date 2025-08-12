@@ -2,6 +2,10 @@
   "ui": {
     "title": "Mi Diario de Recetas",
     "search_placeholder": "Buscar recetas...",
+    "section_headers": {
+      "dish_types": "Tipos de Platos",
+      "dietary_options": "Opciones Dietéticas"
+    },
     "categories": {
       "all": "Todas las Recetas",
       "main_courses": "Platos Principales",
