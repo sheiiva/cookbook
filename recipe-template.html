@@ -4,178 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css?nocache=true">
+    <link rel="stylesheet" href="css/button-styles.css?nocache=true">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div id="branding">
-                    <h1>My Recipe Journal</h1>
-                </div>
+        <div class="header-content">
+            <div id="branding">
+                <h1 data-i18n="my_recipe_journal">My Recipe Journal</h1>
             </div>
-            <div class="language-switcher">
-                <button class="language-toggle" id="language-toggle">
-                    <span class="current-lang">English</span>
-                    <span class="toggle-icon">🌍</span>
-                </button>
-                <div class="language-menu" id="language-menu">
-                    <!-- Language options will be loaded dynamically -->
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
         </div>
+        <div class="language-switcher">
+            <button class="language-toggle" id="language-toggle">
+                <span class="current-lang">English</span>
+                <span class="toggle-icon">🌍</span>
+            </button>
+        </div>
+        <nav>
+            <a href="index.html">← Back to Home</a>
+        </nav>
     </header>
+    
     <div class="container">
-        <!-- Recipe content will be dynamically loaded here -->
+        <div id="recipe-content">
+            <p>Loading recipe...</p>
+        </div>
     </div>
     
-    <script src="js/dynamicRecipeRenderer.min.js"></script>
-    <script src="js/scalableTranslator.min.js"></script>
-    <script src="js/simpleLanguageSwitcher.min.js"></script>
-    <script src="js/languageMenuLoader.min.js"></script>
-    <script>
-        // Wait for the script to load and initialize
-        function waitForRenderer() {
-            if (typeof window.dynamicRecipeRenderer !== 'undefined' && typeof window.scalableTranslator !== 'undefined') {
-                console.log('Dynamic recipe renderer and scalable translator loaded successfully');
-                initializeRecipe();
-            } else {
-                console.log('Waiting for dynamic recipe renderer and scalable translator...');
-                setTimeout(waitForRenderer, 100);
-            }
-        }
-        
-        function initializeRecipe() {
-            // Get recipe ID from URL parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const recipeId = urlParams.get('id');
-            
-            console.log('=== RECIPE TEMPLATE DEBUG ===');
-            console.log('Recipe ID from URL:', recipeId);
-            console.log('Dynamic recipe renderer available:', !!window.dynamicRecipeRenderer);
-            console.log('Scalable translator available:', !!window.scalableTranslator);
-            
-            if (recipeId && window.dynamicRecipeRenderer) {
-                console.log('Loading recipe with ID:', recipeId);
-                
-                // Load and render the recipe
-                window.dynamicRecipeRenderer.loadRecipe(recipeId).then(recipe => {
-                    console.log('Recipe loaded successfully:', recipe);
-                    
-                    if (recipe) {
-                        const container = document.querySelector('.container');
-                        console.log('Container found:', container);
-                        
-                        window.dynamicRecipeRenderer.renderRecipe(container);
-                        console.log('Recipe rendered');
-                        
-                        // Update page title
-                        document.title = recipe.title;
-                        
-                        // Apply saved language preference
-                        if (window.scalableTranslator) {
-                            console.log('Applying saved language preference...');
-                            const savedLang = localStorage.getItem('cookbook-language') || 'en';
-                            if (savedLang !== 'en') {
-                                window.scalableTranslator.changeLanguage(savedLang);
-                            }
-                        }
-                    } else {
-                        console.error('Recipe not found');
-                        // Recipe not found
-                        const container = document.querySelector('.container');
-                        container.innerHTML = `
-                            <div class="recipe">
-                                <h2>Recipe Not Found</h2>
-                                <p>The requested recipe could not be found.</p>
-                                <a href="index.html">← Back to Home</a>
-                            </div>
-                        `;
-                    }
-                }).catch(error => {
-                    console.error('Error loading recipe:', error);
-                    const container = document.querySelector('.container');
-                    container.innerHTML = `
-                        <div class="recipe">
-                            <h2>Error Loading Recipe</h2>
-                            <p>There was an error loading the recipe: ${error.message}</p>
-                            <a href="index.html">← Back to Home</a>
-                        </div>
-                    `;
-                });
-            } else if (!window.dynamicRecipeRenderer) {
-                console.error('Dynamic recipe renderer not available');
-                const container = document.querySelector('.container');
-                container.innerHTML = `
-                    <div class="recipe">
-                        <h2>Error Loading Recipe System</h2>
-                        <p>The recipe system failed to load. Please check the console for errors.</p>
-                        <a href="index.html">← Back to Home</a>
-                    </div>
-                `;
-            } else {
-                console.log('No recipe ID provided');
-                // No recipe ID provided
-                const container = document.querySelector('.container');
-                container.innerHTML = `
-                    <div class="recipe">
-                        <h2>No Recipe Selected</h2>
-                        <p>Please select a recipe from the home page.</p>
-                        <a href="index.html">← Back to Home</a>
-                    </div>
-                `;
-            }
-        }
-        
-        // Start waiting for the renderer
-        waitForRenderer();
-        
-        // Debug language menu loader
-        setTimeout(() => {
-            console.log('=== RECIPE TEMPLATE LANGUAGE MENU DEBUG ===');
-            console.log('window.languageMenuLoader:', window.languageMenuLoader);
-            console.log('Language menu element:', document.getElementById('language-menu'));
-            console.log('Language menu innerHTML:', document.getElementById('language-menu')?.innerHTML);
-            
-            if (window.languageMenuLoader) {
-                console.log('Languages loaded:', window.languageMenuLoader.languages);
-                console.log('Current language:', window.languageMenuLoader.currentLanguage);
-            }
-            
-            // Fallback: if menu is still empty, populate it manually
-            const languageMenu = document.getElementById('language-menu');
-            if (languageMenu && languageMenu.children.length === 0) {
-                console.log('Language menu is empty, adding fallback options...');
-                const fallbackLanguages = [
-                    { code: 'en', native: 'English' },
-                    { code: 'fr', native: 'Français' },
-                    { code: 'es', native: 'Español' },
-                    { code: 'de', native: 'Deutsch' },
-                    { code: 'it', native: 'Italiano' },
-                    { code: 'pt', native: 'Português' },
-                    { code: 'nl', native: 'Nederlands' },
-                    { code: 'ru', native: 'Русский' },
-                    { code: 'zh', native: '中文' },
-                    { code: 'ja', native: '日本語' },
-                    { code: 'ko', native: '한국어' }
-                ];
-                
-                fallbackLanguages.forEach(lang => {
-                    const langOption = document.createElement('div');
-                    langOption.className = 'lang-option';
-                    langOption.setAttribute('data-lang', lang.code);
-                    langOption.textContent = lang.native;
-                    languageMenu.appendChild(langOption);
-                });
-                
-                console.log('Fallback language options added');
-            }
-        }, 2000);
-    </script>
+    <script src="js/recipeDetailViewer.min.js"></script>
 </body>
 </html> 
