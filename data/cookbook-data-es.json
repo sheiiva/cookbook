@@ -1,0 +1,199 @@
+{
+  "ui": {
+    "title": "Mi Diario de Recetas",
+    "search_placeholder": "Buscar recetas...",
+    "categories": {
+      "all": "Todas las Recetas",
+      "main_courses": "Platos Principales",
+      "desserts": "Postres",
+      "soups": "Sopas"
+    },
+    "dietary_filters": {
+      "vegan": "Vegano",
+      "gluten_free": "Sin Gluten"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "breadcrumbs": {
+      "separator": "›"
+    }
+  },
+  "recipes": [
+    {
+      "id": "bourguignon",
+      "title": "Bourguignon de Seitán",
+      "image": "optimized/bourguignon.webp",
+      "description": "Una versión vegana del plato francés clásico",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "2 cuadrados de chocolate negro",
+        "500 ml de caldo de verduras",
+        "1 cucharada de harina",
+        "3 zanahorias",
+        "1 cebolla",
+        "70 ml de vino tinto de Borgoña",
+        "500 g de seitán",
+        "300 g de champiñones",
+        "2 dientes de ajo",
+        "20 g de margarina",
+        "1 bouquet garni",
+        "Sal y pimienta"
+      ],
+      "instructions": [
+        "El día anterior o por la mañana para la cena:",
+        "Enjuaga las verduras y pica finamente el ajo, la cebolla y los champiñones. Corta las zanahorias en trozos de 1 cm.",
+        "En una olla a fuego medio, derrite la margarina. Añade el ajo, la cebolla, las zanahorias y los champiñones. Sofríe durante 5 minutos.",
+        "Corta el seitán en cubos gruesos, similares a carne de estofado.",
+        "Añade el seitán a la olla y déjalo dorar durante 2 minutos.",
+        "Desglasa con todo el vino tinto, raspando los trozos del fondo con una espátula.",
+        "Añade el bouquet garni y retira del fuego.",
+        "Tapa y deja marinar toda la noche.",
+        "Al día siguiente, vierte el caldo de verduras en la olla. Sazona con sal y pimienta.",
+        "Vuelve a cocinar, hirviendo a fuego lento durante 1 hora a fuego medio-bajo. Antes de servir, añade los cuadrados de chocolate negro y remueve hasta que se derritan para ligar la salsa.",
+        "¡Está listo! Sirve con arroz o pasta sin huevos."
+      ]
+    },
+    {
+      "id": "lentils_soup",
+      "title": "Sopa de Lentejas",
+      "image": "optimized/lentils_soup.webp",
+      "description": "Sopa de lentejas caliente y nutritiva",
+      "tags": ["soups", "vegan", "gluten_free"],
+      "ingredients": [
+        "1 taza de lentejas secas",
+        "1 cebolla, picada",
+        "2 zanahorias, picadas",
+        "2 dientes de ajo, picados",
+        "4 tazas de caldo de verduras",
+        "1 hoja de laurel",
+        "Sal y pimienta al gusto",
+        "2 cucharadas de aceite de oliva"
+      ],
+      "instructions": [
+        "Calienta el aceite de oliva en una olla grande a fuego medio.",
+        "Añade la cebolla picada y cocina hasta que esté translúcida, unos 5 minutos.",
+        "Añade el ajo picado y cocina durante 1 minuto hasta que esté fragante.",
+        "Añade las zanahorias picadas y cocina durante 3 minutos.",
+        "Enjuaga las lentejas y añádelas a la olla junto con el caldo de verduras y la hoja de laurel.",
+        "Lleva a ebullición, luego reduce el fuego y deja hervir a fuego lento durante 30-40 minutos hasta que las lentejas estén tiernas.",
+        "Sazona con sal y pimienta al gusto.",
+        "Retira la hoja de laurel antes de servir."
+      ]
+    },
+    {
+      "id": "moussaka",
+      "title": "Moussaka",
+      "image": "optimized/moussaka.webp",
+      "description": "Cazuela de berenjenas y patatas en capas",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "sal",
+        "pimienta",
+        "nuez moscada",
+        "1 cucharada de miel",
+        "30 g de mantequilla (o margarina para opciones veganas)",
+        "aceite de oliva",
+        "1 cebolla",
+        "5 tomates (+/- un ladrillo de coulis de tomate)",
+        "2 berenjenas",
+        "5 patatas medianas",
+        "500 g de carne picada (o sustituto vegetal)",
+        "2 huevos (o sustituto vegetal)",
+        "200 ml de leche (o leche vegetal)",
+        "50 g de queso rallado (o sustituto vegetal)"
+      ],
+      "instructions": [
+        "Precalienta el horno a 180°C (350°F).",
+        "Corta las berenjenas en rodajas y ásalas hasta que estén tiernas.",
+        "Cocina las patatas en rodajas hasta que estén casi tiernas.",
+        "En una sartén, sofríe la cebolla picada en aceite de oliva.",
+        "Añade la carne picada y cocínala hasta que esté dorada.",
+        "Añade los tomates, la sal, la pimienta y deja hervir a fuego lento durante 10 minutos.",
+        "En una fuente para gratinar, alterna las capas: patatas, berenjenas, salsa de carne.",
+        "Prepara la bechamel mezclando la leche, los huevos, el queso, la nuez moscada.",
+        "Vierte la bechamel por encima.",
+        "Cocina en el horno durante 30-40 minutos hasta que la parte superior esté dorada."
+      ]
+    },
+    {
+      "id": "banana_bread",
+      "title": "Pan de Plátano",
+      "image": "optimized/banana_bread.webp",
+      "description": "Pan húmedo de plátanos maduros",
+      "tags": ["desserts", "vegan"],
+      "ingredients": [
+        "3 plátanos maduros, aplastados",
+        "1/3 taza de mantequilla derretida (o aceite vegetal)",
+        "1 taza de azúcar",
+        "1 huevo (o 1 cucharada de semillas de lino molidas + 3 cucharadas de agua)",
+        "1 cucharadita de vainilla",
+        "1 cucharadita de bicarbonato de sodio",
+        "1 pizca de sal",
+        "1 1/2 taza de harina para todo uso"
+      ],
+      "instructions": [
+        "Precalienta el horno a 175°C (350°F).",
+        "Engrasa un molde de pan de 9x5 pulgadas.",
+        "En un tazón grande, mezcla los plátanos aplastados y la mantequilla derretida.",
+        "Mezcla el azúcar, el huevo y la vainilla.",
+        "Espolvorea el bicarbonato de sodio y la sal sobre la mezcla.",
+        "Añade la harina y mezcla solo hasta que todo esté húmedo.",
+        "Vierte en el molde preparado.",
+        "Hornea durante 50-60 minutos hasta que un palillo insertado en el centro salga limpio.",
+        "Deja enfriar durante 10 minutos antes de desmoldar."
+      ]
+    },
+    {
+      "id": "chocolate_truffles",
+      "title": "Trufas de Chocolate",
+      "image": "optimized/chocolate_truffles.webp",
+      "description": "Trufas de chocolate ricas y cremosas",
+      "tags": ["desserts", "gluten_free"],
+      "ingredients": [
+        "200 g de chocolate negro de buena calidad",
+        "100 ml de crema espesa",
+        "2 cucharadas de mantequilla",
+        "1 cucharadita de extracto de vainilla",
+        "Cacao en polvo para recubrir"
+      ],
+      "instructions": [
+        "Pica finamente el chocolate y colócalo en un tazón.",
+        "Calienta la crema hasta que esté apenas hirviendo.",
+        "Vierte la crema caliente sobre el chocolate y deja reposar durante 2 minutos.",
+        "Remueve suavemente hasta que el chocolate esté completamente derretido.",
+        "Añade la mantequilla y la vainilla, remueve hasta que todo esté suave.",
+        "Tapa y refrigera durante al menos 2 horas.",
+        "Con una cuchara, forma pequeñas bolas del tamaño de una nuez.",
+        "Enróllalas en el cacao en polvo.",
+        "Coloca en una bandeja y refrigera hasta el momento de servir."
+      ]
+    },
+    {
+      "id": "rice_pudding",
+      "title": "Arroz con Leche",
+      "image": "optimized/rice_pudding.webp",
+      "description": "Arroz con leche cremoso y reconfortante",
+      "tags": ["desserts", "gluten_free"],
+      "ingredients": [
+        "1 taza de arroz de grano corto",
+        "4 tazas de leche",
+        "1/3 taza de azúcar",
+        "1 cucharadita de vainilla",
+        "1/2 cucharadita de canela",
+        "1 pizca de sal",
+        "2 cucharadas de mantequilla"
+      ],
+      "instructions": [
+        "Enjuaga el arroz hasta que el agua esté clara.",
+        "En una olla mediana, combina el arroz, la leche, el azúcar y la sal.",
+        "Lleva a ebullición a fuego medio, removiendo frecuentemente.",
+        "Reduce el fuego y deja hervir a fuego lento, removiendo ocasionalmente, durante 20-25 minutos.",
+        "El arroz debe estar tierno y la mezcla cremosa.",
+        "Retira del fuego y añade la vainilla, la canela y la mantequilla.",
+        "Remueve hasta que la mantequilla esté derretida.",
+        "Sirve caliente o frío, espolvoreado con canela adicional si se desea."
+      ]
+    }
+  ]
+} 
