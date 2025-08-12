@@ -32,5 +32,31 @@
     <!-- Recipes will be loaded dynamically from data/cookbook-data-*.json -->
     
     <script src="js/recipeLoader.min.js"></script>
+    <script>
+        // Debug script to help identify issues
+        window.addEventListener('error', function(e) {
+            console.error('Global error:', e.error);
+        });
+        
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('Unhandled promise rejection:', e.reason);
+        });
+        
+        // Test if data files are accessible
+        fetch('data/cookbook-data-en.json')
+            .then(response => {
+                console.log('Data file response:', response.status, response.statusText);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('✅ Data loaded successfully:', data.recipes.length, 'recipes');
+            })
+            .catch(error => {
+                console.error('❌ Failed to load data:', error.message);
+            });
+    </script>
   </body>
   </html>
