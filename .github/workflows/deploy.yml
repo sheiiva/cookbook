@@ -44,19 +44,38 @@ jobs:
             fi
           done
           
-          # Minify CSS
-          echo "🎨 Minifying CSS..."
-          cat css/styles.css | tr -d '\n' | sed 's/  */ /g' | sed 's/;}/}/g' | sed 's/: /:/g' > css/styles.min.css
-          echo "✅ CSS minified: css/styles.min.css"
+          # Ensure all necessary files are present
+          echo "📁 Checking file structure..."
+          ls -la
+          echo "📁 Checking data directory..."
+          ls -la data/
+          echo "📁 Checking js directory..."
+          ls -la js/
+          echo "📁 Checking css directory..."
+          ls -la css/
           
-          # Minify JS
-          echo "⚡ Minifying JavaScript..."
-          cat js/searchRecipes.js | tr -d '\n' | sed 's/  */ /g' > js/searchRecipes.min.js
-          cat js/lazyLoad.js | tr -d '\n' | sed 's/  */ /g' > js/lazyLoad.min.js
-          cat js/navigation.js | tr -d '\n' | sed 's/  */ /g' > js/navigation.min.js
-          cat js/recipeLoader.js | tr -d '\n' | sed 's/  */ /g' > js/recipeLoader.min.js
-          cat js/i18n.js | tr -d '\n' | sed 's/  */ /g' > js/i18n.min.js
-          echo "✅ JS minified: searchRecipes.min.js, lazyLoad.min.js, navigation.min.js, recipeLoader.min.js, i18n.min.js"
+          # Verify data files are accessible
+          echo "🔍 Testing data file accessibility..."
+          if [ -f "data/cookbook-data-en.json" ]; then
+            echo "✅ English data file exists"
+            echo "📊 File size: $(wc -c < data/cookbook-data-en.json) bytes"
+          else
+            echo "❌ English data file missing!"
+          fi
+          
+          if [ -f "data/cookbook-data-fr.json" ]; then
+            echo "✅ French data file exists"
+            echo "📊 File size: $(wc -c < data/cookbook-data-fr.json) bytes"
+          else
+            echo "❌ French data file missing!"
+          fi
+          
+          if [ -f "data/cookbook-data-es.json" ]; then
+            echo "✅ Spanish data file exists"
+            echo "📊 File size: $(wc -c < data/cookbook-data-es.json) bytes"
+          else
+            echo "❌ Spanish data file missing!"
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -65,7 +84,33 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+          retention-days: 1
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
+      - name: Test deployment
+        run: |
+          echo "🧪 Testing deployed website..."
+          sleep 10  # Wait for deployment to complete
+          
+          # Test if the main page loads
+          if curl -f -s "https://sheiiva.github.io/cookbook/" > /dev/null; then
+            echo "✅ Main page loads successfully"
+          else
+            echo "❌ Main page failed to load"
+          fi
+          
+          # Test if data files are accessible
+          if curl -f -s "https://sheiiva.github.io/cookbook/data/cookbook-data-en.json" > /dev/null; then
+            echo "✅ English data file accessible"
+          else
+            echo "❌ English data file not accessible"
+          fi
+          
+          if curl -f -s "https://sheiiva.github.io/cookbook/js/recipeLoader.min.js" > /dev/null; then
+            echo "✅ JavaScript file accessible"
+          else
+            echo "❌ JavaScript file not accessible"
+          fi
