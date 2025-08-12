@@ -2,6 +2,10 @@
   "ui": {
     "title": "Mon Journal de Recettes",
     "search_placeholder": "Rechercher des recettes...",
+    "section_headers": {
+      "dish_types": "Types de Plats",
+      "dietary_options": "Options Alimentaires"
+    },
     "categories": {
       "all": "Toutes les Recettes",
       "main_courses": "Plats Principaux",
