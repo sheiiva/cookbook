@@ -1,0 +1,42 @@
+/* Dietary filter button styles */
+.dietary-toggle {
+    padding: 8px 16px;
+    margin: 4px;
+    border: 2px solid #ddd;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+/* Hover state */
+.dietary-toggle:hover {
+    background-color: #e8e8e8;
+    border-color: #bbb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Active/Clicked state */
+.dietary-toggle.active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #45a049;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+/* Active hover state */
+.dietary-toggle.active:hover {
+    background-color: #45a049;
+    border-color: #3d8b40;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(76, 175, 80, 0.4);
+}
+
+/* Focus state for accessibility */
+.dietary-toggle:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+} 
