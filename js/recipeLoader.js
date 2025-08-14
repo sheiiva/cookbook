@@ -246,8 +246,8 @@ class RecipeLoader {
                 
                 console.log(`Recipe ${recipe.title}: tags=${recipe.tags}, shouldShow=${shouldShow}`);
                 
-                // Show/hide recipe
-                parentLi.style.visibility = shouldShow ? 'visible' : 'hidden';
+                // Show/hide the entire li element
+                parentLi.style.display = shouldShow ? 'list-item' : 'none';
                 
                 // Track section visibility
                 if (sectionId) {
