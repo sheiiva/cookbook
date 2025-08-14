@@ -67,32 +67,13 @@
         
         // Initialize RecipeLoader
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, initializing RecipeLoader...');
             const recipeLoader = new RecipeLoader();
-            recipeLoader.init().then(() => {
-                console.log('RecipeLoader initialized successfully');
-            }).catch(error => {
-                console.error('Failed to initialize RecipeLoader:', error);
-            });
+            recipeLoader.init();
         });
         
 
         
-        // Test if data files are accessible
-        fetch('data/cookbook-data-en.json')
-            .then(response => {
-                console.log('Data file response:', response.status, response.statusText);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('✅ Data loaded successfully:', data.recipes.length, 'recipes');
-            })
-            .catch(error => {
-                console.error('❌ Failed to load data:', error.message);
-            });
+
     </script>
   </body>
   </html>
