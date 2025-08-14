@@ -29,9 +29,32 @@
             </div>
         </div>
     </header>
+    
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+        <div class="filter-content">
+            <div class="filter-section">
+                <h3>Dish Types</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn" data-filter="all" data-type="dish">All</button>
+                    <button class="filter-btn" data-filter="main_courses" data-type="dish">Main Courses</button>
+                    <button class="filter-btn" data-filter="desserts" data-type="dish">Desserts</button>
+                    <button class="filter-btn" data-filter="soups" data-type="dish">Soups</button>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Dietary Options</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn" data-filter="vegan">Vegan</button>
+                    <button class="filter-btn" data-filter="gluten_free">Gluten-Free</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Recipes will be loaded dynamically from data/cookbook-data-*.json -->
     
-    <script src="js/recipeLoader.min.js"></script>
+    <script src="js/recipeLoader.js"></script>
     <script>
         // Debug script to help identify issues
         window.addEventListener('error', function(e) {
@@ -41,6 +64,19 @@
         window.addEventListener('unhandledrejection', function(e) {
             console.error('Unhandled promise rejection:', e.reason);
         });
+        
+        // Initialize RecipeLoader
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing RecipeLoader...');
+            const recipeLoader = new RecipeLoader();
+            recipeLoader.init().then(() => {
+                console.log('RecipeLoader initialized successfully');
+            }).catch(error => {
+                console.error('Failed to initialize RecipeLoader:', error);
+            });
+        });
+        
+
         
         // Test if data files are accessible
         fetch('data/cookbook-data-en.json')

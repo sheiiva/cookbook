@@ -6,9 +6,9 @@ class RecipeLoader {
             vegan: false,
             gluten_free: false
         };
-        this.currentDishType = 'all';  // Track current dish type filter
-        this.currentLanguage = 'en';  // Track current language
-        this.currentSearchTerm = '';  // Track current search term
+        this.currentDishType = 'all';
+        this.currentLanguage = 'en';
+        this.currentSearchTerm = '';
     }
 
     async init() {
@@ -35,13 +35,11 @@ class RecipeLoader {
         const languageToggle = document.getElementById('language-toggle');
         if (languageToggle) {
             languageToggle.addEventListener('click', async () => {
-                // Cycle through languages: en -> fr -> es -> en
                 const languages = ['en', 'fr', 'es'];
                 const currentIndex = languages.indexOf(this.currentLanguage);
                 const nextIndex = (currentIndex + 1) % languages.length;
                 this.currentLanguage = languages[nextIndex];
                 
-                // Update button text
                 const currentLangSpan = languageToggle.querySelector('.current-lang');
                 if (currentLangSpan) {
                     const languageNames = {
@@ -52,11 +50,9 @@ class RecipeLoader {
                     currentLangSpan.textContent = languageNames[this.currentLanguage];
                 }
                 
-                // Reload recipes for new language
                 try {
                     await this.loadRecipesForLanguage(this.currentLanguage);
                     this.renderRecipes();
-                    this.applyAllFilters(); // Reapply current filters
                 } catch (error) {
                     console.error('Failed to load recipes for new language:', error);
                 }
@@ -65,13 +61,11 @@ class RecipeLoader {
     }
 
     updatePageText() {
-        // Update page title
         const titleElement = document.querySelector('h1[data-i18n="my_recipe_journal"]');
         if (titleElement && this.recipesData.ui.title) {
             titleElement.textContent = this.recipesData.ui.title;
         }
         
-        // Update search placeholder
         const searchInput = document.getElementById('search-bar');
         if (searchInput && this.recipesData.ui.search_placeholder) {
             searchInput.placeholder = this.recipesData.ui.search_placeholder;
@@ -79,23 +73,18 @@ class RecipeLoader {
     }
 
     renderRecipes() {
-        console.log('renderRecipes called');
         if (!this.recipesData) {
             console.error('Missing recipesData');
             return;
         }
-        
-        console.log('Recipes data loaded:', this.recipesData.recipes.length, 'recipes');
 
-        // Update page title and search placeholder
         this.updatePageText();
 
-        // Clear any existing content after filter bar
+        // Clear existing content after filter bar
         const filterBar = document.querySelector('.filter-bar');
         const header = document.querySelector('header');
         let startElement = filterBar || header;
         
-        // Remove content after filter bar (or header if no filter bar)
         let nextElement = startElement.nextElementSibling;
         while (nextElement && !nextElement.classList.contains('filter-bar')) {
             const toRemove = nextElement;
@@ -109,9 +98,8 @@ class RecipeLoader {
         recipesContainer.style.maxWidth = '1200px';
         recipesContainer.style.margin = '2rem auto';
         recipesContainer.style.padding = '0 2rem';
-        console.log('Created recipes container');
 
-        // Add recipes container after filter bar (or header if no filter bar)
+        // Add recipes container after filter bar
         const insertAfter = filterBar || header;
         insertAfter.after(recipesContainer);
 
@@ -130,12 +118,9 @@ class RecipeLoader {
         });
 
         // Render each category
-        console.log('Categories to render:', Object.keys(this.recipesData.ui.categories));
         Object.entries(this.recipesData.ui.categories).forEach(([categoryId, categoryName]) => {
             const recipesInCategory = recipesByCategory[categoryId] || [];
-            console.log(`Category ${categoryId}: ${recipesInCategory.length} recipes`);
             if (recipesInCategory.length === 0) {
-                console.log(`Skipping ${categoryId} - no recipes`);
                 return;
             }
             
@@ -169,11 +154,121 @@ class RecipeLoader {
 
         // Add filter event listeners
         this.setupFilterListeners();
-
-
     }
 
+    setupFilterListeners() {
+        console.log('Setting up filter listeners...');
+        // Filter button listeners
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        console.log('Found filter buttons:', filterButtons.length);
+        
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filterType = btn.getAttribute('data-filter');
+                const buttonType = btn.getAttribute('data-type');
+                console.log('Filter button clicked:', filterType, buttonType);
+                
+                if (filterType === 'all' && buttonType === 'dish') {
+                    // Clear all dish type filters
+                    document.querySelectorAll('.filter-btn[data-type="dish"]').forEach(dishBtn => {
+                        dishBtn.classList.remove('active');
+                    });
+                    // Activate the "All" button
+                    btn.classList.add('active');
+                } else if (buttonType === 'dish') {
+                    // If clicking a specific dish type, deactivate "All" button
+                    document.querySelector('.filter-btn[data-filter="all"]').classList.remove('active');
+                    btn.classList.toggle('active');
+                } else {
+                    // For dietary filters, just toggle
+                    btn.classList.toggle('active');
+                }
+                
+                this.applyFilters();
+            });
+        });
 
+        // Search bar listener
+        const searchBar = document.getElementById('search-bar');
+        if (searchBar) {
+            searchBar.addEventListener('input', (e) => {
+                this.currentSearchTerm = e.target.value.toLowerCase().trim();
+                this.applyFilters();
+            });
+        }
+    }
+
+    applyFilters() {
+        const allActiveFilters = Array.from(document.querySelectorAll('.filter-btn.active'));
+        const activeDishFilters = allActiveFilters
+            .filter(btn => btn.getAttribute('data-type') === 'dish' && btn.getAttribute('data-filter') !== 'all')
+            .map(btn => btn.getAttribute('data-filter'));
+        const activeDietaryFilters = allActiveFilters
+            .filter(btn => btn.getAttribute('data-type') !== 'dish')
+            .map(btn => btn.getAttribute('data-filter'));
+        const showAllDishes = allActiveFilters.some(btn => btn.getAttribute('data-filter') === 'all');
+        
+        console.log('Active dish filters:', activeDishFilters);
+        console.log('Active dietary filters:', activeDietaryFilters);
+        console.log('Show all dishes:', showAllDishes);
+        
+        const recipeLinks = document.querySelectorAll('a[data-recipe-id]');
+        console.log('Found recipe links:', recipeLinks.length);
+        
+        // Track which sections have visible recipes
+        const sectionVisibility = {};
+        
+        recipeLinks.forEach(link => {
+            const recipeId = link.getAttribute('data-recipe-id');
+            const recipe = this.recipesData.recipes.find(r => r.id === recipeId);
+            const parentLi = link.parentElement;
+            const parentBlock = parentLi.closest('.recipe-block');
+            const sectionId = parentBlock ? parentBlock.id : null;
+            
+            if (recipe && recipe.tags) {
+                let shouldShow = true;
+                
+                // Check search term
+                if (this.currentSearchTerm) {
+                    shouldShow = recipe.title.toLowerCase().includes(this.currentSearchTerm) ||
+                                recipe.description.toLowerCase().includes(this.currentSearchTerm);
+                }
+                
+                // Check dish type filters
+                if (shouldShow && !showAllDishes && activeDishFilters.length > 0) {
+                    shouldShow = activeDishFilters.some(filter => recipe.tags.includes(filter));
+                }
+                
+                // Check dietary filters (AND logic - must match ALL selected filters)
+                if (shouldShow && activeDietaryFilters.length > 0) {
+                    shouldShow = activeDietaryFilters.every(filter => recipe.tags.includes(filter));
+                }
+                
+                console.log(`Recipe ${recipe.title}: tags=${recipe.tags}, shouldShow=${shouldShow}`);
+                
+                // Show/hide recipe
+                parentLi.style.visibility = shouldShow ? 'visible' : 'hidden';
+                
+                // Track section visibility
+                if (sectionId) {
+                    if (!sectionVisibility[sectionId]) {
+                        sectionVisibility[sectionId] = false;
+                    }
+                    if (shouldShow) {
+                        sectionVisibility[sectionId] = true;
+                    }
+                }
+            }
+        });
+        
+        // Show/hide entire sections based on visibility
+        Object.entries(sectionVisibility).forEach(([sectionId, hasVisibleRecipes]) => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = hasVisibleRecipes ? 'block' : 'none';
+            }
+        });
+    }
 
     renderFallback() {
         const header = document.querySelector('header');
@@ -185,120 +280,4 @@ class RecipeLoader {
         `;
         header.after(errorDiv);
     }
-
-
-
-    setupFilterListeners() {
-        // Dish type filter listeners
-        document.querySelectorAll('.filter-btn[data-category]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const category = btn.getAttribute('data-category');
-                this.currentDishType = category;  // Update current dish type
-                this.applyAllFilters();  // Apply both dish type and dietary filters
-                
-                // Update active state
-                document.querySelectorAll('.filter-btn[data-category]').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-            });
-        });
-
-        // Dietary filter listeners
-        document.querySelectorAll('.dietary-toggle').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const dietary = btn.getAttribute('data-dietary');
-                this.dietaryFilterState[dietary] = !this.dietaryFilterState[dietary];  // Toggle state
-                btn.classList.toggle('active');  // Toggle button visual state
-                this.applyAllFilters();  // Apply both dish type and dietary filters
-            });
-        });
-
-        // Search bar listener
-        const searchBar = document.getElementById('search-bar');
-        if (searchBar) {
-            searchBar.addEventListener('input', (e) => {
-                this.currentSearchTerm = e.target.value.toLowerCase().trim();
-                this.applyAllFilters();
-            });
-        }
-    }
-
-
-
-    applyAllFilters() {
-        const activeDietaryFilters = this.getActiveDietaryFilters();
-        
-        const recipeLinks = document.querySelectorAll('a[data-recipe-id]');
-        
-        // Track which sections have visible recipes
-        const sectionVisibility = {};
-        
-        recipeLinks.forEach(link => {
-            const recipeId = link.getAttribute('data-recipe-id');
-            const recipe = this.recipesData.recipes.find(r => r.id === recipeId);
-            
-            if (recipe && recipe.tags) {
-                const parentLi = link.parentElement;
-                const parentBlock = parentLi.closest('.recipe-block');
-                const sectionId = parentBlock ? parentBlock.id : null;
-                
-                // Check dish type filter
-                let matchesDishType = true;
-                if (this.currentDishType !== 'all') {
-                    matchesDishType = recipe.tags.includes(this.currentDishType);
-                }
-                
-                // Check dietary filters
-                let matchesDietary = true;
-                if (activeDietaryFilters.length > 0) {
-                    matchesDietary = activeDietaryFilters.every(filter => recipe.tags.includes(filter));
-                }
-                
-                // Check search filter
-                let matchesSearch = true;
-                if (this.currentSearchTerm) {
-                    const searchText = `${recipe.title} ${recipe.description}`.toLowerCase();
-                    matchesSearch = searchText.includes(this.currentSearchTerm);
-                }
-                
-                // Recipe must match ALL filters: dish type AND dietary AND search
-                const shouldShow = matchesDishType && matchesDietary && matchesSearch;
-                
-                if (shouldShow) {
-                    parentLi.style.display = 'list-item';  // Show with bullet point
-                    if (sectionId) {
-                        sectionVisibility[sectionId] = true;
-                    }
-                } else {
-                    parentLi.style.display = 'none';  // Hide completely
-                    if (sectionId && !sectionVisibility[sectionId]) {
-                        sectionVisibility[sectionId] = false;
-                    }
-                }
-            }
-        });
-        
-        // Hide/show sections based on whether they have visible recipes
-        Object.entries(sectionVisibility).forEach(([sectionId, hasVisibleRecipes]) => {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                if (hasVisibleRecipes) {
-                    section.style.display = 'block';
-                } else {
-                    section.style.display = 'none';
-                }
-            }
-        });
-    }
-
-    getActiveDietaryFilters() {
-        return Object.entries(this.dietaryFilterState)
-            .filter(([filter, isActive]) => isActive)
-            .map(([filter]) => filter);
-    }
-}
-
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    const recipeLoader = new RecipeLoader();
-    recipeLoader.init();
-}); 
+} 
