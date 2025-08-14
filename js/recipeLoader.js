@@ -17,7 +17,6 @@ class RecipeLoader {
             this.setupLanguageToggle();
             this.renderRecipes();
         } catch (error) {
-            console.error('Failed to load recipes:', error);
             this.renderFallback();
         }
     }
@@ -54,7 +53,7 @@ class RecipeLoader {
                     await this.loadRecipesForLanguage(this.currentLanguage);
                     this.renderRecipes();
                 } catch (error) {
-                    console.error('Failed to load recipes for new language:', error);
+                    // Handle language change error silently
                 }
             });
         }
@@ -74,7 +73,6 @@ class RecipeLoader {
 
     renderRecipes() {
         if (!this.recipesData) {
-            console.error('Missing recipesData');
             return;
         }
 
@@ -157,16 +155,13 @@ class RecipeLoader {
     }
 
     setupFilterListeners() {
-        console.log('Setting up filter listeners...');
         // Filter button listeners
         const filterButtons = document.querySelectorAll('.filter-btn');
-        console.log('Found filter buttons:', filterButtons.length);
         
         filterButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 const filterType = btn.getAttribute('data-filter');
                 const buttonType = btn.getAttribute('data-type');
-                console.log('Filter button clicked:', filterType, buttonType);
                 
                 if (filterType === 'all' && buttonType === 'dish') {
                     // Clear all dish type filters
@@ -208,12 +203,7 @@ class RecipeLoader {
             .map(btn => btn.getAttribute('data-filter'));
         const showAllDishes = allActiveFilters.some(btn => btn.getAttribute('data-filter') === 'all');
         
-        console.log('Active dish filters:', activeDishFilters);
-        console.log('Active dietary filters:', activeDietaryFilters);
-        console.log('Show all dishes:', showAllDishes);
-        
         const recipeLinks = document.querySelectorAll('a[data-recipe-id]');
-        console.log('Found recipe links:', recipeLinks.length);
         
         // Track which sections have visible recipes
         const sectionVisibility = {};
@@ -228,10 +218,10 @@ class RecipeLoader {
             if (recipe && recipe.tags) {
                 let shouldShow = true;
                 
-                // Check search term
+                // Check search term (only recipe title/name)
                 if (this.currentSearchTerm) {
-                    shouldShow = recipe.title.toLowerCase().includes(this.currentSearchTerm) ||
-                                recipe.description.toLowerCase().includes(this.currentSearchTerm);
+                    const titleMatch = recipe.title.toLowerCase().includes(this.currentSearchTerm);
+                    shouldShow = titleMatch;
                 }
                 
                 // Check dish type filters
@@ -243,8 +233,6 @@ class RecipeLoader {
                 if (shouldShow && activeDietaryFilters.length > 0) {
                     shouldShow = activeDietaryFilters.every(filter => recipe.tags.includes(filter));
                 }
-                
-                console.log(`Recipe ${recipe.title}: tags=${recipe.tags}, shouldShow=${shouldShow}`);
                 
                 // Show/hide the entire li element
                 parentLi.style.display = shouldShow ? 'list-item' : 'none';
