@@ -247,6 +247,29 @@
         "Shape your pizza to the dimensions of your baking sheet, ideally placing the dough on baking paper.",
         "Garnish your pizza according to your desires or your leftovers in the fridge."
       ]
+    },
+    {
+      "id": "brownie",
+      "title": "Brownie",
+      "image": "optimized/brownie.webp",
+      "description": "Rich and fudgy chocolate brownie",
+      "tags": ["desserts"],
+      "ingredients": [
+        "250g pastry chocolate",
+        "150g butter",
+        "150g sugar",
+        "60g flour",
+        "salt",
+        "1 packet vanilla sugar",
+        "3 eggs"
+      ],
+      "instructions": [
+        "Melt the chocolate broken into pieces with the butter.",
+        "Meanwhile, beat the eggs with the sugar until the mixture whitens.",
+        "Add the flour, vanilla sugar, and add the chocolate.",
+        "Pour everything into a mold, and bake at 180°C (thermostat 6) for 15 min...",
+        "And there you go!"
+      ]
     }
   ]
 } 
