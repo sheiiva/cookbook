@@ -256,6 +256,31 @@
         "Ajoutez le tofu et cuisez encore 3 minutes.",
         "Saupoudrez d'oignons verts et servez en accompagnement du riz. Servez directement du pot, ou transférez dans un bol de service. Tout le monde peut manger ensemble dans le pot, ou les portions peuvent être servies dans des bols individuels pour chaque personne."
       ]
+    },
+    {
+      "id": "cookies",
+      "title": "Cookies",
+      "image": "optimized/cookies.webp",
+      "description": "Cookies moelleux aux pépites de chocolat",
+      "tags": ["desserts"],
+      "ingredients": [
+        "85g de beurre tendre",
+        "85g de sucre",
+        "vanille ou 1 sachet de sucre vanillé",
+        "150g de farine",
+        "100g de chocolat noir",
+        "1 cuillère à café de sel",
+        "1 cuillère à café de levure chimique",
+        "1 œuf"
+      ],
+      "instructions": [
+        "Détailler le chocolat en pépites.",
+        "Préchauffer le four à 180°C (thermostat 6). Dans un saladier, mettre 75g de beurre, le sucre, l'œuf entier, la vanille et mélanger le tout avec une cuillère en bois.",
+        "Ajouter petit à petit la farine mélangée à la levure, le sel et le chocolat.",
+        "Avec une feuille de papier essuie-tout, beurrer une plaque allant au four et former les cookies sur la plaque.",
+        "Pour former les cookies, utiliser 2 cuillères à soupe et faire des petits tas espacés les uns des autres; ils grandiront à la cuisson.",
+        "Enfourner pour 10 minutes de cuisson."
+      ]
     }
   ]
 } 

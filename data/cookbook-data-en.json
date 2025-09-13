@@ -296,6 +296,31 @@
         "Add the tofu and cook for another 3 minutes.",
         "Sprinkle with the green onions and serve as a side dish to rice. Serve it directly from the pot, or transfer to a serving bowl. Everybody can eat together out of the pot, or portions can be ladled out in individual bowls for each person."
       ]
+    },
+    {
+      "id": "cookies",
+      "title": "Chocolate Cookies",
+      "image": "optimized/cookies.webp",
+      "description": "Soft and chewy chocolate chip cookies",
+      "tags": ["desserts"],
+      "ingredients": [
+        "85g soft butter",
+        "85g sugar",
+        "vanilla or 1 packet vanilla sugar",
+        "150g flour",
+        "100g dark chocolate",
+        "1 teaspoon salt",
+        "1 teaspoon baking powder",
+        "1 egg"
+      ],
+      "instructions": [
+        "Cut the chocolate into chips.",
+        "Preheat the oven to 180°C (thermostat 6). In a bowl, put 75g of butter, sugar, whole egg, vanilla and mix everything with a wooden spoon.",
+        "Gradually add the flour mixed with baking powder, salt and chocolate.",
+        "With a paper towel, butter a baking sheet and form the cookies on the sheet.",
+        "To form the cookies, use 2 tablespoons and make small piles spaced apart from each other; they will grow during cooking.",
+        "Bake for 10 minutes."
+      ]
     }
   ]
 } 
