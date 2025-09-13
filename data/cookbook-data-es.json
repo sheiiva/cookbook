@@ -256,6 +256,31 @@
         "Añade el tofu y cocina otros 3 minutos.",
         "Espolvorea con las cebollas verdes y sirve como acompañamiento del arroz. Sírvelo directamente de la olla, o transfiere a un bol de servir. Todos pueden comer juntos de la olla, o las porciones pueden servirse en bols individuales para cada persona."
       ]
+    },
+    {
+      "id": "cookies",
+      "title": "Galletas",
+      "image": "optimized/cookies.webp",
+      "description": "Galletas suaves con trozos de chocolate",
+      "tags": ["desserts"],
+      "ingredients": [
+        "85g de mantequilla blanda",
+        "85g de azúcar",
+        "vainilla o 1 sobre de azúcar de vainilla",
+        "150g de harina",
+        "100g de chocolate negro",
+        "1 cucharadita de sal",
+        "1 cucharadita de levadura en polvo",
+        "1 huevo"
+      ],
+      "instructions": [
+        "Cortar el chocolate en trozos.",
+        "Precalentar el horno a 180°C (termostato 6). En un bol, poner 75g de mantequilla, azúcar, huevo entero, vainilla y mezclar todo con una cuchara de madera.",
+        "Añadir poco a poco la harina mezclada con la levadura, la sal y el chocolate.",
+        "Con una hoja de papel de cocina, engrasar una bandeja de horno y formar las galletas en la bandeja.",
+        "Para formar las galletas, usar 2 cucharadas y hacer pequeñas montañas espaciadas entre sí; crecerán durante la cocción.",
+        "Hornear durante 10 minutos."
+      ]
     }
   ]
 } 
