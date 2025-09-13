@@ -183,6 +183,30 @@
         "Quand le riz arrive près du niveau du lait, éteignez le feu et laissez refroidir ; le riz finira d'absorber le lait en refroidissant.",
         "Ce dessert peut être servi chaud ou froid, selon votre goût."
       ]
+    },
+    {
+      "id": "pizza_dough",
+      "title": "Pâte à Pizza",
+      "image": "optimized/pizza_dough.webp",
+      "description": "Pâte à pizza maison classique",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "350g de farine (type pâte à pain) + 100g pour travailler la pâte",
+        "2 cuillères à café de sel",
+        "1 sachet de levure boulangère",
+        "3 cuillères à soupe d'huile d'olive",
+        "25cl d'eau tiède"
+      ],
+      "instructions": [
+        "Mettre 350g de farine dans un grand saladier puis ajouter successivement le sel, la levure boulangère et l'huile d'olive.",
+        "Verser petit à petit l'eau tiède tout en mélangeant avec une cuillère en bois.",
+        "Remuer longuement jusqu'à obtention d'une pâte qui se détache du saladier.",
+        "Laisser reposer la pâte pendant 1h en couvrant le saladier avec un torchon dans un endroit chaud.",
+        "Après le temps de repos, déposer de la farine sur votre plan de travail y déposer la pâte à pizza.",
+        "La travailler comme on travaillerait une pâte à pain.",
+        "Façonner votre pizza aux dimensions de votre plaque à four où l'idéal, c'est de déposer la pâte sur du papier cuisson.",
+        "Agrémenter votre pizza au grès de vos envies ou de vos restes dans le frigo."
+      ]
     }
   ]
 } 
