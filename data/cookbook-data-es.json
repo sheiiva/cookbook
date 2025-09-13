@@ -230,6 +230,32 @@
         "Vierte todo en un molde, y hornea a 180°C (termostato 6) durante 15 min...",
         "¡Y ya está!"
       ]
+    },
+    {
+      "id": "doenjang_jjigae",
+      "title": "Doenjang-jjigae",
+      "image": "optimized/doenjang_jjigae.webp",
+      "description": "Estofado coreano de pasta de soja fermentada",
+      "tags": ["soups", "vegan"],
+      "ingredients": [
+        "1 patata mediana, pelada y cortada en cubos de 1cm (aproximadamente 150g)",
+        "1 cebolla mediana, cortada en trozos de 1cm (aproximadamente 150g)",
+        "1 calabacín pequeño, cortado en trozos de 1cm (aproximadamente 150g)",
+        "1 pimiento verde coreano (cheong-gochu), sin tallo y picado",
+        "4 dientes de ajo, picados",
+        "600ml de agua",
+        "5 cucharadas de pasta de soja fermentada (doenjang)",
+        "170g de tofu firme, cortado en cubos de 1cm",
+        "2 cebollas verdes, picadas"
+      ],
+      "instructions": [
+        "Combina la patata, la cebolla, el calabacín, el pimiento y el ajo en una olla de barro de 1½ cuarto (6 tazas) u otra olla pesada.",
+        "Añade el agua y tapa.",
+        "Cocina a fuego medio-alto durante 15 minutos hasta que empiece a hervir. Si usas una olla de acero inoxidable, tomará menos de 15 minutos, aproximadamente 7 a 8 minutos.",
+        "Mezcla la pasta de soja, removiendo bien. Tapa y cocina 20 minutos más a fuego medio.",
+        "Añade el tofu y cocina otros 3 minutos.",
+        "Espolvorea con las cebollas verdes y sirve como acompañamiento del arroz. Sírvelo directamente de la olla, o transfiere a un bol de servir. Todos pueden comer juntos de la olla, o las porciones pueden servirse en bols individuales para cada persona."
+      ]
     }
   ]
 } 

@@ -230,6 +230,32 @@
         "Versez le tout dans un moule, et enfournez à 180°C (thermostat 6) pendant 15 min...",
         "Et voilà !"
       ]
+    },
+    {
+      "id": "doenjang_jjigae",
+      "title": "Doenjang-jjigae",
+      "image": "optimized/doenjang_jjigae.webp",
+      "description": "Ragoût coréen à la pâte de soja fermentée",
+      "tags": ["soups", "vegan"],
+      "ingredients": [
+        "1 pomme de terre moyenne, pelée et coupée en cubes de 1cm (environ 150g)",
+        "1 oignon moyen, coupé en morceaux de 1cm (environ 150g)",
+        "1 petite courgette, coupée en morceaux de 1cm (environ 150g)",
+        "1 piment vert coréen (cheong-gochu), équeuté et haché",
+        "4 gousses d'ail, émincées",
+        "600ml d'eau",
+        "5 cuillères à soupe de pâte de soja fermentée (doenjang)",
+        "170g de tofu ferme, coupé en cubes de 1cm",
+        "2 oignons verts, hachés"
+      ],
+      "instructions": [
+        "Combinez la pomme de terre, l'oignon, la courgette, le piment et l'ail dans un pot en terre cuite de 1½ litre (6 tasses) ou autre casserole lourde.",
+        "Ajoutez l'eau et couvrez.",
+        "Cuisez à feu moyen-élevé pendant 15 minutes jusqu'à ébullition. Si vous utilisez une casserole en acier inoxydable, cela prendra moins de 15 minutes, environ 7 à 8 minutes.",
+        "Mélangez la pâte de soja, en remuant bien. Couvrez et cuisez encore 20 minutes à feu moyen.",
+        "Ajoutez le tofu et cuisez encore 3 minutes.",
+        "Saupoudrez d'oignons verts et servez en accompagnement du riz. Servez directement du pot, ou transférez dans un bol de service. Tout le monde peut manger ensemble dans le pot, ou les portions peuvent être servies dans des bols individuels pour chaque personne."
+      ]
     }
   ]
 } 

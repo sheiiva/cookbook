@@ -270,6 +270,32 @@
         "Pour everything into a mold, and bake at 180°C (thermostat 6) for 15 min...",
         "And there you go!"
       ]
+    },
+    {
+      "id": "doenjang_jjigae",
+      "title": "Doenjang-jjigae",
+      "image": "optimized/doenjang_jjigae.webp",
+      "description": "Korean fermented soybean paste stew",
+      "tags": ["soups", "vegan"],
+      "ingredients": [
+        "1 medium potato, peeled and cut into 1cm cubes (about 150g)",
+        "1 medium onion, cut into 1cm pieces (about 150g)",
+        "1 small zucchini, cut into 1cm pieces (about 150g)",
+        "1 green Korean chili pepper (cheong-gochu), stemmed and chopped",
+        "4 garlic cloves, minced",
+        "600ml water",
+        "5 tablespoons fermented soybean paste (doenjang)",
+        "170g medium-firm tofu, cut into 1cm cubes",
+        "2 green onions, chopped"
+      ],
+      "instructions": [
+        "Combine the potato, onion, zucchini, chili pepper, and garlic in a 1½-quart (6 cups) earthenware pot or other heavy pot.",
+        "Add water and cover.",
+        "Cook over medium-high heat for 15 minutes until it starts boiling. If you use a stainless steel pot, it will take less than 15 minutes, about 7 to 8 minutes.",
+        "Stir in the soybean paste, mixing well. Cover and cook for 20 minutes longer over medium heat.",
+        "Add the tofu and cook for another 3 minutes.",
+        "Sprinkle with the green onions and serve as a side dish to rice. Serve it directly from the pot, or transfer to a serving bowl. Everybody can eat together out of the pot, or portions can be ladled out in individual bowls for each person."
+      ]
     }
   ]
 } 
