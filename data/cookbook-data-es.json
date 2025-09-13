@@ -207,6 +207,29 @@
         "Dar forma a tu pizza a las dimensiones de tu bandeja de horno, idealmente colocando la masa sobre papel de horno.",
         "Adornar tu pizza según tus deseos o tus sobras en la nevera."
       ]
+    },
+    {
+      "id": "brownie",
+      "title": "Brownie",
+      "image": "optimized/brownie.webp",
+      "description": "Brownie de chocolate rico y cremoso",
+      "tags": ["desserts"],
+      "ingredients": [
+        "250g de chocolate de repostería",
+        "150g de mantequilla",
+        "150g de azúcar",
+        "60g de harina",
+        "sal",
+        "1 sobre de azúcar de vainilla",
+        "3 huevos"
+      ],
+      "instructions": [
+        "Derrite el chocolate roto en trozos con la mantequilla.",
+        "Mientras tanto, bate los huevos con el azúcar hasta que la mezcla se blanquee.",
+        "Añade la harina, el azúcar de vainilla, y añade el chocolate.",
+        "Vierte todo en un molde, y hornea a 180°C (termostato 6) durante 15 min...",
+        "¡Y ya está!"
+      ]
     }
   ]
 } 
