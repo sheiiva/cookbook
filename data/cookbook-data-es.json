@@ -183,6 +183,30 @@
         "Cuando el arroz se acerque al nivel de la leche, apaga el fuego y deja enfriar; el arroz terminará de absorber la leche mientras se enfría.",
         "Este postre se puede servir caliente o frío, según tu gusto."
       ]
+    },
+    {
+      "id": "pizza_dough",
+      "title": "Masa de Pizza",
+      "image": "optimized/pizza_dough.webp",
+      "description": "Masa de pizza casera clásica",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "350g de harina (tipo masa de pan) + 100g para trabajar la masa",
+        "2 cucharaditas de sal",
+        "1 sobre de levadura de panadero",
+        "3 cucharadas de aceite de oliva",
+        "25cl de agua templada"
+      ],
+      "instructions": [
+        "Poner 350g de harina en un bol grande y añadir sucesivamente la sal, la levadura de panadero y el aceite de oliva.",
+        "Verter poco a poco el agua templada mientras se mezcla con una cuchara de madera.",
+        "Remover durante mucho tiempo hasta obtener una masa que se despegue del bol.",
+        "Dejar reposar la masa durante 1 hora cubriendo el bol con un paño en un lugar cálido.",
+        "Después del tiempo de reposo, poner harina en tu superficie de trabajo y colocar la masa de pizza sobre ella.",
+        "Trabajarla como se trabajaría una masa de pan.",
+        "Dar forma a tu pizza a las dimensiones de tu bandeja de horno, idealmente colocando la masa sobre papel de horno.",
+        "Adornar tu pizza según tus deseos o tus sobras en la nevera."
+      ]
     }
   ]
 } 
