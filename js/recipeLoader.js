@@ -69,6 +69,32 @@ class RecipeLoader {
         if (searchInput && this.recipesData.ui.search_placeholder) {
             searchInput.placeholder = this.recipesData.ui.search_placeholder;
         }
+        
+        // Update filter section headers
+        const dishTypesHeader = document.querySelector('h3[data-i18n="dish_types"]');
+        if (dishTypesHeader && this.recipesData.ui.section_headers.dish_types) {
+            dishTypesHeader.textContent = this.recipesData.ui.section_headers.dish_types;
+        }
+        
+        const dietaryOptionsHeader = document.querySelector('h3[data-i18n="dietary_options"]');
+        if (dietaryOptionsHeader && this.recipesData.ui.section_headers.dietary_options) {
+            dietaryOptionsHeader.textContent = this.recipesData.ui.section_headers.dietary_options;
+        }
+        
+        // Update filter button texts
+        Object.entries(this.recipesData.ui.categories).forEach(([categoryId, categoryName]) => {
+            const button = document.querySelector(`.filter-btn[data-filter="${categoryId}"]`);
+            if (button) {
+                button.textContent = categoryName;
+            }
+        });
+        
+        Object.entries(this.recipesData.ui.dietary_filters).forEach(([filterId, filterName]) => {
+            const button = document.querySelector(`.filter-btn[data-filter="${filterId}"]`);
+            if (button) {
+                button.textContent = filterName;
+            }
+        });
     }
 
     renderRecipes() {
