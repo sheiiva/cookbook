@@ -153,7 +153,8 @@
     box-shadow: 0 4px 20px rgba(124, 58, 237, 0.1);
     display: flex;
     gap: 2rem;
-    align-items: flex-start;
+    align-items: center;
+    min-height: 400px;
 }
 
 .recipe-info {
