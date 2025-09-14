@@ -283,6 +283,7 @@
     counter-reset: step-counter;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .recipe-instructions li {
