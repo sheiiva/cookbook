@@ -266,6 +266,42 @@
     text-align: center;
 }
 
+.ingredient-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ingredient-section h4 {
+    color: #4c1d95;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+}
+
+.ingredient-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredient-section li {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.4rem;
+    border-radius: 6px;
+    border-left: 2px solid #8b5cf6;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.ingredient-section li:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(2px);
+}
+
 /* Responsive design for recipe header */
 @media (max-width: 768px) {
     .recipe-header {
