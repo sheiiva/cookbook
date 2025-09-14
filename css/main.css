@@ -440,6 +440,37 @@
     margin: 0;
 }
 
+/* Mobile-specific styles for better readability */
+@media (max-width: 768px) {
+    .recipe-ingredients-header li {
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+    }
+    
+    .ingredient-section li {
+        padding: 0.4rem 0.6rem;
+        margin-bottom: 0.25rem;
+        font-size: 0.8rem;
+    }
+    
+    .recipe-ingredients-header {
+        padding: 0.75rem;
+    }
+    
+    .recipe-header {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .recipe-image {
+        width: 90%;
+        max-width: 90%;
+    }
+}
+
 /* Desktop layout - only for larger screens */
 @media (min-width: 1025px) {
     .header-content {
