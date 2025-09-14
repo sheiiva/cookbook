@@ -151,6 +151,22 @@
     border-radius: 20px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 20px rgba(124, 58, 237, 0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.recipe-info {
+    flex: 1;
+    text-align: center;
+}
+
+.recipe-ingredients-header {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
 }
 
 .recipe-title {
@@ -217,6 +233,49 @@
 .recipe-ingredients li:hover {
     transform: translateX(5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-ingredients-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipe-ingredients-header li {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    border-left: 3px solid #8b5cf6;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.recipe-ingredients-header li:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-ingredients-header h3 {
+    color: #1e1b4b;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Responsive design for recipe header */
+@media (max-width: 768px) {
+    .recipe-header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .recipe-info,
+    .recipe-ingredients-header {
+        flex: none;
+    }
 }
 
 .recipe-instructions ol {
