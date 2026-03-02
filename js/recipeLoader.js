@@ -176,8 +176,10 @@ class RecipeLoader {
             recipesContainer.appendChild(recipeBlock);
         });
 
-        // Add filter event listeners
+        // Add filter event listeners and set "All" as active by default
         this.setupFilterListeners();
+        const allBtn = document.querySelector('.filter-btn[data-filter="all"][data-type="dish"]');
+        if (allBtn) allBtn.classList.add('active');
     }
 
     setupFilterListeners() {
