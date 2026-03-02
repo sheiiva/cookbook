@@ -1,3 +1,9 @@
+/* Theme variables - used by recipe links and shared accents */
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #4f46e5;
+}
+
 /* Mobile-first approach */
 .header-content {
     display: flex;
