@@ -34,7 +34,7 @@ cookbook/
     └── MULTILINGUAL.md
 ```
 
-There is no `js/i18n.js`, no `config/translation.json`, and no `recipes/` folder. All translatable content lives in the `data/cookbook-data-*.json` files.
+All translatable content lives in the `data/cookbook-data-*.json` files.
 
 ## How it works
 
