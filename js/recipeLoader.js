@@ -32,8 +32,7 @@ class RecipeLoader {
     }
 
     setupLanguageToggle() {
-        const languageNames = { en: 'English', fr: 'Français', es: 'Español' };
-        const languages = ['en', 'fr', 'es'];
+        const { languageNames, languages } = window.CookbookI18n || { languageNames: { en: 'English', fr: 'Français', es: 'Español' }, languages: ['en', 'fr', 'es'] };
         const menu = document.getElementById('language-menu');
         const languageToggle = document.getElementById('language-toggle');
 
