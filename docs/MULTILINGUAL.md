@@ -1,333 +1,61 @@
-# 🌍 Multilingual Cookbook System
+# Multilingual Cookbook (JSON-based)
 
 ## Overview
 
-This cookbook website now supports **11 languages** with automatic translation using translation APIs. The system provides:
+The cookbook uses **3 languages** (English, French, Spanish) with **one JSON file per language**. There is no translation API: each language has its own `data/cookbook-data-{en,fr,es}.json` with full UI strings and recipes. The app loads the file for the current language and renders from it.
 
-- **Dynamic language switching** with a dropdown in the header
-- **Automatic translation** of all content using translation APIs
-- **Local caching** to improve performance
-- **Fallback system** to English if translation fails
-- **Persistent language preference** stored in browser
+- **Language switching** – Header button cycles EN → FR → ES (see `recipeLoader.js`, `recipeDetailViewer.min.js`).
+- **No runtime translation** – All text is pre-written in the JSON files.
+- **Same structure in every file** – Each JSON has `ui` (labels, categories, filters) and `recipes` (array of recipe objects).
 
-## 🚀 Supported Languages
+## Supported languages
 
-| Language | Code | Native Name |
-|----------|------|-------------|
-| English | `en` | English |
-| French | `fr` | Français |
-| Spanish | `es` | Español |
-| German | `de` | Deutsch |
-| Italian | `it` | Italiano |
-| Portuguese | `pt` | Português |
-| Dutch | `nl` | Nederlands |
-| Russian | `ru` | Русский |
-| Chinese | `zh` | 中文 |
-| Japanese | `ja` | 日本語 |
-| Korean | `ko` | 한국어 |
+| Code | Language  |
+|------|-----------|
+| `en` | English   |
+| `fr` | Français  |
+| `es` | Español   |
 
-## 🔧 Translation API
-
-### LibreTranslate (Free)
-- **Cost**: Free
-- **Quality**: Good
-- **Setup**: No API key required
-- **Rate Limits**: None (public instance)
-
-```javascript
-// Current implementation in js/i18n.js
-const response = await fetch('https://libretranslate.com/translate', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-        q: text,
-        source: 'en',
-        target: targetLang,
-        format: 'text',
-        alternatives: 1,
-        api_key: ''
-    })
-});
-```
-
-## 📁 File Structure
+## File structure (actual)
 
 ```
 cookbook/
+├── index.html
+├── recipe-template.html
 ├── js/
-│   ├── i18n.js              # Main i18n system
-│   ├── i18n.min.js          # Minified version
-│   └── recipeLoader.js      # Dynamic recipe loading
+│   ├── recipeLoader.js       # Loads cookbook-data-{lang}.json, renders list, filters, language toggle
+│   ├── recipeLoader.min.js
+│   ├── recipeDetailViewer.min.js   # Loads cookbook-data-{lang}.json, renders one recipe from ?id=&lang=
 ├── data/
-│   ├── recipes.json         # Recipe database
-│   └── translation.json     # Translation config
-├── config/
-│   └── translation.json     # API configuration
+│   ├── cookbook-data-en.json   # English UI + recipes
+│   ├── cookbook-data-fr.json   # French UI + recipes
+│   └── cookbook-data-es.json   # Spanish UI + recipes
 └── docs/
-    └── MULTILINGUAL.md      # This documentation
+    └── MULTILINGUAL.md
 ```
 
-## 🎯 How to Use
+There is no `js/i18n.js`, no `config/translation.json`, and no `recipes/` folder. All translatable content lives in the `data/cookbook-data-*.json` files.
 
-### 1. Setup Translation API
+## How it works
 
-**LibreTranslate (Free):**
-- ✅ **No setup required!** The system is already configured to use LibreTranslate
-- ✅ **No API key needed** - using the public instance
-- ✅ **No rate limits** - completely free to use
-- ✅ **Ready to use** - just load the page and select a language
+1. **Initial load** – The app loads `data/cookbook-data-en.json` (or the language from the URL on the recipe page).
+2. **UI strings** – Labels (title, search placeholder, filter names, etc.) come from `recipesData.ui` and are applied to the page (e.g. in `recipeLoader.js` via `updatePageText()`).
+3. **Recipes** – The list and detail views read from `recipesData.recipes`. Recipe links point to `recipe-template.html?id=<id>&lang=<lang>`.
+4. **Language change** – The language button cycles `en` → `fr` → `es`. The app fetches the new `cookbook-data-{lang}.json` and re-renders.
 
-### 2. Add New Content
+## Adding a new language
 
-**For static content:**
-```html
-<h1 data-i18n="my_recipe_journal">My Recipe Journal</h1>
-<input placeholder="Search recipes..." data-i18n="search_placeholder">
-```
+1. Add a new file `data/cookbook-data-<code>.json` with the same structure as `cookbook-data-en.json` (e.g. `ui` and `recipes`).
+2. In `recipeLoader.js` and in the recipe detail viewer script, add the new language code and label to the `languages` array and the `languageNames` object (or a shared config if you introduce one).
+3. Ensure the language switcher UI includes the new option.
 
-**For dynamic content:**
-```javascript
-// In your JavaScript
-const translated = window.i18n.translate('recipe_title');
-element.textContent = translated;
-```
+## Adding or editing content
 
-### 3. Add New Recipes
+- **UI strings** – Edit the `ui` object in each `data/cookbook-data-{en,fr,es}.json` (title, search placeholder, section headers, category names, dietary filter names).
+- **Recipes** – Edit the `recipes` array in each language file. Use the same `id` in all three files so links and the detail page work. See the main [README](../README.md) for the recipe object shape and how to add recipes.
 
-1. **Add to JSON database:**
-```json
-{
-  "id": "new_recipe",
-  "title": "New Recipe",
-  "file": "new_recipe.html",
-  "description": "A delicious new recipe"
-}
-```
+## Optional future improvements
 
-2. **Add translation keys:**
-```javascript
-// In js/i18n.js, add to translations.en
-'new_recipe': 'New Recipe',
-'new_recipe_desc': 'A delicious new recipe'
-```
-
-3. **Create recipe HTML file** in `recipes/`
-
-### 4. Add New Languages
-
-1. **Add to supported languages:**
-```javascript
-// In js/i18n.js
-this.supportedLanguages = {
-    'en': 'English',
-    'fr': 'Français',
-    'new_lang': 'New Language Name'
-};
-```
-
-2. **Translations will be automatically generated** via API
-
-## 🔄 How It Works
-
-### 1. Initialization
-```javascript
-// System loads saved language preference
-const savedLang = localStorage.getItem('cookbook-language') || 'en';
-
-// Loads base English translations
-await this.loadTranslations();
-
-// Applies translations to all elements with data-i18n
-this.applyTranslations();
-
-// Creates language switcher in header
-this.setupLanguageSwitcher();
-```
-
-### 2. Translation Process
-```javascript
-// When user changes language
-async changeLanguage(newLang) {
-    // 1. Check if translations are cached
-    const cached = localStorage.getItem(`translations_${newLang}`);
-    
-    if (!cached) {
-        // 2. Call translation API for all English text
-        for (const [key, value] of Object.entries(this.translations.en)) {
-            const translated = await this.translationAPI.translate(value, newLang);
-            this.translations[newLang][key] = translated;
-        }
-        
-        // 3. Cache translations
-        localStorage.setItem(`translations_${newLang}`, JSON.stringify(this.translations[newLang]));
-    }
-    
-    // 4. Apply translations
-    this.applyTranslations();
-}
-```
-
-### 3. Caching System
-- **First visit**: API call to translate all content
-- **Subsequent visits**: Load from localStorage cache
-- **Cache duration**: 24 hours (configurable)
-- **Fallback**: English if API fails
-
-## 🎨 UI Components
-
-### Language Switcher
-```html
-<div class="language-switcher">
-    <select id="language-select">
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-        <!-- ... more languages -->
-    </select>
-</div>
-```
-
-### CSS Styling
-```css
-.language-switcher {
-    margin-left: auto;
-    margin-right: 20px;
-}
-
-.language-switcher select {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 8px 12px;
-    /* ... more styles */
-}
-```
-
-## 🚀 Performance Optimizations
-
-### 1. Caching
-- **LocalStorage**: Caches translations for 24 hours
-- **Reduced API calls**: Only translates new content
-- **Fallback system**: English if API unavailable
-
-### 2. Lazy Loading
-- **On-demand translation**: Only when language changes
-- **Background processing**: Non-blocking UI updates
-- **Progressive enhancement**: Works without JavaScript
-
-### 3. Minification
-- **Production builds**: All JS files minified
-- **GitHub Actions**: Automatic minification on deploy
-- **CDN ready**: Optimized for fast loading
-
-## 🔧 Configuration
-
-### Translation API Settings
-```json
-{
-  "api": {
-    "libre_translate": {
-      "enabled": true,
-      "endpoint": "https://libretranslate.com/translate",
-      "api_key": "",
-      "format": "text",
-      "alternatives": 1
-    }
-  }
-}
-```
-
-### Language Settings
-```json
-{
-  "languages": {
-    "default": "en",
-    "supported": ["en", "fr", "es", "de", "it", "pt", "nl", "ru", "zh", "ja", "ko"]
-  }
-}
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**1. Translations not loading:**
-- Check API key (Google Translate)
-- Verify internet connection
-- Check browser console for errors
-
-**2. Language switcher not appearing:**
-- Ensure `js/i18n.min.js` is loaded
-- Check CSS for `.language-switcher` styles
-- Verify header structure
-
-**3. Cached translations outdated:**
-- Clear localStorage: `localStorage.clear()`
-- Or clear specific language: `localStorage.removeItem('translations_fr')`
-
-**4. API rate limits:**
-- Google Translate: 500,000 characters/day free
-- LibreTranslate: No limits (public instance)
-
-## 📈 Analytics & Monitoring
-
-### Translation Usage
-```javascript
-// Track translation requests
-const trackTranslation = (fromLang, toLang, textLength) => {
-    // Send to analytics service
-    console.log(`Translation: ${fromLang} → ${toLang}, ${textLength} chars`);
-};
-```
-
-### Error Monitoring
-```javascript
-// Monitor API failures
-catch (error) {
-    console.error('Translation API error:', error);
-    // Send to error tracking service
-    return text; // Fallback to original
-}
-```
-
-## 🎯 Best Practices
-
-### 1. Content Management
-- **Use translation keys**: `data-i18n="key_name"`
-- **Keep keys descriptive**: `recipe_title` not `title`
-- **Group related keys**: `recipe_ingredients`, `recipe_instructions`
-
-### 2. Performance
-- **Cache aggressively**: Store translations locally
-- **Batch API calls**: Translate multiple strings at once
-- **Lazy load**: Only translate visible content
-
-### 3. User Experience
-- **Show loading state**: While translating
-- **Preserve user choice**: Remember language preference
-- **Graceful fallback**: Always show English if translation fails
-
-### 4. SEO
-- **Add language meta tags**:
-```html
-<meta name="language" content="en">
-<link rel="alternate" hreflang="fr" href="/fr/">
-```
-
-## 🔮 Future Enhancements
-
-### Planned Features
-- **Machine learning**: Improve translation quality
-- **User corrections**: Allow users to fix translations
-- **Community translations**: Crowdsourced improvements
-- **Voice translation**: Speech-to-text for recipes
-- **Image translation**: Translate recipe images
-
-### Advanced Features
-- **Regional variants**: French (Canada) vs French (France)
-- **Formal/informal**: Respect cultural language norms
-- **Recipe units**: Automatic unit conversion (metric/imperial)
-- **Dietary restrictions**: Translate based on dietary needs
-
----
-
-**🎉 Your cookbook is now truly global!** Users from around the world can enjoy your recipes in their native language. 
+- **More languages** – Add more `cookbook-data-<code>.json` files and extend the language switcher.
+- **Single source + build** – e.g. one canonical JSON plus a build step that generates per-language files (not implemented today).
+- **Translation API** – If you later integrate an API, you could keep the same JSON structure and generate the `cookbook-data-*.json` files from a build or external process.
