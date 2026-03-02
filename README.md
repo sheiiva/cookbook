@@ -35,7 +35,8 @@ cookbook/
 ├── js/
 │   ├── recipeLoader.js     # Loads data, renders list, handles filters & language
 │   ├── recipeLoader.min.js
-│   ├── recipeDetailViewer.min.js  # Renders a single recipe from ?id=...&lang=...
+│   ├── recipeDetailViewer.js      # **Source** for recipe detail page (edit this)
+│   ├── recipeDetailViewer.min.js  # Built from recipeDetailViewer.js on deploy (recipe-template loads this)
 ├── data/
 │   ├── cookbook-data-en.json   # English UI strings + recipes
 │   ├── cookbook-data-fr.json   # French
@@ -81,6 +82,13 @@ Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file 
 
 3. **Images**  
    Put source images in `images/` (e.g. `images/my_recipe.jpg`). The GitHub Actions deploy can convert them to `images/optimized/*.webp`. For local dev, you can put a `.webp` (or other image) in `images/optimized/` and set `"image": "optimized/my_recipe.webp"` in the JSON.
+
+## Recipe detail viewer (recipe-template.html)
+
+- **Source:** Edit `js/recipeDetailViewer.js`. The recipe detail page loads `js/recipeDetailViewer.min.js`.
+- **Build:** On deploy, the workflow runs `npx terser js/recipeDetailViewer.js -o js/recipeDetailViewer.min.js` so the min file is always built from the current source.
+- **Local:** After editing `recipeDetailViewer.js`, rebuild the min for local testing with:  
+  `npx terser js/recipeDetailViewer.js -o js/recipeDetailViewer.min.js -c -m`
 
 ## License
 

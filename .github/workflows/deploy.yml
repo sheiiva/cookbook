@@ -29,6 +29,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick
 
+      - name: Build recipeDetailViewer.min.js from source
+        run: |
+          npx terser js/recipeDetailViewer.js -o js/recipeDetailViewer.min.js -c -m
+          echo "✅ Built js/recipeDetailViewer.min.js from js/recipeDetailViewer.js"
+
       - name: Build and Optimize
         run: |
           # Create optimized images directory
