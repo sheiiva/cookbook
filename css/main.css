@@ -17,6 +17,20 @@
     text-align: center;
 }
 
+.back-to-home {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    align-self: flex-start;
+    margin-bottom: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.back-to-home:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 .search-container {
     width: 100%;
     max-width: 400px;
