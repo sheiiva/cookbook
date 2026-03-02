@@ -16,6 +16,7 @@ class RecipeLoader {
             await this.loadRecipesForLanguage(this.currentLanguage);
             this.setupLanguageToggle();
             this.renderRecipes();
+            this.setDocumentLang(this.currentLanguage);
         } catch (error) {
             this.renderFallback();
         }
@@ -31,32 +32,52 @@ class RecipeLoader {
     }
 
     setupLanguageToggle() {
+        const languageNames = { en: 'English', fr: 'Français', es: 'Español' };
+        const languages = ['en', 'fr', 'es'];
+        const menu = document.getElementById('language-menu');
         const languageToggle = document.getElementById('language-toggle');
-        if (languageToggle) {
-            languageToggle.addEventListener('click', async () => {
-                const languages = ['en', 'fr', 'es'];
-                const currentIndex = languages.indexOf(this.currentLanguage);
-                const nextIndex = (currentIndex + 1) % languages.length;
-                this.currentLanguage = languages[nextIndex];
-                
-                const currentLangSpan = languageToggle.querySelector('.current-lang');
-                if (currentLangSpan) {
-                    const languageNames = {
-                        'en': 'English',
-                        'fr': 'Français',
-                        'es': 'Español'
-                    };
-                    currentLangSpan.textContent = languageNames[this.currentLanguage];
-                }
-                
-                try {
-                    await this.loadRecipesForLanguage(this.currentLanguage);
-                    this.renderRecipes();
-                } catch (error) {
-                    // Handle language change error silently
-                }
+
+        if (menu) {
+            languages.forEach(code => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.textContent = languageNames[code];
+                btn.setAttribute('data-lang', code);
+                if (code === this.currentLanguage) btn.classList.add('active-lang');
+                btn.addEventListener('click', async (e) => {
+                    e.stopPropagation();
+                    const lang = btn.getAttribute('data-lang');
+                    if (lang === this.currentLanguage) { menu.classList.remove('open'); return; }
+                    this.currentLanguage = lang;
+                    menu.querySelectorAll('button').forEach(b => b.classList.remove('active-lang'));
+                    btn.classList.add('active-lang');
+                    const currentLangSpan = languageToggle?.querySelector('.current-lang');
+                    if (currentLangSpan) currentLangSpan.textContent = languageNames[lang];
+                    menu.classList.remove('open');
+                    try {
+                        await this.loadRecipesForLanguage(this.currentLanguage);
+                        this.renderRecipes();
+                        this.setDocumentLang(this.currentLanguage);
+                    } catch (error) {
+                        console.error('Language change failed:', error);
+                    }
+                });
+                menu.appendChild(btn);
             });
         }
+
+        if (languageToggle) {
+            languageToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                menu?.classList.toggle('open');
+            });
+        }
+
+        document.addEventListener('click', () => menu?.classList.remove('open'));
+    }
+
+    setDocumentLang(lang) {
+        document.documentElement.lang = lang || 'en';
     }
 
     updatePageText() {
