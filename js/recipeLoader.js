@@ -59,6 +59,7 @@ class RecipeLoader {
                         this.setDocumentLang(this.currentLanguage);
                     } catch (error) {
                         console.error('Language change failed:', error);
+                        this.showLanguageError();
                     }
                 });
                 menu.appendChild(btn);
@@ -77,6 +78,22 @@ class RecipeLoader {
 
     setDocumentLang(lang) {
         document.documentElement.lang = lang || 'en';
+    }
+
+    showLanguageError() {
+        const existing = document.getElementById('language-error-toast');
+        if (existing) existing.remove();
+        const toast = document.createElement('div');
+        toast.id = 'language-error-toast';
+        toast.setAttribute('role', 'alert');
+        toast.textContent = 'Could not switch language. Try again.';
+        toast.style.cssText = 'position:absolute;top:100%;right:0;margin-top:0.25rem;padding:0.5rem 0.75rem;background:#fef2f2;color:#991b1b;border-radius:8px;font-size:0.875rem;white-space:nowrap;z-index:20;';
+        const switcher = document.querySelector('.language-switcher');
+        if (switcher) {
+            switcher.style.position = 'relative';
+            switcher.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
     }
 
     updatePageText() {
