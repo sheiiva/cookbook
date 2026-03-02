@@ -85,12 +85,11 @@ class RecipeLoader {
         if (existing) existing.remove();
         const toast = document.createElement('div');
         toast.id = 'language-error-toast';
+        toast.className = 'language-error-toast';
         toast.setAttribute('role', 'alert');
         toast.textContent = 'Could not switch language. Try again.';
-        toast.style.cssText = 'position:absolute;top:100%;right:0;margin-top:0.25rem;padding:0.5rem 0.75rem;background:#fef2f2;color:#991b1b;border-radius:8px;font-size:0.875rem;white-space:nowrap;z-index:20;';
         const switcher = document.querySelector('.language-switcher');
         if (switcher) {
-            switcher.style.position = 'relative';
             switcher.appendChild(toast);
             setTimeout(() => toast.remove(), 3000);
         }
@@ -107,38 +106,58 @@ class RecipeLoader {
             searchInput.placeholder = this.recipesData.ui.search_placeholder;
         }
         
-        // Update filter section headers
-        const dishTypesHeader = document.querySelector('h3[data-i18n="dish_types"]');
-        if (dishTypesHeader && this.recipesData.ui.section_headers.dish_types) {
-            dishTypesHeader.textContent = this.recipesData.ui.section_headers.dish_types;
-        }
-        
-        const dietaryOptionsHeader = document.querySelector('h3[data-i18n="dietary_options"]');
-        if (dietaryOptionsHeader && this.recipesData.ui.section_headers.dietary_options) {
-            dietaryOptionsHeader.textContent = this.recipesData.ui.section_headers.dietary_options;
-        }
-        
-        // Update filter button texts
-        Object.entries(this.recipesData.ui.categories).forEach(([categoryId, categoryName]) => {
-            const button = document.querySelector(`.filter-btn[data-filter="${categoryId}"]`);
-            if (button) {
-                button.textContent = categoryName;
-            }
+    }
+
+    /** Build filter bar from JSON (single source for categories and dietary filters) */
+    buildFilterBar() {
+        const container = document.getElementById('filter-content');
+        if (!container || !this.recipesData?.ui) return;
+        const { section_headers, categories, dietary_filters } = this.recipesData.ui;
+
+        container.innerHTML = '';
+
+        const dishSection = document.createElement('div');
+        dishSection.className = 'filter-section';
+        const dishH3 = document.createElement('h3');
+        dishH3.setAttribute('data-i18n', 'dish_types');
+        dishH3.textContent = section_headers?.dish_types || 'Dish Types';
+        dishSection.appendChild(dishH3);
+        const dishBtns = document.createElement('div');
+        dishBtns.className = 'filter-buttons';
+        Object.entries(categories || {}).forEach(([id, label]) => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.setAttribute('data-filter', id);
+            btn.setAttribute('data-type', 'dish');
+            btn.textContent = label;
+            dishBtns.appendChild(btn);
         });
-        
-        Object.entries(this.recipesData.ui.dietary_filters).forEach(([filterId, filterName]) => {
-            const button = document.querySelector(`.filter-btn[data-filter="${filterId}"]`);
-            if (button) {
-                button.textContent = filterName;
-            }
+        dishSection.appendChild(dishBtns);
+        container.appendChild(dishSection);
+
+        const dietarySection = document.createElement('div');
+        dietarySection.className = 'filter-section';
+        const dietaryH3 = document.createElement('h3');
+        dietaryH3.setAttribute('data-i18n', 'dietary_options');
+        dietaryH3.textContent = section_headers?.dietary_options || 'Dietary Options';
+        dietarySection.appendChild(dietaryH3);
+        const dietaryBtns = document.createElement('div');
+        dietaryBtns.className = 'filter-buttons';
+        Object.entries(dietary_filters || {}).forEach(([id, label]) => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.setAttribute('data-filter', id);
+            btn.textContent = label;
+            dietaryBtns.appendChild(btn);
         });
+        dietarySection.appendChild(dietaryBtns);
+        container.appendChild(dietarySection);
     }
 
     renderRecipes() {
-        if (!this.recipesData) {
-            return;
-        }
+        if (!this.recipesData) return;
 
+        this.buildFilterBar();
         this.updatePageText();
 
         // Clear existing content after filter bar
@@ -153,12 +172,8 @@ class RecipeLoader {
             toRemove.remove();
         }
 
-        // Create recipes container
         const recipesContainer = document.createElement('div');
         recipesContainer.className = 'recipes-container';
-        recipesContainer.style.maxWidth = '1200px';
-        recipesContainer.style.margin = '2rem auto';
-        recipesContainer.style.padding = '0 2rem';
 
         // Add recipes container after filter bar
         const insertAfter = filterBar || header;
@@ -191,8 +206,6 @@ class RecipeLoader {
 
             const title = document.createElement('h2');
             title.textContent = categoryName;
-            title.style.color = '#374151';
-            title.style.marginBottom = '1rem';
             recipeBlock.appendChild(title);
 
             const ul = document.createElement('ul');
@@ -299,27 +312,18 @@ class RecipeLoader {
                     shouldShow = activeDietaryFilters.every(filter => recipe.tags.includes(filter));
                 }
                 
-                // Show/hide the entire li element
-                parentLi.style.display = shouldShow ? 'list-item' : 'none';
-                
-                // Track section visibility
+                parentLi.classList.toggle('recipe-item-filtered-out', !shouldShow);
+
                 if (sectionId) {
-                    if (!sectionVisibility[sectionId]) {
-                        sectionVisibility[sectionId] = false;
-                    }
-                    if (shouldShow) {
-                        sectionVisibility[sectionId] = true;
-                    }
+                    if (!sectionVisibility[sectionId]) sectionVisibility[sectionId] = false;
+                    if (shouldShow) sectionVisibility[sectionId] = true;
                 }
             }
         });
-        
-        // Show/hide entire sections based on visibility
+
         Object.entries(sectionVisibility).forEach(([sectionId, hasVisibleRecipes]) => {
             const section = document.getElementById(sectionId);
-            if (section) {
-                section.style.display = hasVisibleRecipes ? 'block' : 'none';
-            }
+            if (section) section.classList.toggle('recipe-block-hidden', !hasVisibleRecipes);
         });
     }
 
