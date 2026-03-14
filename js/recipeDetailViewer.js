@@ -271,11 +271,12 @@ class RecipeDetailViewer {
         const breadcrumbEl = document.getElementById('recipe-breadcrumb');
         if (breadcrumbEl) breadcrumbEl.innerHTML = '';
         const recipeContent = document.getElementById('recipe-content');
+        const homeUrl = `index.html?lang=${encodeURIComponent(this.currentLanguage)}`;
         recipeContent.innerHTML = `
             <div class="error">
                 <h2>Error</h2>
                 <p>${this.escapeHtml(message)}</p>
-                <a href="index.html">← Back to Home</a>
+                <a href="${homeUrl}">← Back to Home</a>
             </div>
         `;
     }
