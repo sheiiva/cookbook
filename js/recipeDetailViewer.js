@@ -204,7 +204,7 @@ class RecipeDetailViewer {
         recipeContent.innerHTML = `
             <div class="recipe-header">
                 <div class="recipe-info">
-                    <img src="images/${safeImage}" alt="${safeTitle}" class="recipe-image">
+                    <img src="images/${safeImage}" alt="${safeTitle}" class="recipe-image" loading="lazy">
                     <p class="recipe-description">${this.escapeHtml(recipe.description)}</p>
                 </div>
                 <div class="recipe-ingredients-header">
