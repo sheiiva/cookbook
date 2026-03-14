@@ -374,6 +374,26 @@
         "Cook on each side for 30 seconds, until browned.",
         "Place the finished tortillas inside a tea towel and cover to keep soft."
       ]
+    },
+    {
+      "id": "vegan_sourdough_pancakes",
+      "title": "Vegan Sourdough Pancakes",
+      "image": "optimized/vegan_sourdough_pancakes.webp",
+      "description": "Fluffy pancakes made with sourdough starter and plant milk",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "80g sourdough starter",
+        "60ml plant milk (soy, oat, almond, etc.)",
+        "1 tbsp sugar or maple syrup (optional)",
+        "1 tbsp oil",
+        "1/4 tsp baking soda",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Mix starter, plant milk, oil, sugar, and salt.",
+        "Add baking soda last and stir gently.",
+        "Cook on a lightly oiled pan over medium heat (2–3 minutes first side, 1–2 minutes after flipping)."
+      ]
     }
   ]
 } 

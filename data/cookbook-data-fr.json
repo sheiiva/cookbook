@@ -334,6 +334,26 @@
         "Cuire 30 secondes de chaque côté jusqu'à coloration.",
         "Envelopper les tortillas dans un torchon et couvrir pour les garder moelleuses."
       ]
+    },
+    {
+      "id": "vegan_sourdough_pancakes",
+      "title": "Pancakes vegans au levain",
+      "image": "optimized/vegan_sourdough_pancakes.webp",
+      "description": "Pancakes moelleux au levain et au lait végétal",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "80g de levain",
+        "60ml de lait végétal (soja, avoine, amande, etc.)",
+        "1 c. à soupe de sucre ou sirop d'érable (optionnel)",
+        "1 c. à soupe d'huile",
+        "1/4 c. à café de bicarbonate",
+        "Pincée de sel"
+      ],
+      "instructions": [
+        "Mélanger le levain, le lait végétal, l'huile, le sucre et le sel.",
+        "Ajouter le bicarbonate en dernier et mélanger délicatement.",
+        "Cuire dans une poêle légèrement huilée à feu moyen (2–3 min le premier côté, 1–2 min après avoir retourné)."
+      ]
     }
   ]
 } 

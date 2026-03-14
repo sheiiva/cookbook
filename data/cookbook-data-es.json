@@ -334,6 +334,26 @@
         "Cocinar 30 segundos por cada lado hasta que se doren.",
         "Guardar las tortillas terminadas en un paño de cocina tapadas para que se mantengan blandas."
       ]
+    },
+    {
+      "id": "vegan_sourdough_pancakes",
+      "title": "Tortitas veganas de masa madre",
+      "image": "optimized/vegan_sourdough_pancakes.webp",
+      "description": "Tortitas esponjosas con masa madre y leche vegetal",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "80g de masa madre",
+        "60ml de leche vegetal (soja, avena, almendra, etc.)",
+        "1 cucharada de azúcar o sirope de arce (opcional)",
+        "1 cucharada de aceite",
+        "1/4 cucharadita de bicarbonato",
+        "Una pizca de sal"
+      ],
+      "instructions": [
+        "Mezclar la masa madre, la leche vegetal, el aceite, el azúcar y la sal.",
+        "Añadir el bicarbonato al final y remover suavemente.",
+        "Cocinar en una sartén ligeramente aceitada a fuego medio (2–3 min el primer lado, 1–2 min al dar la vuelta)."
+      ]
     }
   ]
 } 
