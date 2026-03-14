@@ -29,7 +29,7 @@ Use the “Live Server” extension. Right‑click `index.html` (inside the cook
 cookbook/
 ├── index.html              # Home: recipe list, search, filters, language switcher
 ├── recipe-template.html    # Recipe detail page (one template for all recipes)
-├── test.html               # Dev: manual test for loading recipe JSON
+├── test.html               # Dev only: manual test for JSON loading (not deployed)
 ├── css/
 │   ├── main.css            # Layout, theme, recipe styles
 │   └── button-styles.css   # Filter button focus (accessibility)
@@ -49,6 +49,8 @@ cookbook/
 └── .github/workflows/
     └── deploy.yml         # GitHub Pages deploy (e.g. image optimization)
 ```
+
+**Dev / test page:** `test.html` is a small manual test that fetches `data/cookbook-data-en.json` and lists recipe titles. Use it locally to verify data loads (e.g. when serving from a subpath). It is **excluded from the GitHub Pages deploy** so it is not published.
 
 Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file has the same structure: `ui` (labels, categories, filters) and `recipes` (array of recipe objects).
 

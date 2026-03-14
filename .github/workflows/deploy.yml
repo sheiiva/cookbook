@@ -91,6 +91,11 @@ jobs:
             echo "❌ Spanish data file missing!"
           fi
 
+      - name: Exclude dev-only files from deploy
+        run: |
+          rm -f test.html
+          echo "Excluded test.html from deployment (dev tool only)"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
