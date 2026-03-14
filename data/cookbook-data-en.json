@@ -394,6 +394,29 @@
         "Add baking soda last and stir gently.",
         "Cook on a lightly oiled pan over medium heat (2–3 minutes first side, 1–2 minutes after flipping)."
       ]
+    },
+    {
+      "id": "sourdough_english_muffins",
+      "title": "Sourdough English Muffins",
+      "image": "optimized/sourdough_english_muffins.webp",
+      "description": "Classic English muffins made with active sourdough starter",
+      "tags": ["main_courses"],
+      "ingredients": [
+        "100g active sourdough starter",
+        "20g honey",
+        "240g milk",
+        "360g all-purpose flour",
+        "8g fine sea salt",
+        "Cornmeal, for dusting"
+      ],
+      "instructions": [
+        "Mix starter, honey, milk, flour and salt. Let rest for 45 minutes.",
+        "Knead dough on a floured surface for 5 minutes.",
+        "Let dough ferment in a bowl for 8 hours.",
+        "Press dough out to 1½ in (4 cm) thick. Cut into 3 in (7.5 cm) rounds.",
+        "Place rounds on a cookie sheet lined with parchment paper and dusted with cornmeal. Sprinkle tops with cornmeal. Cover with a towel and rest for 1 hour.",
+        "Over low heat, cook muffins in a pan, covered, about 4 minutes per side, until internal temperature reaches 200°F (93°C)."
+      ]
     }
   ]
 } 

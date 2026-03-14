@@ -354,6 +354,29 @@
         "Ajouter le bicarbonate en dernier et mélanger délicatement.",
         "Cuire dans une poêle légèrement huilée à feu moyen (2–3 min le premier côté, 1–2 min après avoir retourné)."
       ]
+    },
+    {
+      "id": "sourdough_english_muffins",
+      "title": "Muffins anglais au levain",
+      "image": "optimized/sourdough_english_muffins.webp",
+      "description": "Muffins anglais au levain actif",
+      "tags": ["main_courses"],
+      "ingredients": [
+        "100g de levain actif",
+        "20g de miel",
+        "240g de lait",
+        "360g de farine tout usage",
+        "8g de sel de mer fin",
+        "Semoule de maïs, pour saupoudrer"
+      ],
+      "instructions": [
+        "Mélanger le levain, le miel, le lait, la farine et le sel. Laisser reposer 45 minutes.",
+        "Pétrir la pâte sur un plan fariné pendant 5 minutes.",
+        "Laisser fermenter la pâte dans un saladier 8 heures.",
+        "Étaler la pâte sur 1,5 cm d'épaisseur. Découper des ronds de 7,5 cm de diamètre.",
+        "Déposer les ronds sur une plaque avec papier sulfurisé et semoule de maïs. Saupoudrer le dessus de semoule. Couvrir d'un torchon et laisser reposer 1 heure.",
+        "À feu doux, cuire les muffins à la poêle, couvert, environ 4 minutes par côté, jusqu'à une température interne de 93°C."
+      ]
     }
   ]
 } 

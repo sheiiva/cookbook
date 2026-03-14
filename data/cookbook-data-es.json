@@ -354,6 +354,29 @@
         "Añadir el bicarbonato al final y remover suavemente.",
         "Cocinar en una sartén ligeramente aceitada a fuego medio (2–3 min el primer lado, 1–2 min al dar la vuelta)."
       ]
+    },
+    {
+      "id": "sourdough_english_muffins",
+      "title": "Muffins ingleses de masa madre",
+      "image": "optimized/sourdough_english_muffins.webp",
+      "description": "Muffins ingleses con masa madre activa",
+      "tags": ["main_courses"],
+      "ingredients": [
+        "100g de masa madre activa",
+        "20g de miel",
+        "240g de leche",
+        "360g de harina de trigo",
+        "8g de sal marina fina",
+        "Maicena o harina de maíz, para espolvorear"
+      ],
+      "instructions": [
+        "Mezclar la masa madre, la miel, la leche, la harina y la sal. Dejar reposar 45 minutos.",
+        "Amasar la masa sobre una superficie enharinada 5 minutos.",
+        "Dejar fermentar la masa en un bol 8 horas.",
+        "Estirar la masa hasta 1,5 cm de grosor. Cortar en discos de 7,5 cm de diámetro.",
+        "Colocar los discos en una bandeja con papel de horno y maicena. Espolvorear por encima con maicena. Tapar con un paño y reposar 1 hora.",
+        "A fuego bajo, cocinar los muffins en una sartén tapada, unos 4 minutos por lado, hasta que la temperatura interior llegue a 93°C."
+      ]
     }
   ]
 } 
