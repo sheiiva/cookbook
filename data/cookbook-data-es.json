@@ -14,7 +14,8 @@
     },
     "dietary_filters": {
       "vegan": "Vegano",
-      "gluten_free": "Sin Gluten"
+      "gluten_free": "Sin Gluten",
+      "sourdough": "Masa madre"
     }
   },
   "navigation": {
@@ -287,7 +288,7 @@
       "title": "Brownies de chocolate con descarte de masa madre",
       "image": "optimized/sourdough_brownies.webp",
       "description": "Brownies de chocolate con descarte de masa madre",
-      "tags": ["desserts"],
+      "tags": ["desserts", "sourdough"],
       "ingredients": [
         "113g de mantequilla",
         "340g de chocolate",
@@ -316,7 +317,7 @@
       "title": "Tortilla de masa madre",
       "image": "optimized/sourdough_tortilla.webp",
       "description": "Tortillas blandas con masa madre",
-      "tags": ["main_courses", "vegan"],
+      "tags": ["main_courses", "vegan", "sourdough"],
       "ingredients": [
         "363g de harina",
         "6,5g de sal",
@@ -340,7 +341,7 @@
       "title": "Tortitas veganas de masa madre",
       "image": "optimized/vegan_sourdough_pancakes.webp",
       "description": "Tortitas esponjosas con masa madre y leche vegetal",
-      "tags": ["main_courses", "vegan"],
+      "tags": ["main_courses", "vegan", "sourdough"],
       "ingredients": [
         "80g de masa madre",
         "60ml de leche vegetal (soja, avena, almendra, etc.)",
@@ -360,7 +361,7 @@
       "title": "Muffins ingleses de masa madre",
       "image": "optimized/sourdough_english_muffins.webp",
       "description": "Muffins ingleses con masa madre activa",
-      "tags": ["main_courses"],
+      "tags": ["main_courses", "sourdough"],
       "ingredients": [
         "100g de masa madre activa",
         "20g de miel",
@@ -383,7 +384,7 @@
       "title": "Galletas de chocolate con masa madre",
       "image": "optimized/sourdough_chocolate_chip_cookies.webp",
       "description": "Galletas de chocolate gruesas y tiernas con descarte de masa madre (Angelica Sourdough Co.)",
-      "tags": ["desserts"],
+      "tags": ["desserts", "sourdough"],
       "ingredients": [
         "1½ tazas (113g) de mantequilla blanda o derretida y enfriada",
         "1/2 taza (100g) de azúcar moreno",

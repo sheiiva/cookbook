@@ -14,7 +14,8 @@
     },
     "dietary_filters": {
       "vegan": "Végétalien",
-      "gluten_free": "Sans Gluten"
+      "gluten_free": "Sans Gluten",
+      "sourdough": "Levain"
     }
   },
   "navigation": {
@@ -287,7 +288,7 @@
       "title": "Brownies au chocolat au levain",
       "image": "optimized/sourdough_brownies.webp",
       "description": "Brownies au chocolat au levain",
-      "tags": ["desserts"],
+      "tags": ["desserts", "sourdough"],
       "ingredients": [
         "113g de beurre",
         "340g de chocolat",
@@ -316,7 +317,7 @@
       "title": "Tortilla au levain",
       "image": "optimized/sourdough_tortilla.webp",
       "description": "Tortillas moelleuses au levain",
-      "tags": ["main_courses", "vegan"],
+      "tags": ["main_courses", "vegan", "sourdough"],
       "ingredients": [
         "363g de farine",
         "6,5g de sel",
@@ -340,7 +341,7 @@
       "title": "Pancakes vegans au levain",
       "image": "optimized/vegan_sourdough_pancakes.webp",
       "description": "Pancakes moelleux au levain et au lait végétal",
-      "tags": ["main_courses", "vegan"],
+      "tags": ["main_courses", "vegan", "sourdough"],
       "ingredients": [
         "80g de levain",
         "60ml de lait végétal (soja, avoine, amande, etc.)",
@@ -360,7 +361,7 @@
       "title": "Muffins anglais au levain",
       "image": "optimized/sourdough_english_muffins.webp",
       "description": "Muffins anglais au levain actif",
-      "tags": ["main_courses"],
+      "tags": ["main_courses", "sourdough"],
       "ingredients": [
         "100g de levain actif",
         "20g de miel",
@@ -383,7 +384,7 @@
       "title": "Cookies aux pépites de chocolat au levain",
       "image": "optimized/sourdough_chocolate_chip_cookies.webp",
       "description": "Cookies épais et moelleux aux pépites de chocolat au levain de rebut (Angelica Sourdough Co.)",
-      "tags": ["desserts"],
+      "tags": ["desserts", "sourdough"],
       "ingredients": [
         "1½ tasses (113g) de beurre ramolli ou fondu et refroidi",
         "1/2 tasse (100g) de sucre roux",
