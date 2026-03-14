@@ -13,4 +13,4 @@
 - [x] **9a** – SEO: meta description + Open Graph tags
 - [x] **9b** – SEO: recipe page title format (Recipe name · My Recipe Journal)
 - [x] **10a** – Cleanup: tidy index.html (trailing scripts, cache meta)
-- [ ] **10b** – Cleanup: optional copy-edit of cookbook-data-es.json
+- [x] **10b** – Cleanup: optional copy-edit of cookbook-data-es.json
