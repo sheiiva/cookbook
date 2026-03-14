@@ -141,6 +141,8 @@ class RecipeDetailViewer {
         const titleElement = document.querySelector('h1[data-i18n="my_recipe_journal"]');
         if (titleElement) titleElement.textContent = recipe.title;
 
+        this.renderBreadcrumb(recipe.title);
+
         const recipeContent = document.getElementById('recipe-content');
         recipeContent.innerHTML = `
             <div class="recipe-header">
@@ -209,6 +211,8 @@ class RecipeDetailViewer {
     }
 
     showError(message) {
+        const breadcrumbEl = document.getElementById('recipe-breadcrumb');
+        if (breadcrumbEl) breadcrumbEl.innerHTML = '';
         const recipeContent = document.getElementById('recipe-content');
         recipeContent.innerHTML = `
             <div class="error">

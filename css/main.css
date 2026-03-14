@@ -248,6 +248,34 @@
 }
 
 /* Recipe Detail Page Styling */
+/* Breadcrumb on recipe detail page */
+.breadcrumb {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    padding: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.breadcrumb .breadcrumb-sep {
+    margin: 0 0.35em;
+    color: #9ca3af;
+}
+
+.breadcrumb .breadcrumb-current {
+    color: #374151;
+}
+
 .recipe-content {
     max-width: 800px;
     margin: 2rem auto;
