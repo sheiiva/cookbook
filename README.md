@@ -50,8 +50,6 @@ cookbook/
     └── deploy.yml         # GitHub Pages deploy (e.g. image optimization)
 ```
 
-**Improvement list:** Completed tasks are tracked in `docs/TODO.md` (all items done).
-
 **Dev / test page:** `test.html` is a small manual test that fetches `data/cookbook-data-en.json` and lists recipe titles. Use it locally to verify data loads (e.g. when serving from a subpath). It is **excluded from the GitHub Pages deploy** so it is not published.
 
 Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file has the same structure: `ui` (labels, categories, filters) and `recipes` (array of recipe objects).
