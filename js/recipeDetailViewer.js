@@ -42,12 +42,18 @@ class RecipeDetailViewer {
     }
 
     async init() {
-        await this.loadRecipesForLanguage(this.currentLanguage);
-        this.updateBackToHomeLink();
-        this.updateLanguageButton();
-        this.setupLanguageToggle();
-        this.setDocumentLang(this.currentLanguage);
-        this.displayRecipe();
+        try {
+            await this.loadRecipesForLanguage(this.currentLanguage);
+            this.updateBackToHomeLink();
+            this.updateLanguageButton();
+            this.setupLanguageToggle();
+            this.setDocumentLang(this.currentLanguage);
+            this.displayRecipe();
+        } catch (error) {
+            console.error('Recipe viewer init failed:', error);
+            const detail = error && error.message ? error.message : 'Failed to load recipe data.';
+            this.showError(detail + ' Run the server from the cookbook folder: cd cookbook && python3 -m http.server 8000, then open http://localhost:8000');
+        }
     }
 
     updateBackToHomeLink() {
@@ -57,6 +63,17 @@ class RecipeDetailViewer {
         }
     }
 
+    /** Render breadcrumb: Home › Recipe title (uses navigation from JSON) */
+    renderBreadcrumb(recipeTitle) {
+        const el = document.getElementById('recipe-breadcrumb');
+        if (!el || !this.recipesData || !this.recipesData.navigation) return;
+        const home = this.escapeHtml(this.recipesData.navigation.home || 'Home');
+        const sep = this.escapeHtml((this.recipesData.navigation.breadcrumbs && this.recipesData.navigation.breadcrumbs.separator) || '›');
+        const current = this.escapeHtml(recipeTitle || '');
+        const homeUrl = `index.html?lang=${encodeURIComponent(this.currentLanguage)}`;
+        el.innerHTML = `<a href="${homeUrl}">${home}</a><span class="breadcrumb-sep">${sep}</span><span class="breadcrumb-current">${current}</span>`;
+    }
+
     setDocumentLang(lang) {
         const langMap = { en: 'en', fr: 'fr', es: 'es' };
         document.documentElement.lang = langMap[lang] || 'en';
@@ -64,9 +81,15 @@ class RecipeDetailViewer {
 
     async loadRecipesForLanguage(lang) {
         const filename = `data/cookbook-data-${lang}.json`;
-        const response = await fetch(filename);
+        const dir = window.location.pathname.replace(/\/[^/]*$/, '') || '';
+        const pathPrefix = dir ? dir + '/' : '/';
+        const absoluteUrl = window.location.origin + pathPrefix + filename;
+        let response = await fetch(absoluteUrl);
         if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            response = await fetch(filename);
+        }
+        if (!response.ok) {
+            throw new Error(`Could not load data (tried ${absoluteUrl}): ${response.status} ${response.statusText}`);
         }
         this.recipesData = await response.json();
     }

@@ -7,6 +7,15 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>My Recipe Journal</title>
+    <script>
+    (function() {
+        var p = location.pathname.replace(/\/[^/]*$/, '') || '/';
+        if (!p.endsWith('/')) p += '/';
+        var base = document.createElement('base');
+        base.href = location.origin + p;
+        document.head.insertBefore(base, document.head.firstChild);
+    })();
+    </script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button-styles.css">
 </head>

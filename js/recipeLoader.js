@@ -24,9 +24,15 @@ class RecipeLoader {
 
     async loadRecipesForLanguage(lang) {
         const filename = `data/cookbook-data-${lang}.json`;
-        const response = await fetch(filename);
+        const dir = window.location.pathname.replace(/\/[^/]*$/, '') || '';
+        const pathPrefix = dir ? dir + '/' : '/';
+        const absoluteUrl = window.location.origin + pathPrefix + filename;
+        let response = await fetch(absoluteUrl);
         if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            response = await fetch(filename);
+        }
+        if (!response.ok) {
+            throw new Error(`Could not load data (tried ${absoluteUrl}): ${response.status} ${response.statusText}`);
         }
         this.recipesData = await response.json();
     }

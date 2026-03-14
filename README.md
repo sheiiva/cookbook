@@ -4,23 +4,24 @@ A static, multilingual recipe journal. Browse recipes by category, filter by dis
 
 ## Run locally
 
-The app is static HTML/CSS/JS with no build step. Use any local HTTP server so that `fetch()` can load the JSON data (opening `index.html` directly with `file://` may be blocked by the browser).
+The app is static HTML/CSS/JS with no build step. **Run the server from the cookbook directory** (so the site is served at the root). If you run from a parent folder (e.g. workspace root), the app will still work as long as you open the URL that includes `/cookbook/` (e.g. `http://127.0.0.1:5500/cookbook/`); the recipe page detects the base path and loads data from the correct location.
 
-**Option 1 – Python:**
+**Option 1 – Python (from cookbook folder):**
 ```bash
-# Python 3
+cd cookbook
 python3 -m http.server 8000
 ```
 Then open http://localhost:8000
 
-**Option 2 – Node (npx):**
+**Option 2 – Node (from cookbook folder):**
 ```bash
+cd cookbook
 npx serve .
 ```
 Then open the URL shown in the terminal (e.g. http://localhost:3000).
 
 **Option 3 – VS Code / Cursor:**  
-Use the “Live Server” extension and “Go Live” from the status bar.
+Use the “Live Server” extension. Right‑click `index.html` (inside the cookbook folder) and “Open with Live Server”, or set your workspace root to the **cookbook** folder before starting Live Server so the site is at the root (e.g. http://127.0.0.1:5500/). If Live Server runs from a parent folder, open http://127.0.0.1:5500/cookbook/ so data and assets load correctly.
 
 ## Project structure
 
