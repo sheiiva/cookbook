@@ -12,5 +12,5 @@
 - [x] **8b** – Test: document test.html as dev tool or exclude from deploy
 - [x] **9a** – SEO: meta description + Open Graph tags
 - [x] **9b** – SEO: recipe page title format (Recipe name · My Recipe Journal)
-- [ ] **10a** – Cleanup: tidy index.html (trailing scripts, cache meta)
+- [x] **10a** – Cleanup: tidy index.html (trailing scripts, cache meta)
 - [ ] **10b** – Cleanup: optional copy-edit of cookbook-data-es.json
