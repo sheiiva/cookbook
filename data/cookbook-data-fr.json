@@ -310,6 +310,30 @@
         "Cuire 35 à 40 minutes à 180°C.",
         "Laisser refroidir les brownies avant de les démouler et de les découper."
       ]
+    },
+    {
+      "id": "sourdough_tortilla",
+      "title": "Tortilla au levain",
+      "image": "optimized/sourdough_tortilla.webp",
+      "description": "Tortillas moelleuses au levain",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "363g de farine",
+        "6,5g de sel",
+        "64g d'huile",
+        "94g d'eau tiède",
+        "220g de levain"
+      ],
+      "instructions": [
+        "Mettre la farine et le sel dans le bol du pétrin et mélanger avec le crochet.",
+        "Ajouter le levain, l'huile et l'eau, puis mélanger à vitesse lente.",
+        "Pétrir 2 à 3 minutes jusqu'à ce que la pâte soit homogène ; ajouter un peu de farine ou d'eau si besoin.",
+        "Laisser reposer la pâte 10 minutes.",
+        "Après 10 minutes, déposer sur un plan fariné et diviser en 16 parts égales.",
+        "Former des boules. Sur un plan fariné, étaler chaque part le plus finement possible et cuire dans une poêle en fonte préchauffée.",
+        "Cuire 30 secondes de chaque côté jusqu'à coloration.",
+        "Envelopper les tortillas dans un torchon et couvrir pour les garder moelleuses."
+      ]
     }
   ]
 } 

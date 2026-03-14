@@ -350,6 +350,30 @@
         "Bake for 35–40 minutes at 180°C.",
         "Allow baked brownies to cool before removing from the baking dish and cutting."
       ]
+    },
+    {
+      "id": "sourdough_tortilla",
+      "title": "Sourdough Tortilla",
+      "image": "optimized/sourdough_tortilla.webp",
+      "description": "Soft tortillas made with sourdough starter",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "363g flour",
+        "6.5g salt",
+        "64g oil",
+        "94g warm water",
+        "220g sourdough starter"
+      ],
+      "instructions": [
+        "Add flour and salt to the bowl of a stand mixer and mix using the dough hook.",
+        "Then add in the sourdough starter, oil and water and mix on low.",
+        "Allow the dough to knead for 2–3 minutes until combined; add more flour or water if needed.",
+        "Let the dough rest for 10 minutes.",
+        "After 10 minutes, place on a floured surface and cut into 16 equal pieces.",
+        "Roll each piece into a ball. On a floured surface, roll out each piece of dough as thin as possible, and place in a preheated cast iron skillet.",
+        "Cook on each side for 30 seconds, until browned.",
+        "Place the finished tortillas inside a tea towel and cover to keep soft."
+      ]
     }
   ]
 } 

@@ -310,6 +310,30 @@
         "Hornear 35–40 minutos a 180°C.",
         "Dejar enfriar los brownies antes de desmoldar y cortar."
       ]
+    },
+    {
+      "id": "sourdough_tortilla",
+      "title": "Tortilla de masa madre",
+      "image": "optimized/sourdough_tortilla.webp",
+      "description": "Tortillas blandas con masa madre",
+      "tags": ["main_courses", "vegan"],
+      "ingredients": [
+        "363g de harina",
+        "6,5g de sal",
+        "64g de aceite",
+        "94g de agua tibia",
+        "220g de masa madre"
+      ],
+      "instructions": [
+        "Añadir la harina y la sal al bol de la amasadora y mezclar con el gancho.",
+        "Incorporar la masa madre, el aceite y el agua y mezclar a velocidad baja.",
+        "Amasar 2–3 minutos hasta que se integre; añadir más harina o agua si hace falta.",
+        "Dejar reposar la masa 10 minutos.",
+        "Pasados 10 minutos, colocar en una superficie enharinada y cortar en 16 porciones iguales.",
+        "Formar bolitas con cada porción. Sobre una superficie enharinada, estirar cada una lo más fina posible y cocer en una sartén de hierro fundido precalentada.",
+        "Cocinar 30 segundos por cada lado hasta que se doren.",
+        "Guardar las tortillas terminadas en un paño de cocina tapadas para que se mantengan blandas."
+      ]
     }
   ]
 } 
