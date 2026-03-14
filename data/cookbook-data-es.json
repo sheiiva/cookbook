@@ -16,6 +16,10 @@
       "vegan": "Vegano",
       "gluten_free": "Sin Gluten",
       "sourdough": "Masa madre"
+    },
+    "recipe_labels": {
+      "ingredients": "Ingredientes",
+      "instructions": "Instrucciones"
     }
   },
   "navigation": {

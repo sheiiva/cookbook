@@ -16,6 +16,10 @@
       "vegan": "Vegan",
       "gluten_free": "Gluten Free",
       "sourdough": "Sourdough"
+    },
+    "recipe_labels": {
+      "ingredients": "Ingredients",
+      "instructions": "Instructions"
     }
   },
   "navigation": {

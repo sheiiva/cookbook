@@ -197,6 +197,9 @@ class RecipeDetailViewer {
 
         this.renderBreadcrumb(recipe.title);
 
+        const labels = (this.recipesData.ui && this.recipesData.ui.recipe_labels) ? this.recipesData.ui.recipe_labels : {};
+        const ingredientsLabel = this.escapeHtml(labels.ingredients || 'Ingredients');
+        const instructionsLabel = this.escapeHtml(labels.instructions || 'Instructions');
         const recipeContent = document.getElementById('recipe-content');
         recipeContent.innerHTML = `
             <div class="recipe-header">
@@ -205,12 +208,12 @@ class RecipeDetailViewer {
                     <p class="recipe-description">${this.escapeHtml(recipe.description)}</p>
                 </div>
                 <div class="recipe-ingredients-header">
-                    <h3>Ingredients</h3>
+                    <h3>${ingredientsLabel}</h3>
                     ${this.renderIngredients(recipe)}
                 </div>
             </div>
             <div class="recipe-section recipe-instructions">
-                <h2>Instructions</h2>
+                <h2>${instructionsLabel}</h2>
                 ${this.renderInstructions(recipe)}
             </div>
         `;

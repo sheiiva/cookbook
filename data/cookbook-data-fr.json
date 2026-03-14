@@ -16,6 +16,10 @@
       "vegan": "Végétalien",
       "gluten_free": "Sans Gluten",
       "sourdough": "Levain"
+    },
+    "recipe_labels": {
+      "ingredients": "Ingrédients",
+      "instructions": "Instructions"
     }
   },
   "navigation": {
