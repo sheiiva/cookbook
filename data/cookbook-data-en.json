@@ -321,6 +321,35 @@
         "To form the cookies, use 2 tablespoons and make small piles spaced apart from each other; they will grow during cooking.",
         "Bake for 10 minutes."
       ]
+    },
+    {
+      "id": "sourdough_brownies",
+      "title": "Sourdough Discard Chocolate Brownies",
+      "image": "optimized/sourdough_brownies.webp",
+      "description": "Rich chocolate brownies using sourdough discard",
+      "tags": ["desserts"],
+      "ingredients": [
+        "113g butter",
+        "340g chocolate",
+        "2 tsps vanilla extract",
+        "40g cocoa powder",
+        "2 eggs",
+        "1 egg yolk",
+        "200g granulated sugar",
+        "110g brown sugar",
+        "125g sourdough discard",
+        "120g plain flour",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Melt the butter over a medium heat. Then add in the chocolate, vanilla extract and cocoa powder. Stir the mixture until the chocolate has melted and everything has combined.",
+        "In a separate bowl beat the eggs and egg yolk, granulated sugar and brown sugar until combined into a paste.",
+        "Add the sourdough discard, and chocolate mixture from step 1 into this bowl. Mix until combined.",
+        "Add in the flour and salt. Mix until combined.",
+        "Line a baking dish with baking paper and pour in the mixture.",
+        "Bake for 35–40 minutes at 180°C.",
+        "Allow baked brownies to cool before removing from the baking dish and cutting."
+      ]
     }
   ]
 } 

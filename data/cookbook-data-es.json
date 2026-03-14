@@ -281,6 +281,35 @@
         "Para formar las galletas, usar 2 cucharadas y hacer pequeñas montañas espaciadas entre sí; crecerán durante la cocción.",
         "Hornear durante 10 minutos."
       ]
+    },
+    {
+      "id": "sourdough_brownies",
+      "title": "Brownies de chocolate con descarte de masa madre",
+      "image": "optimized/sourdough_brownies.webp",
+      "description": "Brownies de chocolate con descarte de masa madre",
+      "tags": ["desserts"],
+      "ingredients": [
+        "113g de mantequilla",
+        "340g de chocolate",
+        "2 cucharaditas de extracto de vainilla",
+        "40g de cacao en polvo",
+        "2 huevos",
+        "1 yema de huevo",
+        "200g de azúcar blanco",
+        "110g de azúcar moreno",
+        "125g de descarte de masa madre",
+        "120g de harina",
+        "1 cucharadita de sal"
+      ],
+      "instructions": [
+        "Derretir la mantequilla a fuego medio. Añadir el chocolate, el extracto de vainilla y el cacao en polvo. Remover hasta que el chocolate se derrita y todo esté mezclado.",
+        "En un bol aparte, batir los huevos y la yema con el azúcar blanco y el azúcar moreno hasta obtener una pasta.",
+        "Añadir el descarte de masa madre y la mezcla de chocolate del paso 1. Mezclar hasta integrar.",
+        "Incorporar la harina y la sal. Mezclar hasta que se integren.",
+        "Forrar un molde con papel de horno y verter la mezcla.",
+        "Hornear 35–40 minutos a 180°C.",
+        "Dejar enfriar los brownies antes de desmoldar y cortar."
+      ]
     }
   ]
 } 

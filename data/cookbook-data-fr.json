@@ -281,6 +281,35 @@
         "Pour former les cookies, utiliser 2 cuillères à soupe et faire des petits tas espacés les uns des autres; ils grandiront à la cuisson.",
         "Enfourner pour 10 minutes de cuisson."
       ]
+    },
+    {
+      "id": "sourdough_brownies",
+      "title": "Brownies au chocolat au levain",
+      "image": "optimized/sourdough_brownies.webp",
+      "description": "Brownies au chocolat au levain",
+      "tags": ["desserts"],
+      "ingredients": [
+        "113g de beurre",
+        "340g de chocolat",
+        "2 cuillères à café d'extrait de vanille",
+        "40g de poudre de cacao",
+        "2 œufs",
+        "1 jaune d'œuf",
+        "200g de sucre en poudre",
+        "110g de sucre roux",
+        "125g de levain",
+        "120g de farine",
+        "1 cuillère à café de sel"
+      ],
+      "instructions": [
+        "Faire fondre le beurre à feu moyen. Ajouter le chocolat, l'extrait de vanille et la poudre de cacao. Mélanger jusqu'à ce que le chocolat soit fondu et que tout soit homogène.",
+        "Dans un saladier, battre les œufs et le jaune avec le sucre en poudre et le sucre roux jusqu'à obtenir une pâte.",
+        "Ajouter le levain et le mélange chocolat de l'étape 1. Mélanger jusqu'à homogénéité.",
+        "Incorporer la farine et le sel. Mélanger jusqu'à ce que tout soit combiné.",
+        "Chemiser un moule de papier sulfurisé et verser la préparation.",
+        "Cuire 35 à 40 minutes à 180°C.",
+        "Laisser refroidir les brownies avant de les démouler et de les découper."
+      ]
     }
   ]
 } 
