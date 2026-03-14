@@ -36,18 +36,27 @@ jobs:
 
       - name: Build and Optimize
         run: |
-          # Create optimized images directory
+          # Require images/ for deploy: workflow expects source images here (optional but documented)
+          if [ ! -d "images" ]; then
+            echo "⚠️ images/ not found — creating it. Add .jpg/.png source images for recipe photos."
+            mkdir -p images
+          fi
           mkdir -p images/optimized
           
-          # Optimize images
+          # Optimize images (source files in images/*.jpg or images/*.png)
           echo "📸 Optimizing images..."
-          for img in images/*.{jpg,png}; do
+          count=0
+          for img in images/*.jpg images/*.png; do
             if [ -f "$img" ]; then
               filename=$(basename "$img" | sed 's/\.[^.]*$/.webp/')
               convert "$img" -strip -quality 85 -resize 800x600^ -gravity center -extent 800x600 "images/optimized/$filename"
               echo "✅ Optimized: $img → images/optimized/$filename"
+              count=$((count+1))
             fi
           done
+          if [ "$count" -eq 0 ]; then
+            echo "⚠️ No source images in images/ (expected .jpg or .png). Recipe images will be missing until you add them."
+          fi
           
           # Ensure all necessary files are present
           echo "📁 Checking file structure..."

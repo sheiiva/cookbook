@@ -84,6 +84,12 @@ Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file 
 3. **Images**  
    Put source images in `images/` (e.g. `images/my_recipe.jpg`). The GitHub Actions deploy can convert them to `images/optimized/*.webp`. For local dev, you can put a `.webp` (or other image) in `images/optimized/` and set `"image": "optimized/my_recipe.webp"` in the JSON.
 
+## Deploy (GitHub Pages)
+
+- The workflow (`.github/workflows/deploy.yml`) runs on push to `main` and deploys the site to GitHub Pages.
+- **Images:** Source images must live in **`images/`** as `.jpg` or `.png`. The workflow creates `images/optimized/` and converts them to WebP. If `images/` is missing or has no images, the site still deploys but recipe images will be missing until you add source files and redeploy.
+- The workflow also builds `recipeDetailViewer.min.js` from `recipeDetailViewer.js` and checks that `data/cookbook-data-{en,fr,es}.json` exist.
+
 ## Recipe detail viewer (recipe-template.html)
 
 - **Source:** Edit `js/recipeDetailViewer.js`. The recipe detail page loads `js/recipeDetailViewer.min.js`.
