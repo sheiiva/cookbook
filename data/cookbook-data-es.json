@@ -377,6 +377,33 @@
         "Colocar los discos en una bandeja con papel de horno y maicena. Espolvorear por encima con maicena. Tapar con un paño y reposar 1 hora.",
         "A fuego bajo, cocinar los muffins en una sartén tapada, unos 4 minutos por lado, hasta que la temperatura interior llegue a 93°C."
       ]
+    },
+    {
+      "id": "sourdough_chocolate_chip_cookies",
+      "title": "Galletas de chocolate con masa madre",
+      "image": "optimized/sourdough_chocolate_chip_cookies.webp",
+      "description": "Galletas de chocolate gruesas y tiernas con descarte de masa madre (Angelica Sourdough Co.)",
+      "tags": ["desserts"],
+      "ingredients": [
+        "1½ tazas (113g) de mantequilla blanda o derretida y enfriada",
+        "1/2 taza (100g) de azúcar moreno",
+        "1/4 taza (50g) de azúcar blanco",
+        "1/3 taza (80g) de descarte de masa madre, sin alimentar, a temperatura ambiente",
+        "1 yema de huevo grande",
+        "1 cucharadita de extracto de vainilla",
+        "1½ tazas (160g) de harina de trigo",
+        "1/2 cucharadita de bicarbonato",
+        "1½ cucharaditas de sal",
+        "3/4 taza de gotas o trozos de chocolate (semi-amargo o negro)"
+      ],
+      "instructions": [
+        "Mezclar los líquidos: En batidora, batir la mantequilla, el azúcar moreno y el azúcar blanco hasta que estén suaves y brillantes. Incorporar el descarte de masa madre, la yema y la vainilla.",
+        "Añadir los secos: Incorporar la harina, el bicarbonato y la sal. Mezclar hasta que solo se combinen.",
+        "Añadir el chocolate: Mezclar las gotas o trozos de chocolate hasta que se repartan bien.",
+        "Enfriar: Tapar la masa y refrigerar 30–60 minutos. Así las galletas quedan gruesas y tiernas.",
+        "Hornear: Precalentar el horno a 175°C. Forrar una bandeja con papel de horno. Formar porciones de ¼ taza, altas y sin aplanar. Hornear 10–12 minutos hasta que los bordes estén firmes y el centro cuaje.",
+        "Enfriar: Dejar las galletas 10 minutos en la bandeja antes de moverlas; acabarán de cuajar y se mantendrán tiernas."
+      ]
     }
   ]
 } 

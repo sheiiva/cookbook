@@ -377,6 +377,33 @@
         "Déposer les ronds sur une plaque avec papier sulfurisé et semoule de maïs. Saupoudrer le dessus de semoule. Couvrir d'un torchon et laisser reposer 1 heure.",
         "À feu doux, cuire les muffins à la poêle, couvert, environ 4 minutes par côté, jusqu'à une température interne de 93°C."
       ]
+    },
+    {
+      "id": "sourdough_chocolate_chip_cookies",
+      "title": "Cookies aux pépites de chocolat au levain",
+      "image": "optimized/sourdough_chocolate_chip_cookies.webp",
+      "description": "Cookies épais et moelleux aux pépites de chocolat au levain de rebut (Angelica Sourdough Co.)",
+      "tags": ["desserts"],
+      "ingredients": [
+        "1½ tasses (113g) de beurre ramolli ou fondu et refroidi",
+        "1/2 tasse (100g) de sucre roux",
+        "1/4 tasse (50g) de sucre en poudre",
+        "1/3 tasse (80g) de levain de rebut, non rafraîchi, à température ambiante",
+        "1 jaune d'œuf",
+        "1 c. à café d'extrait de vanille",
+        "1½ tasses (160g) de farine tout usage",
+        "1/2 c. à café de bicarbonate",
+        "1½ c. à café de sel",
+        "3/4 tasse de pépites ou morceaux de chocolat (mi-sucré ou noir)"
+      ],
+      "instructions": [
+        "Mélanger les ingrédients humides : au batteur, fouetter le beurre, le sucre roux et le sucre en poudre jusqu'à ce que le mélange soit lisse et brillant. Incorporer le levain de rebut, le jaune d'œuf et la vanille.",
+        "Ajouter les ingrédients secs : incorporer la farine, le bicarbonate et le sel. Mélanger jusqu'à ce que tout soit juste combiné.",
+        "Incorporer le chocolat : mélanger les pépites ou morceaux de chocolat jusqu'à répartition homogène.",
+        "Réfrigérer : couvrir la pâte et laisser au frais 30 à 60 minutes. Les cookies resteront épais et moelleux.",
+        "Cuire : préchauffer le four à 175°C. Chemiser une plaque de papier sulfurisé. Former des boules de ¼ tasse, bien hautes sans les aplatir. Enfourner 10 à 12 min jusqu'à ce que les bords soient pris et le centre paraisse cuit.",
+        "Laisser refroidir : laisser les cookies sur la plaque 10 minutes avant de les déplacer ; ils finiront de prendre tout en restant moelleux."
+      ]
     }
   ]
 } 
