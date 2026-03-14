@@ -34,8 +34,8 @@ cookbook/
 │   ├── main.css            # Layout, theme, recipe styles
 │   └── button-styles.css   # Filter button focus (accessibility)
 ├── js/
-│   ├── recipeLoader.js     # Loads data, renders list, handles filters & language
-│   ├── recipeLoader.min.js
+│   ├── recipeLoader.js     # **Source** for index (edit this); deploy builds .min
+│   ├── recipeLoader.min.js # Built from recipeLoader.js on deploy (index loads this)
 │   ├── recipeDetailViewer.js      # **Source** for recipe detail page (edit this)
 │   ├── recipeDetailViewer.min.js  # Built from recipeDetailViewer.js on deploy (recipe-template loads this)
 ├── data/
@@ -92,7 +92,7 @@ Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file 
 
 - The workflow (`.github/workflows/deploy.yml`) runs on push to `main` and deploys the site to GitHub Pages.
 - **Images:** Source images must live in **`images/`** as `.jpg` or `.png`. The workflow creates `images/optimized/` and converts them to WebP. If `images/` is missing or has no images, the site still deploys but recipe images will be missing until you add source files and redeploy.
-- The workflow also builds `recipeDetailViewer.min.js` from `recipeDetailViewer.js` and checks that `data/cookbook-data-{en,fr,es}.json` exist.
+- The workflow builds `recipeDetailViewer.min.js` and `recipeLoader.min.js` from their sources and checks that `data/cookbook-data-{en,fr,es}.json` exist.
 
 ## Recipe detail viewer (recipe-template.html)
 
@@ -100,6 +100,9 @@ Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file 
 - **Build:** On deploy, the workflow runs `npx terser js/recipeDetailViewer.js -o js/recipeDetailViewer.min.js` so the min file is always built from the current source.
 - **Local:** After editing `recipeDetailViewer.js`, rebuild the min for local testing with:  
   `npx terser js/recipeDetailViewer.js -o js/recipeDetailViewer.min.js -c -m`
+
+**Recipe loader (index):** Edit `js/recipeLoader.js`. The index loads `recipeLoader.min.js`; rebuild with  
+`npx terser js/recipeLoader.js -o js/recipeLoader.min.js -c -m` for local testing.
 
 ## License
 
