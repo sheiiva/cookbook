@@ -63,6 +63,34 @@ class RecipeDetailViewer {
         }
     }
 
+    /** Update meta description and Open Graph tags for recipe page (SEO, sharing) */
+    updateMetaAndOg(recipe, siteName) {
+        const desc = (recipe.description || recipe.title || '').slice(0, 160);
+        const title = `${recipe.title} · ${siteName}`;
+        const url = window.location.href;
+        const dir = window.location.pathname.replace(/\/[^/]*$/, '') || '';
+        const pathPrefix = dir ? dir + '/' : '/';
+        const imageUrl = recipe.image ? `${window.location.origin}${pathPrefix}images/${this.safeImageSrc(recipe.image)}` : '';
+
+        const setMeta = (attr, key, value) => {
+            if (!value) return;
+            let el = document.querySelector(`meta[${attr}="${key}"]`);
+            if (!el) {
+                el = document.createElement('meta');
+                el.setAttribute(attr, key);
+                document.head.appendChild(el);
+            }
+            el.setAttribute('content', value);
+        };
+
+        setMeta('name', 'description', desc);
+        setMeta('property', 'og:title', title);
+        setMeta('property', 'og:description', desc);
+        setMeta('property', 'og:type', 'article');
+        setMeta('property', 'og:url', url);
+        if (imageUrl) setMeta('property', 'og:image', imageUrl);
+    }
+
     /** Render breadcrumb: Home › Recipe title (uses navigation from JSON) */
     renderBreadcrumb(recipeTitle) {
         const el = document.getElementById('recipe-breadcrumb');
@@ -158,8 +186,11 @@ class RecipeDetailViewer {
 
         const safeTitle = this.escapeHtml(recipe.title);
         const safeImage = this.safeImageSrc(recipe.image);
+        const siteName = (this.recipesData.ui && this.recipesData.ui.title) ? this.recipesData.ui.title : 'My Recipe Journal';
 
-        document.title = recipe.title;
+        document.title = `${recipe.title} · ${siteName}`;
+
+        this.updateMetaAndOg(recipe, siteName);
 
         const titleElement = document.querySelector('h1[data-i18n="my_recipe_journal"]');
         if (titleElement) titleElement.textContent = recipe.title;

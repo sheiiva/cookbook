@@ -10,7 +10,7 @@
 - [x] **7b** – Breadcrumbs: Home › Recipe
 - [x] **8a** – Deploy: document images/ requirement + workflow check
 - [x] **8b** – Test: document test.html as dev tool or exclude from deploy
-- [ ] **9a** – SEO: meta description + Open Graph tags
-- [ ] **9b** – SEO: recipe page title format (Recipe name · My Recipe Journal)
+- [x] **9a** – SEO: meta description + Open Graph tags
+- [x] **9b** – SEO: recipe page title format (Recipe name · My Recipe Journal)
 - [ ] **10a** – Cleanup: tidy index.html (trailing scripts, cache meta)
 - [ ] **10b** – Cleanup: optional copy-edit of cookbook-data-es.json
