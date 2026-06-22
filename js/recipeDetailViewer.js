@@ -127,6 +127,7 @@ class RecipeDetailViewer {
         document.title = `${recipe.title} · ${siteName}`;
 
         this.updateMetaAndOg(recipe, siteName);
+        this.common.injectRecipeJsonLd(recipe, { lang: this.currentLanguage });
 
         const titleElement = document.querySelector('h1[data-i18n="my_recipe_journal"]');
         if (titleElement) titleElement.textContent = recipe.title;

@@ -32,6 +32,9 @@ jobs:
           node scripts/build-data.js
           git diff --exit-code data/cookbook-data-en.json data/cookbook-data-fr.json data/cookbook-data-es.json
 
+      - name: Build sitemap
+        run: node scripts/build-sitemap.js
+
       - name: Setup ImageMagick
         run: |
           sudo apt-get update

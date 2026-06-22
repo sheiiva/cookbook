@@ -2,9 +2,75 @@
  * Shared helpers for cookbook loader and recipe detail viewer.
  */
 window.CookbookCommon = {
+    getSiteRoot() {
+        const path = window.location.pathname;
+        const recipesIdx = path.indexOf('/recipes/');
+        if (recipesIdx !== -1) {
+            const root = path.slice(0, recipesIdx + 1);
+            return root.endsWith('/') ? root : `${root}/`;
+        }
+        const dir = path.replace(/\/[^/]*$/, '') || '';
+        return dir ? `${dir}/` : '/';
+    },
+
     getPathPrefix() {
-        const dir = window.location.pathname.replace(/\/[^/]*$/, '') || '';
-        return dir ? dir + '/' : '/';
+        return this.getSiteRoot();
+    },
+
+    getRecipeIdFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const fromQuery = params.get('id');
+        if (fromQuery) return fromQuery;
+        const match = window.location.pathname.match(/\/recipes\/([^/]+)\/?$/);
+        return match ? decodeURIComponent(match[1]) : null;
+    },
+
+    injectRecipeJsonLd(recipe, options = {}) {
+        const existing = document.getElementById('recipe-jsonld');
+        if (existing) existing.remove();
+
+        const ingredients = [
+            ...(recipe.ingredients || []),
+            ...Object.values(recipe.ingredient_sections || {}).flat()
+        ];
+
+        const instructions = [];
+        if (recipe.instructions) {
+            instructions.push(...recipe.instructions);
+        }
+        if (recipe.instruction_blocks) {
+            for (const block of Object.values(recipe.instruction_blocks)) {
+                if (block.steps) instructions.push(...block.steps);
+            }
+        }
+
+        const jsonLd = {
+            '@context': 'https://schema.org',
+            '@type': 'Recipe',
+            name: recipe.title,
+            description: recipe.description || recipe.title,
+            inLanguage: options.lang || 'en',
+            recipeIngredient: ingredients,
+            recipeInstructions: instructions.map((text) => ({
+                '@type': 'HowToStep',
+                text
+            }))
+        };
+
+        if (recipe.servings) jsonLd.recipeYield = recipe.servings;
+        if (recipe.prep_time) jsonLd.prepTime = recipe.prep_time;
+        if (recipe.cook_time) jsonLd.cookTime = recipe.cook_time;
+
+        const safeImage = this.safeImageSrc(recipe.image);
+        if (safeImage) {
+            jsonLd.image = `${window.location.origin}${this.getSiteRoot()}images/${safeImage}`;
+        }
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'recipe-jsonld';
+        script.textContent = JSON.stringify(jsonLd);
+        document.head.appendChild(script);
     },
 
     async loadCookbookData(lang) {
