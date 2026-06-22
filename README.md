@@ -60,9 +60,11 @@ Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file 
 
    ```bash
    node scripts/build-data.js
+   node scripts/build-sitemap.js
+   node scripts/build-pages.js
    ```
 
-   This regenerates `data/cookbook-data-{en,fr,es}.json`. Commit both source and generated files.
+   This regenerates `data/cookbook-data-{en,fr,es}.json`, `sitemap.xml`, and `recipes/{id}/index.html`. Commit source and generated files.
 
 2. **Or add the recipe in each language file**  
    Edit `data/cookbook-data-en.json`, `data/cookbook-data-fr.json`, and `data/cookbook-data-es.json`. Use the **same `id`** in all three so links and the detail page work. Prefer editing `data/source/recipes.json` when possible.
