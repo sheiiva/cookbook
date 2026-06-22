@@ -172,7 +172,7 @@ class RecipeLoader {
             recipesInCategory.forEach(recipe => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
-                a.href = `recipe-template.html?id=${recipe.id}&lang=${this.currentLanguage}`;
+                a.href = `recipes/${recipe.id}/?lang=${this.currentLanguage}`;
                 a.textContent = recipe.title;
                 a.setAttribute('data-category', categoryId);
                 a.setAttribute('data-recipe-id', recipe.id);

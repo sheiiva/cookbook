@@ -105,8 +105,7 @@ class RecipeDetailViewer {
     }
 
     displayRecipe() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const recipeId = urlParams.get('id');
+        const recipeId = this.common.getRecipeIdFromUrl();
 
         if (!recipeId || !this.recipesData) {
             this.showError('Recipe not found');
