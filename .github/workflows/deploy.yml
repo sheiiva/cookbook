@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate multilingual data
+        run: node scripts/validate-data.js
+
       - name: Setup ImageMagick
         run: |
           sudo apt-get update
