@@ -32,13 +32,13 @@
   "recipes": [
     {
       "id": "bourguignon",
-      "title": "Bourguignon de Seitan",
-      "image": "optimized/bourguignon.webp",
-      "description": "Une version végétalienne du plat français classique",
       "tags": [
         "main_courses",
         "vegan"
       ],
+      "image": "optimized/bourguignon.webp",
+      "title": "Bourguignon de Seitan",
+      "description": "Une version végétalienne du plat français classique",
       "ingredients": [
         "2 carrés de chocolat noir",
         "500 ml de bouillon de légumes",
@@ -69,14 +69,14 @@
     },
     {
       "id": "lentils_soup",
-      "title": "Soupe aux Lentilles",
-      "image": "optimized/lentils_soup.webp",
-      "description": "Soupe de lentilles chaude et nutritive",
       "tags": [
         "soups",
         "vegan",
         "gluten_free"
       ],
+      "image": "optimized/lentils_soup.webp",
+      "title": "Soupe aux Lentilles",
+      "description": "Soupe de lentilles chaude et nutritive",
       "ingredients": [
         "3 cuillères à soupe d'huile d'olive",
         "1 oignon",
@@ -98,13 +98,13 @@
     },
     {
       "id": "moussaka",
-      "title": "Moussaka",
-      "image": "optimized/moussaka.webp",
-      "description": "Casserole d'aubergines et pommes de terre en couches",
       "tags": [
         "main_courses",
         "vegan"
       ],
+      "image": "optimized/moussaka.webp",
+      "title": "Moussaka",
+      "description": "Casserole d'aubergines et pommes de terre en couches",
       "ingredients": [
         "sel",
         "poivre",
@@ -176,13 +176,13 @@
     },
     {
       "id": "banana_bread",
-      "title": "Pain aux Bananes",
-      "image": "optimized/banana_bread.webp",
-      "description": "Pain moelleux aux bananes mûres",
       "tags": [
         "desserts",
         "vegan"
       ],
+      "image": "optimized/banana_bread.webp",
+      "title": "Pain aux Bananes",
+      "description": "Pain moelleux aux bananes mûres",
       "ingredients": [
         "4 bananes mûres moyennes",
         "120g de sucre",
@@ -203,13 +203,13 @@
     },
     {
       "id": "chocolate_truffles",
-      "title": "Truffes au Chocolat",
-      "image": "optimized/chocolate_truffles.webp",
-      "description": "Truffes au chocolat riches et crémeuses",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/chocolate_truffles.webp",
+      "title": "Truffes au Chocolat",
+      "description": "Truffes au chocolat riches et crémeuses",
       "ingredients": [
         "80g de sucre glace",
         "100g de beurre non salé",
@@ -228,13 +228,13 @@
     },
     {
       "id": "rice_pudding",
-      "title": "Riz au Lait",
-      "image": "optimized/rice_pudding.webp",
-      "description": "Riz au lait crémeux et réconfortant",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/rice_pudding.webp",
+      "title": "Riz au Lait",
+      "description": "Riz au lait crémeux et réconfortant",
       "ingredients": [
         "orange ou clémentine",
         "5 cuillères à soupe de sucre",
@@ -251,13 +251,13 @@
     },
     {
       "id": "pizza_dough",
-      "title": "Pâte à Pizza",
-      "image": "optimized/pizza_dough.webp",
-      "description": "Pâte à pizza maison classique",
       "tags": [
         "main_courses",
         "vegan"
       ],
+      "image": "optimized/pizza_dough.webp",
+      "title": "Pâte à Pizza",
+      "description": "Pâte à pizza maison classique",
       "ingredients": [
         "350g de farine (type pâte à pain) + 100g pour travailler la pâte",
         "2 cuillères à café de sel",
@@ -278,12 +278,12 @@
     },
     {
       "id": "brownie",
-      "title": "Brownie",
-      "image": "optimized/brownie.webp",
-      "description": "Brownie au chocolat riche et fondant",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/brownie.webp",
+      "title": "Brownie",
+      "description": "Brownie au chocolat riche et fondant",
       "ingredients": [
         "250g de chocolat pâtissier",
         "150g de beurre",
@@ -303,13 +303,13 @@
     },
     {
       "id": "doenjang_jjigae",
-      "title": "Doenjang-jjigae",
-      "image": "optimized/doenjang_jjigae.webp",
-      "description": "Ragoût coréen à la pâte de soja fermentée",
       "tags": [
         "soups",
         "vegan"
       ],
+      "image": "optimized/doenjang_jjigae.webp",
+      "title": "Doenjang-jjigae",
+      "description": "Ragoût coréen à la pâte de soja fermentée",
       "ingredients": [
         "1 pomme de terre moyenne, pelée et coupée en cubes de 1cm (environ 150g)",
         "1 oignon moyen, coupé en morceaux de 1cm (environ 150g)",
@@ -332,12 +332,12 @@
     },
     {
       "id": "cookies",
-      "title": "Cookies",
-      "image": "optimized/cookies.webp",
-      "description": "Cookies moelleux aux pépites de chocolat",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/cookies.webp",
+      "title": "Cookies",
+      "description": "Cookies moelleux aux pépites de chocolat",
       "ingredients": [
         "85g de beurre tendre",
         "85g de sucre",
@@ -359,13 +359,13 @@
     },
     {
       "id": "sourdough_brownies",
-      "title": "Brownies au chocolat au levain",
-      "image": "optimized/sourdough_brownies.webp",
-      "description": "Brownies au chocolat au levain",
       "tags": [
         "desserts",
         "sourdough"
       ],
+      "image": "optimized/sourdough_brownies.webp",
+      "title": "Brownies au chocolat au levain",
+      "description": "Brownies au chocolat au levain",
       "ingredients": [
         "113g de beurre",
         "340g de chocolat",
@@ -391,14 +391,14 @@
     },
     {
       "id": "sourdough_tortilla",
-      "title": "Tortilla au levain",
-      "image": "optimized/sourdough_tortilla.webp",
-      "description": "Tortillas moelleuses au levain",
       "tags": [
         "main_courses",
         "vegan",
         "sourdough"
       ],
+      "image": "optimized/sourdough_tortilla.webp",
+      "title": "Tortilla au levain",
+      "description": "Tortillas moelleuses au levain",
       "ingredients": [
         "363g de farine",
         "6,5g de sel",
@@ -419,14 +419,14 @@
     },
     {
       "id": "vegan_sourdough_pancakes",
-      "title": "Pancakes vegans au levain",
-      "image": "optimized/vegan_sourdough_pancakes.webp",
-      "description": "Pancakes moelleux au levain et au lait végétal",
       "tags": [
         "main_courses",
         "vegan",
         "sourdough"
       ],
+      "image": "optimized/vegan_sourdough_pancakes.webp",
+      "title": "Pancakes vegans au levain",
+      "description": "Pancakes moelleux au levain et au lait végétal",
       "ingredients": [
         "80g de levain",
         "60ml de lait végétal (soja, avoine, amande, etc.)",
@@ -443,13 +443,13 @@
     },
     {
       "id": "sourdough_english_muffins",
-      "title": "Muffins anglais au levain",
-      "image": "optimized/sourdough_english_muffins.webp",
-      "description": "Muffins anglais au levain actif",
       "tags": [
         "main_courses",
         "sourdough"
       ],
+      "image": "optimized/sourdough_english_muffins.webp",
+      "title": "Muffins anglais au levain",
+      "description": "Muffins anglais au levain actif",
       "ingredients": [
         "100g de levain actif",
         "20g de miel",
@@ -469,13 +469,13 @@
     },
     {
       "id": "sourdough_chocolate_chip_cookies",
-      "title": "Cookies aux pépites de chocolat au levain",
-      "image": "optimized/sourdough_chocolate_chip_cookies.webp",
-      "description": "Cookies épais et moelleux aux pépites de chocolat au levain de rebut (Angelica Sourdough Co.)",
       "tags": [
         "desserts",
         "sourdough"
       ],
+      "image": "optimized/sourdough_chocolate_chip_cookies.webp",
+      "title": "Cookies aux pépites de chocolat au levain",
+      "description": "Cookies épais et moelleux aux pépites de chocolat au levain de rebut (Angelica Sourdough Co.)",
       "ingredients": [
         "1½ tasses (113g) de beurre ramolli ou fondu et refroidi",
         "1/2 tasse (100g) de sucre roux",
@@ -499,13 +499,16 @@
     },
     {
       "id": "petite_creme_cacao",
-      "title": "Petite Crème au Cacao",
-      "image": "optimized/petite_creme_cacao.webp",
-      "description": "Crème au chocolat rapide — La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/petite_creme_cacao.webp",
+      "title": "Petite Crème au Cacao",
+      "description": "Crème au chocolat rapide — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 1 personne",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 5 min",
       "ingredients": [
         "200 ml de lait demi-écrémé",
         "2 c. à c. de cacao maigre non sucré",
@@ -517,23 +520,23 @@
         "Dans une petite casserole, versez le reste de lait, la fécule diluée, le cacao et le sucre en poudre. Faites chauffer à feu doux jusqu'à ébullition, puis laissez épaissir pendant 2 à 3 minutes en remuant sans cesse.",
         "Versez dans un verre ou un ramequin et servez tiède ou froid."
       ],
-      "servings": "Pour 1 personne",
-      "prep_time": "Préparation : 5 min",
-      "cook_time": "Cuisson : 5 min",
       "tips": [
         "vous pouvez aussi préparer cette crème en 2 minutes au micro-ondes. Dans un bol ou une grande tasse, versez la fécule de maïs et un peu de lait. Mélangez, puis versez-y le reste du lait, le cacao et le sucre. Faites cuire 2 à 3 minutes en arrêtant de temps en temps la cuisson pour mélanger. Surveillez attentivement afin que cela ne déborde pas."
       ]
     },
     {
       "id": "guacamole",
-      "title": "Guacamole",
-      "image": "optimized/guacamole.webp",
-      "description": "Guacamole mexicain classique — La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "vegan",
         "gluten_free"
       ],
+      "image": "optimized/guacamole.webp",
+      "title": "Guacamole",
+      "description": "Guacamole mexicain classique — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Attente : 1 heure",
       "ingredients": [
         "2 avocats bien mûrs",
         "1 tomate",
@@ -547,19 +550,19 @@
         "Versez dans le saladier le jus de citron, l'oignon émincé et les dés de tomate. Mélangez bien.",
         "Ajoutez le piment et le sel. Goûtez et rectifiez l'assaisonnement. Couvrez et mettez au frais pendant au moins 1 heure.",
         "Servez avec des chips tortillas, ou tartinez sur du pain de mie avec une tranche de jambon blanc."
-      ],
-      "servings": "Pour 4 personnes",
-      "prep_time": "Préparation : 15 min",
-      "cook_time": "Attente : 1 heure"
+      ]
     },
     {
       "id": "quiche_lorraine",
-      "title": "Quiche Lorraine",
-      "image": "optimized/quiche_lorraine.webp",
-      "description": "Quiche traditionnelle aux lardons — La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses"
       ],
+      "image": "optimized/quiche_lorraine.webp",
+      "title": "Quiche Lorraine",
+      "description": "Quiche traditionnelle aux lardons — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 6 personnes",
+      "prep_time": "Préparation : 10 min",
+      "cook_time": "Cuisson : 40 min",
       "ingredients": [
         "8 œufs",
         "1 rouleau de pâte brisée",
@@ -575,22 +578,22 @@
         "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez. Versez sur les lardons.",
         "Enfournez et laissez cuire 40 minutes. Servez chaud."
       ],
-      "servings": "Pour 6 personnes",
-      "prep_time": "Préparation : 10 min",
-      "cook_time": "Cuisson : 40 min",
       "tips": [
         "ajoutez un bouquet de ciboulette ciselé pour une note de fraîcheur. Le reste se déguste froid en lunch box."
       ]
     },
     {
       "id": "flan_courgette",
-      "title": "Flan de Courgette, au Micro-ondes",
-      "image": "optimized/flan_courgette.webp",
-      "description": "Flan de courgette rapide au micro-ondes — La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "gluten_free"
       ],
+      "image": "optimized/flan_courgette.webp",
+      "title": "Flan de Courgette, au Micro-ondes",
+      "description": "Flan de courgette rapide au micro-ondes — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
       "ingredients": [
         "1 courgette",
         "2 œufs",
@@ -603,21 +606,21 @@
         "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez.",
         "Mettez les dés de courgette dans un plat adapté au micro-ondes et versez par-dessus la préparation aux œufs. Couvrez. Faites cuire 10 minutes environ à 800 W. Servez chaud."
       ],
-      "servings": "Pour 2 personnes",
-      "prep_time": "Préparation : 5 min",
-      "cook_time": "Cuisson : 10 min",
       "tips": [
         "ajoutez une pointe de piment ou 1 cuillère à café de curry en poudre pour relever le flan."
       ]
     },
     {
       "id": "gateau_yaourt",
-      "title": "Gâteau au Yaourt",
-      "image": "optimized/gateau_yaourt.webp",
-      "description": "Gâteau moelleux au pot de yaourt — La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/gateau_yaourt.webp",
+      "title": "Gâteau au Yaourt",
+      "description": "Gâteau moelleux au pot de yaourt — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 6 personnes",
+      "prep_time": "Préparation : 10 min",
+      "cook_time": "Cuisson : 40 min",
       "ingredients": [
         "1 pot de yaourt nature",
         "2 pots de sucre en poudre",
@@ -635,22 +638,22 @@
         "Versez la pâte dans un moule à cake beurré et fariné, et enfournez pour 40 minutes. Vérifiez la cuisson en plongeant la lame d'un couteau : si elle ressort sèche, le gâteau est cuit.",
         "Laissez le gâteau refroidir avant de le démouler."
       ],
-      "servings": "Pour 6 personnes",
-      "prep_time": "Préparation : 10 min",
-      "cook_time": "Cuisson : 40 min",
       "tips": [
         "ajoutez des morceaux de fruits frais ou en conserve, des épices (cannelle, vanille...), du zeste d'orange ou de citron, ou des pépites de chocolat."
       ]
     },
     {
       "id": "gratin_pommes_terre",
-      "title": "Gratin de Pommes de Terre, à la Poêle",
-      "image": "optimized/gratin_pommes_terre.webp",
-      "description": "Gratin de pommes de terre cuit à la poêle — La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "gluten_free"
       ],
+      "image": "optimized/gratin_pommes_terre.webp",
+      "title": "Gratin de Pommes de Terre, à la Poêle",
+      "description": "Gratin de pommes de terre cuit à la poêle — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 20 min",
+      "cook_time": "Cuisson : 50 min",
       "ingredients": [
         "4 belles pommes de terre",
         "1 œuf",
@@ -666,22 +669,22 @@
         "Versez l'huile d'olive dans une poêle. Déposez la moitié des rondelles de pommes de terre, la préparation avec les pommes de terre râpées, et le reste des rondelles de pommes de terre. Couvrez de lait à hauteur. Faites cuire 30 minutes à feu doux.",
         "Retournez le gratin dans un plat puis remettez-le à nouveau dans la poêle afin de faire cuire l'autre face durant 15 à 20 minutes. Servez bien chaud."
       ],
-      "servings": "Pour 2 personnes",
-      "prep_time": "Préparation : 20 min",
-      "cook_time": "Cuisson : 50 min",
       "tips": [
         "ajoutez des dés de jambon, des herbes (ciboulette, persil...) ou une pincée d'épices (piment, curry...)."
       ]
     },
     {
       "id": "banane_four",
-      "title": "Banane au Four",
-      "image": "optimized/banane_four.webp",
-      "description": "Dessert simple à la banane rôtie — La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/banane_four.webp",
+      "title": "Banane au Four",
+      "description": "Dessert simple à la banane rôtie — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 1 personne",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
       "ingredients": [
         "1 banane",
         "1 sachet de sucre vanillé",
@@ -693,22 +696,22 @@
         "Saupoudrez-les de sucre vanillé et parsemez de petits morceaux de beurre.",
         "Enfournez et laissez cuire 10 minutes. Dégustez chaud ou tiède."
       ],
-      "servings": "Pour 1 personne",
-      "prep_time": "Préparation : 5 min",
-      "cook_time": "Cuisson : 10 min",
       "tips": [
         "pour apporter du croquant, saupoudrez de biscuits émiettés."
       ]
     },
     {
       "id": "boulettes_riz_tomate",
-      "title": "Boulettes de Riz à la Tomate",
-      "image": "optimized/boulettes_riz_tomate.webp",
-      "description": "Boulettes de riz à la mozzarella et sauce tomate — La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "gluten_free"
       ],
+      "image": "optimized/boulettes_riz_tomate.webp",
+      "title": "Boulettes de Riz à la Tomate",
+      "description": "Boulettes de riz à la mozzarella et sauce tomate — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Cuisson : 20 min",
       "ingredients": [
         "250 g de riz",
         "200 g de sauce tomate",
@@ -723,21 +726,21 @@
         "Formez des boules en les roulant entre vos paumes.",
         "Faites chauffer l'huile d'olive dans une poêle. Ajoutez les boulettes et laissez-les réchauffer 5 minutes environ. Servez sans attendre."
       ],
-      "servings": "Pour 4 personnes",
-      "prep_time": "Préparation : 15 min",
-      "cook_time": "Cuisson : 20 min",
       "tips": [
         "utilisez de préférence un riz pour risotto (arborio). Avec les restes, écrasez les boulettes et réchauffez le riz avec des dés de poivron et de tomate."
       ]
     },
     {
       "id": "spaghettis_citron",
-      "title": "Spaghettis Légers au Citron",
-      "image": "optimized/spaghettis_citron.webp",
-      "description": "Pâtes fraîches au citron et fromage blanc — La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses"
       ],
+      "image": "optimized/spaghettis_citron.webp",
+      "title": "Spaghettis Légers au Citron",
+      "description": "Pâtes fraîches au citron et fromage blanc — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
       "ingredients": [
         "150 g de spaghettis",
         "1 citron",
@@ -749,21 +752,21 @@
         "Pressez le citron. Dans un bol, mélangez le fromage blanc et le jus de citron. Salez et poivrez.",
         "Égouttez les pâtes et mélangez-les avec la sauce au fromage blanc. Servez immédiatement."
       ],
-      "servings": "Pour 2 personnes",
-      "prep_time": "Préparation : 5 min",
-      "cook_time": "Cuisson : 10 min",
       "tips": [
         "parsemez de parmesan râpé et ajoutez quelques crevettes cuites."
       ]
     },
     {
       "id": "fondant_chocolat",
-      "title": "Fondant au Chocolat, au Micro-ondes",
-      "image": "optimized/fondant_chocolat.webp",
-      "description": "Gâteau au chocolat fondant cuit au micro-ondes — La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/fondant_chocolat.webp",
+      "title": "Fondant au Chocolat, au Micro-ondes",
+      "description": "Gâteau au chocolat fondant cuit au micro-ondes — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 6 personnes",
+      "prep_time": "Préparation : 10 min",
+      "cook_time": "Cuisson : 8–11 min",
       "ingredients": [
         "150 g de chocolat noir à pâtisser",
         "3 œufs",
@@ -779,22 +782,22 @@
         "Beurrez et farinez le moule.",
         "Versez la préparation dans le moule et faites cuire 8 minutes au micro-ondes à 800 W. Laissez tiédir avant de servir."
       ],
-      "servings": "Pour 6 personnes",
-      "prep_time": "Préparation : 10 min",
-      "cook_time": "Cuisson : 8–11 min",
       "tips": [
         "5-6 minutes pour un coulant au chocolat, 10 minutes pour une texture plus ferme."
       ]
     },
     {
       "id": "cremes_pate_tartiner",
-      "title": "Petites Crèmes à la Pâte à Tartiner",
-      "image": "optimized/cremes_pate_tartiner.webp",
-      "description": "Crèmes au chocolat-noisettes — La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/cremes_pate_tartiner.webp",
+      "title": "Petites Crèmes à la Pâte à Tartiner",
+      "description": "Crèmes au chocolat-noisettes — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
       "ingredients": [
         "4 grosses c. à s. de pâte à tartiner chocolat-noisettes",
         "3 jaunes d'œufs",
@@ -808,23 +811,23 @@
         "Reversez le tout dans la casserole et ajoutez la pâte à tartiner. Faites cuire 5 minutes à feu doux en remuant sans cesse. Versez dans 4 petits verres ou pots en verre.",
         "Mettez au frais pendant 2 heures au moins."
       ],
-      "servings": "Pour 4 personnes",
-      "prep_time": "Préparation : 5 min",
-      "cook_time": "Cuisson : 10 min",
       "tips": [
         "avec les 3 blancs d'œufs, préparez des meringues maison (blancs montés en neige avec 120 g de sucre, cuisson 1 h au four thermostat 2-3)."
       ]
     },
     {
       "id": "curry_lentilles",
-      "title": "Curry de Lentilles",
-      "image": "optimized/curry_lentilles.webp",
-      "description": "Curry de lentilles vertes — La Cuisine de l'Étudiant Malin",
       "tags": [
         "soups",
         "vegan",
         "gluten_free"
       ],
+      "image": "optimized/curry_lentilles.webp",
+      "title": "Curry de Lentilles",
+      "description": "Curry de lentilles vertes — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Cuisson : 40 min",
       "ingredients": [
         "100 g de lentilles vertes à cuire",
         "½ boîte de tomates pelées",
@@ -840,21 +843,21 @@
         "Dans une cocotte ou une grande casserole, faites chauffer l'huile d'olive. Ajoutez l'oignon et laissez-le dorer 5 minutes. Versez les dés de carotte et les tomates égouttées. Laissez cuire 5 minutes.",
         "Ajoutez les lentilles, le jus des tomates et couvrez d'eau à hauteur. Salez, poivrez et ajoutez le curry. Portez à ébullition, puis baissez le feu et laissez mijoter 30 minutes sans couvrir. Servez bien chaud."
       ],
-      "servings": "Pour 2 personnes",
-      "prep_time": "Préparation : 15 min",
-      "cook_time": "Cuisson : 40 min",
       "tips": [
         "utilisez des lentilles corail pour une cuisson plus courte (environ 20 minutes). Agrémentez de cannelle, piment, gingembre ou curcuma."
       ]
     },
     {
       "id": "gateau_pommes_poele",
-      "title": "Gâteau aux Pommes, à la Poêle",
-      "image": "optimized/gateau_pommes_poele.webp",
-      "description": "Gâteau aux pommes cuit à la poêle — La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/gateau_pommes_poele.webp",
+      "title": "Gâteau aux Pommes, à la Poêle",
+      "description": "Gâteau aux pommes cuit à la poêle — La Cuisine de l'Étudiant Malin",
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Cuisson : 15 min",
       "ingredients": [
         "4 pommes",
         "1 œuf",
@@ -869,9 +872,6 @@
         "Dans un saladier, battez l'œuf avec la farine, la levure et 4 cuillères à soupe d'eau. Ajoutez le sucre, le sucre vanillé et mélangez. Versez les lamelles de pommes et mélangez encore.",
         "Faites fondre la moitié du beurre dans une grande poêle. Versez la préparation aux pommes, couvrez et laissez cuire 5 minutes. Faites glisser le gâteau retourné dans une grande assiette. Faites fondre le reste de beurre dans la poêle, puis remettez le gâteau pour le faire cuire de l'autre côté. Poursuivez la cuisson 10 minutes environ."
       ],
-      "servings": "Pour 4 personnes",
-      "prep_time": "Préparation : 15 min",
-      "cook_time": "Cuisson : 15 min",
       "tips": [
         "remplacez les pommes par des poires, des prunes ou des abricots. Servez tiède avec une boule de glace à la vanille ou un peu de crème fraîche."
       ]

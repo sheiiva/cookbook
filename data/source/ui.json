@@ -1,0 +1,74 @@
+{
+  "en": {
+    "title": "My Recipe Journal",
+    "search_placeholder": "Search recipes...",
+    "section_headers": {
+      "dish_types": "Dish Types",
+      "dietary_options": "Dietary Options"
+    },
+    "categories": {
+      "all": "All Recipes",
+      "main_courses": "Main Courses",
+      "desserts": "Desserts",
+      "soups": "Soups"
+    },
+    "dietary_filters": {
+      "vegan": "Vegan",
+      "gluten_free": "Gluten Free",
+      "sourdough": "Sourdough"
+    },
+    "recipe_labels": {
+      "ingredients": "Ingredients",
+      "instructions": "Instructions",
+      "tips": "Tips"
+    }
+  },
+  "fr": {
+    "title": "Mon Journal de Recettes",
+    "search_placeholder": "Rechercher des recettes...",
+    "section_headers": {
+      "dish_types": "Types de Plats",
+      "dietary_options": "Options Alimentaires"
+    },
+    "categories": {
+      "all": "Toutes les Recettes",
+      "main_courses": "Plats Principaux",
+      "desserts": "Desserts",
+      "soups": "Soupes"
+    },
+    "dietary_filters": {
+      "vegan": "Végétalien",
+      "gluten_free": "Sans Gluten",
+      "sourdough": "Levain"
+    },
+    "recipe_labels": {
+      "ingredients": "Ingrédients",
+      "instructions": "Instructions",
+      "tips": "Astuces"
+    }
+  },
+  "es": {
+    "title": "Mi Diario de Recetas",
+    "search_placeholder": "Buscar recetas...",
+    "section_headers": {
+      "dish_types": "Tipos de Platos",
+      "dietary_options": "Opciones Dietéticas"
+    },
+    "categories": {
+      "all": "Todas las Recetas",
+      "main_courses": "Platos Principales",
+      "desserts": "Postres",
+      "soups": "Sopas"
+    },
+    "dietary_filters": {
+      "vegan": "Vegano",
+      "gluten_free": "Sin Gluten",
+      "sourdough": "Masa madre"
+    },
+    "recipe_labels": {
+      "ingredients": "Ingredientes",
+      "instructions": "Instrucciones",
+      "tips": "Consejos"
+    }
+  }
+}

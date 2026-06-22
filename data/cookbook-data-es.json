@@ -32,13 +32,13 @@
   "recipes": [
     {
       "id": "bourguignon",
-      "title": "Bourguignon de Seitán",
-      "image": "optimized/bourguignon.webp",
-      "description": "Una versión vegana del plato francés clásico",
       "tags": [
         "main_courses",
         "vegan"
       ],
+      "image": "optimized/bourguignon.webp",
+      "title": "Bourguignon de Seitán",
+      "description": "Una versión vegana del plato francés clásico",
       "ingredients": [
         "2 cuadrados de chocolate negro",
         "500 ml de caldo de verduras",
@@ -69,14 +69,14 @@
     },
     {
       "id": "lentils_soup",
-      "title": "Sopa de Lentejas",
-      "image": "optimized/lentils_soup.webp",
-      "description": "Sopa de lentejas caliente y nutritiva",
       "tags": [
         "soups",
         "vegan",
         "gluten_free"
       ],
+      "image": "optimized/lentils_soup.webp",
+      "title": "Sopa de Lentejas",
+      "description": "Sopa de lentejas caliente y nutritiva",
       "ingredients": [
         "3 cucharadas de aceite de oliva",
         "1 cebolla",
@@ -98,13 +98,13 @@
     },
     {
       "id": "moussaka",
-      "title": "Moussaka",
-      "image": "optimized/moussaka.webp",
-      "description": "Cazuela de berenjenas y patatas en capas",
       "tags": [
         "main_courses",
         "vegan"
       ],
+      "image": "optimized/moussaka.webp",
+      "title": "Moussaka",
+      "description": "Cazuela de berenjenas y patatas en capas",
       "ingredients": [
         "sal",
         "pimienta",
@@ -176,13 +176,13 @@
     },
     {
       "id": "banana_bread",
-      "title": "Pan de Plátano",
-      "image": "optimized/banana_bread.webp",
-      "description": "Pan húmedo de plátanos maduros",
       "tags": [
         "desserts",
         "vegan"
       ],
+      "image": "optimized/banana_bread.webp",
+      "title": "Pan de Plátano",
+      "description": "Pan húmedo de plátanos maduros",
       "ingredients": [
         "4 plátanos maduros medianos",
         "120g de azúcar",
@@ -203,13 +203,13 @@
     },
     {
       "id": "chocolate_truffles",
-      "title": "Trufas de Chocolate",
-      "image": "optimized/chocolate_truffles.webp",
-      "description": "Trufas de chocolate ricas y cremosas",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/chocolate_truffles.webp",
+      "title": "Trufas de Chocolate",
+      "description": "Trufas de chocolate ricas y cremosas",
       "ingredients": [
         "80g de azúcar glas",
         "100g de mantequilla sin sal",
@@ -228,13 +228,13 @@
     },
     {
       "id": "rice_pudding",
-      "title": "Arroz con Leche",
-      "image": "optimized/rice_pudding.webp",
-      "description": "Arroz con leche cremoso y reconfortante",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/rice_pudding.webp",
+      "title": "Arroz con Leche",
+      "description": "Arroz con leche cremoso y reconfortante",
       "ingredients": [
         "naranja o clementina",
         "5 cucharadas de azúcar",
@@ -251,13 +251,13 @@
     },
     {
       "id": "pizza_dough",
-      "title": "Masa de Pizza",
-      "image": "optimized/pizza_dough.webp",
-      "description": "Masa de pizza casera clásica",
       "tags": [
         "main_courses",
         "vegan"
       ],
+      "image": "optimized/pizza_dough.webp",
+      "title": "Masa de Pizza",
+      "description": "Masa de pizza casera clásica",
       "ingredients": [
         "350g de harina (tipo masa de pan) + 100g para trabajar la masa",
         "2 cucharaditas de sal",
@@ -278,12 +278,12 @@
     },
     {
       "id": "brownie",
-      "title": "Brownie",
-      "image": "optimized/brownie.webp",
-      "description": "Brownie de chocolate rico y cremoso",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/brownie.webp",
+      "title": "Brownie",
+      "description": "Brownie de chocolate rico y cremoso",
       "ingredients": [
         "250g de chocolate de repostería",
         "150g de mantequilla",
@@ -303,13 +303,13 @@
     },
     {
       "id": "doenjang_jjigae",
-      "title": "Doenjang-jjigae",
-      "image": "optimized/doenjang_jjigae.webp",
-      "description": "Estofado coreano de pasta de soja fermentada",
       "tags": [
         "soups",
         "vegan"
       ],
+      "image": "optimized/doenjang_jjigae.webp",
+      "title": "Doenjang-jjigae",
+      "description": "Estofado coreano de pasta de soja fermentada",
       "ingredients": [
         "1 patata mediana, pelada y cortada en cubos de 1cm (aproximadamente 150g)",
         "1 cebolla mediana, cortada en trozos de 1cm (aproximadamente 150g)",
@@ -332,12 +332,12 @@
     },
     {
       "id": "cookies",
-      "title": "Galletas",
-      "image": "optimized/cookies.webp",
-      "description": "Galletas suaves con trozos de chocolate",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/cookies.webp",
+      "title": "Galletas",
+      "description": "Galletas suaves con trozos de chocolate",
       "ingredients": [
         "85g de mantequilla blanda",
         "85g de azúcar",
@@ -359,13 +359,13 @@
     },
     {
       "id": "sourdough_brownies",
-      "title": "Brownies de chocolate con descarte de masa madre",
-      "image": "optimized/sourdough_brownies.webp",
-      "description": "Brownies de chocolate con descarte de masa madre",
       "tags": [
         "desserts",
         "sourdough"
       ],
+      "image": "optimized/sourdough_brownies.webp",
+      "title": "Brownies de chocolate con descarte de masa madre",
+      "description": "Brownies de chocolate con descarte de masa madre",
       "ingredients": [
         "113g de mantequilla",
         "340g de chocolate",
@@ -391,14 +391,14 @@
     },
     {
       "id": "sourdough_tortilla",
-      "title": "Tortilla de masa madre",
-      "image": "optimized/sourdough_tortilla.webp",
-      "description": "Tortillas blandas con masa madre",
       "tags": [
         "main_courses",
         "vegan",
         "sourdough"
       ],
+      "image": "optimized/sourdough_tortilla.webp",
+      "title": "Tortilla de masa madre",
+      "description": "Tortillas blandas con masa madre",
       "ingredients": [
         "363g de harina",
         "6,5g de sal",
@@ -419,14 +419,14 @@
     },
     {
       "id": "vegan_sourdough_pancakes",
-      "title": "Tortitas veganas de masa madre",
-      "image": "optimized/vegan_sourdough_pancakes.webp",
-      "description": "Tortitas esponjosas con masa madre y leche vegetal",
       "tags": [
         "main_courses",
         "vegan",
         "sourdough"
       ],
+      "image": "optimized/vegan_sourdough_pancakes.webp",
+      "title": "Tortitas veganas de masa madre",
+      "description": "Tortitas esponjosas con masa madre y leche vegetal",
       "ingredients": [
         "80g de masa madre",
         "60ml de leche vegetal (soja, avena, almendra, etc.)",
@@ -443,13 +443,13 @@
     },
     {
       "id": "sourdough_english_muffins",
-      "title": "Muffins ingleses de masa madre",
-      "image": "optimized/sourdough_english_muffins.webp",
-      "description": "Muffins ingleses con masa madre activa",
       "tags": [
         "main_courses",
         "sourdough"
       ],
+      "image": "optimized/sourdough_english_muffins.webp",
+      "title": "Muffins ingleses de masa madre",
+      "description": "Muffins ingleses con masa madre activa",
       "ingredients": [
         "100g de masa madre activa",
         "20g de miel",
@@ -469,13 +469,13 @@
     },
     {
       "id": "sourdough_chocolate_chip_cookies",
-      "title": "Galletas de chocolate con masa madre",
-      "image": "optimized/sourdough_chocolate_chip_cookies.webp",
-      "description": "Galletas de chocolate gruesas y tiernas con descarte de masa madre (Angelica Sourdough Co.)",
       "tags": [
         "desserts",
         "sourdough"
       ],
+      "image": "optimized/sourdough_chocolate_chip_cookies.webp",
+      "title": "Galletas de chocolate con masa madre",
+      "description": "Galletas de chocolate gruesas y tiernas con descarte de masa madre (Angelica Sourdough Co.)",
       "ingredients": [
         "1½ tazas (113g) de mantequilla blanda o derretida y enfriada",
         "1/2 taza (100g) de azúcar moreno",
@@ -499,13 +499,16 @@
     },
     {
       "id": "petite_creme_cacao",
-      "title": "Pequeña Crema de Cacao",
-      "image": "optimized/petite_creme_cacao.webp",
-      "description": "Crema de chocolate rápida para una persona — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/petite_creme_cacao.webp",
+      "title": "Pequeña Crema de Cacao",
+      "description": "Crema de chocolate rápida para una persona — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 1 persona",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 5 min",
       "ingredients": [
         "200 ml de leche semidesnatada",
         "2 cucharaditas de cacao en polvo sin azúcar",
@@ -517,23 +520,23 @@
         "En una cacerola pequeña, vierta el resto de la leche, la maicena diluida, el cacao y el azúcar. Caliente a fuego lento hasta que hierva, luego deje espesar 2 a 3 minutos removiendo sin cesar.",
         "Vierta en un vaso o ramequín y sirva tibia o fría."
       ],
-      "servings": "Para 1 persona",
-      "prep_time": "Preparación : 5 min",
-      "cook_time": "Cocción : 5 min",
       "tips": [
         "también puede preparar esta crema en 2 minutos en el microondas. En un bol o taza grande, mezcle la maicena con un poco de leche, luego añada el resto de la leche, el cacao y el azúcar. Cocine 2 a 3 minutos, parando para remover. Vigile para que no se desborde."
       ]
     },
     {
       "id": "guacamole",
-      "title": "Guacamole",
-      "image": "optimized/guacamole.webp",
-      "description": "Guacamole mexicano clásico — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "vegan",
         "gluten_free"
       ],
+      "image": "optimized/guacamole.webp",
+      "title": "Guacamole",
+      "description": "Guacamole mexicano clásico — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Reposo : 1 hora",
       "ingredients": [
         "2 aguacates bien maduros",
         "1 tomate",
@@ -547,19 +550,19 @@
         "Vierta en el bol el zumo de lima, la cebolla picada y los dados de tomate. Mezcle bien.",
         "Añada el pimentón y la sal. Pruebe y rectifique el sazonado. Cubra y refrigere al menos 1 hora.",
         "Sirva con chips de tortilla, o unte sobre pan de molde con una loncha de jamón cocido."
-      ],
-      "servings": "Para 4 personas",
-      "prep_time": "Preparación : 15 min",
-      "cook_time": "Reposo : 1 hora"
+      ]
     },
     {
       "id": "quiche_lorraine",
-      "title": "Quiche Lorraine",
-      "image": "optimized/quiche_lorraine.webp",
-      "description": "Quiche tradicional con bacon — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses"
       ],
+      "image": "optimized/quiche_lorraine.webp",
+      "title": "Quiche Lorraine",
+      "description": "Quiche tradicional con bacon — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 6 personas",
+      "prep_time": "Preparación : 10 min",
+      "cook_time": "Cocción : 40 min",
       "ingredients": [
         "8 huevos",
         "1 rollo de masa quebrada",
@@ -575,22 +578,22 @@
         "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta. Vierta sobre el bacon.",
         "Hornee 40 minutos. Sirva caliente."
       ],
-      "servings": "Para 6 personas",
-      "prep_time": "Preparación : 10 min",
-      "cook_time": "Cocción : 40 min",
       "tips": [
         "añada cebollino picado para frescura. Los restos se comen fríos en el tupper."
       ]
     },
     {
       "id": "flan_courgette",
-      "title": "Flan de Calabacín al Microondas",
-      "image": "optimized/flan_courgette.webp",
-      "description": "Flan de calabacín rápido al microondas — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "gluten_free"
       ],
+      "image": "optimized/flan_courgette.webp",
+      "title": "Flan de Calabacín al Microondas",
+      "description": "Flan de calabacín rápido al microondas — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
       "ingredients": [
         "1 calabacín",
         "2 huevos",
@@ -603,21 +606,21 @@
         "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta.",
         "Ponga los dados de calabacín en un recipiente apto para microondas y vierta encima la preparación de huevo. Cubra. Cocine unos 10 minutos a 800 W. Sirva caliente."
       ],
-      "servings": "Para 2 personas",
-      "prep_time": "Preparación : 5 min",
-      "cook_time": "Cocción : 10 min",
       "tips": [
         "añada una pizca de pimentón o 1 cucharadita de curry en polvo."
       ]
     },
     {
       "id": "gateau_yaourt",
-      "title": "Bizcocho de Yogur",
-      "image": "optimized/gateau_yaourt.webp",
-      "description": "Bizcocho medido con el pot de yogur — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/gateau_yaourt.webp",
+      "title": "Bizcocho de Yogur",
+      "description": "Bizcocho medido con el pot de yogur — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 6 personas",
+      "prep_time": "Preparación : 10 min",
+      "cook_time": "Cocción : 40 min",
       "ingredients": [
         "1 pot de yogur natural",
         "2 pots de azúcar en polvo",
@@ -635,22 +638,22 @@
         "Vierta la masa en un molde de bizcocho engrasado y enharinado y hornee 40 minutos. Compruebe la cocción insertando un cuchillo: si sale seco, el bizcocho está listo.",
         "Deje enfriar antes de desmoldar."
       ],
-      "servings": "Para 6 personas",
-      "prep_time": "Preparación : 10 min",
-      "cook_time": "Cocción : 40 min",
       "tips": [
         "añada trozos de fruta fresca o en conserva, especias (canela, vainilla...), ralladura cítrica o pepitas de chocolate."
       ]
     },
     {
       "id": "gratin_pommes_terre",
-      "title": "Gratin de Patatas en Sartén",
-      "image": "optimized/gratin_pommes_terre.webp",
-      "description": "Gratin de patatas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "gluten_free"
       ],
+      "image": "optimized/gratin_pommes_terre.webp",
+      "title": "Gratin de Patatas en Sartén",
+      "description": "Gratin de patatas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 20 min",
+      "cook_time": "Cocción : 50 min",
       "ingredients": [
         "4 patatas",
         "1 huevo",
@@ -666,22 +669,22 @@
         "Vierta el aceite de oliva en una sartén. Coloque la mitad de las rodajas, la mezcla de patata rallada y el resto de rodajas. Cubra con leche hasta el borde. Cocine 30 minutos a fuego lento.",
         "Voltee el gratin en un plato y vuelva a ponerlo en la sartén para cocinar el otro lado 15 a 20 minutos. Sirva bien caliente."
       ],
-      "servings": "Para 2 personas",
-      "prep_time": "Preparación : 20 min",
-      "cook_time": "Cocción : 50 min",
       "tips": [
         "añada dados de jamón, hierbas (cebollino, perejil...) o una pizca de especias (pimentón, curry...)."
       ]
     },
     {
       "id": "banane_four",
-      "title": "Plátano al Horno",
-      "image": "optimized/banane_four.webp",
-      "description": "Postre simple de plátano asado — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/banane_four.webp",
+      "title": "Plátano al Horno",
+      "description": "Postre simple de plátano asado — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 1 persona",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
       "ingredients": [
         "1 plátano",
         "1 sobre de azúcar vainillado",
@@ -693,22 +696,22 @@
         "Espolvoree con azúcar vainillado y ponga trocitos de mantequilla.",
         "Hornee 10 minutos. Disfrute caliente o tibio."
       ],
-      "servings": "Para 1 persona",
-      "prep_time": "Preparación : 5 min",
-      "cook_time": "Cocción : 10 min",
       "tips": [
         "espolvoree con galletas desmenuzadas para dar crujiente."
       ]
     },
     {
       "id": "boulettes_riz_tomate",
-      "title": "Bolitas de Arroz con Tomate",
-      "image": "optimized/boulettes_riz_tomate.webp",
-      "description": "Bolitas de arroz con mozzarella y salsa de tomate — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses",
         "gluten_free"
       ],
+      "image": "optimized/boulettes_riz_tomate.webp",
+      "title": "Bolitas de Arroz con Tomate",
+      "description": "Bolitas de arroz con mozzarella y salsa de tomate — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Cocción : 20 min",
       "ingredients": [
         "250 g de arroz",
         "200 g de salsa de tomate",
@@ -723,21 +726,21 @@
         "Forme bolas rodándolas entre las palmas.",
         "Caliente el aceite de oliva en una sartén. Añada las bolitas y caliéntelas unos 5 minutos. Sirva de inmediato."
       ],
-      "servings": "Para 4 personas",
-      "prep_time": "Preparación : 15 min",
-      "cook_time": "Cocción : 20 min",
       "tips": [
         "use arroz para risotto (arborio) si es posible. Con los restos, aplaste las bolitas y recaliente el arroz con dados de pimiento y tomate."
       ]
     },
     {
       "id": "spaghettis_citron",
-      "title": "Espaguetis Ligeros al Limón",
-      "image": "optimized/spaghettis_citron.webp",
-      "description": "Pasta fresca con limón y queso fresco — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "main_courses"
       ],
+      "image": "optimized/spaghettis_citron.webp",
+      "title": "Espaguetis Ligeros al Limón",
+      "description": "Pasta fresca con limón y queso fresco — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
       "ingredients": [
         "150 g de espaguetis",
         "1 limón",
@@ -749,21 +752,21 @@
         "Exprima el limón. En un bol, mezcle el queso fresco y el zumo de limón. Sazone con sal y pimienta.",
         "Escurra la pasta y mézclela con la salsa de queso fresco. Sirva de inmediato."
       ],
-      "servings": "Para 2 personas",
-      "prep_time": "Preparación : 5 min",
-      "cook_time": "Cocción : 10 min",
       "tips": [
         "espolvoree con parmesano rallado y añada unas gambas cocidas."
       ]
     },
     {
       "id": "fondant_chocolat",
-      "title": "Fondant de Chocolate al Microondas",
-      "image": "optimized/fondant_chocolat.webp",
-      "description": "Pastel de chocolate fundente al microondas — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/fondant_chocolat.webp",
+      "title": "Fondant de Chocolate al Microondas",
+      "description": "Pastel de chocolate fundente al microondas — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 6 personas",
+      "prep_time": "Preparación : 10 min",
+      "cook_time": "Cocción : 8–11 min",
       "ingredients": [
         "150 g de chocolate negro para repostería",
         "3 huevos",
@@ -779,22 +782,22 @@
         "Engrase y enharine el molde.",
         "Vierta la preparación en el molde y cocine 8 minutos en el microondas a 800 W. Deje templar antes de servir."
       ],
-      "servings": "Para 6 personas",
-      "prep_time": "Preparación : 10 min",
-      "cook_time": "Cocción : 8–11 min",
       "tips": [
         "5-6 minutos para centro fundente, 10 minutos para textura más firme."
       ]
     },
     {
       "id": "cremes_pate_tartiner",
-      "title": "Pequeñas Cremas de Crema de Cacao y Avellanas",
-      "image": "optimized/cremes_pate_tartiner.webp",
-      "description": "Cremas con crema de chocolate y avellanas — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts",
         "gluten_free"
       ],
+      "image": "optimized/cremes_pate_tartiner.webp",
+      "title": "Pequeñas Cremas de Crema de Cacao y Avellanas",
+      "description": "Cremas con crema de chocolate y avellanas — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
       "ingredients": [
         "4 cucharadas grandes de crema de chocolate y avellanas",
         "3 yemas de huevo",
@@ -808,23 +811,23 @@
         "Vierta todo de nuevo en la cacerola y añada la crema de cacao. Cocine 5 minutos a fuego lento removiendo sin cesar. Vierta en 4 vasitos o tarros de cristal.",
         "Refrigere al menos 2 horas."
       ],
-      "servings": "Para 4 personas",
-      "prep_time": "Preparación : 5 min",
-      "cook_time": "Cocción : 10 min",
       "tips": [
         "con las 3 claras, prepare merengues caseras (claras montadas con 120 g de azúcar, hornee 1 hora a temperatura muy baja)."
       ]
     },
     {
       "id": "curry_lentilles",
-      "title": "Curry de Lentejas",
-      "image": "optimized/curry_lentilles.webp",
-      "description": "Curry de lentejas verdes — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "soups",
         "vegan",
         "gluten_free"
       ],
+      "image": "optimized/curry_lentilles.webp",
+      "title": "Curry de Lentejas",
+      "description": "Curry de lentejas verdes — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Cocción : 40 min",
       "ingredients": [
         "100 g de lentejas verdes para cocer",
         "½ lata de tomates pelados",
@@ -840,21 +843,21 @@
         "En una olla grande, caliente el aceite de oliva. Añada la cebolla y dórela 5 minutos. Vierta la zanahoria en dados y los tomates escurridos. Cocine 5 minutos.",
         "Añada las lentejas, el jugo de tomate y cubra con agua hasta el borde. Sazone con sal, pimienta y curry. Lleve a ebullición, baje el fuego y cocine a fuego lento sin tapar 30 minutos. Sirva bien caliente."
       ],
-      "servings": "Para 2 personas",
-      "prep_time": "Preparación : 15 min",
-      "cook_time": "Cocción : 40 min",
       "tips": [
         "use lentejas rojas para cocción más corta (unos 20 minutos). Añada canela, pimentón, jengibre o cúrcuma."
       ]
     },
     {
       "id": "gateau_pommes_poele",
-      "title": "Bizcocho de Manzanas en Sartén",
-      "image": "optimized/gateau_pommes_poele.webp",
-      "description": "Bizcocho de manzanas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
       "tags": [
         "desserts"
       ],
+      "image": "optimized/gateau_pommes_poele.webp",
+      "title": "Bizcocho de Manzanas en Sartén",
+      "description": "Bizcocho de manzanas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Cocción : 15 min",
       "ingredients": [
         "4 manzanas",
         "1 huevo",
@@ -869,9 +872,6 @@
         "En un bol, bata el huevo con la harina, la levadura y 4 cucharadas de agua. Añada el azúcar y el azúcar vainillado y mezcle. Incorpore las láminas de manzana y mezcle de nuevo.",
         "Derrita la mitad de la mantequilla en una sartén grande. Vierta la preparación de manzana, cubra y cocine 5 minutos. Deslice el bizcocho volteado en un plato grande. Derrita el resto de mantequilla en la sartén y vuelva a poner el bizcocho para cocinar el otro lado unos 10 minutos."
       ],
-      "servings": "Para 4 personas",
-      "prep_time": "Preparación : 15 min",
-      "cook_time": "Cocción : 15 min",
       "tips": [
         "sustituya las manzanas por peras, ciruelas o albaricoques. Sirva tibio con helado de vainilla o un poco de nata."
       ]

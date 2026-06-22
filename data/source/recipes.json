@@ -1,0 +1,2320 @@
+[
+  {
+    "id": "bourguignon",
+    "image": "optimized/bourguignon.webp",
+    "tags": [
+      "main_courses",
+      "vegan"
+    ],
+    "translations": {
+      "en": {
+        "title": "Seitan Bourguignon",
+        "description": "A hearty vegan version of the classic French dish",
+        "ingredients": [
+          "2 squares of dark chocolate",
+          "500 ml of vegetable stock",
+          "1 tablespoon of flour",
+          "3 carrots",
+          "1 onion",
+          "70 ml of Bourgogne red wine",
+          "500 g of seitan",
+          "300 g of mushrooms",
+          "2 cloves of garlic",
+          "20 g of margarine",
+          "1 bouquet garni",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "The day before or the morning for dinner:",
+          "Rinse the vegetables and finely chop the garlic, onion, and mushrooms. Cut the carrots into 1 cm pieces.",
+          "In a pot over medium heat, melt the margarine. Add the garlic, onion, carrots, and mushrooms. Sauté for 5 minutes.",
+          "Cut the seitan into thick cubes, similar to stew meat.",
+          "Add the seitan to the pot and let it sear for 2 minutes.",
+          "Deglaze with all the red wine, scraping the bits off the bottom with a spatula.",
+          "Add the bouquet garni and remove from heat.",
+          "Cover and let marinate overnight.",
+          "The next day, pour the vegetable stock into the pot. Season with salt and pepper.",
+          "Cook again, simmering for 1 hour over medium-low heat. Before serving, add the squares of dark chocolate and stir until melted to bind the sauce.",
+          "It's ready! Serve with rice or egg-free pasta."
+        ]
+      },
+      "fr": {
+        "title": "Bourguignon de Seitan",
+        "description": "Une version végétalienne du plat français classique",
+        "ingredients": [
+          "2 carrés de chocolat noir",
+          "500 ml de bouillon de légumes",
+          "1 cuillère à soupe de farine",
+          "3 carottes",
+          "1 oignon",
+          "70 ml de vin rouge de Bourgogne",
+          "500 g de seitan",
+          "300 g de champignons",
+          "2 gousses d'ail",
+          "20 g de margarine",
+          "1 bouquet garni",
+          "Sel et poivre"
+        ],
+        "instructions": [
+          "La veille ou le matin pour le dîner :",
+          "Rincez les légumes et hachez finement l'ail, l'oignon et les champignons. Coupez les carottes en morceaux de 1 cm.",
+          "Dans une casserole à feu moyen, faites fondre la margarine. Ajoutez l'ail, l'oignon, les carottes et les champignons. Faites revenir pendant 5 minutes.",
+          "Coupez le seitan en gros cubes, similaires à de la viande de ragoût.",
+          "Ajoutez le seitan à la casserole et laissez-le dorer pendant 2 minutes.",
+          "Déglacez avec tout le vin rouge, en grattant les morceaux du fond avec une spatule.",
+          "Ajoutez le bouquet garni et retirez du feu.",
+          "Couvrez et laissez mariner toute la nuit.",
+          "Le lendemain, versez le bouillon de légumes dans la casserole. Assaisonnez avec du sel et du poivre.",
+          "Remettez à cuire, en mijotant pendant 1 heure à feu moyen-doux. Avant de servir, ajoutez les carrés de chocolat noir et remuez jusqu'à ce qu'ils soient fondus pour lier la sauce.",
+          "C'est prêt ! Servez avec du riz ou des pâtes sans œufs."
+        ]
+      },
+      "es": {
+        "title": "Bourguignon de Seitán",
+        "description": "Una versión vegana del plato francés clásico",
+        "ingredients": [
+          "2 cuadrados de chocolate negro",
+          "500 ml de caldo de verduras",
+          "1 cucharada de harina",
+          "3 zanahorias",
+          "1 cebolla",
+          "70 ml de vino tinto de Borgoña",
+          "500 g de seitán",
+          "300 g de champiñones",
+          "2 dientes de ajo",
+          "20 g de margarina",
+          "1 bouquet garni",
+          "Sal y pimienta"
+        ],
+        "instructions": [
+          "El día anterior o por la mañana para la cena:",
+          "Lava las verduras y pica finamente el ajo, la cebolla y los champiñones. Corta las zanahorias en trozos de 1 cm.",
+          "En una olla a fuego medio, derrite la margarina. Añade el ajo, la cebolla, las zanahorias y los champiñones. Sofríe durante 5 minutos.",
+          "Corta el seitán en cubos gruesos, similares a carne de estofado.",
+          "Añade el seitán a la olla y déjalo dorar durante 2 minutos.",
+          "Desglaza con todo el vino tinto, raspando el fondo con una espátula.",
+          "Añade el bouquet garni y retira del fuego.",
+          "Tapa y deja marinar toda la noche.",
+          "Al día siguiente, vierte el caldo de verduras en la olla. Sazona con sal y pimienta.",
+          "Vuelve a cocinar, hirviendo a fuego lento durante 1 hora a fuego medio-bajo. Antes de servir, añade los cuadrados de chocolate negro y remueve hasta que se derritan para ligar la salsa.",
+          "¡Está listo! Sirve con arroz o pasta sin huevos."
+        ]
+      }
+    }
+  },
+  {
+    "id": "lentils_soup",
+    "image": "optimized/lentils_soup.webp",
+    "tags": [
+      "soups",
+      "vegan",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Lentils Soup",
+        "description": "Warm and nutritious lentil soup",
+        "ingredients": [
+          "3 tablespoons of olive oil",
+          "1 onion",
+          "1 carrots",
+          "1 leek white",
+          "1 shallot",
+          "150g green lentils",
+          "2 bouillon cubes",
+          "1L of water"
+        ],
+        "instructions": [
+          "Peel the white leek, carrot, onion and shallot, and cut into mirepoix (small dice).",
+          "In a casserole, put three tablespoons of olive oil and sweat the vegetables which will for 5 to 10 minutes over low heat.",
+          "Add the lentils, mixing them well with the vegetables so that they become translucent and absorb the flavors of the vegetables.",
+          "Add 1 liter of water, two stock cubes, and simmer for 3/4 of an hour.",
+          "Mix the preparation (no food mill, the mixer leaves small pieces for a nicer consistency).",
+          "Serve hot with croutons, a little grated cheese, or boiled eggs."
+        ]
+      },
+      "fr": {
+        "title": "Soupe aux Lentilles",
+        "description": "Soupe de lentilles chaude et nutritive",
+        "ingredients": [
+          "3 cuillères à soupe d'huile d'olive",
+          "1 oignon",
+          "1 carotte",
+          "1 poireau blanc",
+          "1 échalote",
+          "150g de lentilles vertes",
+          "2 cubes de bouillon",
+          "1L d'eau"
+        ],
+        "instructions": [
+          "Épluchez le poireau blanc, la carotte, l'oignon et l'échalote, et coupez en mirepoix (petits dés).",
+          "Dans une casserole, mettez trois cuillères à soupe d'huile d'olive et faites suer les légumes pendant 5 à 10 minutes à feu doux.",
+          "Ajoutez les lentilles, en les mélangeant bien avec les légumes pour qu'elles deviennent translucides et absorbent les saveurs des légumes.",
+          "Ajoutez 1 litre d'eau, deux cubes de bouillon, et laissez mijoter pendant 3/4 d'heure.",
+          "Mixez la préparation (pas de moulin à légumes, le mixeur laisse de petits morceaux pour une consistance plus agréable).",
+          "Servez chaud avec des croûtons, un peu de fromage râpé, ou des œufs durs."
+        ]
+      },
+      "es": {
+        "title": "Sopa de Lentejas",
+        "description": "Sopa de lentejas caliente y nutritiva",
+        "ingredients": [
+          "3 cucharadas de aceite de oliva",
+          "1 cebolla",
+          "1 zanahoria",
+          "1 puerro blanco",
+          "1 chalota",
+          "150g de lentejas verdes",
+          "2 cubos de caldo",
+          "1L de agua"
+        ],
+        "instructions": [
+          "Pela el puerro blanco, la zanahoria, la cebolla y la chalota, y corta en mirepoix (dados pequeños).",
+          "En una cazuela, pon tres cucharadas de aceite de oliva y sofríe las verduras 5 a 10 minutos a fuego lento.",
+          "Añade las lentejas, mezclándolas bien con las verduras para que se vuelvan translúcidas y absorban los sabores de las verduras.",
+          "Añade 1 litro de agua, dos cubos de caldo, y deja hervir a fuego lento durante 3/4 de hora.",
+          "Tritura la preparación (no uses un molinillo, la batidora deja trocitos pequeños para una consistencia más agradable).",
+          "Sirve caliente con picatostes, un poco de queso rallado, o huevos duros."
+        ]
+      }
+    }
+  },
+  {
+    "id": "moussaka",
+    "image": "optimized/moussaka.webp",
+    "tags": [
+      "main_courses",
+      "vegan"
+    ],
+    "translations": {
+      "en": {
+        "title": "Moussaka",
+        "description": "Layered eggplant and potato casserole",
+        "ingredients": [
+          "salt",
+          "pepper",
+          "nutmeg",
+          "1 tablespoon of honey",
+          "30 g of butter (or margarine for vegan options)",
+          "olive oil",
+          "1 onion",
+          "5 tomatoes (+/- a brick of tomato coulis)",
+          "2 eggplants",
+          "5 medium potatoes",
+          "200g of texturized soja",
+          "1 tablespoons of cinnamon"
+        ],
+        "ingredient_sections": {
+          "béchamel": [
+            "3 tablespoons of flour",
+            "20 g of butter",
+            "35 cl of milk (or plant milk)"
+          ]
+        },
+        "instruction_blocks": {
+          "tomato_sauce": {
+            "title": "Preparation of the tomato sauce",
+            "steps": [
+              "Slice the onions and brown them in a small casserole dish.",
+              "Add the tomatoes cut into large cubes and 2 big tablespoons of olive oil, the cinnamon, the honey, salt and pepper. Let everything reduce for 25 minutes over medium heat. You should obtain a sauce, which can be homogenized with ready-made tomato coulis.",
+              "Note: If the sauce is too acidic, you can add a small pinch of bicarbonate of soda to balance the acidity."
+            ]
+          },
+          "eggplants": {
+            "title": "Preparation of the eggplants",
+            "steps": [
+              "Cut the eggplants into slices (without peeling them), salt generously, and let them drain while you do the next step. Tip for draining the eggplants: in a dish, alternate a layer of salted eggplant slices and a layer of absorbent paper or leave them in a colander."
+            ]
+          },
+          "potatoes": {
+            "title": "Preparation of the potatoes",
+            "steps": [
+              "Peel and cut the potatoes into thin slices.",
+              "Arrange the potato slices in the bottom of a fairly high, oiled gratin dish. Baste the potatoes with a little (3 tablespoons) of the juice released by the simmering tomatoes.",
+              "Place the potato dish under the grill for 5 to 15 minutes depending on your oven, so that they brown."
+            ]
+          },
+          "assembly": {
+            "title": "Prepare the montage",
+            "steps": [
+              "Now that they have drained, place the eggplant slices in the pan over high heat to grill them a little on each side, set aside.",
+              "Add the texturized soja to the tomato-onion sauce and lower the heat (very low).",
+              "Remove the potato dish from the oven and preheat the oven to 200°C (thermostat 6-7)."
+            ]
+          },
+          "béchamel": {
+            "title": "Preparation of the béchamel",
+            "steps": [
+              "In a small casserole dish over low heat, brown the 20 g of butter, add the flour and mix until smooth.",
+              "Gradually add the milk, stirring constantly, this can take a good 10 minutes, you should get a fairly thick sauce.",
+              "Salt, pepper and grate a little nutmeg."
+            ]
+          },
+          "final_assembly": {
+            "title": "Assembly of the moussaka",
+            "steps": [
+              "Assembly of the moussaka. On top of the layer of potatoes, spread half of the minced meat with the tomato, then half of the eggplants, then the other half of the meat, then the other half of the eggplants, a drizzle of olive oil and finish with the béchamel.",
+              "Place everything in the oven at 200°C (thermostat 6-7) and cook for 1 hour (the béchamel should be crispy and golden)."
+            ]
+          }
+        }
+      },
+      "fr": {
+        "title": "Moussaka",
+        "description": "Casserole d'aubergines et pommes de terre en couches",
+        "ingredients": [
+          "sel",
+          "poivre",
+          "noix de muscade",
+          "1 cuillère à soupe de miel",
+          "30 g de beurre (ou margarine pour les options végétaliennes)",
+          "huile d'olive",
+          "1 oignon",
+          "5 tomates (+/- une brique de coulis de tomates)",
+          "2 aubergines",
+          "5 pommes de terre moyennes",
+          "200 g de soja texturé",
+          "1 cuillère à soupe de cannelle"
+        ],
+        "ingredient_sections": {
+          "béchamel": [
+            "3 cuillères à soupe de farine",
+            "20 g de beurre",
+            "35 cl de lait (ou lait végétal)"
+          ]
+        },
+        "instruction_blocks": {
+          "tomato_sauce": {
+            "title": "Préparation de la sauce tomate",
+            "steps": [
+              "Émincez les oignons et faites-les dorer dans une petite casserole.",
+              "Ajoutez les tomates coupées en gros cubes et 2 grosses cuillères à soupe d'huile d'olive, la cannelle, le miel, le sel et le poivre. Laissez réduire 25 minutes à feu moyen. Vous devez obtenir une sauce, que vous pouvez homogénéiser avec du coulis de tomates.",
+              "Note : si la sauce est trop acide, ajoutez une petite pincée de bicarbonate pour équilibrer l'acidité."
+            ]
+          },
+          "eggplants": {
+            "title": "Préparation des aubergines",
+            "steps": [
+              "Coupez les aubergines en tranches (sans les éplucher), salez généreusement et laissez-les dégorger pendant l'étape suivante. Astuce : dans un plat, alternez une couche de tranches d'aubergines salées et une couche de papier absorbant, ou laissez-les dans une passoire."
+            ]
+          },
+          "potatoes": {
+            "title": "Préparation des pommes de terre",
+            "steps": [
+              "Épluchez et coupez les pommes de terre en fines tranches.",
+              "Disposez les tranches au fond d'un plat à gratin assez haut et huilé. Arrosez les pommes de terre avec un peu (3 cuillères à soupe) du jus des tomates en cuisson.",
+              "Placez le plat sous le gril 5 à 15 minutes selon votre four, jusqu'à ce qu'elles dorent."
+            ]
+          },
+          "assembly": {
+            "title": "Préparer le montage",
+            "steps": [
+              "Maintenant qu'elles ont dégorgé, faites griller les tranches d'aubergines à feu vif de chaque côté, puis réservez.",
+              "Ajoutez le soja texturé à la sauce tomate-oignon et baissez le feu (très doux).",
+              "Sortez le plat de pommes de terre du four et préchauffez le four à 200 °C (thermostat 6-7)."
+            ]
+          },
+          "béchamel": {
+            "title": "Préparation de la béchamel",
+            "steps": [
+              "Dans une petite casserole à feu doux, faites fondre les 20 g de beurre, ajoutez la farine et mélangez jusqu'à obtenir une pâte lisse.",
+              "Ajoutez progressivement le lait en remuant sans cesse ; cela peut prendre une bonne dizaine de minutes. Vous devez obtenir une sauce assez épaisse.",
+              "Salez, poivrez et râpez un peu de noix de muscade."
+            ]
+          },
+          "final_assembly": {
+            "title": "Montage de la moussaka",
+            "steps": [
+              "Sur la couche de pommes de terre, étalez la moitié du mélange soja-tomate, puis la moitié des aubergines, puis l'autre moitié du mélange, puis l'autre moitié des aubergines, un filet d'huile d'olive et terminez par la béchamel.",
+              "Enfournez à 200 °C (thermostat 6-7) et laissez cuire 1 heure (la béchamel doit être croustillante et dorée)."
+            ]
+          }
+        }
+      },
+      "es": {
+        "title": "Moussaka",
+        "description": "Cazuela de berenjenas y patatas en capas",
+        "ingredients": [
+          "sal",
+          "pimienta",
+          "nuez moscada",
+          "1 cucharada de miel",
+          "30 g de mantequilla (o margarina para opciones veganas)",
+          "aceite de oliva",
+          "1 cebolla",
+          "5 tomates (+/- un ladrillo de coulis de tomate)",
+          "2 berenjenas",
+          "5 patatas medianas",
+          "200 g de soja texturizada",
+          "1 cucharada de canela"
+        ],
+        "ingredient_sections": {
+          "bechamel": [
+            "3 cucharadas de harina",
+            "20 g de mantequilla",
+            "35 cl de leche (o leche vegetal)"
+          ]
+        },
+        "instruction_blocks": {
+          "tomato_sauce": {
+            "title": "Preparación de la salsa de tomate",
+            "steps": [
+              "Corta las cebollas en rodajas y dóralas en una cacerola pequeña.",
+              "Añade los tomates cortados en dados grandes y 2 cucharadas grandes de aceite de oliva, la canela, la miel, la sal y la pimienta. Deja reducir 25 minutos a fuego medio. Debes obtener una salsa, que puedes homogeneizar con coulis de tomate.",
+              "Nota: si la salsa es demasiado ácida, añade una pizca de bicarbonato para equilibrar la acidez."
+            ]
+          },
+          "eggplants": {
+            "title": "Preparación de las berenjenas",
+            "steps": [
+              "Corta las berenjenas en rodajas (sin pelarlas), sala generosamente y déjalas escurrir mientras haces el siguiente paso. Consejo: en un plato, alterna una capa de rodajas de berenjena saladas y una capa de papel absorbente, o déjalas en un colador."
+            ]
+          },
+          "potatoes": {
+            "title": "Preparación de las patatas",
+            "steps": [
+              "Pela y corta las patatas en rodajas finas.",
+              "Coloca las rodajas en el fondo de una fuente para gratinar bastante alta y engrasada. Riega las patatas con un poco (3 cucharadas) del jugo de los tomates en cocción.",
+              "Coloca la fuente bajo el grill 5 a 15 minutos según tu horno, hasta que se doren."
+            ]
+          },
+          "assembly": {
+            "title": "Preparar el montaje",
+            "steps": [
+              "Ahora que han escurrido, coloca las rodajas de berenjena en la sartén a fuego fuerte para grillarlas un poco por cada lado y reserva.",
+              "Añade la soja texturizada a la salsa de tomate y cebolla y baja el fuego (muy bajo).",
+              "Saca la fuente de patatas del horno y precalienta el horno a 200 °C (termóstato 6-7)."
+            ]
+          },
+          "bechamel": {
+            "title": "Preparación de la bechamel",
+            "steps": [
+              "En una cacerola pequeña a fuego lento, derrite los 20 g de mantequilla, añade la harina y mezcla hasta obtener una pasta lisa.",
+              "Añade gradualmente la leche removiendo constantemente; puede tardar unos 10 minutos. Debes obtener una salsa bastante espesa.",
+              "Sala, pimienta y ralla un poco de nuez moscada."
+            ]
+          },
+          "final_assembly": {
+            "title": "Montaje de la moussaka",
+            "steps": [
+              "Sobre la capa de patatas, extiende la mitad de la mezcla de soja y tomate, luego la mitad de las berenjenas, luego la otra mitad de la mezcla, luego la otra mitad de las berenjenas, un chorrito de aceite de oliva y termina con la bechamel.",
+              "Hornea a 200 °C (termóstato 6-7) y cocina 1 hora (la bechamel debe quedar crujiente y dorada)."
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "banana_bread",
+    "image": "optimized/banana_bread.webp",
+    "tags": [
+      "desserts",
+      "vegan"
+    ],
+    "translations": {
+      "en": {
+        "title": "Banana Bread",
+        "description": "Moist and delicious banana bread",
+        "ingredients": [
+          "4 medium ripe bananas",
+          "120g sugar",
+          "75ml sunflower oil",
+          "240g wheat flour",
+          "3tsp baking powder",
+          "40g chopped walnuts (optional)",
+          "40g chocolate chips or chopped chocolate (optional)"
+        ],
+        "instructions": [
+          "Preheat the oven to 200°C.",
+          "Mash the bananas in a large bowl with the help of a fork. Then, add the sugar and sunflower oil and mix well.",
+          "Add the flour and yeast and mix again. Finally, we optionally add the nuts and chocolate chips and mix.",
+          "Grease the mold (you can use margarine, olive oil, coconut oil, cooking spray...) and pour the dough into the mold. Optionally, you can sprinkle a little sugar on top to make it crispier.",
+          "Bake for 40 minutes at 200°C with the oven previously preheated. After 20 minutes, we'll take a look to see if it's browning too much on top. If so, you just have to cover it with aluminum foil and leave it for 20 more minutes.",
+          "Let it cool before unmolding. If you want to unmold it before, it can break."
+        ]
+      },
+      "fr": {
+        "title": "Pain aux Bananes",
+        "description": "Pain moelleux aux bananes mûres",
+        "ingredients": [
+          "4 bananes mûres moyennes",
+          "120g de sucre",
+          "75ml d'huile de tournesol",
+          "240g de farine de blé",
+          "3 c.à.c de levure chimique",
+          "40g de noix hachées (optionnel)",
+          "40g de pépites de chocolat ou chocolat haché (optionnel)"
+        ],
+        "instructions": [
+          "Préchauffez le four à 200°C.",
+          "Écrasez les bananes dans un grand bol à l'aide d'une fourchette. Puis, ajoutez le sucre et l'huile de tournesol et mélangez bien.",
+          "Ajoutez la farine et la levure et mélangez à nouveau. Enfin, nous ajoutons optionnellement les noix et les pépites de chocolat et mélangeons.",
+          "Graissez le moule (vous pouvez utiliser de la margarine, de l'huile d'olive, de l'huile de coco, un spray de cuisson...) et versez la pâte dans le moule. Optionnellement, vous pouvez saupoudrer un peu de sucre sur le dessus pour le rendre plus croustillant.",
+          "Faites cuire pendant 40 minutes à 200°C avec le four préalablement préchauffé. Après 20 minutes, nous jetterons un coup d'œil pour voir si ça dore trop sur le dessus. Si c'est le cas, il suffit de le couvrir avec du papier aluminium et laisser encore 20 minutes.",
+          "Laissez refroidir avant de démouler. Si vous voulez le démouler avant, il peut se casser."
+        ]
+      },
+      "es": {
+        "title": "Pan de Plátano",
+        "description": "Pan húmedo de plátanos maduros",
+        "ingredients": [
+          "4 plátanos maduros medianos",
+          "120g de azúcar",
+          "75ml de aceite de girasol",
+          "240g de harina de trigo",
+          "3 cucharaditas de levadura en polvo",
+          "40g de nueces picadas (opcional)",
+          "40g de chips de chocolate o chocolate picado (opcional)"
+        ],
+        "instructions": [
+          "Precalienta el horno a 200°C.",
+          "Aplasta los plátanos en un tazón grande con la ayuda de un tenedor. Luego, añade el azúcar y el aceite de girasol y mezcla bien.",
+          "Añade la harina y la levadura y mezcla de nuevo. Opcionalmente, añade las nueces y los chips de chocolate y mezcla.",
+          "Engrasa el molde (puedes usar margarina, aceite de oliva, aceite de coco, spray de cocina...) y vierte la masa en el molde. Opcionalmente, puedes espolvorear un poco de azúcar encima para hacerlo más crujiente.",
+          "Hornea durante 40 minutos a 200°C con el horno previamente precalentado. Después de 20 minutos, echaremos un vistazo para ver si se está dorando demasiado por encima. Si es así, solo tienes que cubrirlo con papel de aluminio y dejarlo 20 minutos más.",
+          "Déjalo enfriar antes de desmoldar. Si quieres desmoldarlo antes, puede romperse."
+        ]
+      }
+    }
+  },
+  {
+    "id": "chocolate_truffles",
+    "image": "optimized/chocolate_truffles.webp",
+    "tags": [
+      "desserts",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Chocolate Truffles",
+        "description": "Rich and creamy chocolate truffles",
+        "ingredients": [
+          "80g icing sugar",
+          "100g unsalted butter",
+          "250g dark chocolate",
+          "2 egg yolks",
+          "7.5g vanilla sugar",
+          "50g cocoa"
+        ],
+        "instructions": [
+          "Break the chocolate into small pieces in a heat-resistant dish. Melt it in a bain-marie.",
+          "Gradually add the butter cut into small cubes. Mix.",
+          "When the butter has melted into the chocolate, remove the dish from the heat, add the egg yolks, vanilla sugar (it adds crunch, if you want a smooth texture, add 10 g of icing sugar and 1 drop of liquid vanilla) and the icing sugar. Mix everything well.",
+          "Put the dough in the fridge for at least an hour so that it solidifies.",
+          "Then, form small balls of dough by hand, roll them in the cocoa and then place them on a dish."
+        ]
+      },
+      "fr": {
+        "title": "Truffes au Chocolat",
+        "description": "Truffes au chocolat riches et crémeuses",
+        "ingredients": [
+          "80g de sucre glace",
+          "100g de beurre non salé",
+          "250g de chocolat noir",
+          "2 jaunes d'œufs",
+          "7.5g de sucre vanillé",
+          "50g de cacao"
+        ],
+        "instructions": [
+          "Cassez le chocolat en petits morceaux dans un plat résistant à la chaleur. Faites-le fondre au bain-marie.",
+          "Ajoutez progressivement le beurre coupé en petits cubes. Mélangez.",
+          "Quand le beurre a fondu dans le chocolat, retirez le plat du feu, ajoutez les jaunes d'œufs, le sucre vanillé (il ajoute du croquant, si vous voulez une texture lisse, ajoutez 10 g de sucre glace et 1 goutte de vanille liquide) et le sucre glace. Mélangez bien le tout.",
+          "Mettez la pâte au réfrigérateur pendant au moins une heure pour qu'elle se solidifie.",
+          "Ensuite, formez de petites boules de pâte à la main, roulez-les dans le cacao puis placez-les sur un plat."
+        ]
+      },
+      "es": {
+        "title": "Trufas de Chocolate",
+        "description": "Trufas de chocolate ricas y cremosas",
+        "ingredients": [
+          "80g de azúcar glas",
+          "100g de mantequilla sin sal",
+          "250g de chocolate negro",
+          "2 yemas de huevo",
+          "7.5g de azúcar de vainilla",
+          "50g de cacao"
+        ],
+        "instructions": [
+          "Rompe el chocolate en trozos pequeños en un plato resistente al calor. Funde al baño maría.",
+          "Añade gradualmente la mantequilla cortada en pequeños cubos. Mezcla.",
+          "Cuando la mantequilla se haya derretido en el chocolate, retira del fuego, añade las yemas, el azúcar de vainilla (da un toque crujiente; si prefieres textura suave, añade 10 g de azúcar glas y 1 gota de vainilla líquida) y el azúcar glas. Mezcla todo bien.",
+          "Pon la masa en la nevera durante al menos una hora para que se solidifique.",
+          "Luego, forma pequeñas bolas de masa con las manos, enróllalas en el cacao y colócalas en un plato."
+        ]
+      }
+    }
+  },
+  {
+    "id": "rice_pudding",
+    "image": "optimized/rice_pudding.webp",
+    "tags": [
+      "desserts",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Rice Pudding",
+        "description": "Creamy and comforting rice pudding",
+        "ingredients": [
+          "orange or clementine",
+          "5 tablespoons of sugar",
+          "1L of milk",
+          "200 g of round white rice",
+          "1 sachet of vanilla sugar or vanilla aroma"
+        ],
+        "instructions": [
+          "Boil the milk with the sugar, the vanilla sugar and the zest of your choice.",
+          "When the milk boils, throw in the rice and lower the heat so that it boils very slowly; the rice should cook very slowly.",
+          "When the rice comes close to the milk level, turn off the heat and let cool; the rice will finish soaking up the milk as it cools.",
+          "This dessert can be served warm or cold, depending on your taste."
+        ]
+      },
+      "fr": {
+        "title": "Riz au Lait",
+        "description": "Riz au lait crémeux et réconfortant",
+        "ingredients": [
+          "orange ou clémentine",
+          "5 cuillères à soupe de sucre",
+          "1L de lait",
+          "200 g de riz blanc rond",
+          "1 sachet de sucre vanillé ou arôme vanille"
+        ],
+        "instructions": [
+          "Faites bouillir le lait avec le sucre, le sucre vanillé et le zeste de votre choix.",
+          "Quand le lait bout, jetez-y le riz et baissez le feu pour qu'il bouille très lentement ; le riz doit cuire très lentement.",
+          "Quand le riz arrive près du niveau du lait, éteignez le feu et laissez refroidir ; le riz finira d'absorber le lait en refroidissant.",
+          "Ce dessert peut être servi chaud ou froid, selon votre goût."
+        ]
+      },
+      "es": {
+        "title": "Arroz con Leche",
+        "description": "Arroz con leche cremoso y reconfortante",
+        "ingredients": [
+          "naranja o clementina",
+          "5 cucharadas de azúcar",
+          "1L de leche",
+          "200 g de arroz blanco redondo",
+          "1 sobre de azúcar de vainilla o aroma de vainilla"
+        ],
+        "instructions": [
+          "Hierve la leche con el azúcar, el azúcar de vainilla y la ralladura de tu elección.",
+          "Cuando la leche hierva, echa el arroz y baja el fuego para que hierva muy lentamente; el arroz debe cocerse muy lentamente.",
+          "Cuando el arroz se acerque al nivel de la leche, apaga el fuego y deja enfriar; el arroz terminará de absorber la leche mientras se enfría.",
+          "Este postre se puede servir caliente o frío, según tu gusto."
+        ]
+      }
+    }
+  },
+  {
+    "id": "pizza_dough",
+    "image": "optimized/pizza_dough.webp",
+    "tags": [
+      "main_courses",
+      "vegan"
+    ],
+    "translations": {
+      "en": {
+        "title": "Pizza Dough",
+        "description": "Classic homemade pizza dough",
+        "ingredients": [
+          "350g bread flour + 100g for working the dough",
+          "2 teaspoons salt",
+          "1 packet baker's yeast",
+          "3 tablespoons olive oil",
+          "25cl warm water"
+        ],
+        "instructions": [
+          "Put 350g of flour in a large bowl then add successively the salt, baker's yeast and olive oil.",
+          "Pour the warm water little by little while mixing with a wooden spoon.",
+          "Stir for a long time until you obtain a dough that comes away from the bowl.",
+          "Let the dough rest for 1 hour by covering the bowl with a cloth in a warm place.",
+          "After the resting time, put flour on your work surface and place the pizza dough on it.",
+          "Work it as you would work bread dough.",
+          "Shape your pizza to the dimensions of your baking sheet, ideally placing the dough on baking paper.",
+          "Garnish your pizza according to your desires or your leftovers in the fridge."
+        ]
+      },
+      "fr": {
+        "title": "Pâte à Pizza",
+        "description": "Pâte à pizza maison classique",
+        "ingredients": [
+          "350g de farine (type pâte à pain) + 100g pour travailler la pâte",
+          "2 cuillères à café de sel",
+          "1 sachet de levure boulangère",
+          "3 cuillères à soupe d'huile d'olive",
+          "25cl d'eau tiède"
+        ],
+        "instructions": [
+          "Mettre 350g de farine dans un grand saladier puis ajouter successivement le sel, la levure boulangère et l'huile d'olive.",
+          "Verser petit à petit l'eau tiède tout en mélangeant avec une cuillère en bois.",
+          "Remuer longuement jusqu'à obtention d'une pâte qui se détache du saladier.",
+          "Laisser reposer la pâte pendant 1h en couvrant le saladier avec un torchon dans un endroit chaud.",
+          "Après le temps de repos, déposer de la farine sur votre plan de travail y déposer la pâte à pizza.",
+          "La travailler comme on travaillerait une pâte à pain.",
+          "Façonner votre pizza aux dimensions de votre plaque à four où l'idéal, c'est de déposer la pâte sur du papier cuisson.",
+          "Agrémenter votre pizza au grès de vos envies ou de vos restes dans le frigo."
+        ]
+      },
+      "es": {
+        "title": "Masa de Pizza",
+        "description": "Masa de pizza casera clásica",
+        "ingredients": [
+          "350g de harina (tipo masa de pan) + 100g para trabajar la masa",
+          "2 cucharaditas de sal",
+          "1 sobre de levadura de panadero",
+          "3 cucharadas de aceite de oliva",
+          "25cl de agua templada"
+        ],
+        "instructions": [
+          "Poner 350g de harina en un bol grande y añadir sucesivamente la sal, la levadura de panadero y el aceite de oliva.",
+          "Verter poco a poco el agua templada mientras se mezcla con una cuchara de madera.",
+          "Remover durante mucho tiempo hasta obtener una masa que se despegue del bol.",
+          "Dejar reposar la masa durante 1 hora cubriendo el bol con un paño en un lugar cálido.",
+          "Después del tiempo de reposo, poner harina en tu superficie de trabajo y colocar la masa de pizza sobre ella.",
+          "Trabajarla como se trabajaría una masa de pan.",
+          "Dar forma a tu pizza a las dimensiones de tu bandeja de horno, idealmente colocando la masa sobre papel de horno.",
+          "Decora la pizza con los ingredientes que prefieras o con lo que tengas en la nevera."
+        ]
+      }
+    }
+  },
+  {
+    "id": "brownie",
+    "image": "optimized/brownie.webp",
+    "tags": [
+      "desserts"
+    ],
+    "translations": {
+      "en": {
+        "title": "Brownie",
+        "description": "Rich and fudgy chocolate brownie",
+        "ingredients": [
+          "250g pastry chocolate",
+          "150g butter",
+          "150g sugar",
+          "60g flour",
+          "salt",
+          "1 packet vanilla sugar",
+          "3 eggs"
+        ],
+        "instructions": [
+          "Melt the chocolate broken into pieces with the butter.",
+          "Meanwhile, beat the eggs with the sugar until the mixture whitens.",
+          "Add the flour, vanilla sugar, and add the chocolate.",
+          "Pour everything into a mold, and bake at 180°C (thermostat 6) for 15 min...",
+          "And there you go!"
+        ]
+      },
+      "fr": {
+        "title": "Brownie",
+        "description": "Brownie au chocolat riche et fondant",
+        "ingredients": [
+          "250g de chocolat pâtissier",
+          "150g de beurre",
+          "150g de sucre",
+          "60g de farine",
+          "sel",
+          "1 sachet de sucre vanillé",
+          "3 œufs"
+        ],
+        "instructions": [
+          "Faites fondre le chocolat cassé en morceaux avec le beurre.",
+          "Pendant ce temps, battez les œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
+          "Ajoutez la farine, le sucre vanillé, et ajoutez le chocolat.",
+          "Versez le tout dans un moule, et enfournez à 180°C (thermostat 6) pendant 15 min...",
+          "Et voilà !"
+        ]
+      },
+      "es": {
+        "title": "Brownie",
+        "description": "Brownie de chocolate rico y cremoso",
+        "ingredients": [
+          "250g de chocolate de repostería",
+          "150g de mantequilla",
+          "150g de azúcar",
+          "60g de harina",
+          "sal",
+          "1 sobre de azúcar de vainilla",
+          "3 huevos"
+        ],
+        "instructions": [
+          "Derrite el chocolate roto en trozos con la mantequilla.",
+          "Mientras tanto, bate los huevos con el azúcar hasta que la mezcla se blanquee.",
+          "Añade la harina, el azúcar de vainilla, y añade el chocolate.",
+          "Vierte todo en un molde, y hornea a 180°C (termostato 6) durante 15 min...",
+          "¡Y ya está!"
+        ]
+      }
+    }
+  },
+  {
+    "id": "doenjang_jjigae",
+    "image": "optimized/doenjang_jjigae.webp",
+    "tags": [
+      "soups",
+      "vegan"
+    ],
+    "translations": {
+      "en": {
+        "title": "Doenjang-jjigae",
+        "description": "Korean fermented soybean paste stew",
+        "ingredients": [
+          "1 medium potato, peeled and cut into 1cm cubes (about 150g)",
+          "1 medium onion, cut into 1cm pieces (about 150g)",
+          "1 small zucchini, cut into 1cm pieces (about 150g)",
+          "1 green Korean chili pepper (cheong-gochu), stemmed and chopped",
+          "4 garlic cloves, minced",
+          "600ml water",
+          "5 tablespoons fermented soybean paste (doenjang)",
+          "170g medium-firm tofu, cut into 1cm cubes",
+          "2 green onions, chopped"
+        ],
+        "instructions": [
+          "Combine the potato, onion, zucchini, chili pepper, and garlic in a 1½-quart (6 cups) earthenware pot or other heavy pot.",
+          "Add water and cover.",
+          "Cook over medium-high heat for 15 minutes until it starts boiling. If you use a stainless steel pot, it will take less than 15 minutes, about 7 to 8 minutes.",
+          "Stir in the soybean paste, mixing well. Cover and cook for 20 minutes longer over medium heat.",
+          "Add the tofu and cook for another 3 minutes.",
+          "Sprinkle with the green onions and serve as a side dish to rice. Serve it directly from the pot, or transfer to a serving bowl. Everybody can eat together out of the pot, or portions can be ladled out in individual bowls for each person."
+        ]
+      },
+      "fr": {
+        "title": "Doenjang-jjigae",
+        "description": "Ragoût coréen à la pâte de soja fermentée",
+        "ingredients": [
+          "1 pomme de terre moyenne, pelée et coupée en cubes de 1cm (environ 150g)",
+          "1 oignon moyen, coupé en morceaux de 1cm (environ 150g)",
+          "1 petite courgette, coupée en morceaux de 1cm (environ 150g)",
+          "1 piment vert coréen (cheong-gochu), équeuté et haché",
+          "4 gousses d'ail, émincées",
+          "600ml d'eau",
+          "5 cuillères à soupe de pâte de soja fermentée (doenjang)",
+          "170g de tofu ferme, coupé en cubes de 1cm",
+          "2 oignons verts, hachés"
+        ],
+        "instructions": [
+          "Combinez la pomme de terre, l'oignon, la courgette, le piment et l'ail dans un pot en terre cuite de 1½ litre (6 tasses) ou autre casserole lourde.",
+          "Ajoutez l'eau et couvrez.",
+          "Cuisez à feu moyen-élevé pendant 15 minutes jusqu'à ébullition. Si vous utilisez une casserole en acier inoxydable, cela prendra moins de 15 minutes, environ 7 à 8 minutes.",
+          "Mélangez la pâte de soja, en remuant bien. Couvrez et cuisez encore 20 minutes à feu moyen.",
+          "Ajoutez le tofu et cuisez encore 3 minutes.",
+          "Saupoudrez d'oignons verts et servez en accompagnement du riz. Servez directement du pot, ou transférez dans un bol de service. Tout le monde peut manger ensemble dans le pot, ou les portions peuvent être servies dans des bols individuels pour chaque personne."
+        ]
+      },
+      "es": {
+        "title": "Doenjang-jjigae",
+        "description": "Estofado coreano de pasta de soja fermentada",
+        "ingredients": [
+          "1 patata mediana, pelada y cortada en cubos de 1cm (aproximadamente 150g)",
+          "1 cebolla mediana, cortada en trozos de 1cm (aproximadamente 150g)",
+          "1 calabacín pequeño, cortado en trozos de 1cm (aproximadamente 150g)",
+          "1 pimiento verde coreano (cheong-gochu), sin tallo y picado",
+          "4 dientes de ajo, picados",
+          "600ml de agua",
+          "5 cucharadas de pasta de soja fermentada (doenjang)",
+          "170g de tofu firme, cortado en cubos de 1cm",
+          "2 cebollas verdes, picadas"
+        ],
+        "instructions": [
+          "Combina la patata, la cebolla, el calabacín, el pimiento y el ajo en una olla de barro de 1,5 litros (6 tazas) u otra olla pesada.",
+          "Añade el agua y tapa.",
+          "Cocina a fuego medio-alto durante 15 minutos hasta que empiece a hervir. Si usas una olla de acero inoxidable, tomará menos de 15 minutos, aproximadamente 7 a 8 minutos.",
+          "Mezcla la pasta de soja, removiendo bien. Tapa y cocina 20 minutos más a fuego medio.",
+          "Añade el tofu y cocina otros 3 minutos.",
+          "Espolvorea con las cebollas verdes y sirve con arroz. Puedes servir directamente de la olla en la mesa o pasar a una fuente; cada uno puede servirse de la olla o en boles individuales."
+        ]
+      }
+    }
+  },
+  {
+    "id": "cookies",
+    "image": "optimized/cookies.webp",
+    "tags": [
+      "desserts"
+    ],
+    "translations": {
+      "en": {
+        "title": "Chocolate Cookies",
+        "description": "Soft and chewy chocolate chip cookies",
+        "ingredients": [
+          "85g soft butter",
+          "85g sugar",
+          "vanilla or 1 packet vanilla sugar",
+          "150g flour",
+          "100g dark chocolate",
+          "1 teaspoon salt",
+          "1 teaspoon baking powder",
+          "1 egg"
+        ],
+        "instructions": [
+          "Cut the chocolate into chips.",
+          "Preheat the oven to 180°C (thermostat 6). In a bowl, put 75g of butter, sugar, whole egg, vanilla and mix everything with a wooden spoon.",
+          "Gradually add the flour mixed with baking powder, salt and chocolate.",
+          "With a paper towel, butter a baking sheet and form the cookies on the sheet.",
+          "To form the cookies, use 2 tablespoons and make small piles spaced apart from each other; they will grow during cooking.",
+          "Bake for 10 minutes."
+        ]
+      },
+      "fr": {
+        "title": "Cookies",
+        "description": "Cookies moelleux aux pépites de chocolat",
+        "ingredients": [
+          "85g de beurre tendre",
+          "85g de sucre",
+          "vanille ou 1 sachet de sucre vanillé",
+          "150g de farine",
+          "100g de chocolat noir",
+          "1 cuillère à café de sel",
+          "1 cuillère à café de levure chimique",
+          "1 œuf"
+        ],
+        "instructions": [
+          "Détailler le chocolat en pépites.",
+          "Préchauffer le four à 180°C (thermostat 6). Dans un saladier, mettre 75g de beurre, le sucre, l'œuf entier, la vanille et mélanger le tout avec une cuillère en bois.",
+          "Ajouter petit à petit la farine mélangée à la levure, le sel et le chocolat.",
+          "Avec une feuille de papier essuie-tout, beurrer une plaque allant au four et former les cookies sur la plaque.",
+          "Pour former les cookies, utiliser 2 cuillères à soupe et faire des petits tas espacés les uns des autres; ils grandiront à la cuisson.",
+          "Enfourner pour 10 minutes de cuisson."
+        ]
+      },
+      "es": {
+        "title": "Galletas",
+        "description": "Galletas suaves con trozos de chocolate",
+        "ingredients": [
+          "85g de mantequilla blanda",
+          "85g de azúcar",
+          "vainilla o 1 sobre de azúcar de vainilla",
+          "150g de harina",
+          "100g de chocolate negro",
+          "1 cucharadita de sal",
+          "1 cucharadita de levadura en polvo",
+          "1 huevo"
+        ],
+        "instructions": [
+          "Cortar el chocolate en trozos.",
+          "Precalentar el horno a 180°C (termostato 6). En un bol, poner 75g de mantequilla, azúcar, huevo entero, vainilla y mezclar todo con una cuchara de madera.",
+          "Añadir poco a poco la harina mezclada con la levadura, la sal y el chocolate.",
+          "Engrasa una bandeja de horno y forma las galletas sobre ella.",
+          "Para formar las galletas, usar 2 cucharadas y hacer pequeñas montañas espaciadas entre sí; crecerán durante la cocción.",
+          "Hornear durante 10 minutos."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sourdough_brownies",
+    "image": "optimized/sourdough_brownies.webp",
+    "tags": [
+      "desserts",
+      "sourdough"
+    ],
+    "translations": {
+      "en": {
+        "title": "Sourdough Discard Chocolate Brownies",
+        "description": "Rich chocolate brownies using sourdough discard",
+        "ingredients": [
+          "113g butter",
+          "340g chocolate",
+          "2 tsps vanilla extract",
+          "40g cocoa powder",
+          "2 eggs",
+          "1 egg yolk",
+          "200g granulated sugar",
+          "110g brown sugar",
+          "125g sourdough discard",
+          "120g plain flour",
+          "1 tsp salt"
+        ],
+        "instructions": [
+          "Melt the butter over a medium heat. Then add in the chocolate, vanilla extract and cocoa powder. Stir the mixture until the chocolate has melted and everything has combined.",
+          "In a separate bowl beat the eggs and egg yolk, granulated sugar and brown sugar until combined into a paste.",
+          "Add the sourdough discard, and chocolate mixture from step 1 into this bowl. Mix until combined.",
+          "Add in the flour and salt. Mix until combined.",
+          "Line a baking dish with baking paper and pour in the mixture.",
+          "Bake for 35–40 minutes at 180°C.",
+          "Allow baked brownies to cool before removing from the baking dish and cutting."
+        ]
+      },
+      "fr": {
+        "title": "Brownies au chocolat au levain",
+        "description": "Brownies au chocolat au levain",
+        "ingredients": [
+          "113g de beurre",
+          "340g de chocolat",
+          "2 cuillères à café d'extrait de vanille",
+          "40g de poudre de cacao",
+          "2 œufs",
+          "1 jaune d'œuf",
+          "200g de sucre en poudre",
+          "110g de sucre roux",
+          "125g de levain",
+          "120g de farine",
+          "1 cuillère à café de sel"
+        ],
+        "instructions": [
+          "Faire fondre le beurre à feu moyen. Ajouter le chocolat, l'extrait de vanille et la poudre de cacao. Mélanger jusqu'à ce que le chocolat soit fondu et que tout soit homogène.",
+          "Dans un saladier, battre les œufs et le jaune avec le sucre en poudre et le sucre roux jusqu'à obtenir une pâte.",
+          "Ajouter le levain et le mélange chocolat de l'étape 1. Mélanger jusqu'à homogénéité.",
+          "Incorporer la farine et le sel. Mélanger jusqu'à ce que tout soit combiné.",
+          "Chemiser un moule de papier sulfurisé et verser la préparation.",
+          "Cuire 35 à 40 minutes à 180°C.",
+          "Laisser refroidir les brownies avant de les démouler et de les découper."
+        ]
+      },
+      "es": {
+        "title": "Brownies de chocolate con descarte de masa madre",
+        "description": "Brownies de chocolate con descarte de masa madre",
+        "ingredients": [
+          "113g de mantequilla",
+          "340g de chocolate",
+          "2 cucharaditas de extracto de vainilla",
+          "40g de cacao en polvo",
+          "2 huevos",
+          "1 yema de huevo",
+          "200g de azúcar blanco",
+          "110g de azúcar moreno",
+          "125g de descarte de masa madre",
+          "120g de harina",
+          "1 cucharadita de sal"
+        ],
+        "instructions": [
+          "Derretir la mantequilla a fuego medio. Añadir el chocolate, el extracto de vainilla y el cacao en polvo. Remover hasta que el chocolate se derrita y todo esté mezclado.",
+          "En un bol aparte, batir los huevos y la yema con el azúcar blanco y el azúcar moreno hasta obtener una pasta.",
+          "Añadir el descarte de masa madre y la mezcla de chocolate del paso 1. Mezclar hasta integrar.",
+          "Incorporar la harina y la sal. Mezclar hasta que se integren.",
+          "Forrar un molde con papel de horno y verter la mezcla.",
+          "Hornear 35–40 minutos a 180°C.",
+          "Dejar enfriar los brownies antes de desmoldar y cortar."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sourdough_tortilla",
+    "image": "optimized/sourdough_tortilla.webp",
+    "tags": [
+      "main_courses",
+      "vegan",
+      "sourdough"
+    ],
+    "translations": {
+      "en": {
+        "title": "Sourdough Tortilla",
+        "description": "Soft tortillas made with sourdough starter",
+        "ingredients": [
+          "363g flour",
+          "6.5g salt",
+          "64g oil",
+          "94g warm water",
+          "220g sourdough starter"
+        ],
+        "instructions": [
+          "Add flour and salt to the bowl of a stand mixer and mix using the dough hook.",
+          "Then add in the sourdough starter, oil and water and mix on low.",
+          "Allow the dough to knead for 2–3 minutes until combined; add more flour or water if needed.",
+          "Let the dough rest for 10 minutes.",
+          "After 10 minutes, place on a floured surface and cut into 16 equal pieces.",
+          "Roll each piece into a ball. On a floured surface, roll out each piece of dough as thin as possible, and place in a preheated cast iron skillet.",
+          "Cook on each side for 30 seconds, until browned.",
+          "Place the finished tortillas inside a tea towel and cover to keep soft."
+        ]
+      },
+      "fr": {
+        "title": "Tortilla au levain",
+        "description": "Tortillas moelleuses au levain",
+        "ingredients": [
+          "363g de farine",
+          "6,5g de sel",
+          "64g d'huile",
+          "94g d'eau tiède",
+          "220g de levain"
+        ],
+        "instructions": [
+          "Mettre la farine et le sel dans le bol du pétrin et mélanger avec le crochet.",
+          "Ajouter le levain, l'huile et l'eau, puis mélanger à vitesse lente.",
+          "Pétrir 2 à 3 minutes jusqu'à ce que la pâte soit homogène ; ajouter un peu de farine ou d'eau si besoin.",
+          "Laisser reposer la pâte 10 minutes.",
+          "Après 10 minutes, déposer sur un plan fariné et diviser en 16 parts égales.",
+          "Former des boules. Sur un plan fariné, étaler chaque part le plus finement possible et cuire dans une poêle en fonte préchauffée.",
+          "Cuire 30 secondes de chaque côté jusqu'à coloration.",
+          "Envelopper les tortillas dans un torchon et couvrir pour les garder moelleuses."
+        ]
+      },
+      "es": {
+        "title": "Tortilla de masa madre",
+        "description": "Tortillas blandas con masa madre",
+        "ingredients": [
+          "363g de harina",
+          "6,5g de sal",
+          "64g de aceite",
+          "94g de agua tibia",
+          "220g de masa madre"
+        ],
+        "instructions": [
+          "Añadir la harina y la sal al bol de la amasadora y mezclar con el gancho.",
+          "Incorporar la masa madre, el aceite y el agua y mezclar a velocidad baja.",
+          "Amasar 2–3 minutos hasta que se integre; añadir más harina o agua si hace falta.",
+          "Dejar reposar la masa 10 minutos.",
+          "Pasados 10 minutos, colocar en una superficie enharinada y cortar en 16 porciones iguales.",
+          "Formar bolitas con cada porción. Sobre una superficie enharinada, estirar cada una lo más fina posible y cocer en una sartén de hierro fundido precalentada.",
+          "Cocinar 30 segundos por cada lado hasta que se doren.",
+          "Guardar las tortillas terminadas en un paño de cocina tapadas para que se mantengan blandas."
+        ]
+      }
+    }
+  },
+  {
+    "id": "vegan_sourdough_pancakes",
+    "image": "optimized/vegan_sourdough_pancakes.webp",
+    "tags": [
+      "main_courses",
+      "vegan",
+      "sourdough"
+    ],
+    "translations": {
+      "en": {
+        "title": "Vegan Sourdough Pancakes",
+        "description": "Fluffy pancakes made with sourdough starter and plant milk",
+        "ingredients": [
+          "80g sourdough starter",
+          "60ml plant milk (soy, oat, almond, etc.)",
+          "1 tbsp sugar or maple syrup (optional)",
+          "1 tbsp oil",
+          "1/4 tsp baking soda",
+          "Pinch of salt"
+        ],
+        "instructions": [
+          "Mix starter, plant milk, oil, sugar, and salt.",
+          "Add baking soda last and stir gently.",
+          "Cook on a lightly oiled pan over medium heat (2–3 minutes first side, 1–2 minutes after flipping)."
+        ]
+      },
+      "fr": {
+        "title": "Pancakes vegans au levain",
+        "description": "Pancakes moelleux au levain et au lait végétal",
+        "ingredients": [
+          "80g de levain",
+          "60ml de lait végétal (soja, avoine, amande, etc.)",
+          "1 c. à soupe de sucre ou sirop d'érable (optionnel)",
+          "1 c. à soupe d'huile",
+          "1/4 c. à café de bicarbonate",
+          "Pincée de sel"
+        ],
+        "instructions": [
+          "Mélanger le levain, le lait végétal, l'huile, le sucre et le sel.",
+          "Ajouter le bicarbonate en dernier et mélanger délicatement.",
+          "Cuire dans une poêle légèrement huilée à feu moyen (2–3 min le premier côté, 1–2 min après avoir retourné)."
+        ]
+      },
+      "es": {
+        "title": "Tortitas veganas de masa madre",
+        "description": "Tortitas esponjosas con masa madre y leche vegetal",
+        "ingredients": [
+          "80g de masa madre",
+          "60ml de leche vegetal (soja, avena, almendra, etc.)",
+          "1 cucharada de azúcar o sirope de arce (opcional)",
+          "1 cucharada de aceite",
+          "1/4 cucharadita de bicarbonato",
+          "Una pizca de sal"
+        ],
+        "instructions": [
+          "Mezclar la masa madre, la leche vegetal, el aceite, el azúcar y la sal.",
+          "Añadir el bicarbonato al final y remover suavemente.",
+          "Cocinar en una sartén ligeramente aceitada a fuego medio (2–3 min el primer lado, 1–2 min al dar la vuelta)."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sourdough_english_muffins",
+    "image": "optimized/sourdough_english_muffins.webp",
+    "tags": [
+      "main_courses",
+      "sourdough"
+    ],
+    "translations": {
+      "en": {
+        "title": "Sourdough English Muffins",
+        "description": "Classic English muffins made with active sourdough starter",
+        "ingredients": [
+          "100g active sourdough starter",
+          "20g honey",
+          "240g milk",
+          "360g all-purpose flour",
+          "8g fine sea salt",
+          "Cornmeal, for dusting"
+        ],
+        "instructions": [
+          "Mix starter, honey, milk, flour and salt. Let rest for 45 minutes.",
+          "Knead dough on a floured surface for 5 minutes.",
+          "Let dough ferment in a bowl for 8 hours.",
+          "Press dough out to 1½ in (4 cm) thick. Cut into 3 in (7.5 cm) rounds.",
+          "Place rounds on a cookie sheet lined with parchment paper and dusted with cornmeal. Sprinkle tops with cornmeal. Cover with a towel and rest for 1 hour.",
+          "Over low heat, cook muffins in a pan, covered, about 4 minutes per side, until internal temperature reaches 200°F (93°C)."
+        ]
+      },
+      "fr": {
+        "title": "Muffins anglais au levain",
+        "description": "Muffins anglais au levain actif",
+        "ingredients": [
+          "100g de levain actif",
+          "20g de miel",
+          "240g de lait",
+          "360g de farine tout usage",
+          "8g de sel de mer fin",
+          "Semoule de maïs, pour saupoudrer"
+        ],
+        "instructions": [
+          "Mélanger le levain, le miel, le lait, la farine et le sel. Laisser reposer 45 minutes.",
+          "Pétrir la pâte sur un plan fariné pendant 5 minutes.",
+          "Laisser fermenter la pâte dans un saladier 8 heures.",
+          "Étaler la pâte sur 1,5 cm d'épaisseur. Découper des ronds de 7,5 cm de diamètre.",
+          "Déposer les ronds sur une plaque avec papier sulfurisé et semoule de maïs. Saupoudrer le dessus de semoule. Couvrir d'un torchon et laisser reposer 1 heure.",
+          "À feu doux, cuire les muffins à la poêle, couvert, environ 4 minutes par côté, jusqu'à une température interne de 93°C."
+        ]
+      },
+      "es": {
+        "title": "Muffins ingleses de masa madre",
+        "description": "Muffins ingleses con masa madre activa",
+        "ingredients": [
+          "100g de masa madre activa",
+          "20g de miel",
+          "240g de leche",
+          "360g de harina de trigo",
+          "8g de sal marina fina",
+          "Maicena o harina de maíz, para espolvorear"
+        ],
+        "instructions": [
+          "Mezclar la masa madre, la miel, la leche, la harina y la sal. Dejar reposar 45 minutos.",
+          "Amasar la masa sobre una superficie enharinada 5 minutos.",
+          "Dejar fermentar la masa en un bol 8 horas.",
+          "Estirar la masa hasta 1,5 cm de grosor. Cortar en discos de 7,5 cm de diámetro.",
+          "Colocar los discos en una bandeja con papel de horno y maicena. Espolvorear por encima con maicena. Tapar con un paño y reposar 1 hora.",
+          "A fuego bajo, cocinar los muffins en una sartén tapada, unos 4 minutos por lado, hasta que la temperatura interior llegue a 93°C."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sourdough_chocolate_chip_cookies",
+    "image": "optimized/sourdough_chocolate_chip_cookies.webp",
+    "tags": [
+      "desserts",
+      "sourdough"
+    ],
+    "translations": {
+      "en": {
+        "title": "Sourdough Chocolate Chip Cookies",
+        "description": "Thick, soft chocolate chip cookies with sourdough discard (Angelica Sourdough Co.)",
+        "ingredients": [
+          "1½ cups (113g) butter, softened or melted and cooled",
+          "1/2 cup (100g) brown sugar, packed",
+          "1/4 cup (50g) granulated sugar",
+          "1/3 cup (80g) sourdough discard, unfed, room temperature",
+          "1 large egg yolk",
+          "1 tsp vanilla extract",
+          "1½ cups (160g) all-purpose flour",
+          "1/2 tsp baking soda",
+          "1½ tsp salt",
+          "3/4 cup chocolate chips or chunks (semi-sweet or dark)"
+        ],
+        "instructions": [
+          "Mix wet ingredients: In a stand mixer, whisk together butter, brown sugar, and granulated sugar until smooth and glossy. Whisk in sourdough discard, egg yolk, and vanilla extract.",
+          "Add dry ingredients: Add flour, baking soda, and salt. Mix until just combined.",
+          "Fold in chocolate: Stir in chocolate chips or chunks until evenly distributed.",
+          "Chill: Cover dough and chill for 30–60 minutes. This keeps the cookies thick and soft.",
+          "Bake: Preheat oven to 350°F (175°C). Line a baking sheet with parchment. Scoop ¼ cup portions and place dough tall, not flattened. Bake for 10–12 minutes until edges are set and centers look set.",
+          "Cool gently: Let cookies rest on the pan for 10 minutes before moving—they'll finish setting while staying soft."
+        ]
+      },
+      "fr": {
+        "title": "Cookies aux pépites de chocolat au levain",
+        "description": "Cookies épais et moelleux aux pépites de chocolat au levain de rebut (Angelica Sourdough Co.)",
+        "ingredients": [
+          "1½ tasses (113g) de beurre ramolli ou fondu et refroidi",
+          "1/2 tasse (100g) de sucre roux",
+          "1/4 tasse (50g) de sucre en poudre",
+          "1/3 tasse (80g) de levain de rebut, non rafraîchi, à température ambiante",
+          "1 jaune d'œuf",
+          "1 c. à café d'extrait de vanille",
+          "1½ tasses (160g) de farine tout usage",
+          "1/2 c. à café de bicarbonate",
+          "1½ c. à café de sel",
+          "3/4 tasse de pépites ou morceaux de chocolat (mi-sucré ou noir)"
+        ],
+        "instructions": [
+          "Mélanger les ingrédients humides : au batteur, fouetter le beurre, le sucre roux et le sucre en poudre jusqu'à ce que le mélange soit lisse et brillant. Incorporer le levain de rebut, le jaune d'œuf et la vanille.",
+          "Ajouter les ingrédients secs : incorporer la farine, le bicarbonate et le sel. Mélanger jusqu'à ce que tout soit juste combiné.",
+          "Incorporer le chocolat : mélanger les pépites ou morceaux de chocolat jusqu'à répartition homogène.",
+          "Réfrigérer : couvrir la pâte et laisser au frais 30 à 60 minutes. Les cookies resteront épais et moelleux.",
+          "Cuire : préchauffer le four à 175°C. Chemiser une plaque de papier sulfurisé. Former des boules de ¼ tasse, bien hautes sans les aplatir. Enfourner 10 à 12 min jusqu'à ce que les bords soient pris et le centre paraisse cuit.",
+          "Laisser refroidir : laisser les cookies sur la plaque 10 minutes avant de les déplacer ; ils finiront de prendre tout en restant moelleux."
+        ]
+      },
+      "es": {
+        "title": "Galletas de chocolate con masa madre",
+        "description": "Galletas de chocolate gruesas y tiernas con descarte de masa madre (Angelica Sourdough Co.)",
+        "ingredients": [
+          "1½ tazas (113g) de mantequilla blanda o derretida y enfriada",
+          "1/2 taza (100g) de azúcar moreno",
+          "1/4 taza (50g) de azúcar blanco",
+          "1/3 taza (80g) de descarte de masa madre, sin alimentar, a temperatura ambiente",
+          "1 yema de huevo grande",
+          "1 cucharadita de extracto de vainilla",
+          "1½ tazas (160g) de harina de trigo",
+          "1/2 cucharadita de bicarbonato",
+          "1½ cucharaditas de sal",
+          "3/4 taza de gotas o trozos de chocolate (semi-amargo o negro)"
+        ],
+        "instructions": [
+          "Mezclar los líquidos: En batidora, batir la mantequilla, el azúcar moreno y el azúcar blanco hasta que estén suaves y brillantes. Incorporar el descarte de masa madre, la yema y la vainilla.",
+          "Añadir los secos: Incorporar la harina, el bicarbonato y la sal. Mezclar hasta que solo se combinen.",
+          "Añadir el chocolate: Mezclar las gotas o trozos de chocolate hasta que se repartan bien.",
+          "Enfriar: Tapar la masa y refrigerar 30–60 minutos. Así las galletas quedan gruesas y tiernas.",
+          "Hornear: Precalentar el horno a 175°C. Forrar una bandeja con papel de horno. Formar porciones de ¼ taza, altas y sin aplanar. Hornear 10–12 minutos hasta que los bordes estén firmes y el centro cuaje.",
+          "Enfriar: Dejar las galletas 10 minutos en la bandeja antes de moverlas; acabarán de cuajar y se mantendrán tiernas."
+        ]
+      }
+    }
+  },
+  {
+    "id": "petite_creme_cacao",
+    "image": "optimized/petite_creme_cacao.webp",
+    "tags": [
+      "desserts",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Small Cocoa Cream",
+        "description": "Quick chocolate cream for one — from La Cuisine de l'Étudiant Malin",
+        "servings": "1 serving",
+        "prep_time": "5 min prep",
+        "cook_time": "5 min cook",
+        "ingredients": [
+          "200 ml semi-skimmed milk",
+          "2 tsp unsweetened cocoa powder",
+          "1 tbsp cornstarch",
+          "1 tsp granulated sugar"
+        ],
+        "instructions": [
+          "Pour the cornstarch into a cup and add a little milk. Mix until smooth.",
+          "In a small saucepan, pour the remaining milk, the diluted starch, cocoa and sugar. Heat over low heat until boiling, then thicken for 2 to 3 minutes, stirring constantly.",
+          "Pour into a glass or ramekin and serve warm or cold."
+        ],
+        "tips": [
+          "you can also make this cream in 2 minutes in the microwave. In a bowl or large mug, mix cornstarch with a little milk, then add the rest of the milk, cocoa and sugar. Cook 2 to 3 minutes, stopping to stir. Watch carefully so it doesn't overflow."
+        ]
+      },
+      "fr": {
+        "title": "Petite Crème au Cacao",
+        "description": "Crème au chocolat rapide — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 1 personne",
+        "prep_time": "Préparation : 5 min",
+        "cook_time": "Cuisson : 5 min",
+        "ingredients": [
+          "200 ml de lait demi-écrémé",
+          "2 c. à c. de cacao maigre non sucré",
+          "1 c. à s. de fécule de maïs",
+          "1 c. à c. de sucre en poudre"
+        ],
+        "instructions": [
+          "Versez la fécule de maïs dans une tasse et ajoutez un peu de lait. Mélangez de manière à obtenir une préparation homogène.",
+          "Dans une petite casserole, versez le reste de lait, la fécule diluée, le cacao et le sucre en poudre. Faites chauffer à feu doux jusqu'à ébullition, puis laissez épaissir pendant 2 à 3 minutes en remuant sans cesse.",
+          "Versez dans un verre ou un ramequin et servez tiède ou froid."
+        ],
+        "tips": [
+          "vous pouvez aussi préparer cette crème en 2 minutes au micro-ondes. Dans un bol ou une grande tasse, versez la fécule de maïs et un peu de lait. Mélangez, puis versez-y le reste du lait, le cacao et le sucre. Faites cuire 2 à 3 minutes en arrêtant de temps en temps la cuisson pour mélanger. Surveillez attentivement afin que cela ne déborde pas."
+        ]
+      },
+      "es": {
+        "title": "Pequeña Crema de Cacao",
+        "description": "Crema de chocolate rápida para una persona — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 1 persona",
+        "prep_time": "Preparación : 5 min",
+        "cook_time": "Cocción : 5 min",
+        "ingredients": [
+          "200 ml de leche semidesnatada",
+          "2 cucharaditas de cacao en polvo sin azúcar",
+          "1 cucharada de maicena",
+          "1 cucharadita de azúcar en polvo"
+        ],
+        "instructions": [
+          "Vierta la maicena en una taza y añada un poco de leche. Mezcle hasta obtener una preparación homogénea.",
+          "En una cacerola pequeña, vierta el resto de la leche, la maicena diluida, el cacao y el azúcar. Caliente a fuego lento hasta que hierva, luego deje espesar 2 a 3 minutos removiendo sin cesar.",
+          "Vierta en un vaso o ramequín y sirva tibia o fría."
+        ],
+        "tips": [
+          "también puede preparar esta crema en 2 minutos en el microondas. En un bol o taza grande, mezcle la maicena con un poco de leche, luego añada el resto de la leche, el cacao y el azúcar. Cocine 2 a 3 minutos, parando para remover. Vigile para que no se desborde."
+        ]
+      }
+    }
+  },
+  {
+    "id": "guacamole",
+    "image": "optimized/guacamole.webp",
+    "tags": [
+      "main_courses",
+      "vegan",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Guacamole",
+        "description": "Classic Mexican guacamole — from La Cuisine de l'Étudiant Malin",
+        "servings": "4 servings",
+        "prep_time": "15 min prep",
+        "cook_time": "1 hour rest",
+        "ingredients": [
+          "2 very ripe avocados",
+          "1 tomato",
+          "1 onion",
+          "1 lime",
+          "1 pinch of chili powder",
+          "salt"
+        ],
+        "instructions": [
+          "Squeeze the lime. Peel and finely mince the onion. Wash the tomato, remove seeds and cut into very small cubes. Open the avocados and remove the pits. Using a fork, coarsely mash the flesh in a bowl.",
+          "Pour the lime juice, minced onion and tomato cubes into the bowl. Mix well.",
+          "Add chili and salt. Taste and adjust seasoning. Cover and refrigerate for at least 1 hour.",
+          "Serve with tortilla chips, or spread on sandwich bread with a slice of white ham."
+        ]
+      },
+      "fr": {
+        "title": "Guacamole",
+        "description": "Guacamole mexicain classique — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 4 personnes",
+        "prep_time": "Préparation : 15 min",
+        "cook_time": "Attente : 1 heure",
+        "ingredients": [
+          "2 avocats bien mûrs",
+          "1 tomate",
+          "1 oignon",
+          "1 citron vert",
+          "1 pincée de piment en poudre",
+          "sel"
+        ],
+        "instructions": [
+          "Pressez le citron. Pelez et émincez finement l'oignon. Lavez la tomate, épépinez-la et coupez-la en tout petits dés. Ouvrez les avocats et ôtez leur noyau. À l'aide d'une fourchette, écrasez leur chair grossièrement dans un saladier.",
+          "Versez dans le saladier le jus de citron, l'oignon émincé et les dés de tomate. Mélangez bien.",
+          "Ajoutez le piment et le sel. Goûtez et rectifiez l'assaisonnement. Couvrez et mettez au frais pendant au moins 1 heure.",
+          "Servez avec des chips tortillas, ou tartinez sur du pain de mie avec une tranche de jambon blanc."
+        ]
+      },
+      "es": {
+        "title": "Guacamole",
+        "description": "Guacamole mexicano clásico — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 4 personas",
+        "prep_time": "Preparación : 15 min",
+        "cook_time": "Reposo : 1 hora",
+        "ingredients": [
+          "2 aguacates bien maduros",
+          "1 tomate",
+          "1 cebolla",
+          "1 lima",
+          "1 pizca de pimentón picante",
+          "sal"
+        ],
+        "instructions": [
+          "Exprima la lima. Pele y pique finamente la cebolla. Lave el tomate, quítele las semillas y córtelo en dados muy pequeños. Abra los aguacates y retire el hueso. Con un tenedor, aplaste la pulpa groseramente en un bol.",
+          "Vierta en el bol el zumo de lima, la cebolla picada y los dados de tomate. Mezcle bien.",
+          "Añada el pimentón y la sal. Pruebe y rectifique el sazonado. Cubra y refrigere al menos 1 hora.",
+          "Sirva con chips de tortilla, o unte sobre pan de molde con una loncha de jamón cocido."
+        ]
+      }
+    }
+  },
+  {
+    "id": "quiche_lorraine",
+    "image": "optimized/quiche_lorraine.webp",
+    "tags": [
+      "main_courses"
+    ],
+    "translations": {
+      "en": {
+        "title": "Quiche Lorraine",
+        "description": "Traditional bacon quiche — from La Cuisine de l'Étudiant Malin",
+        "servings": "6 servings",
+        "prep_time": "10 min prep",
+        "cook_time": "40 min cook",
+        "ingredients": [
+          "8 eggs",
+          "1 roll of shortcrust pastry",
+          "150 g bacon lardons",
+          "20 cl liquid heavy cream",
+          "20 cl milk",
+          "salt, freshly ground pepper"
+        ],
+        "instructions": [
+          "Preheat the oven to 350°F (180°C).",
+          "Unroll the pastry and line a tart pan, leaving the parchment paper on the bottom.",
+          "Brown the bacon lardons in a small frying pan for 5 minutes. Blot with paper towels and place on the tart base.",
+          "In a bowl, beat the eggs with the cream and milk. Season with salt and pepper. Pour over the bacon.",
+          "Bake for 40 minutes. Serve hot."
+        ],
+        "tips": [
+          "add chopped chives for freshness. Leftovers are great cold in a lunch box."
+        ]
+      },
+      "fr": {
+        "title": "Quiche Lorraine",
+        "description": "Quiche traditionnelle aux lardons — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 6 personnes",
+        "prep_time": "Préparation : 10 min",
+        "cook_time": "Cuisson : 40 min",
+        "ingredients": [
+          "8 œufs",
+          "1 rouleau de pâte brisée",
+          "150 g de lardons",
+          "20 cl de crème fraîche liquide",
+          "20 cl de lait",
+          "sel, poivre du moulin"
+        ],
+        "instructions": [
+          "Préchauffez le four thermostat 6 (180 °C).",
+          "Déroulez la pâte et garnissez-en un moule à tarte, en laissant au fond le papier sulfurisé.",
+          "Faites rissoler les lardons dans une petite poêle pendant 5 minutes. Épongez-les dans un papier absorbant et déposez-les sur le fond de tarte.",
+          "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez. Versez sur les lardons.",
+          "Enfournez et laissez cuire 40 minutes. Servez chaud."
+        ],
+        "tips": [
+          "ajoutez un bouquet de ciboulette ciselé pour une note de fraîcheur. Le reste se déguste froid en lunch box."
+        ]
+      },
+      "es": {
+        "title": "Quiche Lorraine",
+        "description": "Quiche tradicional con bacon — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 6 personas",
+        "prep_time": "Preparación : 10 min",
+        "cook_time": "Cocción : 40 min",
+        "ingredients": [
+          "8 huevos",
+          "1 rollo de masa quebrada",
+          "150 g de bacon en tiras",
+          "20 cl de nata líquida",
+          "20 cl de leche",
+          "sal, pimienta recién molida"
+        ],
+        "instructions": [
+          "Precaliente el horno a 180°C.",
+          "Extienda la masa y forre un molde de tarta, dejando el papel de horno en el fondo.",
+          "Dore el bacon en una sartén pequeña durante 5 minutos. Séquelo con papel absorbente y colóquelo en la base de la tarta.",
+          "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta. Vierta sobre el bacon.",
+          "Hornee 40 minutos. Sirva caliente."
+        ],
+        "tips": [
+          "añada cebollino picado para frescura. Los restos se comen fríos en el tupper."
+        ]
+      }
+    }
+  },
+  {
+    "id": "flan_courgette",
+    "image": "optimized/flan_courgette.webp",
+    "tags": [
+      "main_courses",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Zucchini Flan, Microwave",
+        "description": "Quick zucchini flan in the microwave — from La Cuisine de l'Étudiant Malin",
+        "servings": "2 servings",
+        "prep_time": "5 min prep",
+        "cook_time": "10 min cook",
+        "ingredients": [
+          "1 zucchini",
+          "2 eggs",
+          "15 cl liquid heavy cream",
+          "30 cl milk",
+          "salt, freshly ground pepper"
+        ],
+        "instructions": [
+          "Wash the zucchini, remove the stem and cut into very small cubes without peeling.",
+          "In a bowl, beat the eggs with the cream and milk. Season with salt and pepper.",
+          "Put the zucchini cubes in a microwave-safe dish and pour the egg mixture over them. Cover. Cook about 10 minutes at 800 W. Serve hot."
+        ],
+        "tips": [
+          "add a pinch of chili or 1 tsp curry powder to spice it up."
+        ]
+      },
+      "fr": {
+        "title": "Flan de Courgette, au Micro-ondes",
+        "description": "Flan de courgette rapide au micro-ondes — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 2 personnes",
+        "prep_time": "Préparation : 5 min",
+        "cook_time": "Cuisson : 10 min",
+        "ingredients": [
+          "1 courgette",
+          "2 œufs",
+          "15 cl de crème fraîche liquide",
+          "30 cl de lait",
+          "sel, poivre du moulin"
+        ],
+        "instructions": [
+          "Lavez la courgette, ôtez son pédoncule et coupez-la en tout petits dés sans l'éplucher.",
+          "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez.",
+          "Mettez les dés de courgette dans un plat adapté au micro-ondes et versez par-dessus la préparation aux œufs. Couvrez. Faites cuire 10 minutes environ à 800 W. Servez chaud."
+        ],
+        "tips": [
+          "ajoutez une pointe de piment ou 1 cuillère à café de curry en poudre pour relever le flan."
+        ]
+      },
+      "es": {
+        "title": "Flan de Calabacín al Microondas",
+        "description": "Flan de calabacín rápido al microondas — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 2 personas",
+        "prep_time": "Preparación : 5 min",
+        "cook_time": "Cocción : 10 min",
+        "ingredients": [
+          "1 calabacín",
+          "2 huevos",
+          "15 cl de nata líquida",
+          "30 cl de leche",
+          "sal, pimienta recién molida"
+        ],
+        "instructions": [
+          "Lave el calabacín, retire el tallo y córtelo en dados muy pequeños sin pelarlo.",
+          "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta.",
+          "Ponga los dados de calabacín en un recipiente apto para microondas y vierta encima la preparación de huevo. Cubra. Cocine unos 10 minutos a 800 W. Sirva caliente."
+        ],
+        "tips": [
+          "añada una pizca de pimentón o 1 cucharadita de curry en polvo."
+        ]
+      }
+    }
+  },
+  {
+    "id": "gateau_yaourt",
+    "image": "optimized/gateau_yaourt.webp",
+    "tags": [
+      "desserts"
+    ],
+    "translations": {
+      "en": {
+        "title": "Yogurt Cake",
+        "description": "Moist cake measured with a yogurt pot — from La Cuisine de l'Étudiant Malin",
+        "servings": "6 servings",
+        "prep_time": "10 min prep",
+        "cook_time": "40 min cook",
+        "ingredients": [
+          "1 pot plain yogurt",
+          "2 pots powdered sugar",
+          "3 pots flour + 1 tbsp for the pan",
+          "1 pot sunflower oil",
+          "2 eggs",
+          "a knob of butter",
+          "½ packet baking powder",
+          "salt"
+        ],
+        "instructions": [
+          "Preheat the oven to 350°F (180°C).",
+          "Keep the yogurt pot: it will be used to measure the other ingredients.",
+          "In a bowl, mix yogurt, sugar, flour, baking powder and a pinch of salt. Add whole eggs and oil. Mix well.",
+          "Pour the batter into a buttered and floured loaf pan and bake for 40 minutes. Check doneness by inserting a knife blade: if it comes out dry, the cake is done.",
+          "Let the cake cool before unmolding."
+        ],
+        "tips": [
+          "add fresh or canned fruit, spices (cinnamon, vanilla...), citrus zest, or chocolate chips."
+        ]
+      },
+      "fr": {
+        "title": "Gâteau au Yaourt",
+        "description": "Gâteau moelleux au pot de yaourt — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 6 personnes",
+        "prep_time": "Préparation : 10 min",
+        "cook_time": "Cuisson : 40 min",
+        "ingredients": [
+          "1 pot de yaourt nature",
+          "2 pots de sucre en poudre",
+          "3 pots de farine + 1 c. à s. pour le moule",
+          "1 pot d'huile de tournesol",
+          "2 œufs",
+          "1 noix de beurre",
+          "½ sachet de levure chimique",
+          "sel"
+        ],
+        "instructions": [
+          "Préchauffez le four thermostat 6 (180 °C).",
+          "Conservez le pot de yaourt : il va servir à mesurer les autres ingrédients.",
+          "Dans un saladier, mélangez le yaourt, le sucre, la farine, la levure et une pincée de sel. Ajoutez les œufs entiers et l'huile. Mélangez bien.",
+          "Versez la pâte dans un moule à cake beurré et fariné, et enfournez pour 40 minutes. Vérifiez la cuisson en plongeant la lame d'un couteau : si elle ressort sèche, le gâteau est cuit.",
+          "Laissez le gâteau refroidir avant de le démouler."
+        ],
+        "tips": [
+          "ajoutez des morceaux de fruits frais ou en conserve, des épices (cannelle, vanille...), du zeste d'orange ou de citron, ou des pépites de chocolat."
+        ]
+      },
+      "es": {
+        "title": "Bizcocho de Yogur",
+        "description": "Bizcocho medido con el pot de yogur — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 6 personas",
+        "prep_time": "Preparación : 10 min",
+        "cook_time": "Cocción : 40 min",
+        "ingredients": [
+          "1 pot de yogur natural",
+          "2 pots de azúcar en polvo",
+          "3 pots de harina + 1 cucharada para el molde",
+          "1 pot de aceite de girasol",
+          "2 huevos",
+          "un trozo de mantequilla",
+          "½ sobre de levadura química",
+          "sal"
+        ],
+        "instructions": [
+          "Precaliente el horno a 180°C.",
+          "Guarde el pot de yogur: servirá para medir los demás ingredientes.",
+          "En un bol, mezcle el yogur, el azúcar, la harina, la levadura y una pizca de sal. Añada los huevos enteros y el aceite. Mezcle bien.",
+          "Vierta la masa en un molde de bizcocho engrasado y enharinado y hornee 40 minutos. Compruebe la cocción insertando un cuchillo: si sale seco, el bizcocho está listo.",
+          "Deje enfriar antes de desmoldar."
+        ],
+        "tips": [
+          "añada trozos de fruta fresca o en conserva, especias (canela, vainilla...), ralladura cítrica o pepitas de chocolate."
+        ]
+      }
+    }
+  },
+  {
+    "id": "gratin_pommes_terre",
+    "image": "optimized/gratin_pommes_terre.webp",
+    "tags": [
+      "main_courses",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Pan-Fried Potato Gratin",
+        "description": "Potato gratin cooked in a frying pan — from La Cuisine de l'Étudiant Malin",
+        "servings": "2 servings",
+        "prep_time": "20 min prep",
+        "cook_time": "50 min cook",
+        "ingredients": [
+          "4 nice potatoes",
+          "1 egg",
+          "2 tbsp thick crème fraîche",
+          "50 g grated cheese",
+          "50 cl milk",
+          "1 tsp olive oil",
+          "salt, freshly ground pepper"
+        ],
+        "instructions": [
+          "Peel the potatoes. Grate three of them. Cut the fourth into very thin slices.",
+          "In a bowl, beat the whole egg. Add cream, cheese and grated potatoes. Season with salt and pepper.",
+          "Pour olive oil into a pan. Place half the potato slices, the grated potato mixture, then the rest of the slices. Cover with milk to the top. Cook 30 minutes over low heat.",
+          "Flip the gratin onto a plate then return it to the pan to cook the other side for 15 to 20 minutes. Serve very hot."
+        ],
+        "tips": [
+          "add diced ham, herbs (chives, parsley...) or a pinch of spices (chili, curry...)."
+        ]
+      },
+      "fr": {
+        "title": "Gratin de Pommes de Terre, à la Poêle",
+        "description": "Gratin de pommes de terre cuit à la poêle — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 2 personnes",
+        "prep_time": "Préparation : 20 min",
+        "cook_time": "Cuisson : 50 min",
+        "ingredients": [
+          "4 belles pommes de terre",
+          "1 œuf",
+          "2 c. à s. de crème fraîche épaisse",
+          "50 g de fromage râpé",
+          "50 cl de lait",
+          "1 c. à c. d'huile d'olive",
+          "sel, poivre du moulin"
+        ],
+        "instructions": [
+          "Pelez les pommes de terre. Râpez trois d'entre elles. Coupez la quatrième en rondelles très fines.",
+          "Dans un saladier, battez l'œuf entier. Ajoutez la crème, le fromage et les pommes de terre râpées. Salez et poivrez.",
+          "Versez l'huile d'olive dans une poêle. Déposez la moitié des rondelles de pommes de terre, la préparation avec les pommes de terre râpées, et le reste des rondelles de pommes de terre. Couvrez de lait à hauteur. Faites cuire 30 minutes à feu doux.",
+          "Retournez le gratin dans un plat puis remettez-le à nouveau dans la poêle afin de faire cuire l'autre face durant 15 à 20 minutes. Servez bien chaud."
+        ],
+        "tips": [
+          "ajoutez des dés de jambon, des herbes (ciboulette, persil...) ou une pincée d'épices (piment, curry...)."
+        ]
+      },
+      "es": {
+        "title": "Gratin de Patatas en Sartén",
+        "description": "Gratin de patatas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 2 personas",
+        "prep_time": "Preparación : 20 min",
+        "cook_time": "Cocción : 50 min",
+        "ingredients": [
+          "4 patatas",
+          "1 huevo",
+          "2 cucharadas de nata espesa",
+          "50 g de queso rallado",
+          "50 cl de leche",
+          "1 cucharadita de aceite de oliva",
+          "sal, pimienta recién molida"
+        ],
+        "instructions": [
+          "Pele las patatas. Ralle tres de ellas. Corte la cuarta en rodajas muy finas.",
+          "En un bol, bata el huevo entero. Añada la nata, el queso y las patatas ralladas. Sazone con sal y pimienta.",
+          "Vierta el aceite de oliva en una sartén. Coloque la mitad de las rodajas, la mezcla de patata rallada y el resto de rodajas. Cubra con leche hasta el borde. Cocine 30 minutos a fuego lento.",
+          "Voltee el gratin en un plato y vuelva a ponerlo en la sartén para cocinar el otro lado 15 a 20 minutos. Sirva bien caliente."
+        ],
+        "tips": [
+          "añada dados de jamón, hierbas (cebollino, perejil...) o una pizca de especias (pimentón, curry...)."
+        ]
+      }
+    }
+  },
+  {
+    "id": "banane_four",
+    "image": "optimized/banane_four.webp",
+    "tags": [
+      "desserts",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Baked Banana",
+        "description": "Simple roasted banana dessert — from La Cuisine de l'Étudiant Malin",
+        "servings": "1 serving",
+        "prep_time": "5 min prep",
+        "cook_time": "10 min cook",
+        "ingredients": [
+          "1 banana",
+          "1 packet vanilla sugar",
+          "a knob of butter"
+        ],
+        "instructions": [
+          "Preheat the oven to 350°F (180°C).",
+          "Without peeling, cut the banana in half lengthwise. Place the halves in an ovenproof dish.",
+          "Sprinkle with vanilla sugar and dot with small pieces of butter.",
+          "Bake for 10 minutes. Enjoy hot or warm."
+        ],
+        "tips": [
+          "sprinkle with crumbled biscuits for crunch."
+        ]
+      },
+      "fr": {
+        "title": "Banane au Four",
+        "description": "Dessert simple à la banane rôtie — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 1 personne",
+        "prep_time": "Préparation : 5 min",
+        "cook_time": "Cuisson : 10 min",
+        "ingredients": [
+          "1 banane",
+          "1 sachet de sucre vanillé",
+          "1 noix de beurre"
+        ],
+        "instructions": [
+          "Préchauffez le four thermostat 6 (180 °C).",
+          "Sans l'éplucher, coupez la banane en deux dans le sens de la longueur. Déposez les moitiés de banane dans un plat à four.",
+          "Saupoudrez-les de sucre vanillé et parsemez de petits morceaux de beurre.",
+          "Enfournez et laissez cuire 10 minutes. Dégustez chaud ou tiède."
+        ],
+        "tips": [
+          "pour apporter du croquant, saupoudrez de biscuits émiettés."
+        ]
+      },
+      "es": {
+        "title": "Plátano al Horno",
+        "description": "Postre simple de plátano asado — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 1 persona",
+        "prep_time": "Preparación : 5 min",
+        "cook_time": "Cocción : 10 min",
+        "ingredients": [
+          "1 plátano",
+          "1 sobre de azúcar vainillado",
+          "un trozo de mantequilla"
+        ],
+        "instructions": [
+          "Precaliente el horno a 180°C.",
+          "Sin pelar, corte el plátano por la mitad a lo largo. Coloque las mitades en una fuente de horno.",
+          "Espolvoree con azúcar vainillado y ponga trocitos de mantequilla.",
+          "Hornee 10 minutos. Disfrute caliente o tibio."
+        ],
+        "tips": [
+          "espolvoree con galletas desmenuzadas para dar crujiente."
+        ]
+      }
+    }
+  },
+  {
+    "id": "boulettes_riz_tomate",
+    "image": "optimized/boulettes_riz_tomate.webp",
+    "tags": [
+      "main_courses",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Tomato Rice Balls",
+        "description": "Rice balls with mozzarella and tomato sauce — from La Cuisine de l'Étudiant Malin",
+        "servings": "4 servings",
+        "prep_time": "15 min prep",
+        "cook_time": "20 min cook",
+        "ingredients": [
+          "250 g rice",
+          "200 g tomato sauce",
+          "1 ball of mozzarella",
+          "1 tbsp olive oil",
+          "salt, freshly ground pepper"
+        ],
+        "instructions": [
+          "Cook the rice in a large volume of boiling salted water according to package instructions.",
+          "Drain the mozzarella and cut into very small cubes.",
+          "Drain the rice and mix with tomato sauce and mozzarella. Season with salt and pepper.",
+          "Form balls by rolling between your palms.",
+          "Heat olive oil in a frying pan. Add the rice balls and warm for about 5 minutes. Serve immediately."
+        ],
+        "tips": [
+          "use risotto rice (arborio) if possible. With leftovers, crush the balls and reheat the rice with diced peppers and tomatoes."
+        ]
+      },
+      "fr": {
+        "title": "Boulettes de Riz à la Tomate",
+        "description": "Boulettes de riz à la mozzarella et sauce tomate — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 4 personnes",
+        "prep_time": "Préparation : 15 min",
+        "cook_time": "Cuisson : 20 min",
+        "ingredients": [
+          "250 g de riz",
+          "200 g de sauce tomate",
+          "1 boule de mozzarella",
+          "1 c. à s. d'huile d'olive",
+          "sel, poivre du moulin"
+        ],
+        "instructions": [
+          "Faites cuire le riz dans un grand volume d'eau bouillante salée selon les indications du paquet.",
+          "Égouttez la mozzarella et coupez-la en tout petits dés.",
+          "Égouttez le riz et mélangez-le avec la sauce tomate et la mozzarella. Salez et poivrez.",
+          "Formez des boules en les roulant entre vos paumes.",
+          "Faites chauffer l'huile d'olive dans une poêle. Ajoutez les boulettes et laissez-les réchauffer 5 minutes environ. Servez sans attendre."
+        ],
+        "tips": [
+          "utilisez de préférence un riz pour risotto (arborio). Avec les restes, écrasez les boulettes et réchauffez le riz avec des dés de poivron et de tomate."
+        ]
+      },
+      "es": {
+        "title": "Bolitas de Arroz con Tomate",
+        "description": "Bolitas de arroz con mozzarella y salsa de tomate — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 4 personas",
+        "prep_time": "Preparación : 15 min",
+        "cook_time": "Cocción : 20 min",
+        "ingredients": [
+          "250 g de arroz",
+          "200 g de salsa de tomate",
+          "1 bola de mozzarella",
+          "1 cucharada de aceite de oliva",
+          "sal, pimienta recién molida"
+        ],
+        "instructions": [
+          "Cocine el arroz en abundante agua hirviendo con sal según las indicaciones del paquete.",
+          "Escurra la mozzarella y córtela en dados muy pequeños.",
+          "Escurra el arroz y mézclelo con la salsa de tomate y la mozzarella. Sazone con sal y pimienta.",
+          "Forme bolas rodándolas entre las palmas.",
+          "Caliente el aceite de oliva en una sartén. Añada las bolitas y caliéntelas unos 5 minutos. Sirva de inmediato."
+        ],
+        "tips": [
+          "use arroz para risotto (arborio) si es posible. Con los restos, aplaste las bolitas y recaliente el arroz con dados de pimiento y tomate."
+        ]
+      }
+    }
+  },
+  {
+    "id": "spaghettis_citron",
+    "image": "optimized/spaghettis_citron.webp",
+    "tags": [
+      "main_courses"
+    ],
+    "translations": {
+      "en": {
+        "title": "Light Lemon Spaghetti",
+        "description": "Fresh pasta with lemon and fromage blanc — from La Cuisine de l'Étudiant Malin",
+        "servings": "2 servings",
+        "prep_time": "5 min prep",
+        "cook_time": "10 min cook",
+        "ingredients": [
+          "150 g spaghetti",
+          "1 lemon",
+          "100 g fromage blanc (or quark/cottage cheese)",
+          "salt, freshly ground pepper"
+        ],
+        "instructions": [
+          "Cook the pasta in a large volume of boiling salted water for the time indicated on the package.",
+          "Squeeze the lemon. In a bowl, mix fromage blanc and lemon juice. Season with salt and pepper.",
+          "Drain the pasta and mix with the fromage blanc sauce. Serve immediately."
+        ],
+        "tips": [
+          "sprinkle with grated parmesan and add some cooked shrimp."
+        ]
+      },
+      "fr": {
+        "title": "Spaghettis Légers au Citron",
+        "description": "Pâtes fraîches au citron et fromage blanc — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 2 personnes",
+        "prep_time": "Préparation : 5 min",
+        "cook_time": "Cuisson : 10 min",
+        "ingredients": [
+          "150 g de spaghettis",
+          "1 citron",
+          "100 g de fromage blanc",
+          "sel, poivre du moulin"
+        ],
+        "instructions": [
+          "Faites cuire les pâtes dans un grand volume d'eau bouillante salée le temps indiqué sur le paquet.",
+          "Pressez le citron. Dans un bol, mélangez le fromage blanc et le jus de citron. Salez et poivrez.",
+          "Égouttez les pâtes et mélangez-les avec la sauce au fromage blanc. Servez immédiatement."
+        ],
+        "tips": [
+          "parsemez de parmesan râpé et ajoutez quelques crevettes cuites."
+        ]
+      },
+      "es": {
+        "title": "Espaguetis Ligeros al Limón",
+        "description": "Pasta fresca con limón y queso fresco — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 2 personas",
+        "prep_time": "Preparación : 5 min",
+        "cook_time": "Cocción : 10 min",
+        "ingredients": [
+          "150 g de espaguetis",
+          "1 limón",
+          "100 g de queso fresco batido",
+          "sal, pimienta recién molida"
+        ],
+        "instructions": [
+          "Cocine la pasta en abundante agua hirviendo con sal el tiempo indicado en el paquete.",
+          "Exprima el limón. En un bol, mezcle el queso fresco y el zumo de limón. Sazone con sal y pimienta.",
+          "Escurra la pasta y mézclela con la salsa de queso fresco. Sirva de inmediato."
+        ],
+        "tips": [
+          "espolvoree con parmesano rallado y añada unas gambas cocidas."
+        ]
+      }
+    }
+  },
+  {
+    "id": "fondant_chocolat",
+    "image": "optimized/fondant_chocolat.webp",
+    "tags": [
+      "desserts"
+    ],
+    "translations": {
+      "en": {
+        "title": "Microwave Chocolate Fondant",
+        "description": "Molten chocolate cake in the microwave — from La Cuisine de l'Étudiant Malin",
+        "servings": "6 servings",
+        "prep_time": "10 min prep",
+        "cook_time": "8–11 min cook",
+        "ingredients": [
+          "150 g dark baking chocolate",
+          "3 eggs",
+          "60 g flour + 1 tbsp for the pan",
+          "10 cl milk",
+          "80 g butter + a knob for the pan",
+          "80 g powdered sugar",
+          "1 tsp baking powder"
+        ],
+        "instructions": [
+          "Break the chocolate into pieces and put in a bowl. Add butter cut into pieces and melt in the microwave for 2 to 3 minutes, stirring occasionally.",
+          "In a bowl, beat eggs with sugar until the mixture whitens. Add milk, flour, baking powder and melted chocolate. Mix.",
+          "Butter and flour the pan.",
+          "Pour the batter into the pan and cook 8 minutes in the microwave at 800 W. Let cool slightly before serving."
+        ],
+        "tips": [
+          "5-6 minutes for a molten center, 10 minutes for a firmer texture."
+        ]
+      },
+      "fr": {
+        "title": "Fondant au Chocolat, au Micro-ondes",
+        "description": "Gâteau au chocolat fondant cuit au micro-ondes — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 6 personnes",
+        "prep_time": "Préparation : 10 min",
+        "cook_time": "Cuisson : 8–11 min",
+        "ingredients": [
+          "150 g de chocolat noir à pâtisser",
+          "3 œufs",
+          "60 g de farine + 1 c. à s. pour le moule",
+          "10 cl de lait",
+          "80 g de beurre + 1 noix pour le moule",
+          "80 g de sucre en poudre",
+          "1 c. à c. de levure chimique"
+        ],
+        "instructions": [
+          "Cassez le chocolat en morceaux et mettez-les dans un bol. Ajoutez le beurre coupé en morceaux et faites fondre au micro-ondes pendant 2 à 3 minutes en remuant de temps en temps.",
+          "Dans un saladier, battez les œufs avec le sucre jusqu'à ce que le mélange blanchisse. Ajoutez le lait, la farine, la levure et le chocolat fondu. Mélangez.",
+          "Beurrez et farinez le moule.",
+          "Versez la préparation dans le moule et faites cuire 8 minutes au micro-ondes à 800 W. Laissez tiédir avant de servir."
+        ],
+        "tips": [
+          "5-6 minutes pour un coulant au chocolat, 10 minutes pour une texture plus ferme."
+        ]
+      },
+      "es": {
+        "title": "Fondant de Chocolate al Microondas",
+        "description": "Pastel de chocolate fundente al microondas — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 6 personas",
+        "prep_time": "Preparación : 10 min",
+        "cook_time": "Cocción : 8–11 min",
+        "ingredients": [
+          "150 g de chocolate negro para repostería",
+          "3 huevos",
+          "60 g de harina + 1 cucharada para el molde",
+          "10 cl de leche",
+          "80 g de mantequilla + un trozo para el molde",
+          "80 g de azúcar en polvo",
+          "1 cucharadita de levadura química"
+        ],
+        "instructions": [
+          "Rompa el chocolate en trozos y póngalo en un bol. Añada la mantequilla en trozos y derrítala en el microondas 2 a 3 minutos, removiendo de vez en cuando.",
+          "En un bol, bata los huevos con el azúcar hasta que blanqueen. Añada la leche, la harina, la levadura y el chocolate derretido. Mezcle.",
+          "Engrase y enharine el molde.",
+          "Vierta la preparación en el molde y cocine 8 minutos en el microondas a 800 W. Deje templar antes de servir."
+        ],
+        "tips": [
+          "5-6 minutos para centro fundente, 10 minutos para textura más firme."
+        ]
+      }
+    }
+  },
+  {
+    "id": "cremes_pate_tartiner",
+    "image": "optimized/cremes_pate_tartiner.webp",
+    "tags": [
+      "desserts",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Chocolate Hazelnut Spread Creams",
+        "description": "Creams with chocolate-hazelnut spread — from La Cuisine de l'Étudiant Malin",
+        "servings": "4 servings",
+        "prep_time": "5 min prep",
+        "cook_time": "10 min cook",
+        "ingredients": [
+          "4 large tbsp chocolate-hazelnut spread",
+          "3 egg yolks",
+          "2 tbsp powdered sugar",
+          "25 cl milk",
+          "12.5 cl liquid heavy cream"
+        ],
+        "instructions": [
+          "In a bowl, mix egg yolks and sugar until the mixture whitens.",
+          "Pour milk and cream into a small saucepan. Heat until boiling, then pour the hot liquid over the egg-sugar mixture.",
+          "Pour everything back into the saucepan and add the spread. Cook 5 minutes over low heat, stirring constantly. Pour into 4 small glasses or jars.",
+          "Refrigerate for at least 2 hours."
+        ],
+        "tips": [
+          "with the 3 egg whites, make homemade meringues (beat whites stiff with 120 g sugar, bake 1 hour at very low heat)."
+        ]
+      },
+      "fr": {
+        "title": "Petites Crèmes à la Pâte à Tartiner",
+        "description": "Crèmes au chocolat-noisettes — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 4 personnes",
+        "prep_time": "Préparation : 5 min",
+        "cook_time": "Cuisson : 10 min",
+        "ingredients": [
+          "4 grosses c. à s. de pâte à tartiner chocolat-noisettes",
+          "3 jaunes d'œufs",
+          "2 c. à s. de sucre en poudre",
+          "25 cl de lait",
+          "12,5 cl de crème fraîche liquide"
+        ],
+        "instructions": [
+          "Dans un saladier, mélangez les jaunes d'œufs et le sucre jusqu'à ce que le mélange blanchisse.",
+          "Versez le lait et la crème dans une petite casserole. Faites chauffer jusqu'à ébullition, puis versez le liquide chaud sur le mélange œufs-sucre.",
+          "Reversez le tout dans la casserole et ajoutez la pâte à tartiner. Faites cuire 5 minutes à feu doux en remuant sans cesse. Versez dans 4 petits verres ou pots en verre.",
+          "Mettez au frais pendant 2 heures au moins."
+        ],
+        "tips": [
+          "avec les 3 blancs d'œufs, préparez des meringues maison (blancs montés en neige avec 120 g de sucre, cuisson 1 h au four thermostat 2-3)."
+        ]
+      },
+      "es": {
+        "title": "Pequeñas Cremas de Crema de Cacao y Avellanas",
+        "description": "Cremas con crema de chocolate y avellanas — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 4 personas",
+        "prep_time": "Preparación : 5 min",
+        "cook_time": "Cocción : 10 min",
+        "ingredients": [
+          "4 cucharadas grandes de crema de chocolate y avellanas",
+          "3 yemas de huevo",
+          "2 cucharadas de azúcar en polvo",
+          "25 cl de leche",
+          "12,5 cl de nata líquida"
+        ],
+        "instructions": [
+          "En un bol, mezcle las yemas y el azúcar hasta que blanqueen.",
+          "Vierta la leche y la nata en una cacerola pequeña. Caliente hasta que hierva, luego vierta el líquido caliente sobre la mezcla de huevo y azúcar.",
+          "Vierta todo de nuevo en la cacerola y añada la crema de cacao. Cocine 5 minutos a fuego lento removiendo sin cesar. Vierta en 4 vasitos o tarros de cristal.",
+          "Refrigere al menos 2 horas."
+        ],
+        "tips": [
+          "con las 3 claras, prepare merengues caseras (claras montadas con 120 g de azúcar, hornee 1 hora a temperatura muy baja)."
+        ]
+      }
+    }
+  },
+  {
+    "id": "curry_lentilles",
+    "image": "optimized/curry_lentilles.webp",
+    "tags": [
+      "soups",
+      "vegan",
+      "gluten_free"
+    ],
+    "translations": {
+      "en": {
+        "title": "Lentil Curry",
+        "description": "Green lentil curry — from La Cuisine de l'Étudiant Malin",
+        "servings": "2 servings",
+        "prep_time": "15 min prep",
+        "cook_time": "40 min cook",
+        "ingredients": [
+          "100 g green lentils for cooking",
+          "½ can peeled tomatoes",
+          "1 carrot",
+          "1 onion",
+          "½ tbsp curry powder",
+          "½ tbsp olive oil",
+          "salt, freshly ground pepper"
+        ],
+        "instructions": [
+          "Peel and mince the onion. Peel the carrot and dice it.",
+          "Drain the tomatoes (keep the juice) and cut into pieces.",
+          "In a Dutch oven or large saucepan, heat the olive oil. Add the onion and brown for 5 minutes. Add diced carrot and drained tomatoes. Cook 5 minutes.",
+          "Add lentils, tomato juice and cover with water to height. Season with salt, pepper and curry. Bring to a boil, then lower heat and simmer uncovered for 30 minutes. Serve very hot."
+        ],
+        "tips": [
+          "use red lentils for shorter cooking (about 20 minutes). Add cinnamon, chili, ginger or turmeric."
+        ]
+      },
+      "fr": {
+        "title": "Curry de Lentilles",
+        "description": "Curry de lentilles vertes — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 2 personnes",
+        "prep_time": "Préparation : 15 min",
+        "cook_time": "Cuisson : 40 min",
+        "ingredients": [
+          "100 g de lentilles vertes à cuire",
+          "½ boîte de tomates pelées",
+          "1 carotte",
+          "1 oignon",
+          "½ c. à s. de curry en poudre",
+          "½ c. à s. d'huile d'olive",
+          "sel, poivre du moulin"
+        ],
+        "instructions": [
+          "Pelez et émincez l'oignon. Épluchez la carotte et coupez-la en dés.",
+          "Égouttez les tomates (conservez le jus) et coupez-les en morceaux.",
+          "Dans une cocotte ou une grande casserole, faites chauffer l'huile d'olive. Ajoutez l'oignon et laissez-le dorer 5 minutes. Versez les dés de carotte et les tomates égouttées. Laissez cuire 5 minutes.",
+          "Ajoutez les lentilles, le jus des tomates et couvrez d'eau à hauteur. Salez, poivrez et ajoutez le curry. Portez à ébullition, puis baissez le feu et laissez mijoter 30 minutes sans couvrir. Servez bien chaud."
+        ],
+        "tips": [
+          "utilisez des lentilles corail pour une cuisson plus courte (environ 20 minutes). Agrémentez de cannelle, piment, gingembre ou curcuma."
+        ]
+      },
+      "es": {
+        "title": "Curry de Lentejas",
+        "description": "Curry de lentejas verdes — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 2 personas",
+        "prep_time": "Preparación : 15 min",
+        "cook_time": "Cocción : 40 min",
+        "ingredients": [
+          "100 g de lentejas verdes para cocer",
+          "½ lata de tomates pelados",
+          "1 zanahoria",
+          "1 cebolla",
+          "½ cucharada de curry en polvo",
+          "½ cucharada de aceite de oliva",
+          "sal, pimienta recién molida"
+        ],
+        "instructions": [
+          "Pele y pique la cebolla. Pele la zanahoria y córtela en dados.",
+          "Escurra los tomates (reserve el jugo) y córtelos en trozos.",
+          "En una olla grande, caliente el aceite de oliva. Añada la cebolla y dórela 5 minutos. Vierta la zanahoria en dados y los tomates escurridos. Cocine 5 minutos.",
+          "Añada las lentejas, el jugo de tomate y cubra con agua hasta el borde. Sazone con sal, pimienta y curry. Lleve a ebullición, baje el fuego y cocine a fuego lento sin tapar 30 minutos. Sirva bien caliente."
+        ],
+        "tips": [
+          "use lentejas rojas para cocción más corta (unos 20 minutos). Añada canela, pimentón, jengibre o cúrcuma."
+        ]
+      }
+    }
+  },
+  {
+    "id": "gateau_pommes_poele",
+    "image": "optimized/gateau_pommes_poele.webp",
+    "tags": [
+      "desserts"
+    ],
+    "translations": {
+      "en": {
+        "title": "Pan-Fried Apple Cake",
+        "description": "Apple cake cooked in a frying pan — from La Cuisine de l'Étudiant Malin",
+        "servings": "4 servings",
+        "prep_time": "15 min prep",
+        "cook_time": "15 min cook",
+        "ingredients": [
+          "4 apples",
+          "1 egg",
+          "125 g flour",
+          "20 g salted butter",
+          "50 g powdered sugar",
+          "1 packet vanilla sugar",
+          "1 tsp baking powder"
+        ],
+        "instructions": [
+          "Peel the apples and cut into thin slices.",
+          "In a bowl, beat the egg with flour, baking powder and 4 tablespoons of water. Add sugar and vanilla sugar and mix. Add apple slices and mix again.",
+          "Melt half the butter in a large pan. Pour in the apple mixture, cover and cook 5 minutes. Slide the flipped cake onto a large plate. Melt the remaining butter in the pan, then return the cake to cook on the other side for about 10 minutes."
+        ],
+        "tips": [
+          "replace apples with pears, plums or apricots. Serve warm with vanilla ice cream or a little crème fraîche."
+        ]
+      },
+      "fr": {
+        "title": "Gâteau aux Pommes, à la Poêle",
+        "description": "Gâteau aux pommes cuit à la poêle — La Cuisine de l'Étudiant Malin",
+        "servings": "Pour 4 personnes",
+        "prep_time": "Préparation : 15 min",
+        "cook_time": "Cuisson : 15 min",
+        "ingredients": [
+          "4 pommes",
+          "1 œuf",
+          "125 g de farine",
+          "20 g de beurre salé",
+          "50 g de sucre en poudre",
+          "1 sachet de sucre vanillé",
+          "1 c. à c. de levure chimique"
+        ],
+        "instructions": [
+          "Épluchez les pommes et coupez-les en fines lamelles.",
+          "Dans un saladier, battez l'œuf avec la farine, la levure et 4 cuillères à soupe d'eau. Ajoutez le sucre, le sucre vanillé et mélangez. Versez les lamelles de pommes et mélangez encore.",
+          "Faites fondre la moitié du beurre dans une grande poêle. Versez la préparation aux pommes, couvrez et laissez cuire 5 minutes. Faites glisser le gâteau retourné dans une grande assiette. Faites fondre le reste de beurre dans la poêle, puis remettez le gâteau pour le faire cuire de l'autre côté. Poursuivez la cuisson 10 minutes environ."
+        ],
+        "tips": [
+          "remplacez les pommes par des poires, des prunes ou des abricots. Servez tiède avec une boule de glace à la vanille ou un peu de crème fraîche."
+        ]
+      },
+      "es": {
+        "title": "Bizcocho de Manzanas en Sartén",
+        "description": "Bizcocho de manzanas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
+        "servings": "Para 4 personas",
+        "prep_time": "Preparación : 15 min",
+        "cook_time": "Cocción : 15 min",
+        "ingredients": [
+          "4 manzanas",
+          "1 huevo",
+          "125 g de harina",
+          "20 g de mantequilla salada",
+          "50 g de azúcar en polvo",
+          "1 sobre de azúcar vainillado",
+          "1 cucharadita de levadura química"
+        ],
+        "instructions": [
+          "Pele las manzanas y córtelas en láminas finas.",
+          "En un bol, bata el huevo con la harina, la levadura y 4 cucharadas de agua. Añada el azúcar y el azúcar vainillado y mezcle. Incorpore las láminas de manzana y mezcle de nuevo.",
+          "Derrita la mitad de la mantequilla en una sartén grande. Vierta la preparación de manzana, cubra y cocine 5 minutos. Deslice el bizcocho volteado en un plato grande. Derrita el resto de mantequilla en la sartén y vuelva a poner el bizcocho para cocinar el otro lado unos 10 minutos."
+        ],
+        "tips": [
+          "sustituya las manzanas por peras, ciruelas o albaricoques. Sirva tibio con helado de vainilla o un poco de nata."
+        ]
+      }
+    }
+  }
+]

@@ -27,6 +27,11 @@ jobs:
       - name: Validate multilingual data
         run: node scripts/validate-data.js
 
+      - name: Verify data matches source build
+        run: |
+          node scripts/build-data.js
+          git diff --exit-code data/cookbook-data-en.json data/cookbook-data-fr.json data/cookbook-data-es.json
+
       - name: Setup ImageMagick
         run: |
           sudo apt-get update

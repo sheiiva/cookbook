@@ -56,8 +56,16 @@ Recipes are stored in the `data/cookbook-data-{en,fr,es}.json` files. Each file 
 
 ## How to add recipes
 
-1. **Add the recipe in each language file**  
-   Edit `data/cookbook-data-en.json`, `data/cookbook-data-fr.json`, and `data/cookbook-data-es.json`. Use the **same `id`** in all three so links and the detail page work.
+1. **Edit source files** in `data/source/` (`recipes.json`, `ui.json`, `navigation.json`), then run:
+
+   ```bash
+   node scripts/build-data.js
+   ```
+
+   This regenerates `data/cookbook-data-{en,fr,es}.json`. Commit both source and generated files.
+
+2. **Or add the recipe in each language file**  
+   Edit `data/cookbook-data-en.json`, `data/cookbook-data-fr.json`, and `data/cookbook-data-es.json`. Use the **same `id`** in all three so links and the detail page work. Prefer editing `data/source/recipes.json` when possible.
 
 2. **Recipe object shape**  
    Each recipe in the `recipes` array should look like this (minimal):

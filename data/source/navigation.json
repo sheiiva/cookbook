@@ -1,0 +1,20 @@
+{
+  "en": {
+    "home": "Home",
+    "breadcrumbs": {
+      "separator": "›"
+    }
+  },
+  "fr": {
+    "home": "Accueil",
+    "breadcrumbs": {
+      "separator": "›"
+    }
+  },
+  "es": {
+    "home": "Inicio",
+    "breadcrumbs": {
+      "separator": "›"
+    }
+  }
+}
