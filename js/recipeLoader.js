@@ -295,6 +295,25 @@ class RecipeLoader {
         }
     }
 
+    recipeSearchText(recipe) {
+        const parts = [recipe.title, recipe.description];
+        if (recipe.ingredients) parts.push(...recipe.ingredients);
+        if (recipe.ingredient_sections) {
+            for (const section of Object.values(recipe.ingredient_sections)) {
+                parts.push(...section);
+            }
+        }
+        if (recipe.instructions) parts.push(...recipe.instructions);
+        if (recipe.instruction_blocks) {
+            for (const block of Object.values(recipe.instruction_blocks)) {
+                if (block.title) parts.push(block.title);
+                if (block.steps) parts.push(...block.steps);
+            }
+        }
+        if (recipe.tips) parts.push(...recipe.tips);
+        return parts.filter(Boolean).join(' ').toLowerCase();
+    }
+
     applyFilters() {
         const allActiveFilters = Array.from(document.querySelectorAll('.filter-btn.active'));
         const activeDishFilters = allActiveFilters
@@ -320,10 +339,10 @@ class RecipeLoader {
             if (recipe && recipe.tags) {
                 let shouldShow = true;
                 
-                // Check search term (only recipe title/name)
+                // Check search term (title, description, ingredients, instructions)
                 if (this.currentSearchTerm) {
-                    const titleMatch = recipe.title.toLowerCase().includes(this.currentSearchTerm);
-                    shouldShow = titleMatch;
+                    const searchText = this.recipeSearchText(recipe);
+                    shouldShow = searchText.includes(this.currentSearchTerm);
                 }
                 
                 // Check dish type filters
