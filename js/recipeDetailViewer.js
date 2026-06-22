@@ -3,30 +3,7 @@ class RecipeDetailViewer {
         const urlLang = new URLSearchParams(window.location.search).get('lang');
         this.currentLanguage = (window.CookbookI18n && window.CookbookI18n.resolveLanguage(urlLang)) || 'en';
         this.recipesData = null;
-    }
-
-    /** Escape HTML special chars to prevent XSS when inserting into innerHTML */
-    escapeHtml(str) {
-        if (str == null) return '';
-        const s = String(str);
-        const div = document.createElement('div');
-        div.textContent = s;
-        return div.innerHTML;
-    }
-
-    /** Allow only safe relative image paths (no javascript:, data:, or absolute URLs) */
-    safeImageSrc(path) {
-        if (path == null || typeof path !== 'string') return '';
-        const t = path.trim();
-        if (/^\s*$/.test(t)) return '';
-        if (/^(javascript|data|vbscript):/i.test(t)) return '';
-        if (/^\/\//.test(t)) return '';
-        return t;
-    }
-
-    getLanguageFromURL() {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get('lang');
+        this.common = window.CookbookCommon;
     }
 
     updateURL() {
@@ -36,22 +13,14 @@ class RecipeDetailViewer {
         window.history.replaceState({}, '', newURL);
     }
 
-    updateLanguageButton() {
-        const currentLangSpan = document.querySelector('.current-lang');
-        const languageNames = (window.CookbookI18n && window.CookbookI18n.languageNames) || { en: 'English', fr: 'Français', es: 'Español' };
-        if (currentLangSpan) currentLangSpan.textContent = languageNames[this.currentLanguage] || this.currentLanguage;
-    }
-
     async init() {
         try {
-            if (window.CookbookI18n) {
-                window.CookbookI18n.persistLanguage(this.currentLanguage);
-            }
+            this.common.persistLanguage(this.currentLanguage);
             await this.loadRecipesForLanguage(this.currentLanguage);
             this.updateBackToHomeLink();
-            this.updateLanguageButton();
+            this.common.updateLanguageButton(this.currentLanguage);
             this.setupLanguageToggle();
-            this.setDocumentLang(this.currentLanguage);
+            this.common.setDocumentLang(this.currentLanguage);
             this.displayRecipe();
         } catch (error) {
             console.error('Recipe viewer init failed:', error);
@@ -67,14 +36,14 @@ class RecipeDetailViewer {
         }
     }
 
-    /** Update meta description and Open Graph tags for recipe page (SEO, sharing) */
     updateMetaAndOg(recipe, siteName) {
         const desc = (recipe.description || recipe.title || '').slice(0, 160);
         const title = `${recipe.title} · ${siteName}`;
         const url = window.location.href;
-        const dir = window.location.pathname.replace(/\/[^/]*$/, '') || '';
-        const pathPrefix = dir ? dir + '/' : '/';
-        const imageUrl = recipe.image ? `${window.location.origin}${pathPrefix}images/${this.safeImageSrc(recipe.image)}` : '';
+        const safeImage = this.common.safeImageSrc(recipe.image);
+        const imageUrl = safeImage
+            ? `${window.location.origin}${this.common.getPathPrefix()}images/${safeImage}`
+            : '';
 
         const setMeta = (attr, key, value) => {
             if (!value) return;
@@ -95,84 +64,33 @@ class RecipeDetailViewer {
         if (imageUrl) setMeta('property', 'og:image', imageUrl);
     }
 
-    /** Render breadcrumb: Home › Recipe title (uses navigation from JSON) */
     renderBreadcrumb(recipeTitle) {
         const el = document.getElementById('recipe-breadcrumb');
         if (!el || !this.recipesData || !this.recipesData.navigation) return;
-        const home = this.escapeHtml(this.recipesData.navigation.home || 'Home');
-        const sep = this.escapeHtml((this.recipesData.navigation.breadcrumbs && this.recipesData.navigation.breadcrumbs.separator) || '›');
-        const current = this.escapeHtml(recipeTitle || '');
+        const home = this.common.escapeHtml(this.recipesData.navigation.home || 'Home');
+        const sep = this.common.escapeHtml((this.recipesData.navigation.breadcrumbs && this.recipesData.navigation.breadcrumbs.separator) || '›');
+        const current = this.common.escapeHtml(recipeTitle || '');
         const homeUrl = `index.html?lang=${encodeURIComponent(this.currentLanguage)}`;
         el.innerHTML = `<a href="${homeUrl}">${home}</a><span class="breadcrumb-sep">${sep}</span><span class="breadcrumb-current">${current}</span>`;
     }
 
-    setDocumentLang(lang) {
-        const langMap = { en: 'en', fr: 'fr', es: 'es' };
-        document.documentElement.lang = langMap[lang] || 'en';
-    }
-
     async loadRecipesForLanguage(lang) {
-        const filename = `data/cookbook-data-${lang}.json`;
-        const dir = window.location.pathname.replace(/\/[^/]*$/, '') || '';
-        const pathPrefix = dir ? dir + '/' : '/';
-        const absoluteUrl = window.location.origin + pathPrefix + filename;
-        let response = await fetch(absoluteUrl);
-        if (!response.ok) {
-            response = await fetch(filename);
-        }
-        if (!response.ok) {
-            throw new Error(`Could not load data (tried ${absoluteUrl}): ${response.status} ${response.statusText}`);
-        }
-        this.recipesData = await response.json();
+        this.recipesData = await this.common.loadCookbookData(lang);
     }
 
     setupLanguageToggle() {
-        const { languageNames, languages } = window.CookbookI18n || { languageNames: { en: 'English', fr: 'Français', es: 'Español' }, languages: ['en', 'fr', 'es'] };
-        const menu = document.getElementById('language-menu');
-        const languageToggle = document.getElementById('language-toggle');
-
-        if (menu) {
-            languages.forEach(code => {
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.textContent = languageNames[code];
-                btn.setAttribute('data-lang', code);
-                if (code === this.currentLanguage) btn.classList.add('active-lang');
-                btn.addEventListener('click', async (e) => {
-                    e.stopPropagation();
-                    const lang = btn.getAttribute('data-lang');
-                    if (lang === this.currentLanguage) { menu.classList.remove('open'); return; }
-                    this.currentLanguage = lang;
-                    menu.querySelectorAll('button').forEach(b => b.classList.remove('active-lang'));
-                    btn.classList.add('active-lang');
-                    const currentLangSpan = languageToggle?.querySelector('.current-lang');
-                    if (currentLangSpan) currentLangSpan.textContent = languageNames[lang];
-                    menu.classList.remove('open');
-                    try {
-                        await this.loadRecipesForLanguage(this.currentLanguage);
-                        if (window.CookbookI18n) {
-                            window.CookbookI18n.persistLanguage(this.currentLanguage);
-                        }
-                        this.updateBackToHomeLink();
-                        this.setDocumentLang(this.currentLanguage);
-                        this.displayRecipe();
-                        this.updateURL();
-                    } catch (error) {
-                        console.error('Failed to load recipes for new language:', error);
-                    }
-                });
-                menu.appendChild(btn);
-            });
-        }
-
-        if (languageToggle) {
-            languageToggle.addEventListener('click', (e) => {
-                e.stopPropagation();
-                menu?.classList.toggle('open');
-            });
-        }
-
-        document.addEventListener('click', () => menu?.classList.remove('open'));
+        this.common.setupLanguageMenu({
+            getLanguage: () => this.currentLanguage,
+            setLanguage: (lang) => { this.currentLanguage = lang; },
+            onLanguageChange: async () => {
+                await this.loadRecipesForLanguage(this.currentLanguage);
+                this.common.persistLanguage(this.currentLanguage);
+                this.updateBackToHomeLink();
+                this.common.setDocumentLang(this.currentLanguage);
+                this.displayRecipe();
+                this.updateURL();
+            }
+        });
     }
 
     renderRecipeImage(safeImage, safeTitle) {
@@ -202,8 +120,8 @@ class RecipeDetailViewer {
             return;
         }
 
-        const safeTitle = this.escapeHtml(recipe.title);
-        const safeImage = this.safeImageSrc(recipe.image);
+        const safeTitle = this.common.escapeHtml(recipe.title);
+        const safeImage = this.common.safeImageSrc(recipe.image);
         const siteName = (this.recipesData.ui && this.recipesData.ui.title) ? this.recipesData.ui.title : 'My Recipe Journal';
 
         document.title = `${recipe.title} · ${siteName}`;
@@ -216,16 +134,20 @@ class RecipeDetailViewer {
         this.renderBreadcrumb(recipe.title);
 
         const labels = (this.recipesData.ui && this.recipesData.ui.recipe_labels) ? this.recipesData.ui.recipe_labels : {};
-        const ingredientsLabel = this.escapeHtml(labels.ingredients || 'Ingredients');
-        const instructionsLabel = this.escapeHtml(labels.instructions || 'Instructions');
+        const ingredientsLabel = this.common.escapeHtml(labels.ingredients || 'Ingredients');
+        const instructionsLabel = this.common.escapeHtml(labels.instructions || 'Instructions');
+        const tipsLabel = this.common.escapeHtml(labels.tips || 'Tips');
         const recipeContent = document.getElementById('recipe-content');
         const imageHtml = this.renderRecipeImage(safeImage, safeTitle);
         const headerClass = imageHtml ? 'recipe-header' : 'recipe-header recipe-header--no-image';
+        const metaHtml = this.renderMeta(recipe);
+        const tipsHtml = this.renderTips(recipe, tipsLabel);
         recipeContent.innerHTML = `
             <div class="${headerClass}">
                 <div class="recipe-info">
                     ${imageHtml}
-                    <p class="recipe-description">${this.escapeHtml(recipe.description)}</p>
+                    ${metaHtml}
+                    <p class="recipe-description">${this.common.escapeHtml(recipe.description)}</p>
                 </div>
                 <div class="recipe-ingredients-header">
                     <h3>${ingredientsLabel}</h3>
@@ -236,8 +158,30 @@ class RecipeDetailViewer {
                 <h2>${instructionsLabel}</h2>
                 ${this.renderInstructions(recipe)}
             </div>
+            ${tipsHtml}
         `;
         this.attachRecipeImageFallback(recipeContent);
+    }
+
+    renderMeta(recipe) {
+        const parts = [];
+        if (recipe.servings) parts.push(recipe.servings);
+        if (recipe.prep_time) parts.push(recipe.prep_time);
+        if (recipe.cook_time) parts.push(recipe.cook_time);
+        if (parts.length === 0) return '';
+        return `<p class="recipe-meta">${parts.map((p) => this.common.escapeHtml(p)).join(' · ')}</p>`;
+    }
+
+    renderTips(recipe, tipsLabel) {
+        if (!recipe.tips || recipe.tips.length === 0) return '';
+        return `
+            <div class="recipe-section recipe-tips">
+                <h2>${tipsLabel}</h2>
+                <ul>
+                    ${recipe.tips.map((tip) => `<li>${this.common.escapeHtml(tip)}</li>`).join('')}
+                </ul>
+            </div>
+        `;
     }
 
     renderInstructions(recipe) {
@@ -246,9 +190,9 @@ class RecipeDetailViewer {
             for (const [, block] of Object.entries(recipe.instruction_blocks)) {
                 html += `
                     <div class="instruction-block">
-                        <h3>${this.escapeHtml(block.title)}</h3>
+                        <h3>${this.common.escapeHtml(block.title)}</h3>
                         <ol>
-                            ${(block.steps || []).map(step => `<li>${this.escapeHtml(step)}</li>`).join('')}
+                            ${(block.steps || []).map(step => `<li>${this.common.escapeHtml(step)}</li>`).join('')}
                         </ol>
                     </div>
                 `;
@@ -258,7 +202,7 @@ class RecipeDetailViewer {
         if (recipe.instructions) {
             return `
                 <ol>
-                    ${recipe.instructions.map(instruction => `<li>${this.escapeHtml(instruction)}</li>`).join('')}
+                    ${recipe.instructions.map(instruction => `<li>${this.common.escapeHtml(instruction)}</li>`).join('')}
                 </ol>
             `;
         }
@@ -269,17 +213,17 @@ class RecipeDetailViewer {
         let html = '';
         if (recipe.ingredients && recipe.ingredients.length > 0) {
             html += '<ul>';
-            html += recipe.ingredients.map(ingredient => `<li>${this.escapeHtml(ingredient)}</li>`).join('');
+            html += recipe.ingredients.map(ingredient => `<li>${this.common.escapeHtml(ingredient)}</li>`).join('');
             html += '</ul>';
         }
         if (recipe.ingredient_sections) {
             for (const [sectionName, ingredients] of Object.entries(recipe.ingredient_sections)) {
-                const safeName = this.escapeHtml(sectionName.charAt(0).toUpperCase() + sectionName.slice(1));
+                const safeName = this.common.escapeHtml(sectionName.charAt(0).toUpperCase() + sectionName.slice(1));
                 html += `
                     <div class="ingredient-section">
                         <h4>${safeName}</h4>
                         <ul>
-                            ${(ingredients || []).map(ingredient => `<li>${this.escapeHtml(ingredient)}</li>`).join('')}
+                            ${(ingredients || []).map(ingredient => `<li>${this.common.escapeHtml(ingredient)}</li>`).join('')}
                         </ul>
                     </div>
                 `;
@@ -296,14 +240,13 @@ class RecipeDetailViewer {
         recipeContent.innerHTML = `
             <div class="error">
                 <h2>Error</h2>
-                <p>${this.escapeHtml(message)}</p>
+                <p>${this.common.escapeHtml(message)}</p>
                 <a href="${homeUrl}">← Back to Home</a>
             </div>
         `;
     }
 }
 
-// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const recipeViewer = new RecipeDetailViewer();
     recipeViewer.init();
