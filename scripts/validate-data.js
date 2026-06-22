@@ -14,6 +14,42 @@ const RECIPE_ARRAY_KEYS = ['tags', 'ingredients', 'instructions'];
 const RECIPE_OBJECT_KEYS = ['ingredient_sections', 'instruction_blocks'];
 const RECIPE_OPTIONAL_KEYS = ['tips', 'servings', 'prep_time', 'cook_time'];
 
+const GLUTEN_PATTERN = /\b(farine|flour|harina|spaghettis?|p[âa]te bris[ée]e|shortcrust|pizza dough|bread|levure chimique|baking powder|levadura qu[ií]mica)\b/i;
+const SPREAD_EXCEPTION = /p[âa]te [àa] tartiner|chocolate.hazelnut spread|crema de cacao/i;
+
+const ANIMAL_PATTERN = /\b(egg|œufs?|huevos?|lardons?|bacon|ham|jambon|jam[oó]n|cheese|fromage|queso|mozzarella|milk|lait|leche|cream|cr[èe]me|nata|yogurt|yaourt|yogur)\b/i;
+const VEGAN_SUBSTITUTE = /substitut|végétal|vegetal|plant|margarine|soja|seitan|textur/i;
+
+function allIngredientLines(recipe) {
+  const lines = [...(recipe.ingredients || [])];
+  for (const section of Object.values(recipe.ingredient_sections || {})) {
+    lines.push(...section);
+  }
+  return lines;
+}
+
+function validateDietaryTags(recipe) {
+  const tags = recipe.tags || [];
+  const lines = allIngredientLines(recipe);
+  const text = lines.join(' ');
+
+  if (tags.includes('gluten_free')) {
+    if (GLUTEN_PATTERN.test(text) && !SPREAD_EXCEPTION.test(text)) {
+      return `gluten_free tag but gluten ingredient found`;
+    }
+  }
+
+  if (tags.includes('vegan')) {
+    for (const line of lines) {
+      if (ANIMAL_PATTERN.test(line) && !VEGAN_SUBSTITUTE.test(line)) {
+        return `vegan tag but non-substituted animal ingredient: "${line}"`;
+      }
+    }
+  }
+
+  return null;
+}
+
 function load(lang) {
   const file = path.join(DATA_DIR, `cookbook-data-${lang}.json`);
   if (!fs.existsSync(file)) {
@@ -74,6 +110,12 @@ for (const id of enIds) {
   const enRecipe = recipesByLang.en.get(id);
   const enShape = recipeShape(enRecipe);
   const enTags = tagSet(enRecipe);
+
+  const tagError = validateDietaryTags(enRecipe);
+  if (tagError) {
+    console.error(`❌ Dietary tag issue for "${id}" (en): ${tagError}`);
+    failed = true;
+  }
 
   for (const lang of ['fr', 'es']) {
     const recipe = recipesByLang[lang].get(id);
