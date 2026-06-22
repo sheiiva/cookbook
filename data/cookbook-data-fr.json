@@ -34,7 +34,10 @@
       "title": "Bourguignon de Seitan",
       "image": "optimized/bourguignon.webp",
       "description": "Une version végétalienne du plat français classique",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "2 carrés de chocolat noir",
         "500 ml de bouillon de légumes",
@@ -68,7 +71,11 @@
       "title": "Soupe aux Lentilles",
       "image": "optimized/lentils_soup.webp",
       "description": "Soupe de lentilles chaude et nutritive",
-      "tags": ["soups", "vegan", "gluten_free"],
+      "tags": [
+        "soups",
+        "vegan",
+        "gluten_free"
+      ],
       "ingredients": [
         "3 cuillères à soupe d'huile d'olive",
         "1 oignon",
@@ -93,7 +100,10 @@
       "title": "Moussaka",
       "image": "optimized/moussaka.webp",
       "description": "Casserole d'aubergines et pommes de terre en couches",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "sel",
         "poivre",
@@ -128,7 +138,10 @@
       "title": "Pain aux Bananes",
       "image": "optimized/banana_bread.webp",
       "description": "Pain moelleux aux bananes mûres",
-      "tags": ["desserts", "vegan"],
+      "tags": [
+        "desserts",
+        "vegan"
+      ],
       "ingredients": [
         "4 bananes mûres moyennes",
         "120g de sucre",
@@ -152,7 +165,10 @@
       "title": "Truffes au Chocolat",
       "image": "optimized/chocolate_truffles.webp",
       "description": "Truffes au chocolat riches et crémeuses",
-      "tags": ["desserts", "gluten_free"],
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
       "ingredients": [
         "80g de sucre glace",
         "100g de beurre non salé",
@@ -174,7 +190,10 @@
       "title": "Riz au Lait",
       "image": "optimized/rice_pudding.webp",
       "description": "Riz au lait crémeux et réconfortant",
-      "tags": ["desserts", "gluten_free"],
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
       "ingredients": [
         "orange ou clémentine",
         "5 cuillères à soupe de sucre",
@@ -194,7 +213,10 @@
       "title": "Pâte à Pizza",
       "image": "optimized/pizza_dough.webp",
       "description": "Pâte à pizza maison classique",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "350g de farine (type pâte à pain) + 100g pour travailler la pâte",
         "2 cuillères à café de sel",
@@ -218,7 +240,9 @@
       "title": "Brownie",
       "image": "optimized/brownie.webp",
       "description": "Brownie au chocolat riche et fondant",
-      "tags": ["desserts"],
+      "tags": [
+        "desserts"
+      ],
       "ingredients": [
         "250g de chocolat pâtissier",
         "150g de beurre",
@@ -241,7 +265,10 @@
       "title": "Doenjang-jjigae",
       "image": "optimized/doenjang_jjigae.webp",
       "description": "Ragoût coréen à la pâte de soja fermentée",
-      "tags": ["soups", "vegan"],
+      "tags": [
+        "soups",
+        "vegan"
+      ],
       "ingredients": [
         "1 pomme de terre moyenne, pelée et coupée en cubes de 1cm (environ 150g)",
         "1 oignon moyen, coupé en morceaux de 1cm (environ 150g)",
@@ -267,7 +294,9 @@
       "title": "Cookies",
       "image": "optimized/cookies.webp",
       "description": "Cookies moelleux aux pépites de chocolat",
-      "tags": ["desserts"],
+      "tags": [
+        "desserts"
+      ],
       "ingredients": [
         "85g de beurre tendre",
         "85g de sucre",
@@ -292,7 +321,10 @@
       "title": "Brownies au chocolat au levain",
       "image": "optimized/sourdough_brownies.webp",
       "description": "Brownies au chocolat au levain",
-      "tags": ["desserts", "sourdough"],
+      "tags": [
+        "desserts",
+        "sourdough"
+      ],
       "ingredients": [
         "113g de beurre",
         "340g de chocolat",
@@ -321,7 +353,11 @@
       "title": "Tortilla au levain",
       "image": "optimized/sourdough_tortilla.webp",
       "description": "Tortillas moelleuses au levain",
-      "tags": ["main_courses", "vegan", "sourdough"],
+      "tags": [
+        "main_courses",
+        "vegan",
+        "sourdough"
+      ],
       "ingredients": [
         "363g de farine",
         "6,5g de sel",
@@ -345,7 +381,11 @@
       "title": "Pancakes vegans au levain",
       "image": "optimized/vegan_sourdough_pancakes.webp",
       "description": "Pancakes moelleux au levain et au lait végétal",
-      "tags": ["main_courses", "vegan", "sourdough"],
+      "tags": [
+        "main_courses",
+        "vegan",
+        "sourdough"
+      ],
       "ingredients": [
         "80g de levain",
         "60ml de lait végétal (soja, avoine, amande, etc.)",
@@ -365,7 +405,10 @@
       "title": "Muffins anglais au levain",
       "image": "optimized/sourdough_english_muffins.webp",
       "description": "Muffins anglais au levain actif",
-      "tags": ["main_courses", "sourdough"],
+      "tags": [
+        "main_courses",
+        "sourdough"
+      ],
       "ingredients": [
         "100g de levain actif",
         "20g de miel",
@@ -388,7 +431,10 @@
       "title": "Cookies aux pépites de chocolat au levain",
       "image": "optimized/sourdough_chocolate_chip_cookies.webp",
       "description": "Cookies épais et moelleux aux pépites de chocolat au levain de rebut (Angelica Sourdough Co.)",
-      "tags": ["desserts", "sourdough"],
+      "tags": [
+        "desserts",
+        "sourdough"
+      ],
       "ingredients": [
         "1½ tasses (113g) de beurre ramolli ou fondu et refroidi",
         "1/2 tasse (100g) de sucre roux",
@@ -409,6 +455,322 @@
         "Cuire : préchauffer le four à 175°C. Chemiser une plaque de papier sulfurisé. Former des boules de ¼ tasse, bien hautes sans les aplatir. Enfourner 10 à 12 min jusqu'à ce que les bords soient pris et le centre paraisse cuit.",
         "Laisser refroidir : laisser les cookies sur la plaque 10 minutes avant de les déplacer ; ils finiront de prendre tout en restant moelleux."
       ]
+    },
+    {
+      "id": "petite_creme_cacao",
+      "title": "Petite Crème au Cacao",
+      "image": "optimized/petite_creme_cacao.webp",
+      "description": "Crème au chocolat rapide — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "200 ml de lait demi-écrémé",
+        "2 c. à c. de cacao maigre non sucré",
+        "1 c. à s. de fécule de maïs",
+        "1 c. à c. de sucre en poudre"
+      ],
+      "instructions": [
+        "Versez la fécule de maïs dans une tasse et ajoutez un peu de lait. Mélangez de manière à obtenir une préparation homogène.",
+        "Dans une petite casserole, versez le reste de lait, la fécule diluée, le cacao et le sucre en poudre. Faites chauffer à feu doux jusqu'à ébullition, puis laissez épaissir pendant 2 à 3 minutes en remuant sans cesse.",
+        "Versez dans un verre ou un ramequin et servez tiède ou froid.",
+        "Astuce : vous pouvez aussi préparer cette crème en 2 minutes au micro-ondes. Dans un bol ou une grande tasse, versez la fécule de maïs et un peu de lait. Mélangez, puis versez-y le reste du lait, le cacao et le sucre. Faites cuire 2 à 3 minutes en arrêtant de temps en temps la cuisson pour mélanger. Surveillez attentivement afin que cela ne déborde pas."
+      ]
+    },
+    {
+      "id": "guacamole",
+      "title": "Guacamole",
+      "image": "optimized/guacamole.webp",
+      "description": "Guacamole mexicain classique — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "vegan",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "2 avocats bien mûrs",
+        "1 tomate",
+        "1 oignon",
+        "1 citron vert",
+        "1 pincée de piment en poudre",
+        "sel"
+      ],
+      "instructions": [
+        "Pressez le citron. Pelez et émincez finement l'oignon. Lavez la tomate, épépinez-la et coupez-la en tout petits dés. Ouvrez les avocats et ôtez leur noyau. À l'aide d'une fourchette, écrasez leur chair grossièrement dans un saladier.",
+        "Versez dans le saladier le jus de citron, l'oignon émincé et les dés de tomate. Mélangez bien.",
+        "Ajoutez le piment et le sel. Goûtez et rectifiez l'assaisonnement. Couvrez et mettez au frais pendant au moins 1 heure.",
+        "Servez avec des chips tortillas, ou tartinez sur du pain de mie avec une tranche de jambon blanc."
+      ]
+    },
+    {
+      "id": "quiche_lorraine",
+      "title": "Quiche Lorraine",
+      "image": "optimized/quiche_lorraine.webp",
+      "description": "Quiche traditionnelle aux lardons — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses"
+      ],
+      "ingredients": [
+        "8 œufs",
+        "1 rouleau de pâte brisée",
+        "150 g de lardons",
+        "20 cl de crème fraîche liquide",
+        "20 cl de lait",
+        "sel, poivre du moulin"
+      ],
+      "instructions": [
+        "Préchauffez le four thermostat 6 (180 °C).",
+        "Déroulez la pâte et garnissez-en un moule à tarte, en laissant au fond le papier sulfurisé.",
+        "Faites rissoler les lardons dans une petite poêle pendant 5 minutes. Épongez-les dans un papier absorbant et déposez-les sur le fond de tarte.",
+        "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez. Versez sur les lardons.",
+        "Enfournez et laissez cuire 40 minutes. Servez chaud.",
+        "Astuce : ajoutez un bouquet de ciboulette ciselé pour une note de fraîcheur. Le reste se déguste froid en lunch box."
+      ]
+    },
+    {
+      "id": "flan_courgette",
+      "title": "Flan de Courgette, au Micro-ondes",
+      "image": "optimized/flan_courgette.webp",
+      "description": "Flan de courgette rapide au micro-ondes — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "1 courgette",
+        "2 œufs",
+        "15 cl de crème fraîche liquide",
+        "30 cl de lait",
+        "sel, poivre du moulin"
+      ],
+      "instructions": [
+        "Lavez la courgette, ôtez son pédoncule et coupez-la en tout petits dés sans l'éplucher.",
+        "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez.",
+        "Mettez les dés de courgette dans un plat adapté au micro-ondes et versez par-dessus la préparation aux œufs. Couvrez. Faites cuire 10 minutes environ à 800 W. Servez chaud.",
+        "Astuce : ajoutez une pointe de piment ou 1 cuillère à café de curry en poudre pour relever le flan."
+      ]
+    },
+    {
+      "id": "gateau_yaourt",
+      "title": "Gâteau au Yaourt",
+      "image": "optimized/gateau_yaourt.webp",
+      "description": "Gâteau moelleux au pot de yaourt — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "1 pot de yaourt nature",
+        "2 pots de sucre en poudre",
+        "3 pots de farine + 1 c. à s. pour le moule",
+        "1 pot d'huile de tournesol",
+        "2 œufs",
+        "1 noix de beurre",
+        "½ sachet de levure chimique",
+        "sel"
+      ],
+      "instructions": [
+        "Préchauffez le four thermostat 6 (180 °C).",
+        "Conservez le pot de yaourt : il va servir à mesurer les autres ingrédients.",
+        "Dans un saladier, mélangez le yaourt, le sucre, la farine, la levure et une pincée de sel. Ajoutez les œufs entiers et l'huile. Mélangez bien.",
+        "Versez la pâte dans un moule à cake beurré et fariné, et enfournez pour 40 minutes. Vérifiez la cuisson en plongeant la lame d'un couteau : si elle ressort sèche, le gâteau est cuit.",
+        "Laissez le gâteau refroidir avant de le démouler.",
+        "Variations : ajoutez des morceaux de fruits frais ou en conserve, des épices (cannelle, vanille...), du zeste d'orange ou de citron, ou des pépites de chocolat."
+      ]
+    },
+    {
+      "id": "gratin_pommes_terre",
+      "title": "Gratin de Pommes de Terre, à la Poêle",
+      "image": "optimized/gratin_pommes_terre.webp",
+      "description": "Gratin de pommes de terre cuit à la poêle — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "4 belles pommes de terre",
+        "1 œuf",
+        "2 c. à s. de crème fraîche épaisse",
+        "50 g de fromage râpé",
+        "50 cl de lait",
+        "1 c. à c. d'huile d'olive",
+        "sel, poivre du moulin"
+      ],
+      "instructions": [
+        "Pelez les pommes de terre. Râpez trois d'entre elles. Coupez la quatrième en rondelles très fines.",
+        "Dans un saladier, battez l'œuf entier. Ajoutez la crème, le fromage et les pommes de terre râpées. Salez et poivrez.",
+        "Versez l'huile d'olive dans une poêle. Déposez la moitié des rondelles de pommes de terre, la préparation avec les pommes de terre râpées, et le reste des rondelles de pommes de terre. Couvrez de lait à hauteur. Faites cuire 30 minutes à feu doux.",
+        "Retournez le gratin dans un plat puis remettez-le à nouveau dans la poêle afin de faire cuire l'autre face durant 15 à 20 minutes. Servez bien chaud.",
+        "Astuce : ajoutez des dés de jambon, des herbes (ciboulette, persil...) ou une pincée d'épices (piment, curry...)."
+      ]
+    },
+    {
+      "id": "banane_four",
+      "title": "Banane au Four",
+      "image": "optimized/banane_four.webp",
+      "description": "Dessert simple à la banane rôtie — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "1 banane",
+        "1 sachet de sucre vanillé",
+        "1 noix de beurre"
+      ],
+      "instructions": [
+        "Préchauffez le four thermostat 6 (180 °C).",
+        "Sans l'éplucher, coupez la banane en deux dans le sens de la longueur. Déposez les moitiés de banane dans un plat à four.",
+        "Saupoudrez-les de sucre vanillé et parsemez de petits morceaux de beurre.",
+        "Enfournez et laissez cuire 10 minutes. Dégustez chaud ou tiède.",
+        "Astuce : pour apporter du croquant, saupoudrez de biscuits émiettés."
+      ]
+    },
+    {
+      "id": "boulettes_riz_tomate",
+      "title": "Boulettes de Riz à la Tomate",
+      "image": "optimized/boulettes_riz_tomate.webp",
+      "description": "Boulettes de riz à la mozzarella et sauce tomate — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "250 g de riz",
+        "200 g de sauce tomate",
+        "1 boule de mozzarella",
+        "1 c. à s. d'huile d'olive",
+        "sel, poivre du moulin"
+      ],
+      "instructions": [
+        "Faites cuire le riz dans un grand volume d'eau bouillante salée selon les indications du paquet.",
+        "Égouttez la mozzarella et coupez-la en tout petits dés.",
+        "Égouttez le riz et mélangez-le avec la sauce tomate et la mozzarella. Salez et poivrez.",
+        "Formez des boules en les roulant entre vos paumes.",
+        "Faites chauffer l'huile d'olive dans une poêle. Ajoutez les boulettes et laissez-les réchauffer 5 minutes environ. Servez sans attendre.",
+        "Astuce : utilisez de préférence un riz pour risotto (arborio). Avec les restes, écrasez les boulettes et réchauffez le riz avec des dés de poivron et de tomate."
+      ]
+    },
+    {
+      "id": "spaghettis_citron",
+      "title": "Spaghettis Légers au Citron",
+      "image": "optimized/spaghettis_citron.webp",
+      "description": "Pâtes fraîches au citron et fromage blanc — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses"
+      ],
+      "ingredients": [
+        "150 g de spaghettis",
+        "1 citron",
+        "100 g de fromage blanc",
+        "sel, poivre du moulin"
+      ],
+      "instructions": [
+        "Faites cuire les pâtes dans un grand volume d'eau bouillante salée le temps indiqué sur le paquet.",
+        "Pressez le citron. Dans un bol, mélangez le fromage blanc et le jus de citron. Salez et poivrez.",
+        "Égouttez les pâtes et mélangez-les avec la sauce au fromage blanc. Servez immédiatement.",
+        "Astuce : parsemez de parmesan râpé et ajoutez quelques crevettes cuites."
+      ]
+    },
+    {
+      "id": "fondant_chocolat",
+      "title": "Fondant au Chocolat, au Micro-ondes",
+      "image": "optimized/fondant_chocolat.webp",
+      "description": "Gâteau au chocolat fondant cuit au micro-ondes — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "150 g de chocolat noir à pâtisser",
+        "3 œufs",
+        "60 g de farine + 1 c. à s. pour le moule",
+        "10 cl de lait",
+        "80 g de beurre + 1 noix pour le moule",
+        "80 g de sucre en poudre",
+        "1 c. à c. de levure chimique"
+      ],
+      "instructions": [
+        "Cassez le chocolat en morceaux et mettez-les dans un bol. Ajoutez le beurre coupé en morceaux et faites fondre au micro-ondes pendant 2 à 3 minutes en remuant de temps en temps.",
+        "Dans un saladier, battez les œufs avec le sucre jusqu'à ce que le mélange blanchisse. Ajoutez le lait, la farine, la levure et le chocolat fondu. Mélangez.",
+        "Beurrez et farinez le moule.",
+        "Versez la préparation dans le moule et faites cuire 8 minutes au micro-ondes à 800 W. Laissez tiédir avant de servir.",
+        "Astuce : 5-6 minutes pour un coulant au chocolat, 10 minutes pour une texture plus ferme."
+      ]
+    },
+    {
+      "id": "cremes_pate_tartiner",
+      "title": "Petites Crèmes à la Pâte à Tartiner",
+      "image": "optimized/cremes_pate_tartiner.webp",
+      "description": "Crèmes au chocolat-noisettes — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "4 grosses c. à s. de pâte à tartiner chocolat-noisettes",
+        "3 jaunes d'œufs",
+        "2 c. à s. de sucre en poudre",
+        "25 cl de lait",
+        "12,5 cl de crème fraîche liquide"
+      ],
+      "instructions": [
+        "Dans un saladier, mélangez les jaunes d'œufs et le sucre jusqu'à ce que le mélange blanchisse.",
+        "Versez le lait et la crème dans une petite casserole. Faites chauffer jusqu'à ébullition, puis versez le liquide chaud sur le mélange œufs-sucre.",
+        "Reversez le tout dans la casserole et ajoutez la pâte à tartiner. Faites cuire 5 minutes à feu doux en remuant sans cesse. Versez dans 4 petits verres ou pots en verre.",
+        "Mettez au frais pendant 2 heures au moins.",
+        "Astuce : avec les 3 blancs d'œufs, préparez des meringues maison (blancs montés en neige avec 120 g de sucre, cuisson 1 h au four thermostat 2-3)."
+      ]
+    },
+    {
+      "id": "curry_lentilles",
+      "title": "Curry de Lentilles",
+      "image": "optimized/curry_lentilles.webp",
+      "description": "Curry de lentilles vertes — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "soups",
+        "vegan",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "100 g de lentilles vertes à cuire",
+        "½ boîte de tomates pelées",
+        "1 carotte",
+        "1 oignon",
+        "½ c. à s. de curry en poudre",
+        "½ c. à s. d'huile d'olive",
+        "sel, poivre du moulin"
+      ],
+      "instructions": [
+        "Pelez et émincez l'oignon. Épluchez la carotte et coupez-la en dés.",
+        "Égouttez les tomates (conservez le jus) et coupez-les en morceaux.",
+        "Dans une cocotte ou une grande casserole, faites chauffer l'huile d'olive. Ajoutez l'oignon et laissez-le dorer 5 minutes. Versez les dés de carotte et les tomates égouttées. Laissez cuire 5 minutes.",
+        "Ajoutez les lentilles, le jus des tomates et couvrez d'eau à hauteur. Salez, poivrez et ajoutez le curry. Portez à ébullition, puis baissez le feu et laissez mijoter 30 minutes sans couvrir. Servez bien chaud.",
+        "Astuce : utilisez des lentilles corail pour une cuisson plus courte (environ 20 minutes). Agrémentez de cannelle, piment, gingembre ou curcuma."
+      ]
+    },
+    {
+      "id": "gateau_pommes_poele",
+      "title": "Gâteau aux Pommes, à la Poêle",
+      "image": "optimized/gateau_pommes_poele.webp",
+      "description": "Gâteau aux pommes cuit à la poêle — La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "4 pommes",
+        "1 œuf",
+        "125 g de farine",
+        "20 g de beurre salé",
+        "50 g de sucre en poudre",
+        "1 sachet de sucre vanillé",
+        "1 c. à c. de levure chimique"
+      ],
+      "instructions": [
+        "Épluchez les pommes et coupez-les en fines lamelles.",
+        "Dans un saladier, battez l'œuf avec la farine, la levure et 4 cuillères à soupe d'eau. Ajoutez le sucre, le sucre vanillé et mélangez. Versez les lamelles de pommes et mélangez encore.",
+        "Faites fondre la moitié du beurre dans une grande poêle. Versez la préparation aux pommes, couvrez et laissez cuire 5 minutes. Faites glisser le gâteau retourné dans une grande assiette. Faites fondre le reste de beurre dans la poêle, puis remettez le gâteau pour le faire cuire de l'autre côté. Poursuivez la cuisson 10 minutes environ.",
+        "Variations : remplacez les pommes par des poires, des prunes ou des abricots. Servez tiède avec une boule de glace à la vanille ou un peu de crème fraîche."
+      ]
     }
   ]
-} 
+}

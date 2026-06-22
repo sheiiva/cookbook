@@ -34,7 +34,10 @@
       "title": "Seitan Bourguignon",
       "image": "optimized/bourguignon.webp",
       "description": "A hearty vegan version of the classic French dish",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "2 squares of dark chocolate",
         "500 ml of vegetable stock",
@@ -68,7 +71,11 @@
       "title": "Lentils Soup",
       "image": "optimized/lentils_soup.webp",
       "description": "Warm and nutritious lentil soup",
-      "tags": ["soups", "vegan", "gluten_free"],
+      "tags": [
+        "soups",
+        "vegan",
+        "gluten_free"
+      ],
       "ingredients": [
         "3 tablespoons of olive oil",
         "1 onion",
@@ -93,7 +100,10 @@
       "title": "Moussaka",
       "image": "optimized/moussaka.webp",
       "description": "Layered eggplant and potato casserole",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "salt",
         "pepper",
@@ -168,7 +178,10 @@
       "title": "Banana Bread",
       "image": "optimized/banana_bread.webp",
       "description": "Moist and delicious banana bread",
-      "tags": ["desserts", "vegan"],
+      "tags": [
+        "desserts",
+        "vegan"
+      ],
       "ingredients": [
         "4 medium ripe bananas",
         "120g sugar",
@@ -192,7 +205,10 @@
       "title": "Chocolate Truffles",
       "image": "optimized/chocolate_truffles.webp",
       "description": "Rich and creamy chocolate truffles",
-      "tags": ["desserts", "gluten_free"],
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
       "ingredients": [
         "80g icing sugar",
         "100g unsalted butter",
@@ -214,7 +230,10 @@
       "title": "Rice Pudding",
       "image": "optimized/rice_pudding.webp",
       "description": "Creamy and comforting rice pudding",
-      "tags": ["desserts", "gluten_free"],
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
       "ingredients": [
         "orange or clementine",
         "5 tablespoons of sugar",
@@ -234,7 +253,10 @@
       "title": "Pizza Dough",
       "image": "optimized/pizza_dough.webp",
       "description": "Classic homemade pizza dough",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "350g bread flour + 100g for working the dough",
         "2 teaspoons salt",
@@ -258,7 +280,9 @@
       "title": "Brownie",
       "image": "optimized/brownie.webp",
       "description": "Rich and fudgy chocolate brownie",
-      "tags": ["desserts"],
+      "tags": [
+        "desserts"
+      ],
       "ingredients": [
         "250g pastry chocolate",
         "150g butter",
@@ -281,7 +305,10 @@
       "title": "Doenjang-jjigae",
       "image": "optimized/doenjang_jjigae.webp",
       "description": "Korean fermented soybean paste stew",
-      "tags": ["soups", "vegan"],
+      "tags": [
+        "soups",
+        "vegan"
+      ],
       "ingredients": [
         "1 medium potato, peeled and cut into 1cm cubes (about 150g)",
         "1 medium onion, cut into 1cm pieces (about 150g)",
@@ -307,7 +334,9 @@
       "title": "Chocolate Cookies",
       "image": "optimized/cookies.webp",
       "description": "Soft and chewy chocolate chip cookies",
-      "tags": ["desserts"],
+      "tags": [
+        "desserts"
+      ],
       "ingredients": [
         "85g soft butter",
         "85g sugar",
@@ -332,7 +361,10 @@
       "title": "Sourdough Discard Chocolate Brownies",
       "image": "optimized/sourdough_brownies.webp",
       "description": "Rich chocolate brownies using sourdough discard",
-      "tags": ["desserts", "sourdough"],
+      "tags": [
+        "desserts",
+        "sourdough"
+      ],
       "ingredients": [
         "113g butter",
         "340g chocolate",
@@ -361,7 +393,11 @@
       "title": "Sourdough Tortilla",
       "image": "optimized/sourdough_tortilla.webp",
       "description": "Soft tortillas made with sourdough starter",
-      "tags": ["main_courses", "vegan", "sourdough"],
+      "tags": [
+        "main_courses",
+        "vegan",
+        "sourdough"
+      ],
       "ingredients": [
         "363g flour",
         "6.5g salt",
@@ -385,7 +421,11 @@
       "title": "Vegan Sourdough Pancakes",
       "image": "optimized/vegan_sourdough_pancakes.webp",
       "description": "Fluffy pancakes made with sourdough starter and plant milk",
-      "tags": ["main_courses", "vegan", "sourdough"],
+      "tags": [
+        "main_courses",
+        "vegan",
+        "sourdough"
+      ],
       "ingredients": [
         "80g sourdough starter",
         "60ml plant milk (soy, oat, almond, etc.)",
@@ -405,7 +445,10 @@
       "title": "Sourdough English Muffins",
       "image": "optimized/sourdough_english_muffins.webp",
       "description": "Classic English muffins made with active sourdough starter",
-      "tags": ["main_courses", "sourdough"],
+      "tags": [
+        "main_courses",
+        "sourdough"
+      ],
       "ingredients": [
         "100g active sourdough starter",
         "20g honey",
@@ -428,7 +471,10 @@
       "title": "Sourdough Chocolate Chip Cookies",
       "image": "optimized/sourdough_chocolate_chip_cookies.webp",
       "description": "Thick, soft chocolate chip cookies with sourdough discard (Angelica Sourdough Co.)",
-      "tags": ["desserts", "sourdough"],
+      "tags": [
+        "desserts",
+        "sourdough"
+      ],
       "ingredients": [
         "1½ cups (113g) butter, softened or melted and cooled",
         "1/2 cup (100g) brown sugar, packed",
@@ -449,6 +495,322 @@
         "Bake: Preheat oven to 350°F (175°C). Line a baking sheet with parchment. Scoop ¼ cup portions and place dough tall, not flattened. Bake for 10–12 minutes until edges are set and centers look set.",
         "Cool gently: Let cookies rest on the pan for 10 minutes before moving—they'll finish setting while staying soft."
       ]
+    },
+    {
+      "id": "petite_creme_cacao",
+      "title": "Small Cocoa Cream",
+      "image": "optimized/petite_creme_cacao.webp",
+      "description": "Quick chocolate cream for one — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "200 ml semi-skimmed milk",
+        "2 tsp unsweetened cocoa powder",
+        "1 tbsp cornstarch",
+        "1 tsp granulated sugar"
+      ],
+      "instructions": [
+        "Pour the cornstarch into a cup and add a little milk. Mix until smooth.",
+        "In a small saucepan, pour the remaining milk, the diluted starch, cocoa and sugar. Heat over low heat until boiling, then thicken for 2 to 3 minutes, stirring constantly.",
+        "Pour into a glass or ramekin and serve warm or cold.",
+        "Tip: you can also make this cream in 2 minutes in the microwave. In a bowl or large mug, mix cornstarch with a little milk, then add the rest of the milk, cocoa and sugar. Cook 2 to 3 minutes, stopping to stir. Watch carefully so it doesn't overflow."
+      ]
+    },
+    {
+      "id": "guacamole",
+      "title": "Guacamole",
+      "image": "optimized/guacamole.webp",
+      "description": "Classic Mexican guacamole — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "vegan",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "2 very ripe avocados",
+        "1 tomato",
+        "1 onion",
+        "1 lime",
+        "1 pinch of chili powder",
+        "salt"
+      ],
+      "instructions": [
+        "Squeeze the lime. Peel and finely mince the onion. Wash the tomato, remove seeds and cut into very small cubes. Open the avocados and remove the pits. Using a fork, coarsely mash the flesh in a bowl.",
+        "Pour the lime juice, minced onion and tomato cubes into the bowl. Mix well.",
+        "Add chili and salt. Taste and adjust seasoning. Cover and refrigerate for at least 1 hour.",
+        "Serve with tortilla chips, or spread on sandwich bread with a slice of white ham."
+      ]
+    },
+    {
+      "id": "quiche_lorraine",
+      "title": "Quiche Lorraine",
+      "image": "optimized/quiche_lorraine.webp",
+      "description": "Traditional bacon quiche — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses"
+      ],
+      "ingredients": [
+        "8 eggs",
+        "1 roll of shortcrust pastry",
+        "150 g bacon lardons",
+        "20 cl liquid heavy cream",
+        "20 cl milk",
+        "salt, freshly ground pepper"
+      ],
+      "instructions": [
+        "Preheat the oven to 350°F (180°C).",
+        "Unroll the pastry and line a tart pan, leaving the parchment paper on the bottom.",
+        "Brown the bacon lardons in a small frying pan for 5 minutes. Blot with paper towels and place on the tart base.",
+        "In a bowl, beat the eggs with the cream and milk. Season with salt and pepper. Pour over the bacon.",
+        "Bake for 40 minutes. Serve hot.",
+        "Tip: add chopped chives for freshness. Leftovers are great cold in a lunch box."
+      ]
+    },
+    {
+      "id": "flan_courgette",
+      "title": "Zucchini Flan, Microwave",
+      "image": "optimized/flan_courgette.webp",
+      "description": "Quick zucchini flan in the microwave — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "1 zucchini",
+        "2 eggs",
+        "15 cl liquid heavy cream",
+        "30 cl milk",
+        "salt, freshly ground pepper"
+      ],
+      "instructions": [
+        "Wash the zucchini, remove the stem and cut into very small cubes without peeling.",
+        "In a bowl, beat the eggs with the cream and milk. Season with salt and pepper.",
+        "Put the zucchini cubes in a microwave-safe dish and pour the egg mixture over them. Cover. Cook about 10 minutes at 800 W. Serve hot.",
+        "Tip: add a pinch of chili or 1 tsp curry powder to spice it up."
+      ]
+    },
+    {
+      "id": "gateau_yaourt",
+      "title": "Yogurt Cake",
+      "image": "optimized/gateau_yaourt.webp",
+      "description": "Moist cake measured with a yogurt pot — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "1 pot plain yogurt",
+        "2 pots powdered sugar",
+        "3 pots flour + 1 tbsp for the pan",
+        "1 pot sunflower oil",
+        "2 eggs",
+        "a knob of butter",
+        "½ packet baking powder",
+        "salt"
+      ],
+      "instructions": [
+        "Preheat the oven to 350°F (180°C).",
+        "Keep the yogurt pot: it will be used to measure the other ingredients.",
+        "In a bowl, mix yogurt, sugar, flour, baking powder and a pinch of salt. Add whole eggs and oil. Mix well.",
+        "Pour the batter into a buttered and floured loaf pan and bake for 40 minutes. Check doneness by inserting a knife blade: if it comes out dry, the cake is done.",
+        "Let the cake cool before unmolding.",
+        "Variations: add fresh or canned fruit, spices (cinnamon, vanilla...), citrus zest, or chocolate chips."
+      ]
+    },
+    {
+      "id": "gratin_pommes_terre",
+      "title": "Pan-Fried Potato Gratin",
+      "image": "optimized/gratin_pommes_terre.webp",
+      "description": "Potato gratin cooked in a frying pan — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "4 nice potatoes",
+        "1 egg",
+        "2 tbsp thick crème fraîche",
+        "50 g grated cheese",
+        "50 cl milk",
+        "1 tsp olive oil",
+        "salt, freshly ground pepper"
+      ],
+      "instructions": [
+        "Peel the potatoes. Grate three of them. Cut the fourth into very thin slices.",
+        "In a bowl, beat the whole egg. Add cream, cheese and grated potatoes. Season with salt and pepper.",
+        "Pour olive oil into a pan. Place half the potato slices, the grated potato mixture, then the rest of the slices. Cover with milk to the top. Cook 30 minutes over low heat.",
+        "Flip the gratin onto a plate then return it to the pan to cook the other side for 15 to 20 minutes. Serve very hot.",
+        "Tip: add diced ham, herbs (chives, parsley...) or a pinch of spices (chili, curry...)."
+      ]
+    },
+    {
+      "id": "banane_four",
+      "title": "Baked Banana",
+      "image": "optimized/banane_four.webp",
+      "description": "Simple roasted banana dessert — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "1 banana",
+        "1 packet vanilla sugar",
+        "a knob of butter"
+      ],
+      "instructions": [
+        "Preheat the oven to 350°F (180°C).",
+        "Without peeling, cut the banana in half lengthwise. Place the halves in an ovenproof dish.",
+        "Sprinkle with vanilla sugar and dot with small pieces of butter.",
+        "Bake for 10 minutes. Enjoy hot or warm.",
+        "Tip: sprinkle with crumbled biscuits for crunch."
+      ]
+    },
+    {
+      "id": "boulettes_riz_tomate",
+      "title": "Tomato Rice Balls",
+      "image": "optimized/boulettes_riz_tomate.webp",
+      "description": "Rice balls with mozzarella and tomato sauce — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "250 g rice",
+        "200 g tomato sauce",
+        "1 ball of mozzarella",
+        "1 tbsp olive oil",
+        "salt, freshly ground pepper"
+      ],
+      "instructions": [
+        "Cook the rice in a large volume of boiling salted water according to package instructions.",
+        "Drain the mozzarella and cut into very small cubes.",
+        "Drain the rice and mix with tomato sauce and mozzarella. Season with salt and pepper.",
+        "Form balls by rolling between your palms.",
+        "Heat olive oil in a frying pan. Add the rice balls and warm for about 5 minutes. Serve immediately.",
+        "Tip: use risotto rice (arborio) if possible. With leftovers, crush the balls and reheat the rice with diced peppers and tomatoes."
+      ]
+    },
+    {
+      "id": "spaghettis_citron",
+      "title": "Light Lemon Spaghetti",
+      "image": "optimized/spaghettis_citron.webp",
+      "description": "Fresh pasta with lemon and fromage blanc — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses"
+      ],
+      "ingredients": [
+        "150 g spaghetti",
+        "1 lemon",
+        "100 g fromage blanc (or quark/cottage cheese)",
+        "salt, freshly ground pepper"
+      ],
+      "instructions": [
+        "Cook the pasta in a large volume of boiling salted water for the time indicated on the package.",
+        "Squeeze the lemon. In a bowl, mix fromage blanc and lemon juice. Season with salt and pepper.",
+        "Drain the pasta and mix with the fromage blanc sauce. Serve immediately.",
+        "Tip: sprinkle with grated parmesan and add some cooked shrimp."
+      ]
+    },
+    {
+      "id": "fondant_chocolat",
+      "title": "Microwave Chocolate Fondant",
+      "image": "optimized/fondant_chocolat.webp",
+      "description": "Molten chocolate cake in the microwave — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "150 g dark baking chocolate",
+        "3 eggs",
+        "60 g flour + 1 tbsp for the pan",
+        "10 cl milk",
+        "80 g butter + a knob for the pan",
+        "80 g powdered sugar",
+        "1 tsp baking powder"
+      ],
+      "instructions": [
+        "Break the chocolate into pieces and put in a bowl. Add butter cut into pieces and melt in the microwave for 2 to 3 minutes, stirring occasionally.",
+        "In a bowl, beat eggs with sugar until the mixture whitens. Add milk, flour, baking powder and melted chocolate. Mix.",
+        "Butter and flour the pan.",
+        "Pour the batter into the pan and cook 8 minutes in the microwave at 800 W. Let cool slightly before serving.",
+        "Tip: 5-6 minutes for a molten center, 10 minutes for a firmer texture."
+      ]
+    },
+    {
+      "id": "cremes_pate_tartiner",
+      "title": "Chocolate Hazelnut Spread Creams",
+      "image": "optimized/cremes_pate_tartiner.webp",
+      "description": "Creams with chocolate-hazelnut spread — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "4 large tbsp chocolate-hazelnut spread",
+        "3 egg yolks",
+        "2 tbsp powdered sugar",
+        "25 cl milk",
+        "12.5 cl liquid heavy cream"
+      ],
+      "instructions": [
+        "In a bowl, mix egg yolks and sugar until the mixture whitens.",
+        "Pour milk and cream into a small saucepan. Heat until boiling, then pour the hot liquid over the egg-sugar mixture.",
+        "Pour everything back into the saucepan and add the spread. Cook 5 minutes over low heat, stirring constantly. Pour into 4 small glasses or jars.",
+        "Refrigerate for at least 2 hours.",
+        "Tip: with the 3 egg whites, make homemade meringues (beat whites stiff with 120 g sugar, bake 1 hour at very low heat)."
+      ]
+    },
+    {
+      "id": "curry_lentilles",
+      "title": "Lentil Curry",
+      "image": "optimized/curry_lentilles.webp",
+      "description": "Green lentil curry — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "soups",
+        "vegan",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "100 g green lentils for cooking",
+        "½ can peeled tomatoes",
+        "1 carrot",
+        "1 onion",
+        "½ tbsp curry powder",
+        "½ tbsp olive oil",
+        "salt, freshly ground pepper"
+      ],
+      "instructions": [
+        "Peel and mince the onion. Peel the carrot and dice it.",
+        "Drain the tomatoes (keep the juice) and cut into pieces.",
+        "In a Dutch oven or large saucepan, heat the olive oil. Add the onion and brown for 5 minutes. Add diced carrot and drained tomatoes. Cook 5 minutes.",
+        "Add lentils, tomato juice and cover with water to height. Season with salt, pepper and curry. Bring to a boil, then lower heat and simmer uncovered for 30 minutes. Serve very hot.",
+        "Tip: use red lentils for shorter cooking (about 20 minutes). Add cinnamon, chili, ginger or turmeric."
+      ]
+    },
+    {
+      "id": "gateau_pommes_poele",
+      "title": "Pan-Fried Apple Cake",
+      "image": "optimized/gateau_pommes_poele.webp",
+      "description": "Apple cake cooked in a frying pan — from La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "4 apples",
+        "1 egg",
+        "125 g flour",
+        "20 g salted butter",
+        "50 g powdered sugar",
+        "1 packet vanilla sugar",
+        "1 tsp baking powder"
+      ],
+      "instructions": [
+        "Peel the apples and cut into thin slices.",
+        "In a bowl, beat the egg with flour, baking powder and 4 tablespoons of water. Add sugar and vanilla sugar and mix. Add apple slices and mix again.",
+        "Melt half the butter in a large pan. Pour in the apple mixture, cover and cook 5 minutes. Slide the flipped cake onto a large plate. Melt the remaining butter in the pan, then return the cake to cook on the other side for about 10 minutes.",
+        "Variations: replace apples with pears, plums or apricots. Serve warm with vanilla ice cream or a little crème fraîche."
+      ]
     }
   ]
-} 
+}

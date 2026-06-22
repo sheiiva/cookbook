@@ -34,7 +34,10 @@
       "title": "Bourguignon de Seitán",
       "image": "optimized/bourguignon.webp",
       "description": "Una versión vegana del plato francés clásico",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "2 cuadrados de chocolate negro",
         "500 ml de caldo de verduras",
@@ -68,7 +71,11 @@
       "title": "Sopa de Lentejas",
       "image": "optimized/lentils_soup.webp",
       "description": "Sopa de lentejas caliente y nutritiva",
-      "tags": ["soups", "vegan", "gluten_free"],
+      "tags": [
+        "soups",
+        "vegan",
+        "gluten_free"
+      ],
       "ingredients": [
         "3 cucharadas de aceite de oliva",
         "1 cebolla",
@@ -93,7 +100,10 @@
       "title": "Moussaka",
       "image": "optimized/moussaka.webp",
       "description": "Cazuela de berenjenas y patatas en capas",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "sal",
         "pimienta",
@@ -128,7 +138,10 @@
       "title": "Pan de Plátano",
       "image": "optimized/banana_bread.webp",
       "description": "Pan húmedo de plátanos maduros",
-      "tags": ["desserts", "vegan"],
+      "tags": [
+        "desserts",
+        "vegan"
+      ],
       "ingredients": [
         "4 plátanos maduros medianos",
         "120g de azúcar",
@@ -152,7 +165,10 @@
       "title": "Trufas de Chocolate",
       "image": "optimized/chocolate_truffles.webp",
       "description": "Trufas de chocolate ricas y cremosas",
-      "tags": ["desserts", "gluten_free"],
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
       "ingredients": [
         "80g de azúcar glas",
         "100g de mantequilla sin sal",
@@ -174,7 +190,10 @@
       "title": "Arroz con Leche",
       "image": "optimized/rice_pudding.webp",
       "description": "Arroz con leche cremoso y reconfortante",
-      "tags": ["desserts", "gluten_free"],
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
       "ingredients": [
         "naranja o clementina",
         "5 cucharadas de azúcar",
@@ -194,7 +213,10 @@
       "title": "Masa de Pizza",
       "image": "optimized/pizza_dough.webp",
       "description": "Masa de pizza casera clásica",
-      "tags": ["main_courses", "vegan"],
+      "tags": [
+        "main_courses",
+        "vegan"
+      ],
       "ingredients": [
         "350g de harina (tipo masa de pan) + 100g para trabajar la masa",
         "2 cucharaditas de sal",
@@ -218,7 +240,9 @@
       "title": "Brownie",
       "image": "optimized/brownie.webp",
       "description": "Brownie de chocolate rico y cremoso",
-      "tags": ["desserts"],
+      "tags": [
+        "desserts"
+      ],
       "ingredients": [
         "250g de chocolate de repostería",
         "150g de mantequilla",
@@ -241,7 +265,10 @@
       "title": "Doenjang-jjigae",
       "image": "optimized/doenjang_jjigae.webp",
       "description": "Estofado coreano de pasta de soja fermentada",
-      "tags": ["soups", "vegan"],
+      "tags": [
+        "soups",
+        "vegan"
+      ],
       "ingredients": [
         "1 patata mediana, pelada y cortada en cubos de 1cm (aproximadamente 150g)",
         "1 cebolla mediana, cortada en trozos de 1cm (aproximadamente 150g)",
@@ -267,7 +294,9 @@
       "title": "Galletas",
       "image": "optimized/cookies.webp",
       "description": "Galletas suaves con trozos de chocolate",
-      "tags": ["desserts"],
+      "tags": [
+        "desserts"
+      ],
       "ingredients": [
         "85g de mantequilla blanda",
         "85g de azúcar",
@@ -292,7 +321,10 @@
       "title": "Brownies de chocolate con descarte de masa madre",
       "image": "optimized/sourdough_brownies.webp",
       "description": "Brownies de chocolate con descarte de masa madre",
-      "tags": ["desserts", "sourdough"],
+      "tags": [
+        "desserts",
+        "sourdough"
+      ],
       "ingredients": [
         "113g de mantequilla",
         "340g de chocolate",
@@ -321,7 +353,11 @@
       "title": "Tortilla de masa madre",
       "image": "optimized/sourdough_tortilla.webp",
       "description": "Tortillas blandas con masa madre",
-      "tags": ["main_courses", "vegan", "sourdough"],
+      "tags": [
+        "main_courses",
+        "vegan",
+        "sourdough"
+      ],
       "ingredients": [
         "363g de harina",
         "6,5g de sal",
@@ -345,7 +381,11 @@
       "title": "Tortitas veganas de masa madre",
       "image": "optimized/vegan_sourdough_pancakes.webp",
       "description": "Tortitas esponjosas con masa madre y leche vegetal",
-      "tags": ["main_courses", "vegan", "sourdough"],
+      "tags": [
+        "main_courses",
+        "vegan",
+        "sourdough"
+      ],
       "ingredients": [
         "80g de masa madre",
         "60ml de leche vegetal (soja, avena, almendra, etc.)",
@@ -365,7 +405,10 @@
       "title": "Muffins ingleses de masa madre",
       "image": "optimized/sourdough_english_muffins.webp",
       "description": "Muffins ingleses con masa madre activa",
-      "tags": ["main_courses", "sourdough"],
+      "tags": [
+        "main_courses",
+        "sourdough"
+      ],
       "ingredients": [
         "100g de masa madre activa",
         "20g de miel",
@@ -388,7 +431,10 @@
       "title": "Galletas de chocolate con masa madre",
       "image": "optimized/sourdough_chocolate_chip_cookies.webp",
       "description": "Galletas de chocolate gruesas y tiernas con descarte de masa madre (Angelica Sourdough Co.)",
-      "tags": ["desserts", "sourdough"],
+      "tags": [
+        "desserts",
+        "sourdough"
+      ],
       "ingredients": [
         "1½ tazas (113g) de mantequilla blanda o derretida y enfriada",
         "1/2 taza (100g) de azúcar moreno",
@@ -409,6 +455,322 @@
         "Hornear: Precalentar el horno a 175°C. Forrar una bandeja con papel de horno. Formar porciones de ¼ taza, altas y sin aplanar. Hornear 10–12 minutos hasta que los bordes estén firmes y el centro cuaje.",
         "Enfriar: Dejar las galletas 10 minutos en la bandeja antes de moverlas; acabarán de cuajar y se mantendrán tiernas."
       ]
+    },
+    {
+      "id": "petite_creme_cacao",
+      "title": "Pequeña Crema de Cacao",
+      "image": "optimized/petite_creme_cacao.webp",
+      "description": "Crema de chocolate rápida para una persona — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "200 ml de leche semidesnatada",
+        "2 cucharaditas de cacao en polvo sin azúcar",
+        "1 cucharada de maicena",
+        "1 cucharadita de azúcar en polvo"
+      ],
+      "instructions": [
+        "Vierta la maicena en una taza y añada un poco de leche. Mezcle hasta obtener una preparación homogénea.",
+        "En una cacerola pequeña, vierta el resto de la leche, la maicena diluida, el cacao y el azúcar. Caliente a fuego lento hasta que hierva, luego deje espesar 2 a 3 minutos removiendo sin cesar.",
+        "Vierta en un vaso o ramequín y sirva tibia o fría.",
+        "Consejo: también puede preparar esta crema en 2 minutos en el microondas. En un bol o taza grande, mezcle la maicena con un poco de leche, luego añada el resto de la leche, el cacao y el azúcar. Cocine 2 a 3 minutos, parando para remover. Vigile para que no se desborde."
+      ]
+    },
+    {
+      "id": "guacamole",
+      "title": "Guacamole",
+      "image": "optimized/guacamole.webp",
+      "description": "Guacamole mexicano clásico — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "vegan",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "2 aguacates bien maduros",
+        "1 tomate",
+        "1 cebolla",
+        "1 lima",
+        "1 pizca de pimentón picante",
+        "sal"
+      ],
+      "instructions": [
+        "Exprima la lima. Pele y pique finamente la cebolla. Lave el tomate, quítele las semillas y córtelo en dados muy pequeños. Abra los aguacates y retire el hueso. Con un tenedor, aplaste la pulpa groseramente en un bol.",
+        "Vierta en el bol el zumo de lima, la cebolla picada y los dados de tomate. Mezcle bien.",
+        "Añada el pimentón y la sal. Pruebe y rectifique el sazonado. Cubra y refrigere al menos 1 hora.",
+        "Sirva con chips de tortilla, o unte sobre pan de molde con una loncha de jamón cocido."
+      ]
+    },
+    {
+      "id": "quiche_lorraine",
+      "title": "Quiche Lorraine",
+      "image": "optimized/quiche_lorraine.webp",
+      "description": "Quiche tradicional con bacon — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses"
+      ],
+      "ingredients": [
+        "8 huevos",
+        "1 rollo de masa quebrada",
+        "150 g de bacon en tiras",
+        "20 cl de nata líquida",
+        "20 cl de leche",
+        "sal, pimienta recién molida"
+      ],
+      "instructions": [
+        "Precaliente el horno a 180°C.",
+        "Extienda la masa y forre un molde de tarta, dejando el papel de horno en el fondo.",
+        "Dore el bacon en una sartén pequeña durante 5 minutos. Séquelo con papel absorbente y colóquelo en la base de la tarta.",
+        "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta. Vierta sobre el bacon.",
+        "Hornee 40 minutos. Sirva caliente.",
+        "Consejo: añada cebollino picado para frescura. Los restos se comen fríos en el tupper."
+      ]
+    },
+    {
+      "id": "flan_courgette",
+      "title": "Flan de Calabacín al Microondas",
+      "image": "optimized/flan_courgette.webp",
+      "description": "Flan de calabacín rápido al microondas — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "1 calabacín",
+        "2 huevos",
+        "15 cl de nata líquida",
+        "30 cl de leche",
+        "sal, pimienta recién molida"
+      ],
+      "instructions": [
+        "Lave el calabacín, retire el tallo y córtelo en dados muy pequeños sin pelarlo.",
+        "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta.",
+        "Ponga los dados de calabacín en un recipiente apto para microondas y vierta encima la preparación de huevo. Cubra. Cocine unos 10 minutos a 800 W. Sirva caliente.",
+        "Consejo: añada una pizca de pimentón o 1 cucharadita de curry en polvo."
+      ]
+    },
+    {
+      "id": "gateau_yaourt",
+      "title": "Bizcocho de Yogur",
+      "image": "optimized/gateau_yaourt.webp",
+      "description": "Bizcocho medido con el pot de yogur — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "1 pot de yogur natural",
+        "2 pots de azúcar en polvo",
+        "3 pots de harina + 1 cucharada para el molde",
+        "1 pot de aceite de girasol",
+        "2 huevos",
+        "un trozo de mantequilla",
+        "½ sobre de levadura química",
+        "sal"
+      ],
+      "instructions": [
+        "Precaliente el horno a 180°C.",
+        "Guarde el pot de yogur: servirá para medir los demás ingredientes.",
+        "En un bol, mezcle el yogur, el azúcar, la harina, la levadura y una pizca de sal. Añada los huevos enteros y el aceite. Mezcle bien.",
+        "Vierta la masa en un molde de bizcocho engrasado y enharinado y hornee 40 minutos. Compruebe la cocción insertando un cuchillo: si sale seco, el bizcocho está listo.",
+        "Deje enfriar antes de desmoldar.",
+        "Variaciones: añada trozos de fruta fresca o en conserva, especias (canela, vainilla...), ralladura cítrica o pepitas de chocolate."
+      ]
+    },
+    {
+      "id": "gratin_pommes_terre",
+      "title": "Gratin de Patatas en Sartén",
+      "image": "optimized/gratin_pommes_terre.webp",
+      "description": "Gratin de patatas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "4 patatas",
+        "1 huevo",
+        "2 cucharadas de nata espesa",
+        "50 g de queso rallado",
+        "50 cl de leche",
+        "1 cucharadita de aceite de oliva",
+        "sal, pimienta recién molida"
+      ],
+      "instructions": [
+        "Pele las patatas. Ralle tres de ellas. Corte la cuarta en rodajas muy finas.",
+        "En un bol, bata el huevo entero. Añada la nata, el queso y las patatas ralladas. Sazone con sal y pimienta.",
+        "Vierta el aceite de oliva en una sartén. Coloque la mitad de las rodajas, la mezcla de patata rallada y el resto de rodajas. Cubra con leche hasta el borde. Cocine 30 minutos a fuego lento.",
+        "Voltee el gratin en un plato y vuelva a ponerlo en la sartén para cocinar el otro lado 15 a 20 minutos. Sirva bien caliente.",
+        "Consejo: añada dados de jamón, hierbas (cebollino, perejil...) o una pizca de especias (pimentón, curry...)."
+      ]
+    },
+    {
+      "id": "banane_four",
+      "title": "Plátano al Horno",
+      "image": "optimized/banane_four.webp",
+      "description": "Postre simple de plátano asado — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "1 plátano",
+        "1 sobre de azúcar vainillado",
+        "un trozo de mantequilla"
+      ],
+      "instructions": [
+        "Precaliente el horno a 180°C.",
+        "Sin pelar, corte el plátano por la mitad a lo largo. Coloque las mitades en una fuente de horno.",
+        "Espolvoree con azúcar vainillado y ponga trocitos de mantequilla.",
+        "Hornee 10 minutos. Disfrute caliente o tibio.",
+        "Consejo: espolvoree con galletas desmenuzadas para dar crujiente."
+      ]
+    },
+    {
+      "id": "boulettes_riz_tomate",
+      "title": "Bolitas de Arroz con Tomate",
+      "image": "optimized/boulettes_riz_tomate.webp",
+      "description": "Bolitas de arroz con mozzarella y salsa de tomate — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "250 g de arroz",
+        "200 g de salsa de tomate",
+        "1 bola de mozzarella",
+        "1 cucharada de aceite de oliva",
+        "sal, pimienta recién molida"
+      ],
+      "instructions": [
+        "Cocine el arroz en abundante agua hirviendo con sal según las indicaciones del paquete.",
+        "Escurra la mozzarella y córtela en dados muy pequeños.",
+        "Escurra el arroz y mézclelo con la salsa de tomate y la mozzarella. Sazone con sal y pimienta.",
+        "Forme bolas rodándolas entre las palmas.",
+        "Caliente el aceite de oliva en una sartén. Añada las bolitas y caliéntelas unos 5 minutos. Sirva de inmediato.",
+        "Consejo: use arroz para risotto (arborio) si es posible. Con los restos, aplaste las bolitas y recaliente el arroz con dados de pimiento y tomate."
+      ]
+    },
+    {
+      "id": "spaghettis_citron",
+      "title": "Espaguetis Ligeros al Limón",
+      "image": "optimized/spaghettis_citron.webp",
+      "description": "Pasta fresca con limón y queso fresco — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "main_courses"
+      ],
+      "ingredients": [
+        "150 g de espaguetis",
+        "1 limón",
+        "100 g de queso fresco batido",
+        "sal, pimienta recién molida"
+      ],
+      "instructions": [
+        "Cocine la pasta en abundante agua hirviendo con sal el tiempo indicado en el paquete.",
+        "Exprima el limón. En un bol, mezcle el queso fresco y el zumo de limón. Sazone con sal y pimienta.",
+        "Escurra la pasta y mézclela con la salsa de queso fresco. Sirva de inmediato.",
+        "Consejo: espolvoree con parmesano rallado y añada unas gambas cocidas."
+      ]
+    },
+    {
+      "id": "fondant_chocolat",
+      "title": "Fondant de Chocolate al Microondas",
+      "image": "optimized/fondant_chocolat.webp",
+      "description": "Pastel de chocolate fundente al microondas — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "150 g de chocolate negro para repostería",
+        "3 huevos",
+        "60 g de harina + 1 cucharada para el molde",
+        "10 cl de leche",
+        "80 g de mantequilla + un trozo para el molde",
+        "80 g de azúcar en polvo",
+        "1 cucharadita de levadura química"
+      ],
+      "instructions": [
+        "Rompa el chocolate en trozos y póngalo en un bol. Añada la mantequilla en trozos y derrítala en el microondas 2 a 3 minutos, removiendo de vez en cuando.",
+        "En un bol, bata los huevos con el azúcar hasta que blanqueen. Añada la leche, la harina, la levadura y el chocolate derretido. Mezcle.",
+        "Engrase y enharine el molde.",
+        "Vierta la preparación en el molde y cocine 8 minutos en el microondas a 800 W. Deje templar antes de servir.",
+        "Consejo: 5-6 minutos para centro fundente, 10 minutos para textura más firme."
+      ]
+    },
+    {
+      "id": "cremes_pate_tartiner",
+      "title": "Pequeñas Cremas de Crema de Cacao y Avellanas",
+      "image": "optimized/cremes_pate_tartiner.webp",
+      "description": "Cremas con crema de chocolate y avellanas — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "4 cucharadas grandes de crema de chocolate y avellanas",
+        "3 yemas de huevo",
+        "2 cucharadas de azúcar en polvo",
+        "25 cl de leche",
+        "12,5 cl de nata líquida"
+      ],
+      "instructions": [
+        "En un bol, mezcle las yemas y el azúcar hasta que blanqueen.",
+        "Vierta la leche y la nata en una cacerola pequeña. Caliente hasta que hierva, luego vierta el líquido caliente sobre la mezcla de huevo y azúcar.",
+        "Vierta todo de nuevo en la cacerola y añada la crema de cacao. Cocine 5 minutos a fuego lento removiendo sin cesar. Vierta en 4 vasitos o tarros de cristal.",
+        "Refrigere al menos 2 horas.",
+        "Consejo: con las 3 claras, prepare merengues caseras (claras montadas con 120 g de azúcar, hornee 1 hora a temperatura muy baja)."
+      ]
+    },
+    {
+      "id": "curry_lentilles",
+      "title": "Curry de Lentejas",
+      "image": "optimized/curry_lentilles.webp",
+      "description": "Curry de lentejas verdes — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "soups",
+        "vegan",
+        "gluten_free"
+      ],
+      "ingredients": [
+        "100 g de lentejas verdes para cocer",
+        "½ lata de tomates pelados",
+        "1 zanahoria",
+        "1 cebolla",
+        "½ cucharada de curry en polvo",
+        "½ cucharada de aceite de oliva",
+        "sal, pimienta recién molida"
+      ],
+      "instructions": [
+        "Pele y pique la cebolla. Pele la zanahoria y córtela en dados.",
+        "Escurra los tomates (reserve el jugo) y córtelos en trozos.",
+        "En una olla grande, caliente el aceite de oliva. Añada la cebolla y dórela 5 minutos. Vierta la zanahoria en dados y los tomates escurridos. Cocine 5 minutos.",
+        "Añada las lentejas, el jugo de tomate y cubra con agua hasta el borde. Sazone con sal, pimienta y curry. Lleve a ebullición, baje el fuego y cocine a fuego lento sin tapar 30 minutos. Sirva bien caliente.",
+        "Consejo: use lentejas rojas para cocción más corta (unos 20 minutos). Añada canela, pimentón, jengibre o cúrcuma."
+      ]
+    },
+    {
+      "id": "gateau_pommes_poele",
+      "title": "Bizcocho de Manzanas en Sartén",
+      "image": "optimized/gateau_pommes_poele.webp",
+      "description": "Bizcocho de manzanas cocinado en sartén — de La Cuisine de l'Étudiant Malin",
+      "tags": [
+        "desserts"
+      ],
+      "ingredients": [
+        "4 manzanas",
+        "1 huevo",
+        "125 g de harina",
+        "20 g de mantequilla salada",
+        "50 g de azúcar en polvo",
+        "1 sobre de azúcar vainillado",
+        "1 cucharadita de levadura química"
+      ],
+      "instructions": [
+        "Pele las manzanas y córtelas en láminas finas.",
+        "En un bol, bata el huevo con la harina, la levadura y 4 cucharadas de agua. Añada el azúcar y el azúcar vainillado y mezcle. Incorpore las láminas de manzana y mezcle de nuevo.",
+        "Derrita la mitad de la mantequilla en una sartén grande. Vierta la preparación de manzana, cubra y cocine 5 minutos. Deslice el bizcocho volteado en un plato grande. Derrita el resto de mantequilla en la sartén y vuelva a poner el bizcocho para cocinar el otro lado unos 10 minutos.",
+        "Variaciones: sustituya las manzanas por peras, ciruelas o albaricoques. Sirva tibio con helado de vainilla o un poco de nata."
+      ]
     }
   ]
-} 
+}
