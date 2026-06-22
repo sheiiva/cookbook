@@ -115,23 +115,63 @@
         "5 tomates (+/- une brique de coulis de tomates)",
         "2 aubergines",
         "5 pommes de terre moyennes",
-        "500 g de viande hachée (ou substitut végétal)",
-        "2 œufs (ou substitut végétal)",
-        "200 ml de lait (ou lait végétal)",
-        "50 g de fromage râpé (ou substitut végétal)"
+        "200 g de soja texturé",
+        "1 cuillère à soupe de cannelle"
       ],
-      "instructions": [
-        "Préchauffez le four à 180°C (350°F).",
-        "Coupez les aubergines en tranches et faites-les griller jusqu'à ce qu'elles soient tendres.",
-        "Faites cuire les pommes de terre en tranches jusqu'à ce qu'elles soient presque tendres.",
-        "Dans une poêle, faites revenir l'oignon haché dans l'huile d'olive.",
-        "Ajoutez la viande hachée et faites-la cuire jusqu'à ce qu'elle soit dorée.",
-        "Ajoutez les tomates, le sel, le poivre et laissez mijoter pendant 10 minutes.",
-        "Dans un plat à gratin, alternez les couches : pommes de terre, aubergines, sauce à la viande.",
-        "Préparez la béchamel en mélangeant le lait, les œufs, le fromage, la noix de muscade.",
-        "Versez la béchamel sur le dessus.",
-        "Faites cuire au four pendant 30-40 minutes jusqu'à ce que le dessus soit doré."
-      ]
+      "ingredient_sections": {
+        "béchamel": [
+          "3 cuillères à soupe de farine",
+          "20 g de beurre",
+          "35 cl de lait"
+        ]
+      },
+      "instruction_blocks": {
+        "tomato_sauce": {
+          "title": "Préparation de la sauce tomate",
+          "steps": [
+            "Émincez les oignons et faites-les dorer dans une petite casserole.",
+            "Ajoutez les tomates coupées en gros cubes et 2 grosses cuillères à soupe d'huile d'olive, la cannelle, le miel, le sel et le poivre. Laissez réduire 25 minutes à feu moyen. Vous devez obtenir une sauce, que vous pouvez homogénéiser avec du coulis de tomates.",
+            "Note : si la sauce est trop acide, ajoutez une petite pincée de bicarbonate pour équilibrer l'acidité."
+          ]
+        },
+        "eggplants": {
+          "title": "Préparation des aubergines",
+          "steps": [
+            "Coupez les aubergines en tranches (sans les éplucher), salez généreusement et laissez-les dégorger pendant l'étape suivante. Astuce : dans un plat, alternez une couche de tranches d'aubergines salées et une couche de papier absorbant, ou laissez-les dans une passoire."
+          ]
+        },
+        "potatoes": {
+          "title": "Préparation des pommes de terre",
+          "steps": [
+            "Épluchez et coupez les pommes de terre en fines tranches.",
+            "Disposez les tranches au fond d'un plat à gratin assez haut et huilé. Arrosez les pommes de terre avec un peu (3 cuillères à soupe) du jus des tomates en cuisson.",
+            "Placez le plat sous le gril 5 à 15 minutes selon votre four, jusqu'à ce qu'elles dorent."
+          ]
+        },
+        "assembly": {
+          "title": "Préparer le montage",
+          "steps": [
+            "Maintenant qu'elles ont dégorgé, faites griller les tranches d'aubergines à feu vif de chaque côté, puis réservez.",
+            "Ajoutez le soja texturé à la sauce tomate-oignon et baissez le feu (très doux).",
+            "Sortez le plat de pommes de terre du four et préchauffez le four à 200 °C (thermostat 6-7)."
+          ]
+        },
+        "béchamel": {
+          "title": "Préparation de la béchamel",
+          "steps": [
+            "Dans une petite casserole à feu doux, faites fondre les 20 g de beurre, ajoutez la farine et mélangez jusqu'à obtenir une pâte lisse.",
+            "Ajoutez progressivement le lait en remuant sans cesse ; cela peut prendre une bonne dizaine de minutes. Vous devez obtenir une sauce assez épaisse.",
+            "Salez, poivrez et râpez un peu de noix de muscade."
+          ]
+        },
+        "final_assembly": {
+          "title": "Montage de la moussaka",
+          "steps": [
+            "Sur la couche de pommes de terre, étalez la moitié du mélange soja-tomate, puis la moitié des aubergines, puis l'autre moitié du mélange, puis l'autre moitié des aubergines, un filet d'huile d'olive et terminez par la béchamel.",
+            "Enfournez à 200 °C (thermostat 6-7) et laissez cuire 1 heure (la béchamel doit être croustillante et dorée)."
+          ]
+        }
+      }
     },
     {
       "id": "banana_bread",
