@@ -310,6 +310,14 @@
 }
 
 
+.recipe-header--no-image .recipe-info {
+    justify-content: center;
+}
+
+.recipe-header--no-image .recipe-description {
+    margin-top: 0;
+}
+
 .recipe-title {
     font-size: 2.5rem;
     font-weight: 700;
