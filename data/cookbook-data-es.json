@@ -19,7 +19,8 @@
     },
     "recipe_labels": {
       "ingredients": "Ingredientes",
-      "instructions": "Instrucciones"
+      "instructions": "Instrucciones",
+      "tips": "Consejos"
     }
   },
   "navigation": {
@@ -514,8 +515,13 @@
       "instructions": [
         "Vierta la maicena en una taza y añada un poco de leche. Mezcle hasta obtener una preparación homogénea.",
         "En una cacerola pequeña, vierta el resto de la leche, la maicena diluida, el cacao y el azúcar. Caliente a fuego lento hasta que hierva, luego deje espesar 2 a 3 minutos removiendo sin cesar.",
-        "Vierta en un vaso o ramequín y sirva tibia o fría.",
-        "Consejo: también puede preparar esta crema en 2 minutos en el microondas. En un bol o taza grande, mezcle la maicena con un poco de leche, luego añada el resto de la leche, el cacao y el azúcar. Cocine 2 a 3 minutos, parando para remover. Vigile para que no se desborde."
+        "Vierta en un vaso o ramequín y sirva tibia o fría."
+      ],
+      "servings": "Para 1 persona",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 5 min",
+      "tips": [
+        "también puede preparar esta crema en 2 minutos en el microondas. En un bol o taza grande, mezcle la maicena con un poco de leche, luego añada el resto de la leche, el cacao y el azúcar. Cocine 2 a 3 minutos, parando para remover. Vigile para que no se desborde."
       ]
     },
     {
@@ -541,7 +547,10 @@
         "Vierta en el bol el zumo de lima, la cebolla picada y los dados de tomate. Mezcle bien.",
         "Añada el pimentón y la sal. Pruebe y rectifique el sazonado. Cubra y refrigere al menos 1 hora.",
         "Sirva con chips de tortilla, o unte sobre pan de molde con una loncha de jamón cocido."
-      ]
+      ],
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Reposo : 1 hora"
     },
     {
       "id": "quiche_lorraine",
@@ -564,8 +573,13 @@
         "Extienda la masa y forre un molde de tarta, dejando el papel de horno en el fondo.",
         "Dore el bacon en una sartén pequeña durante 5 minutos. Séquelo con papel absorbente y colóquelo en la base de la tarta.",
         "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta. Vierta sobre el bacon.",
-        "Hornee 40 minutos. Sirva caliente.",
-        "Consejo: añada cebollino picado para frescura. Los restos se comen fríos en el tupper."
+        "Hornee 40 minutos. Sirva caliente."
+      ],
+      "servings": "Para 6 personas",
+      "prep_time": "Preparación : 10 min",
+      "cook_time": "Cocción : 40 min",
+      "tips": [
+        "añada cebollino picado para frescura. Los restos se comen fríos en el tupper."
       ]
     },
     {
@@ -587,8 +601,13 @@
       "instructions": [
         "Lave el calabacín, retire el tallo y córtelo en dados muy pequeños sin pelarlo.",
         "En un bol, bata los huevos con la nata y la leche. Sazone con sal y pimienta.",
-        "Ponga los dados de calabacín en un recipiente apto para microondas y vierta encima la preparación de huevo. Cubra. Cocine unos 10 minutos a 800 W. Sirva caliente.",
-        "Consejo: añada una pizca de pimentón o 1 cucharadita de curry en polvo."
+        "Ponga los dados de calabacín en un recipiente apto para microondas y vierta encima la preparación de huevo. Cubra. Cocine unos 10 minutos a 800 W. Sirva caliente."
+      ],
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
+      "tips": [
+        "añada una pizca de pimentón o 1 cucharadita de curry en polvo."
       ]
     },
     {
@@ -614,8 +633,13 @@
         "Guarde el pot de yogur: servirá para medir los demás ingredientes.",
         "En un bol, mezcle el yogur, el azúcar, la harina, la levadura y una pizca de sal. Añada los huevos enteros y el aceite. Mezcle bien.",
         "Vierta la masa en un molde de bizcocho engrasado y enharinado y hornee 40 minutos. Compruebe la cocción insertando un cuchillo: si sale seco, el bizcocho está listo.",
-        "Deje enfriar antes de desmoldar.",
-        "Variaciones: añada trozos de fruta fresca o en conserva, especias (canela, vainilla...), ralladura cítrica o pepitas de chocolate."
+        "Deje enfriar antes de desmoldar."
+      ],
+      "servings": "Para 6 personas",
+      "prep_time": "Preparación : 10 min",
+      "cook_time": "Cocción : 40 min",
+      "tips": [
+        "añada trozos de fruta fresca o en conserva, especias (canela, vainilla...), ralladura cítrica o pepitas de chocolate."
       ]
     },
     {
@@ -640,8 +664,13 @@
         "Pele las patatas. Ralle tres de ellas. Corte la cuarta en rodajas muy finas.",
         "En un bol, bata el huevo entero. Añada la nata, el queso y las patatas ralladas. Sazone con sal y pimienta.",
         "Vierta el aceite de oliva en una sartén. Coloque la mitad de las rodajas, la mezcla de patata rallada y el resto de rodajas. Cubra con leche hasta el borde. Cocine 30 minutos a fuego lento.",
-        "Voltee el gratin en un plato y vuelva a ponerlo en la sartén para cocinar el otro lado 15 a 20 minutos. Sirva bien caliente.",
-        "Consejo: añada dados de jamón, hierbas (cebollino, perejil...) o una pizca de especias (pimentón, curry...)."
+        "Voltee el gratin en un plato y vuelva a ponerlo en la sartén para cocinar el otro lado 15 a 20 minutos. Sirva bien caliente."
+      ],
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 20 min",
+      "cook_time": "Cocción : 50 min",
+      "tips": [
+        "añada dados de jamón, hierbas (cebollino, perejil...) o una pizca de especias (pimentón, curry...)."
       ]
     },
     {
@@ -662,8 +691,13 @@
         "Precaliente el horno a 180°C.",
         "Sin pelar, corte el plátano por la mitad a lo largo. Coloque las mitades en una fuente de horno.",
         "Espolvoree con azúcar vainillado y ponga trocitos de mantequilla.",
-        "Hornee 10 minutos. Disfrute caliente o tibio.",
-        "Consejo: espolvoree con galletas desmenuzadas para dar crujiente."
+        "Hornee 10 minutos. Disfrute caliente o tibio."
+      ],
+      "servings": "Para 1 persona",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
+      "tips": [
+        "espolvoree con galletas desmenuzadas para dar crujiente."
       ]
     },
     {
@@ -687,8 +721,13 @@
         "Escurra la mozzarella y córtela en dados muy pequeños.",
         "Escurra el arroz y mézclelo con la salsa de tomate y la mozzarella. Sazone con sal y pimienta.",
         "Forme bolas rodándolas entre las palmas.",
-        "Caliente el aceite de oliva en una sartén. Añada las bolitas y caliéntelas unos 5 minutos. Sirva de inmediato.",
-        "Consejo: use arroz para risotto (arborio) si es posible. Con los restos, aplaste las bolitas y recaliente el arroz con dados de pimiento y tomate."
+        "Caliente el aceite de oliva en una sartén. Añada las bolitas y caliéntelas unos 5 minutos. Sirva de inmediato."
+      ],
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Cocción : 20 min",
+      "tips": [
+        "use arroz para risotto (arborio) si es posible. Con los restos, aplaste las bolitas y recaliente el arroz con dados de pimiento y tomate."
       ]
     },
     {
@@ -708,8 +747,13 @@
       "instructions": [
         "Cocine la pasta en abundante agua hirviendo con sal el tiempo indicado en el paquete.",
         "Exprima el limón. En un bol, mezcle el queso fresco y el zumo de limón. Sazone con sal y pimienta.",
-        "Escurra la pasta y mézclela con la salsa de queso fresco. Sirva de inmediato.",
-        "Consejo: espolvoree con parmesano rallado y añada unas gambas cocidas."
+        "Escurra la pasta y mézclela con la salsa de queso fresco. Sirva de inmediato."
+      ],
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
+      "tips": [
+        "espolvoree con parmesano rallado y añada unas gambas cocidas."
       ]
     },
     {
@@ -733,8 +777,13 @@
         "Rompa el chocolate en trozos y póngalo en un bol. Añada la mantequilla en trozos y derrítala en el microondas 2 a 3 minutos, removiendo de vez en cuando.",
         "En un bol, bata los huevos con el azúcar hasta que blanqueen. Añada la leche, la harina, la levadura y el chocolate derretido. Mezcle.",
         "Engrase y enharine el molde.",
-        "Vierta la preparación en el molde y cocine 8 minutos en el microondas a 800 W. Deje templar antes de servir.",
-        "Consejo: 5-6 minutos para centro fundente, 10 minutos para textura más firme."
+        "Vierta la preparación en el molde y cocine 8 minutos en el microondas a 800 W. Deje templar antes de servir."
+      ],
+      "servings": "Para 6 personas",
+      "prep_time": "Preparación : 10 min",
+      "cook_time": "Cocción : 8–11 min",
+      "tips": [
+        "5-6 minutos para centro fundente, 10 minutos para textura más firme."
       ]
     },
     {
@@ -757,8 +806,13 @@
         "En un bol, mezcle las yemas y el azúcar hasta que blanqueen.",
         "Vierta la leche y la nata en una cacerola pequeña. Caliente hasta que hierva, luego vierta el líquido caliente sobre la mezcla de huevo y azúcar.",
         "Vierta todo de nuevo en la cacerola y añada la crema de cacao. Cocine 5 minutos a fuego lento removiendo sin cesar. Vierta en 4 vasitos o tarros de cristal.",
-        "Refrigere al menos 2 horas.",
-        "Consejo: con las 3 claras, prepare merengues caseras (claras montadas con 120 g de azúcar, hornee 1 hora a temperatura muy baja)."
+        "Refrigere al menos 2 horas."
+      ],
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 5 min",
+      "cook_time": "Cocción : 10 min",
+      "tips": [
+        "con las 3 claras, prepare merengues caseras (claras montadas con 120 g de azúcar, hornee 1 hora a temperatura muy baja)."
       ]
     },
     {
@@ -784,8 +838,13 @@
         "Pele y pique la cebolla. Pele la zanahoria y córtela en dados.",
         "Escurra los tomates (reserve el jugo) y córtelos en trozos.",
         "En una olla grande, caliente el aceite de oliva. Añada la cebolla y dórela 5 minutos. Vierta la zanahoria en dados y los tomates escurridos. Cocine 5 minutos.",
-        "Añada las lentejas, el jugo de tomate y cubra con agua hasta el borde. Sazone con sal, pimienta y curry. Lleve a ebullición, baje el fuego y cocine a fuego lento sin tapar 30 minutos. Sirva bien caliente.",
-        "Consejo: use lentejas rojas para cocción más corta (unos 20 minutos). Añada canela, pimentón, jengibre o cúrcuma."
+        "Añada las lentejas, el jugo de tomate y cubra con agua hasta el borde. Sazone con sal, pimienta y curry. Lleve a ebullición, baje el fuego y cocine a fuego lento sin tapar 30 minutos. Sirva bien caliente."
+      ],
+      "servings": "Para 2 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Cocción : 40 min",
+      "tips": [
+        "use lentejas rojas para cocción más corta (unos 20 minutos). Añada canela, pimentón, jengibre o cúrcuma."
       ]
     },
     {
@@ -808,8 +867,13 @@
       "instructions": [
         "Pele las manzanas y córtelas en láminas finas.",
         "En un bol, bata el huevo con la harina, la levadura y 4 cucharadas de agua. Añada el azúcar y el azúcar vainillado y mezcle. Incorpore las láminas de manzana y mezcle de nuevo.",
-        "Derrita la mitad de la mantequilla en una sartén grande. Vierta la preparación de manzana, cubra y cocine 5 minutos. Deslice el bizcocho volteado en un plato grande. Derrita el resto de mantequilla en la sartén y vuelva a poner el bizcocho para cocinar el otro lado unos 10 minutos.",
-        "Variaciones: sustituya las manzanas por peras, ciruelas o albaricoques. Sirva tibio con helado de vainilla o un poco de nata."
+        "Derrita la mitad de la mantequilla en una sartén grande. Vierta la preparación de manzana, cubra y cocine 5 minutos. Deslice el bizcocho volteado en un plato grande. Derrita el resto de mantequilla en la sartén y vuelva a poner el bizcocho para cocinar el otro lado unos 10 minutos."
+      ],
+      "servings": "Para 4 personas",
+      "prep_time": "Preparación : 15 min",
+      "cook_time": "Cocción : 15 min",
+      "tips": [
+        "sustituya las manzanas por peras, ciruelas o albaricoques. Sirva tibio con helado de vainilla o un poco de nata."
       ]
     }
   ]

@@ -19,7 +19,8 @@
     },
     "recipe_labels": {
       "ingredients": "Ingrédients",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "tips": "Astuces"
     }
   },
   "navigation": {
@@ -514,8 +515,13 @@
       "instructions": [
         "Versez la fécule de maïs dans une tasse et ajoutez un peu de lait. Mélangez de manière à obtenir une préparation homogène.",
         "Dans une petite casserole, versez le reste de lait, la fécule diluée, le cacao et le sucre en poudre. Faites chauffer à feu doux jusqu'à ébullition, puis laissez épaissir pendant 2 à 3 minutes en remuant sans cesse.",
-        "Versez dans un verre ou un ramequin et servez tiède ou froid.",
-        "Astuce : vous pouvez aussi préparer cette crème en 2 minutes au micro-ondes. Dans un bol ou une grande tasse, versez la fécule de maïs et un peu de lait. Mélangez, puis versez-y le reste du lait, le cacao et le sucre. Faites cuire 2 à 3 minutes en arrêtant de temps en temps la cuisson pour mélanger. Surveillez attentivement afin que cela ne déborde pas."
+        "Versez dans un verre ou un ramequin et servez tiède ou froid."
+      ],
+      "servings": "Pour 1 personne",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 5 min",
+      "tips": [
+        "vous pouvez aussi préparer cette crème en 2 minutes au micro-ondes. Dans un bol ou une grande tasse, versez la fécule de maïs et un peu de lait. Mélangez, puis versez-y le reste du lait, le cacao et le sucre. Faites cuire 2 à 3 minutes en arrêtant de temps en temps la cuisson pour mélanger. Surveillez attentivement afin que cela ne déborde pas."
       ]
     },
     {
@@ -541,7 +547,10 @@
         "Versez dans le saladier le jus de citron, l'oignon émincé et les dés de tomate. Mélangez bien.",
         "Ajoutez le piment et le sel. Goûtez et rectifiez l'assaisonnement. Couvrez et mettez au frais pendant au moins 1 heure.",
         "Servez avec des chips tortillas, ou tartinez sur du pain de mie avec une tranche de jambon blanc."
-      ]
+      ],
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Attente : 1 heure"
     },
     {
       "id": "quiche_lorraine",
@@ -564,8 +573,13 @@
         "Déroulez la pâte et garnissez-en un moule à tarte, en laissant au fond le papier sulfurisé.",
         "Faites rissoler les lardons dans une petite poêle pendant 5 minutes. Épongez-les dans un papier absorbant et déposez-les sur le fond de tarte.",
         "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez. Versez sur les lardons.",
-        "Enfournez et laissez cuire 40 minutes. Servez chaud.",
-        "Astuce : ajoutez un bouquet de ciboulette ciselé pour une note de fraîcheur. Le reste se déguste froid en lunch box."
+        "Enfournez et laissez cuire 40 minutes. Servez chaud."
+      ],
+      "servings": "Pour 6 personnes",
+      "prep_time": "Préparation : 10 min",
+      "cook_time": "Cuisson : 40 min",
+      "tips": [
+        "ajoutez un bouquet de ciboulette ciselé pour une note de fraîcheur. Le reste se déguste froid en lunch box."
       ]
     },
     {
@@ -587,8 +601,13 @@
       "instructions": [
         "Lavez la courgette, ôtez son pédoncule et coupez-la en tout petits dés sans l'éplucher.",
         "Dans un bol, battez les œufs avec la crème et le lait. Salez et poivrez.",
-        "Mettez les dés de courgette dans un plat adapté au micro-ondes et versez par-dessus la préparation aux œufs. Couvrez. Faites cuire 10 minutes environ à 800 W. Servez chaud.",
-        "Astuce : ajoutez une pointe de piment ou 1 cuillère à café de curry en poudre pour relever le flan."
+        "Mettez les dés de courgette dans un plat adapté au micro-ondes et versez par-dessus la préparation aux œufs. Couvrez. Faites cuire 10 minutes environ à 800 W. Servez chaud."
+      ],
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
+      "tips": [
+        "ajoutez une pointe de piment ou 1 cuillère à café de curry en poudre pour relever le flan."
       ]
     },
     {
@@ -614,8 +633,13 @@
         "Conservez le pot de yaourt : il va servir à mesurer les autres ingrédients.",
         "Dans un saladier, mélangez le yaourt, le sucre, la farine, la levure et une pincée de sel. Ajoutez les œufs entiers et l'huile. Mélangez bien.",
         "Versez la pâte dans un moule à cake beurré et fariné, et enfournez pour 40 minutes. Vérifiez la cuisson en plongeant la lame d'un couteau : si elle ressort sèche, le gâteau est cuit.",
-        "Laissez le gâteau refroidir avant de le démouler.",
-        "Variations : ajoutez des morceaux de fruits frais ou en conserve, des épices (cannelle, vanille...), du zeste d'orange ou de citron, ou des pépites de chocolat."
+        "Laissez le gâteau refroidir avant de le démouler."
+      ],
+      "servings": "Pour 6 personnes",
+      "prep_time": "Préparation : 10 min",
+      "cook_time": "Cuisson : 40 min",
+      "tips": [
+        "ajoutez des morceaux de fruits frais ou en conserve, des épices (cannelle, vanille...), du zeste d'orange ou de citron, ou des pépites de chocolat."
       ]
     },
     {
@@ -640,8 +664,13 @@
         "Pelez les pommes de terre. Râpez trois d'entre elles. Coupez la quatrième en rondelles très fines.",
         "Dans un saladier, battez l'œuf entier. Ajoutez la crème, le fromage et les pommes de terre râpées. Salez et poivrez.",
         "Versez l'huile d'olive dans une poêle. Déposez la moitié des rondelles de pommes de terre, la préparation avec les pommes de terre râpées, et le reste des rondelles de pommes de terre. Couvrez de lait à hauteur. Faites cuire 30 minutes à feu doux.",
-        "Retournez le gratin dans un plat puis remettez-le à nouveau dans la poêle afin de faire cuire l'autre face durant 15 à 20 minutes. Servez bien chaud.",
-        "Astuce : ajoutez des dés de jambon, des herbes (ciboulette, persil...) ou une pincée d'épices (piment, curry...)."
+        "Retournez le gratin dans un plat puis remettez-le à nouveau dans la poêle afin de faire cuire l'autre face durant 15 à 20 minutes. Servez bien chaud."
+      ],
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 20 min",
+      "cook_time": "Cuisson : 50 min",
+      "tips": [
+        "ajoutez des dés de jambon, des herbes (ciboulette, persil...) ou une pincée d'épices (piment, curry...)."
       ]
     },
     {
@@ -662,8 +691,13 @@
         "Préchauffez le four thermostat 6 (180 °C).",
         "Sans l'éplucher, coupez la banane en deux dans le sens de la longueur. Déposez les moitiés de banane dans un plat à four.",
         "Saupoudrez-les de sucre vanillé et parsemez de petits morceaux de beurre.",
-        "Enfournez et laissez cuire 10 minutes. Dégustez chaud ou tiède.",
-        "Astuce : pour apporter du croquant, saupoudrez de biscuits émiettés."
+        "Enfournez et laissez cuire 10 minutes. Dégustez chaud ou tiède."
+      ],
+      "servings": "Pour 1 personne",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
+      "tips": [
+        "pour apporter du croquant, saupoudrez de biscuits émiettés."
       ]
     },
     {
@@ -687,8 +721,13 @@
         "Égouttez la mozzarella et coupez-la en tout petits dés.",
         "Égouttez le riz et mélangez-le avec la sauce tomate et la mozzarella. Salez et poivrez.",
         "Formez des boules en les roulant entre vos paumes.",
-        "Faites chauffer l'huile d'olive dans une poêle. Ajoutez les boulettes et laissez-les réchauffer 5 minutes environ. Servez sans attendre.",
-        "Astuce : utilisez de préférence un riz pour risotto (arborio). Avec les restes, écrasez les boulettes et réchauffez le riz avec des dés de poivron et de tomate."
+        "Faites chauffer l'huile d'olive dans une poêle. Ajoutez les boulettes et laissez-les réchauffer 5 minutes environ. Servez sans attendre."
+      ],
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Cuisson : 20 min",
+      "tips": [
+        "utilisez de préférence un riz pour risotto (arborio). Avec les restes, écrasez les boulettes et réchauffez le riz avec des dés de poivron et de tomate."
       ]
     },
     {
@@ -708,8 +747,13 @@
       "instructions": [
         "Faites cuire les pâtes dans un grand volume d'eau bouillante salée le temps indiqué sur le paquet.",
         "Pressez le citron. Dans un bol, mélangez le fromage blanc et le jus de citron. Salez et poivrez.",
-        "Égouttez les pâtes et mélangez-les avec la sauce au fromage blanc. Servez immédiatement.",
-        "Astuce : parsemez de parmesan râpé et ajoutez quelques crevettes cuites."
+        "Égouttez les pâtes et mélangez-les avec la sauce au fromage blanc. Servez immédiatement."
+      ],
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
+      "tips": [
+        "parsemez de parmesan râpé et ajoutez quelques crevettes cuites."
       ]
     },
     {
@@ -733,8 +777,13 @@
         "Cassez le chocolat en morceaux et mettez-les dans un bol. Ajoutez le beurre coupé en morceaux et faites fondre au micro-ondes pendant 2 à 3 minutes en remuant de temps en temps.",
         "Dans un saladier, battez les œufs avec le sucre jusqu'à ce que le mélange blanchisse. Ajoutez le lait, la farine, la levure et le chocolat fondu. Mélangez.",
         "Beurrez et farinez le moule.",
-        "Versez la préparation dans le moule et faites cuire 8 minutes au micro-ondes à 800 W. Laissez tiédir avant de servir.",
-        "Astuce : 5-6 minutes pour un coulant au chocolat, 10 minutes pour une texture plus ferme."
+        "Versez la préparation dans le moule et faites cuire 8 minutes au micro-ondes à 800 W. Laissez tiédir avant de servir."
+      ],
+      "servings": "Pour 6 personnes",
+      "prep_time": "Préparation : 10 min",
+      "cook_time": "Cuisson : 8–11 min",
+      "tips": [
+        "5-6 minutes pour un coulant au chocolat, 10 minutes pour une texture plus ferme."
       ]
     },
     {
@@ -757,8 +806,13 @@
         "Dans un saladier, mélangez les jaunes d'œufs et le sucre jusqu'à ce que le mélange blanchisse.",
         "Versez le lait et la crème dans une petite casserole. Faites chauffer jusqu'à ébullition, puis versez le liquide chaud sur le mélange œufs-sucre.",
         "Reversez le tout dans la casserole et ajoutez la pâte à tartiner. Faites cuire 5 minutes à feu doux en remuant sans cesse. Versez dans 4 petits verres ou pots en verre.",
-        "Mettez au frais pendant 2 heures au moins.",
-        "Astuce : avec les 3 blancs d'œufs, préparez des meringues maison (blancs montés en neige avec 120 g de sucre, cuisson 1 h au four thermostat 2-3)."
+        "Mettez au frais pendant 2 heures au moins."
+      ],
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 5 min",
+      "cook_time": "Cuisson : 10 min",
+      "tips": [
+        "avec les 3 blancs d'œufs, préparez des meringues maison (blancs montés en neige avec 120 g de sucre, cuisson 1 h au four thermostat 2-3)."
       ]
     },
     {
@@ -784,8 +838,13 @@
         "Pelez et émincez l'oignon. Épluchez la carotte et coupez-la en dés.",
         "Égouttez les tomates (conservez le jus) et coupez-les en morceaux.",
         "Dans une cocotte ou une grande casserole, faites chauffer l'huile d'olive. Ajoutez l'oignon et laissez-le dorer 5 minutes. Versez les dés de carotte et les tomates égouttées. Laissez cuire 5 minutes.",
-        "Ajoutez les lentilles, le jus des tomates et couvrez d'eau à hauteur. Salez, poivrez et ajoutez le curry. Portez à ébullition, puis baissez le feu et laissez mijoter 30 minutes sans couvrir. Servez bien chaud.",
-        "Astuce : utilisez des lentilles corail pour une cuisson plus courte (environ 20 minutes). Agrémentez de cannelle, piment, gingembre ou curcuma."
+        "Ajoutez les lentilles, le jus des tomates et couvrez d'eau à hauteur. Salez, poivrez et ajoutez le curry. Portez à ébullition, puis baissez le feu et laissez mijoter 30 minutes sans couvrir. Servez bien chaud."
+      ],
+      "servings": "Pour 2 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Cuisson : 40 min",
+      "tips": [
+        "utilisez des lentilles corail pour une cuisson plus courte (environ 20 minutes). Agrémentez de cannelle, piment, gingembre ou curcuma."
       ]
     },
     {
@@ -808,8 +867,13 @@
       "instructions": [
         "Épluchez les pommes et coupez-les en fines lamelles.",
         "Dans un saladier, battez l'œuf avec la farine, la levure et 4 cuillères à soupe d'eau. Ajoutez le sucre, le sucre vanillé et mélangez. Versez les lamelles de pommes et mélangez encore.",
-        "Faites fondre la moitié du beurre dans une grande poêle. Versez la préparation aux pommes, couvrez et laissez cuire 5 minutes. Faites glisser le gâteau retourné dans une grande assiette. Faites fondre le reste de beurre dans la poêle, puis remettez le gâteau pour le faire cuire de l'autre côté. Poursuivez la cuisson 10 minutes environ.",
-        "Variations : remplacez les pommes par des poires, des prunes ou des abricots. Servez tiède avec une boule de glace à la vanille ou un peu de crème fraîche."
+        "Faites fondre la moitié du beurre dans une grande poêle. Versez la préparation aux pommes, couvrez et laissez cuire 5 minutes. Faites glisser le gâteau retourné dans une grande assiette. Faites fondre le reste de beurre dans la poêle, puis remettez le gâteau pour le faire cuire de l'autre côté. Poursuivez la cuisson 10 minutes environ."
+      ],
+      "servings": "Pour 4 personnes",
+      "prep_time": "Préparation : 15 min",
+      "cook_time": "Cuisson : 15 min",
+      "tips": [
+        "remplacez les pommes par des poires, des prunes ou des abricots. Servez tiède avec une boule de glace à la vanille ou un peu de crème fraîche."
       ]
     }
   ]

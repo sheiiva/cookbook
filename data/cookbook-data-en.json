@@ -19,7 +19,8 @@
     },
     "recipe_labels": {
       "ingredients": "Ingredients",
-      "instructions": "Instructions"
+      "instructions": "Instructions",
+      "tips": "Tips"
     }
   },
   "navigation": {
@@ -514,8 +515,13 @@
       "instructions": [
         "Pour the cornstarch into a cup and add a little milk. Mix until smooth.",
         "In a small saucepan, pour the remaining milk, the diluted starch, cocoa and sugar. Heat over low heat until boiling, then thicken for 2 to 3 minutes, stirring constantly.",
-        "Pour into a glass or ramekin and serve warm or cold.",
-        "Tip: you can also make this cream in 2 minutes in the microwave. In a bowl or large mug, mix cornstarch with a little milk, then add the rest of the milk, cocoa and sugar. Cook 2 to 3 minutes, stopping to stir. Watch carefully so it doesn't overflow."
+        "Pour into a glass or ramekin and serve warm or cold."
+      ],
+      "servings": "1 serving",
+      "prep_time": "5 min prep",
+      "cook_time": "5 min cook",
+      "tips": [
+        "you can also make this cream in 2 minutes in the microwave. In a bowl or large mug, mix cornstarch with a little milk, then add the rest of the milk, cocoa and sugar. Cook 2 to 3 minutes, stopping to stir. Watch carefully so it doesn't overflow."
       ]
     },
     {
@@ -541,7 +547,10 @@
         "Pour the lime juice, minced onion and tomato cubes into the bowl. Mix well.",
         "Add chili and salt. Taste and adjust seasoning. Cover and refrigerate for at least 1 hour.",
         "Serve with tortilla chips, or spread on sandwich bread with a slice of white ham."
-      ]
+      ],
+      "servings": "4 servings",
+      "prep_time": "15 min prep",
+      "cook_time": "1 hour rest"
     },
     {
       "id": "quiche_lorraine",
@@ -564,8 +573,13 @@
         "Unroll the pastry and line a tart pan, leaving the parchment paper on the bottom.",
         "Brown the bacon lardons in a small frying pan for 5 minutes. Blot with paper towels and place on the tart base.",
         "In a bowl, beat the eggs with the cream and milk. Season with salt and pepper. Pour over the bacon.",
-        "Bake for 40 minutes. Serve hot.",
-        "Tip: add chopped chives for freshness. Leftovers are great cold in a lunch box."
+        "Bake for 40 minutes. Serve hot."
+      ],
+      "servings": "6 servings",
+      "prep_time": "10 min prep",
+      "cook_time": "40 min cook",
+      "tips": [
+        "add chopped chives for freshness. Leftovers are great cold in a lunch box."
       ]
     },
     {
@@ -587,8 +601,13 @@
       "instructions": [
         "Wash the zucchini, remove the stem and cut into very small cubes without peeling.",
         "In a bowl, beat the eggs with the cream and milk. Season with salt and pepper.",
-        "Put the zucchini cubes in a microwave-safe dish and pour the egg mixture over them. Cover. Cook about 10 minutes at 800 W. Serve hot.",
-        "Tip: add a pinch of chili or 1 tsp curry powder to spice it up."
+        "Put the zucchini cubes in a microwave-safe dish and pour the egg mixture over them. Cover. Cook about 10 minutes at 800 W. Serve hot."
+      ],
+      "servings": "2 servings",
+      "prep_time": "5 min prep",
+      "cook_time": "10 min cook",
+      "tips": [
+        "add a pinch of chili or 1 tsp curry powder to spice it up."
       ]
     },
     {
@@ -614,8 +633,13 @@
         "Keep the yogurt pot: it will be used to measure the other ingredients.",
         "In a bowl, mix yogurt, sugar, flour, baking powder and a pinch of salt. Add whole eggs and oil. Mix well.",
         "Pour the batter into a buttered and floured loaf pan and bake for 40 minutes. Check doneness by inserting a knife blade: if it comes out dry, the cake is done.",
-        "Let the cake cool before unmolding.",
-        "Variations: add fresh or canned fruit, spices (cinnamon, vanilla...), citrus zest, or chocolate chips."
+        "Let the cake cool before unmolding."
+      ],
+      "servings": "6 servings",
+      "prep_time": "10 min prep",
+      "cook_time": "40 min cook",
+      "tips": [
+        "add fresh or canned fruit, spices (cinnamon, vanilla...), citrus zest, or chocolate chips."
       ]
     },
     {
@@ -640,8 +664,13 @@
         "Peel the potatoes. Grate three of them. Cut the fourth into very thin slices.",
         "In a bowl, beat the whole egg. Add cream, cheese and grated potatoes. Season with salt and pepper.",
         "Pour olive oil into a pan. Place half the potato slices, the grated potato mixture, then the rest of the slices. Cover with milk to the top. Cook 30 minutes over low heat.",
-        "Flip the gratin onto a plate then return it to the pan to cook the other side for 15 to 20 minutes. Serve very hot.",
-        "Tip: add diced ham, herbs (chives, parsley...) or a pinch of spices (chili, curry...)."
+        "Flip the gratin onto a plate then return it to the pan to cook the other side for 15 to 20 minutes. Serve very hot."
+      ],
+      "servings": "2 servings",
+      "prep_time": "20 min prep",
+      "cook_time": "50 min cook",
+      "tips": [
+        "add diced ham, herbs (chives, parsley...) or a pinch of spices (chili, curry...)."
       ]
     },
     {
@@ -662,8 +691,13 @@
         "Preheat the oven to 350°F (180°C).",
         "Without peeling, cut the banana in half lengthwise. Place the halves in an ovenproof dish.",
         "Sprinkle with vanilla sugar and dot with small pieces of butter.",
-        "Bake for 10 minutes. Enjoy hot or warm.",
-        "Tip: sprinkle with crumbled biscuits for crunch."
+        "Bake for 10 minutes. Enjoy hot or warm."
+      ],
+      "servings": "1 serving",
+      "prep_time": "5 min prep",
+      "cook_time": "10 min cook",
+      "tips": [
+        "sprinkle with crumbled biscuits for crunch."
       ]
     },
     {
@@ -687,8 +721,13 @@
         "Drain the mozzarella and cut into very small cubes.",
         "Drain the rice and mix with tomato sauce and mozzarella. Season with salt and pepper.",
         "Form balls by rolling between your palms.",
-        "Heat olive oil in a frying pan. Add the rice balls and warm for about 5 minutes. Serve immediately.",
-        "Tip: use risotto rice (arborio) if possible. With leftovers, crush the balls and reheat the rice with diced peppers and tomatoes."
+        "Heat olive oil in a frying pan. Add the rice balls and warm for about 5 minutes. Serve immediately."
+      ],
+      "servings": "4 servings",
+      "prep_time": "15 min prep",
+      "cook_time": "20 min cook",
+      "tips": [
+        "use risotto rice (arborio) if possible. With leftovers, crush the balls and reheat the rice with diced peppers and tomatoes."
       ]
     },
     {
@@ -708,8 +747,13 @@
       "instructions": [
         "Cook the pasta in a large volume of boiling salted water for the time indicated on the package.",
         "Squeeze the lemon. In a bowl, mix fromage blanc and lemon juice. Season with salt and pepper.",
-        "Drain the pasta and mix with the fromage blanc sauce. Serve immediately.",
-        "Tip: sprinkle with grated parmesan and add some cooked shrimp."
+        "Drain the pasta and mix with the fromage blanc sauce. Serve immediately."
+      ],
+      "servings": "2 servings",
+      "prep_time": "5 min prep",
+      "cook_time": "10 min cook",
+      "tips": [
+        "sprinkle with grated parmesan and add some cooked shrimp."
       ]
     },
     {
@@ -733,8 +777,13 @@
         "Break the chocolate into pieces and put in a bowl. Add butter cut into pieces and melt in the microwave for 2 to 3 minutes, stirring occasionally.",
         "In a bowl, beat eggs with sugar until the mixture whitens. Add milk, flour, baking powder and melted chocolate. Mix.",
         "Butter and flour the pan.",
-        "Pour the batter into the pan and cook 8 minutes in the microwave at 800 W. Let cool slightly before serving.",
-        "Tip: 5-6 minutes for a molten center, 10 minutes for a firmer texture."
+        "Pour the batter into the pan and cook 8 minutes in the microwave at 800 W. Let cool slightly before serving."
+      ],
+      "servings": "6 servings",
+      "prep_time": "10 min prep",
+      "cook_time": "8–11 min cook",
+      "tips": [
+        "5-6 minutes for a molten center, 10 minutes for a firmer texture."
       ]
     },
     {
@@ -757,8 +806,13 @@
         "In a bowl, mix egg yolks and sugar until the mixture whitens.",
         "Pour milk and cream into a small saucepan. Heat until boiling, then pour the hot liquid over the egg-sugar mixture.",
         "Pour everything back into the saucepan and add the spread. Cook 5 minutes over low heat, stirring constantly. Pour into 4 small glasses or jars.",
-        "Refrigerate for at least 2 hours.",
-        "Tip: with the 3 egg whites, make homemade meringues (beat whites stiff with 120 g sugar, bake 1 hour at very low heat)."
+        "Refrigerate for at least 2 hours."
+      ],
+      "servings": "4 servings",
+      "prep_time": "5 min prep",
+      "cook_time": "10 min cook",
+      "tips": [
+        "with the 3 egg whites, make homemade meringues (beat whites stiff with 120 g sugar, bake 1 hour at very low heat)."
       ]
     },
     {
@@ -784,8 +838,13 @@
         "Peel and mince the onion. Peel the carrot and dice it.",
         "Drain the tomatoes (keep the juice) and cut into pieces.",
         "In a Dutch oven or large saucepan, heat the olive oil. Add the onion and brown for 5 minutes. Add diced carrot and drained tomatoes. Cook 5 minutes.",
-        "Add lentils, tomato juice and cover with water to height. Season with salt, pepper and curry. Bring to a boil, then lower heat and simmer uncovered for 30 minutes. Serve very hot.",
-        "Tip: use red lentils for shorter cooking (about 20 minutes). Add cinnamon, chili, ginger or turmeric."
+        "Add lentils, tomato juice and cover with water to height. Season with salt, pepper and curry. Bring to a boil, then lower heat and simmer uncovered for 30 minutes. Serve very hot."
+      ],
+      "servings": "2 servings",
+      "prep_time": "15 min prep",
+      "cook_time": "40 min cook",
+      "tips": [
+        "use red lentils for shorter cooking (about 20 minutes). Add cinnamon, chili, ginger or turmeric."
       ]
     },
     {
@@ -808,8 +867,13 @@
       "instructions": [
         "Peel the apples and cut into thin slices.",
         "In a bowl, beat the egg with flour, baking powder and 4 tablespoons of water. Add sugar and vanilla sugar and mix. Add apple slices and mix again.",
-        "Melt half the butter in a large pan. Pour in the apple mixture, cover and cook 5 minutes. Slide the flipped cake onto a large plate. Melt the remaining butter in the pan, then return the cake to cook on the other side for about 10 minutes.",
-        "Variations: replace apples with pears, plums or apricots. Serve warm with vanilla ice cream or a little crème fraîche."
+        "Melt half the butter in a large pan. Pour in the apple mixture, cover and cook 5 minutes. Slide the flipped cake onto a large plate. Melt the remaining butter in the pan, then return the cake to cook on the other side for about 10 minutes."
+      ],
+      "servings": "4 servings",
+      "prep_time": "15 min prep",
+      "cook_time": "15 min cook",
+      "tips": [
+        "replace apples with pears, plums or apricots. Serve warm with vanilla ice cream or a little crème fraîche."
       ]
     }
   ]
