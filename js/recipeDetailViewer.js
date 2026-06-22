@@ -1,6 +1,7 @@
 class RecipeDetailViewer {
     constructor() {
-        this.currentLanguage = this.getLanguageFromURL() || 'en';
+        const urlLang = new URLSearchParams(window.location.search).get('lang');
+        this.currentLanguage = (window.CookbookI18n && window.CookbookI18n.resolveLanguage(urlLang)) || 'en';
         this.recipesData = null;
     }
 
@@ -43,6 +44,9 @@ class RecipeDetailViewer {
 
     async init() {
         try {
+            if (window.CookbookI18n) {
+                window.CookbookI18n.persistLanguage(this.currentLanguage);
+            }
             await this.loadRecipesForLanguage(this.currentLanguage);
             this.updateBackToHomeLink();
             this.updateLanguageButton();
@@ -146,6 +150,9 @@ class RecipeDetailViewer {
                     menu.classList.remove('open');
                     try {
                         await this.loadRecipesForLanguage(this.currentLanguage);
+                        if (window.CookbookI18n) {
+                            window.CookbookI18n.persistLanguage(this.currentLanguage);
+                        }
                         this.updateBackToHomeLink();
                         this.setDocumentLang(this.currentLanguage);
                         this.displayRecipe();
@@ -166,6 +173,17 @@ class RecipeDetailViewer {
         }
 
         document.addEventListener('click', () => menu?.classList.remove('open'));
+    }
+
+    renderRecipeImage(safeImage, safeTitle) {
+        if (!safeImage) return '';
+        return `<img src="images/${safeImage}" alt="${safeTitle}" class="recipe-image" loading="lazy">`;
+    }
+
+    attachRecipeImageFallback(container) {
+        const img = container.querySelector('.recipe-image');
+        if (!img) return;
+        img.addEventListener('error', () => img.remove(), { once: true });
     }
 
     displayRecipe() {
@@ -201,10 +219,12 @@ class RecipeDetailViewer {
         const ingredientsLabel = this.escapeHtml(labels.ingredients || 'Ingredients');
         const instructionsLabel = this.escapeHtml(labels.instructions || 'Instructions');
         const recipeContent = document.getElementById('recipe-content');
+        const imageHtml = this.renderRecipeImage(safeImage, safeTitle);
+        const headerClass = imageHtml ? 'recipe-header' : 'recipe-header recipe-header--no-image';
         recipeContent.innerHTML = `
-            <div class="recipe-header">
+            <div class="${headerClass}">
                 <div class="recipe-info">
-                    <img src="images/${safeImage}" alt="${safeTitle}" class="recipe-image" loading="lazy">
+                    ${imageHtml}
                     <p class="recipe-description">${this.escapeHtml(recipe.description)}</p>
                 </div>
                 <div class="recipe-ingredients-header">
@@ -217,6 +237,7 @@ class RecipeDetailViewer {
                 ${this.renderInstructions(recipe)}
             </div>
         `;
+        this.attachRecipeImageFallback(recipeContent);
     }
 
     renderInstructions(recipe) {

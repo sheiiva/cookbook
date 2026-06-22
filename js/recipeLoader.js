@@ -7,14 +7,20 @@ class RecipeLoader {
             gluten_free: false
         };
         this.currentDishType = 'all';
-        this.currentLanguage = 'en';
+        const urlLang = new URLSearchParams(window.location.search).get('lang');
+        this.currentLanguage = (window.CookbookI18n && window.CookbookI18n.resolveLanguage(urlLang)) || 'en';
         this.currentSearchTerm = '';
     }
 
     async init() {
         try {
+            if (window.CookbookI18n) {
+                window.CookbookI18n.persistLanguage(this.currentLanguage);
+                window.CookbookI18n.updateLanguageInUrl(this.currentLanguage);
+            }
             await this.loadRecipesForLanguage(this.currentLanguage);
             this.setupLanguageToggle();
+            this.updateLanguageButton();
             this.renderRecipes();
             this.setDocumentLang(this.currentLanguage);
         } catch (error) {
@@ -61,6 +67,10 @@ class RecipeLoader {
                     menu.classList.remove('open');
                     try {
                         await this.loadRecipesForLanguage(this.currentLanguage);
+                        if (window.CookbookI18n) {
+                            window.CookbookI18n.persistLanguage(this.currentLanguage);
+                            window.CookbookI18n.updateLanguageInUrl(this.currentLanguage);
+                        }
                         this.renderRecipes();
                         this.setDocumentLang(this.currentLanguage);
                     } catch (error) {
@@ -84,6 +94,14 @@ class RecipeLoader {
 
     setDocumentLang(lang) {
         document.documentElement.lang = lang || 'en';
+    }
+
+    updateLanguageButton() {
+        const languageNames = (window.CookbookI18n && window.CookbookI18n.languageNames) || { en: 'English', fr: 'Français', es: 'Español' };
+        const currentLangSpan = document.querySelector('.current-lang');
+        if (currentLangSpan) {
+            currentLangSpan.textContent = languageNames[this.currentLanguage] || this.currentLanguage;
+        }
     }
 
     showLanguageError() {
